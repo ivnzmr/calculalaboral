@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description:
     "Calculadoras laborales gratuitas para 10 paises: Mexico, Colombia, Espana, Argentina, Chile, Peru, Ecuador, Venezuela, Costa Rica y Bolivia. Calcula finiquito, liquidacion, aguinaldo, vacaciones y mas.",
-  metadataBase: new URL("https://calculalaboral.com"),
+  metadataBase: new URL("https://calculalaboral.net"),
   openGraph: {
     siteName: "CalculaLaboral",
     locale: "es_MX",

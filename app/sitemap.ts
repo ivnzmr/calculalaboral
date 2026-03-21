@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { countries, getAllCalculatorPaths } from "@/data/countries";
 import { articles } from "@/data/articles";
 
-const BASE_URL = "https://calculalaboral.com";
+const BASE_URL = "https://calculalaboral.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

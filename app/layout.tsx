@@ -56,7 +56,8 @@ export default function RootLayout({
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-K16W12FKYE"></script>
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-K16W12FKYE');` }} />
-        {/* ADSENSE: Place your Google AdSense script here */}
+        {/* Google AdSense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7911209835387769" crossOrigin="anonymous"></script>
       </head>
       <body className="min-h-screen flex flex-col bg-slate-50">
         {/* Header */}

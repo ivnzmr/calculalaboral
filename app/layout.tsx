@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { countries } from "@/data/countries";
 import SearchBar from "@/components/SearchBar";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const inter = Inter({
@@ -170,6 +171,7 @@ export default function RootLayout({
         </header>
 
         <main className="flex-1 w-full">{children}</main>
+        <CookieBanner />
 
         {/* ADSENSE SLOT */}
 
@@ -334,10 +336,21 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="border-t border-slate-700 mt-10 pt-6 text-center">
+            <div className="border-t border-slate-700 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
               <p className="text-xs text-slate-500">
                 &copy; 2026 CalculaLaboral. Todos los derechos reservados.
               </p>
+              <div className="flex items-center gap-4 text-xs">
+                <Link href="/politica-de-privacidad" className="text-slate-500 hover:text-white transition-colors">
+                  Política de Privacidad
+                </Link>
+                <Link href="/aviso-legal" className="text-slate-500 hover:text-white transition-colors">
+                  Aviso Legal
+                </Link>
+                <Link href="/contacto" className="text-slate-500 hover:text-white transition-colors">
+                  Contacto
+                </Link>
+              </div>
             </div>
           </div>
         </footer>

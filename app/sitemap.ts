@@ -87,6 +87,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
+  // Legal pages
+  const legalPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/politica-de-privacidad`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${BASE_URL}/aviso-legal`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${BASE_URL}/contacto`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+  ];
+
   return [
     homePage,
     ...countryPages,
@@ -97,5 +104,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogArticlePages,
     cartaIndexPage,
     ...cartaPaisPages,
+    ...legalPages,
   ];
 }

@@ -87,6 +87,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
+  // Comparador finiquito vs despido pages
+  const comparadorPages: MetadataRoute.Sitemap = ["mexico", "espana", "argentina", "colombia", "chile"].map(
+    (countrySlug) => ({
+      url: `${BASE_URL}/${countrySlug}/finiquito-vs-despido`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })
+  );
+
+  // Calculadora freelance
+  const freelancePage: MetadataRoute.Sitemap[number] = {
+    url: `${BASE_URL}/calculadora-freelance`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  };
+
   // Legal pages
   const legalPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/politica-de-privacidad`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
@@ -104,6 +122,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogArticlePages,
     cartaIndexPage,
     ...cartaPaisPages,
+    ...comparadorPages,
+    freelancePage,
     ...legalPages,
   ];
 }

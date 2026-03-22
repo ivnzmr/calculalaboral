@@ -50,3 +50,17 @@ body {
   border-radius: 0.25rem;
   font-size: 0.9em;
 }
+
+/* Print styles — used by "Descargar PDF" button */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+}

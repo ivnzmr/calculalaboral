@@ -771,6 +771,10 @@ export default function Calculator({
     setTimeout(() => setCopied(false), 2000);
   }
 
+  function handlePrint() {
+    window.print();
+  }
+
   function handleClear() {
     setForm({
       salary: "",
@@ -816,7 +820,7 @@ export default function Calculator({
 
       {/* ADSENSE SLOT */}
 
-      <form onSubmit={validateAndSubmit} className="space-y-5">
+      <form onSubmit={validateAndSubmit} className="space-y-5 no-print">
         {/* Precio field - IVA/IGV mode only */}
         {inputMode === "precio-iva" && (
           <div>
@@ -1334,12 +1338,18 @@ export default function Calculator({
               contrato y legislacion aplicable.
             </p>
 
-            <div className="mt-4 flex gap-2">
+            <div className="mt-4 flex gap-2 no-print">
               <button
                 onClick={handleShare}
                 className="flex-1 border border-blue-200 bg-blue-50 rounded-xl py-2.5 text-sm font-medium text-blue-700 hover:bg-blue-100 transition-colors"
               >
                 {copied ? "¡Enlace copiado!" : "Compartir resultado"}
+              </button>
+              <button
+                onClick={handlePrint}
+                className="flex-1 border border-slate-200 rounded-xl py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 transition-colors"
+              >
+                Descargar PDF
               </button>
               <button
                 onClick={handleClear}

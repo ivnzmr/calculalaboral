@@ -62,7 +62,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-slate-50">
         {/* Header */}
-        <header className="bg-slate-900 text-white shadow-lg">
+        <header className="no-print bg-slate-900 text-white shadow-lg">
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
             <Link
               href="/"
@@ -160,6 +160,12 @@ export default function RootLayout({
                   Carta de Renuncia
                 </Link>
                 <Link
+                  href="/calculadora-freelance"
+                  className="whitespace-nowrap text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  Freelance
+                </Link>
+                <Link
                   href="/blog"
                   className="whitespace-nowrap text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1.5 rounded-lg transition-colors"
                 >
@@ -176,7 +182,7 @@ export default function RootLayout({
         {/* ADSENSE SLOT */}
 
         {/* Footer */}
-        <footer className="bg-slate-900 text-slate-300 mt-auto">
+        <footer className="no-print bg-slate-900 text-slate-300 mt-auto">
           <div className="max-w-6xl mx-auto px-4 py-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {/* Col 1: Logo + description */}

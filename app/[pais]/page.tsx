@@ -32,6 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const COMPARADOR_COUNTRIES = ["mexico", "espana", "argentina", "colombia", "chile"];
+
 const flagCodes: Record<string, string> = {
   mexico: "mx",
   colombia: "co",
@@ -220,6 +222,26 @@ export default async function CountryPage({ params }: Props) {
       </section>
 
       {/* ADSENSE SLOT */}
+
+      {/* Comparador Finiquito vs Despido */}
+      {COMPARADOR_COUNTRIES.includes(pais) && (
+        <section className="mt-2">
+          <div className="bg-gradient-to-r from-amber-50 to-emerald-50 border border-slate-200 rounded-xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="font-semibold text-slate-800">¿Renunciar o esperar al despido?</p>
+              <p className="text-sm text-slate-600 mt-1">
+                Compara cuánto recibirías en cada escenario con tu salario y fechas reales.
+              </p>
+            </div>
+            <Link
+              href={`/${pais}/finiquito-vs-despido`}
+              className="flex-shrink-0 bg-slate-800 hover:bg-slate-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors"
+            >
+              Comparar escenarios →
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* Referencias útiles */}
       <section className="mt-2">

@@ -123,7 +123,7 @@ export default function HomePage() {
             <p className="text-blue-200 text-sm mt-1">Paises</p>
           </div>
           <div>
-            <p className="text-4xl font-bold">67</p>
+            <p className="text-4xl font-bold">82</p>
             <p className="text-blue-200 text-sm mt-1">Calculadoras</p>
           </div>
           <div>

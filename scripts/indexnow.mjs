@@ -210,6 +210,13 @@ function buildUrlList() {
   ];
   for (const pair of pairs) urls.push(`${BASE_URL}/comparar/${pair}`);
 
+  // Seasonal pages
+  urls.push(`${BASE_URL}/mexico/aguinaldo-2026`);
+  urls.push(`${BASE_URL}/colombia/prima-servicios-2026`);
+  urls.push(`${BASE_URL}/peru/gratificacion-julio-2026`);
+  urls.push(`${BASE_URL}/peru/cts-mayo-2026`);
+  urls.push(`${BASE_URL}/argentina/sac-junio-2026`);
+
   // Legal
   urls.push(`${BASE_URL}/politica-de-privacidad`);
   urls.push(`${BASE_URL}/aviso-legal`);

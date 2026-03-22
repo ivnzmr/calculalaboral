@@ -1184,6 +1184,45 @@ function getDefaultContent(
   };
 }
 
+// Featured snippet content for high-traffic calculator pages
+const SNIPPETS: Record<string, Record<string, { question: string; answer: string }>> = {
+  mexico: {
+    "calculadora-finiquito": {
+      question: "¿Cuánto es el finiquito en México?",
+      answer:
+        "Incluye aguinaldo proporcional (mín. 15 días/año), vacaciones no disfrutadas y prima vacacional (25%). Ejemplo: con $15,000/mes y 8 meses trabajados ≈ $4,250. La LFT exige pagarlo en máx. 3-5 días hábiles.",
+    },
+  },
+  colombia: {
+    "calculadora-liquidacion": {
+      question: "¿Cuánto es la liquidación en Colombia?",
+      answer:
+        "Incluye cesantías (1 mes/año), intereses (12% anual), prima de servicios y vacaciones proporcionales. Con $2,000,000/mes y 1 año ≈ $3,600,000. El empleador tiene 15 días hábiles para pagar.",
+    },
+  },
+  espana: {
+    "calculadora-paro": {
+      question: "¿Cuánto paro me corresponde en España?",
+      answer:
+        "El 70% de tu base reguladora los primeros 180 días, luego el 50%. Con cotización de 24 meses cobras 720 días de paro. Ejemplo: con base de 2,000€/mes → 1,400€/mes los primeros 6 meses.",
+    },
+  },
+  argentina: {
+    "calculadora-indemnizacion": {
+      question: "¿Cuánto es la indemnización por despido en Argentina?",
+      answer:
+        "Art. 245 LCT: 1 mes del mejor sueldo por año trabajado (mín. 2 meses). Con $500,000/mes y 3 años → $1,500,000. El preaviso adicional es de 1-2 meses según antigüedad.",
+    },
+  },
+  peru: {
+    "calculadora-cts": {
+      question: "¿Cuánto CTS me corresponde en Perú?",
+      answer:
+        "Aproximadamente 1/12 de tu remuneración mensual por cada mes trabajado. Con S/2,000/mes en un semestre completo → S/1,000. Se deposita en mayo y noviembre en tu cuenta bancaria.",
+    },
+  },
+};
+
 export default async function CalculatorPage({ params }: Props) {
   const { pais, calculadora } = await params;
   const country = countries[pais];
@@ -1197,6 +1236,8 @@ export default async function CalculatorPage({ params }: Props) {
   const content =
     calculatorContent[pais]?.[calculadora] ??
     getDefaultContent(calc.name, country.name);
+
+  const snippet = SNIPPETS[pais]?.[calculadora];
 
   // Other calculators for this country (excluding the current one)
   const otherCalculators = country.calculators
@@ -1300,6 +1341,21 @@ export default async function CalculatorPage({ params }: Props) {
               {calc.description}
             </p>
           </div>
+
+          {/* Featured snippet */}
+          {snippet && (
+            <section
+              aria-label="Respuesta rápida"
+              className="bg-emerald-50 border border-emerald-200 rounded-xl p-4"
+            >
+              <p className="text-sm font-semibold text-emerald-800 mb-1">
+                {snippet.question}
+              </p>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                {snippet.answer}
+              </p>
+            </section>
+          )}
 
           {/* ADSENSE SLOT */}
 

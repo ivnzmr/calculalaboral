@@ -81,6 +81,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const COMPARADOR_COUNTRIES = ["mexico", "espana", "argentina", "colombia", "chile"];
 
+// Seasonal pages with high search spikes — shown in country hub
+const SEASONAL_PAGES: Record<string, Array<{ slug: string; label: string; description: string }>> = {
+  mexico: [
+    { slug: "aguinaldo-2026", label: "Aguinaldo 2026", description: "¿Cuánto te corresponde en diciembre?" },
+  ],
+  colombia: [
+    { slug: "prima-servicios-2026", label: "Prima de Servicios 2026", description: "Junio y diciembre: calcula tu prima" },
+  ],
+  peru: [
+    { slug: "cts-mayo-2026", label: "CTS Mayo 2026", description: "¿Cuánto te depositan en mayo?" },
+    { slug: "gratificacion-julio-2026", label: "Gratificación Julio 2026", description: "Un sueldo completo por Fiestas Patrias" },
+  ],
+  argentina: [
+    { slug: "sac-junio-2026", label: "SAC Junio 2026", description: "Calcula tu aguinaldo del primer semestre" },
+  ],
+};
+
 const flagCodes: Record<string, string> = {
   mexico: "mx",
   colombia: "co",
@@ -363,6 +380,34 @@ export default async function CountryPage({ params }: Props) {
           </Link>
         </div>
       </section>
+
+      {/* Seasonal pages */}
+      {SEASONAL_PAGES[country.slug] && (
+        <section>
+          <h2 className="text-lg font-bold text-slate-900 mb-3">
+            Calculadoras estacionales 2026
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {SEASONAL_PAGES[country.slug].map((page) => (
+              <Link
+                key={page.slug}
+                href={`/${country.slug}/${page.slug}`}
+                className="group flex items-center gap-4 bg-white border border-slate-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-sm transition-all"
+              >
+                <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center text-lg">
+                  📅
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-800 group-hover:text-emerald-700 transition-colors">
+                    {page.label}
+                  </p>
+                  <p className="text-xs text-slate-500">{page.description}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Legal disclaimer */}
       <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 text-sm text-slate-700 leading-relaxed">

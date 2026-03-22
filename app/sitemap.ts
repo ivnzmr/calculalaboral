@@ -128,6 +128,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Seasonal pages (year-targeted, high search spike)
+  const seasonalPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/mexico/aguinaldo-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/colombia/prima-servicios-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/peru/gratificacion-julio-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/peru/cts-mayo-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/argentina/sac-junio-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+  ];
+
   // Legal pages
   const legalPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/politica-de-privacidad`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
@@ -149,6 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     freelancePage,
     ...newToolPages,
     ...comparacionPages,
+    ...seasonalPages,
     ...legalPages,
   ];
 }

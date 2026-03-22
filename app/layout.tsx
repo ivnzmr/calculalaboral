@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { countries } from "@/data/countries";
+import { countries, getAllCalculatorPaths } from "@/data/countries";
+
+const GLOBAL_TOOLS_COUNT = 9; // freelance + inflacion + prestamo-nomina + irpf + pension + para-empleadores + comparar-ofertas + quiz-laboral + nomada-digital
+const TOTAL_CALCULATORS = getAllCalculatorPaths().length + GLOBAL_TOOLS_COUNT;
 import SearchBar from "@/components/SearchBar";
 import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
@@ -146,7 +149,7 @@ export default function RootLayout({
               <div className="flex items-center gap-4 text-xs text-slate-400 flex-shrink-0">
                 <span className="whitespace-nowrap">10 paises</span>
                 <span className="text-slate-600">·</span>
-                <span className="whitespace-nowrap">82 calculadoras</span>
+                <span className="whitespace-nowrap">{TOTAL_CALCULATORS} calculadoras</span>
                 <span className="text-slate-600">·</span>
                 <span className="whitespace-nowrap">Gratis</span>
                 <span className="text-slate-600">·</span>

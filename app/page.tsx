@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { countries } from "@/data/countries";
+import { countries, getAllCalculatorPaths } from "@/data/countries";
 import { salariosMinimos } from "@/data/salarios-minimos";
+
+// Global tools not in countries.ts (update this when adding new standalone pages)
+const GLOBAL_TOOLS = [
+  "calculadora-freelance",
+  "calculadora-inflacion",
+  "calculadora-prestamo-nomina",
+  "calculadora-irpf",
+  "calculadora-pension",
+  "para-empleadores",
+  "comparar-ofertas",
+  "quiz-laboral",
+  "calculadora-nomada-digital",
+] as const;
+
+const TOTAL_CALCULATORS = getAllCalculatorPaths().length + GLOBAL_TOOLS.length;
 
 export const metadata: Metadata = {
   title:
@@ -123,7 +138,7 @@ export default function HomePage() {
             <p className="text-blue-200 text-sm mt-1">Paises</p>
           </div>
           <div>
-            <p className="text-4xl font-bold">82</p>
+            <p className="text-4xl font-bold">{TOTAL_CALCULATORS}</p>
             <p className="text-blue-200 text-sm mt-1">Calculadoras</p>
           </div>
           <div>

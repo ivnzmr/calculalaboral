@@ -7,7 +7,7 @@ export function OrganizationSchema() {
     name: "CalculaLaboral",
     url: "https://calculalaboral.net",
     description:
-      "Calculadoras laborales gratuitas para 10 países hispanohablantes",
+      "Calculadoras laborales gratuitas para 10 países hispanohablantes. Más de 90 herramientas para calcular finiquito, liquidación, aguinaldo, vacaciones y más.",
     logo: "https://calculalaboral.net/logo.png",
     sameAs: [],
   };

@@ -4,7 +4,7 @@
  * Run with: node scripts/indexnow.mjs
  */
 
-const KEY = "87e32b3a64bd409f951ca38604838b4e";
+const KEY = "f8e3462c66bf4be1b760d1cd6f03e179";
 const HOST = "calculalaboral.net";
 const BASE_URL = `https://${HOST}`;
 

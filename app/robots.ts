@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://calculalaboral.com/sitemap.xml",
+    sitemap: "https://calculalaboral.net/sitemap.xml",
   };
 }

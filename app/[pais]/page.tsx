@@ -12,6 +12,49 @@ export async function generateStaticParams() {
   return getAllCountrySlugs().map((slug) => ({ pais: slug }));
 }
 
+const COUNTRY_META: Record<string, { title: string; description: string }> = {
+  mexico: {
+    title: "Calculadoras Laborales México 2026 – Finiquito, Liquidación y Más",
+    description: "Calcula gratis tu finiquito, liquidación por despido, aguinaldo, vacaciones e IMSS en México. 10 herramientas actualizadas con la LFT 2026.",
+  },
+  colombia: {
+    title: "Calculadoras Laborales Colombia 2026 – Liquidación, Cesantías y Más",
+    description: "Calcula gratis tu liquidación, cesantías, prima de servicios y vacaciones en Colombia. 6 herramientas actualizadas con el CST 2026.",
+  },
+  espana: {
+    title: "Calculadoras Laborales España 2026 – Paro, Finiquito e IRPF",
+    description: "Calcula tu paro, finiquito, despido improcedente e IRPF en España. 6 herramientas gratuitas actualizadas con el Estatuto de los Trabajadores 2026.",
+  },
+  argentina: {
+    title: "Calculadoras Laborales Argentina 2026 – Indemnización, SAC y Más",
+    description: "Calcula tu indemnización por despido, SAC (aguinaldo), vacaciones y liquidación final en Argentina. 5 herramientas actualizadas con la LCT 2026.",
+  },
+  chile: {
+    title: "Calculadoras Laborales Chile 2026 – Finiquito, AFP e Indemnización",
+    description: "Calcula tu finiquito, indemnización, AFP, gratificación y vacaciones en Chile. 5 herramientas gratuitas actualizadas con el Código del Trabajo 2026.",
+  },
+  peru: {
+    title: "Calculadoras Laborales Perú 2026 – CTS, Gratificación y Vacaciones",
+    description: "Calcula tu CTS, gratificación de julio/diciembre, vacaciones y liquidación en Perú. 6 herramientas gratuitas actualizadas con la ley laboral 2026.",
+  },
+  ecuador: {
+    title: "Calculadoras Laborales Ecuador 2026 – Décimo Tercero, IESS y Más",
+    description: "Calcula tu décimo tercero, décimo cuarto, fondos de reserva, IESS y liquidación en Ecuador. 5 herramientas gratuitas actualizadas 2026.",
+  },
+  venezuela: {
+    title: "Calculadoras Laborales Venezuela 2026 – Prestaciones Sociales",
+    description: "Calcula tus prestaciones sociales, utilidades, vacaciones y bono vacacional en Venezuela. 4 herramientas gratuitas actualizadas con la LOTTT 2026.",
+  },
+  "costa-rica": {
+    title: "Calculadoras Laborales Costa Rica 2026 – Aguinaldo y Cesantía",
+    description: "Calcula tu aguinaldo, cesantía, preaviso y vacaciones en Costa Rica. 4 herramientas gratuitas actualizadas con el Código de Trabajo 2026.",
+  },
+  bolivia: {
+    title: "Calculadoras Laborales Bolivia 2026 – Aguinaldo, Desahucio y Más",
+    description: "Calcula tu aguinaldo, desahucio, vacaciones y liquidación en Bolivia. 4 herramientas gratuitas actualizadas con la Ley General del Trabajo 2026.",
+  },
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { pais } = await params;
   const country = countries[pais];
@@ -21,13 +64,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const year = new Date().getFullYear();
+  const meta = COUNTRY_META[pais];
+
+  const title = meta?.title ?? `Calculadoras Laborales ${country.name} ${year}`;
+  const description = meta?.description ?? `Calcula gratis tu finiquito, liquidacion, aguinaldo y vacaciones en ${country.name}. ${country.calculators.length} calculadoras laborales actualizadas ${year}.`;
 
   return {
-    title: `Calculadoras Laborales ${country.name} ${year}`,
-    description: `Calcula gratis tu finiquito, liquidacion, aguinaldo y vacaciones en ${country.name}. ${country.calculators.length} calculadoras laborales actualizadas ${year}.`,
+    title,
+    description,
     openGraph: {
-      title: `Calculadoras Laborales ${country.name} ${year}`,
-      description: `Herramientas gratuitas de calculo laboral para trabajadores de ${country.name}.`,
+      title,
+      description,
     },
   };
 }
@@ -132,6 +179,37 @@ export default async function CountryPage({ params }: Props) {
   const year = new Date().getFullYear();
   const flagCode = flagCodes[pais] ?? "un";
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "CalculaLaboral", item: "https://calculalaboral.net/" },
+      { "@type": "ListItem", position: 2, name: country.name, item: `https://calculalaboral.net/${pais}` },
+    ],
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `¿Qué calculadoras laborales hay para ${country.name}?`,
+        acceptedAnswer: { "@type": "Answer", text: `CalculaLaboral ofrece ${country.calculators.length} calculadoras gratuitas para ${country.name}: ${country.calculators.map(c => c.name).join(", ")}.` },
+      },
+      {
+        "@type": "Question",
+        name: `¿Son gratuitas las calculadoras laborales de ${country.name}?`,
+        acceptedAnswer: { "@type": "Answer", text: `Sí, todas las calculadoras para ${country.name} son completamente gratuitas y no requieren registro. Los resultados son inmediatos.` },
+      },
+      {
+        "@type": "Question",
+        name: `¿Están actualizadas las calculadoras laborales de ${country.name} para ${year}?`,
+        acceptedAnswer: { "@type": "Answer", text: `Sí, todas las calculadoras están actualizadas con la legislación laboral vigente de ${country.name} para ${year}.` },
+      },
+    ],
+  };
+
   // Group calculators by category
   const grouped: Record<string, typeof country.calculators> = {};
   for (const calc of country.calculators) {
@@ -155,6 +233,8 @@ export default async function CountryPage({ params }: Props) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 space-y-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       {/* Breadcrumb */}
       <nav className="text-sm text-slate-500" aria-label="Navegacion">
         <Link href="/" className="hover:text-slate-800 transition-colors">

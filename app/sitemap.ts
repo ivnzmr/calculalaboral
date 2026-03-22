@@ -105,6 +105,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   };
 
+  // New tools (Category A: calculators, Category B: audiences, Category D: SEO)
+  const newToolPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/calculadora-inflacion`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/calculadora-prestamo-nomina`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/calculadora-irpf`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/calculadora-pension`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/para-empleadores`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/comparar-ofertas`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/quiz-laboral`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/calculadora-nomada-digital`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.75 },
+    { url: `${BASE_URL}/comparar`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+  ];
+
+  const comparacionPages: MetadataRoute.Sitemap = [
+    "mexico-vs-espana", "colombia-vs-mexico", "argentina-vs-chile",
+    "espana-vs-colombia", "chile-vs-peru", "mexico-vs-colombia",
+  ].map((pair) => ({
+    url: `${BASE_URL}/comparar/${pair}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   // Legal pages
   const legalPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/politica-de-privacidad`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
@@ -124,6 +147,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...cartaPaisPages,
     ...comparadorPages,
     freelancePage,
+    ...newToolPages,
+    ...comparacionPages,
     ...legalPages,
   ];
 }

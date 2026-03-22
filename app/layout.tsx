@@ -166,10 +166,22 @@ export default function RootLayout({
                   Freelance
                 </Link>
                 <Link
+                  href="/comparar-ofertas"
+                  className="whitespace-nowrap text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  Comparar Ofertas
+                </Link>
+                <Link
+                  href="/quiz-laboral"
+                  className="whitespace-nowrap text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  Quiz
+                </Link>
+                <Link
                   href="/blog"
                   className="whitespace-nowrap text-xs font-semibold bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1.5 rounded-lg transition-colors"
                 >
-                  Blog Laboral
+                  Blog
                 </Link>
               </div>
             </div>

@@ -179,6 +179,16 @@ export const countries: CountriesConfig = {
         name: "Calculadora de IVA",
         description: "IVA general 21%, reducido 10% y superreducido 4%: añadir o desglosar",
       },
+      {
+        slug: "calculadora-seguridad-social",
+        name: "Cuotas Seguridad Social",
+        description: "Cotizaciones SS trabajador: contingencias 4.7%, desempleo 1.55%, FP y FOGASA",
+      },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Salario bruto menos IRPF y Seguridad Social: cuánto cobras en mano cada mes",
+      },
     ],
   },
   argentina: {
@@ -216,6 +226,11 @@ export const countries: CountriesConfig = {
         slug: "calculadora-iva",
         name: "Calculadora de IVA",
         description: "Calcula el IVA al 21%: añadir o desglosar de cualquier precio",
+      },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Salario bruto menos jubilación SIPA, PAMI y obra social: cuánto cobras en mano",
       },
     ],
   },
@@ -260,6 +275,11 @@ export const countries: CountriesConfig = {
         name: "Calculadora de IVA",
         description: "Calcula el IVA al 19%: añadir o desglosar de cualquier precio",
       },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Sueldo bruto menos AFP, seguro de desempleo y salud: cuánto cobras líquido",
+      },
     ],
   },
   peru: {
@@ -302,6 +322,11 @@ export const countries: CountriesConfig = {
         slug: "calculadora-igv",
         name: "Calculadora de IGV",
         description: "Calcula el IGV al 18%: añadir o desglosar de cualquier precio",
+      },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Sueldo bruto menos AFP (~13.19%): cuánto recibes en mano cada mes",
       },
     ],
   },
@@ -346,6 +371,11 @@ export const countries: CountriesConfig = {
         name: "Calculadora de IVA",
         description: "Calcula el IVA al 12%: añadir o desglosar de cualquier precio",
       },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Sueldo bruto menos aporte IESS (9.45%): cuánto cobras en mano",
+      },
     ],
   },
   venezuela: {
@@ -373,6 +403,21 @@ export const countries: CountriesConfig = {
         slug: "calculadora-bono-vacacional",
         name: "Bono Vacacional",
         description: "7 días base + 1 día por cada año de servicio",
+      },
+      {
+        slug: "calculadora-horas-extra",
+        name: "Horas Extra",
+        description: "Días hábiles +50%, feriados y domingos +100% (LOTTT Art. 118)",
+      },
+      {
+        slug: "calculadora-iva",
+        name: "Calculadora de IVA",
+        description: "Calcula el IVA al 16%: añadir o desglosar de cualquier precio",
+      },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Salario bruto menos SSO 4%, FAOV 1% y paro 0.5%: cuánto cobras en mano",
       },
     ],
   },
@@ -402,6 +447,21 @@ export const countries: CountriesConfig = {
         name: "Vacaciones",
         description: "Mínimo 2 semanas (14 días) por año trabajado",
       },
+      {
+        slug: "calculadora-horas-extra",
+        name: "Horas Extra",
+        description: "Recargo mínimo 50% sobre hora ordinaria (Código de Trabajo Art. 139)",
+      },
+      {
+        slug: "calculadora-iva",
+        name: "Calculadora de IVA",
+        description: "Calcula el IVA al 13%: añadir o desglosar de cualquier precio",
+      },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Salario bruto menos CCSS obrero (9.22%): cuánto cobras en mano",
+      },
     ],
   },
   bolivia: {
@@ -429,6 +489,21 @@ export const countries: CountriesConfig = {
         slug: "calculadora-vacaciones",
         name: "Vacaciones",
         description: "15 a 30 días según antigüedad (1-5, 5-8 y +8 años)",
+      },
+      {
+        slug: "calculadora-horas-extra",
+        name: "Horas Extra",
+        description: "Recargo 100% sobre hora ordinaria por jornada extraordinaria (LGT)",
+      },
+      {
+        slug: "calculadora-iva",
+        name: "Calculadora de IVA",
+        description: "Calcula el IVA al 13%: añadir o desglosar de cualquier precio",
+      },
+      {
+        slug: "calculadora-nomina-neta",
+        name: "Nómina Neta (Bruto a Neto)",
+        description: "Salario bruto menos AFP y SGRA (~12.21%): cuánto cobras en mano",
       },
     ],
   },

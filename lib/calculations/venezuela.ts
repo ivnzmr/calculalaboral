@@ -124,3 +124,66 @@ export function calculateBonoVacacional(
   ];
   return { total: amount, breakdown, currency: "VES" };
 }
+
+/**
+ * Horas Extra - Venezuela LOTTT Art. 118
+ * Dias habiles: +50% (1.5x), Feriados/Domingos: +100% (2x)
+ */
+export function calculateHorasExtra(
+  monthlySalary: number,
+  horasHabil: number,
+  horasFestivo: number
+): CalculationResult {
+  const hourlyRate = monthlySalary / (8 * 30);
+  const pagoHabil = hourlyRate * 1.5 * horasHabil;
+  const pagoFestivo = hourlyRate * 2.0 * horasFestivo;
+
+  const breakdown: CalculationBreakdown[] = [
+    ...(horasHabil > 0 ? [{ concept: `Horas extra dias habiles (+50%): ${horasHabil}h`, days: horasHabil, amount: pagoHabil }] : []) as CalculationBreakdown[],
+    ...(horasFestivo > 0 ? [{ concept: `Horas extra feriados/domingos (+100%): ${horasFestivo}h`, days: horasFestivo, amount: pagoFestivo }] : []) as CalculationBreakdown[],
+  ];
+
+  return { total: pagoHabil + pagoFestivo, breakdown, currency: "VES" };
+}
+
+/**
+ * Calculadora de IVA - Venezuela
+ * Tasa general 16% (Ley del IVA)
+ */
+export function calculateIVA(precio: number, incluido: boolean): CalculationResult {
+  const tasa = 0.16;
+  const base = incluido ? precio / (1 + tasa) : precio;
+  const iva = base * tasa;
+  const total = base + iva;
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Precio base (sin IVA)", amount: base },
+    { concept: "IVA (16%)", amount: iva },
+    { concept: "Total con IVA", amount: total },
+  ];
+  return { total: incluido ? iva : total, breakdown, currency: "VES" };
+}
+
+/**
+ * Nomina Neta - Venezuela
+ * SSO (Seguro Social Obligatorio): 4%
+ * FAOV (Fondo Ahorro Obligatorio Vivienda): 1%
+ * RPAE (Paro Forzoso): 0.5%
+ */
+export function calculateNominaNeta(monthlySalary: number): CalculationResult {
+  const sso = monthlySalary * 0.04;
+  const faov = monthlySalary * 0.01;
+  const rpae = monthlySalary * 0.005;
+  const totalDescuento = sso + faov + rpae;
+  const salarioNeto = monthlySalary - totalDescuento;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Salario bruto mensual", amount: monthlySalary },
+    { concept: "SSO - Seguro Social Obligatorio (4%)", amount: sso },
+    { concept: "FAOV - Fondo Ahorro Obligatorio Vivienda (1%)", amount: faov },
+    { concept: "RPAE - Paro Forzoso (0.5%)", amount: rpae },
+    { concept: "Total descuentos", amount: totalDescuento },
+    { concept: "Salario neto estimado (en mano)", amount: salarioNeto },
+  ];
+
+  return { total: salarioNeto, breakdown, currency: "VES" };
+}

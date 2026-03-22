@@ -359,3 +359,28 @@ export function calculateIGV(precio: number, incluido: boolean): CalculationResu
   ];
   return { total: incluido ? igv : total, breakdown, currency: "PEN" };
 }
+
+/**
+ * Nomina Neta - Peru
+ * AFP (promedio): 10% cuenta individual + 1.84% comision + 1.35% seguro = ~13.19%
+ * ONP: 13% flat
+ * Usamos AFP por ser el mas comun
+ */
+export function calculateNominaNetaPE(monthlySalary: number): CalculationResult {
+  const cuentaIndividual = monthlySalary * 0.10;
+  const comision = monthlySalary * 0.0184;
+  const seguroInvalidez = monthlySalary * 0.0135;
+  const totalAfp = cuentaIndividual + comision + seguroInvalidez;
+  const salarioNeto = monthlySalary - totalAfp;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Sueldo bruto mensual", amount: monthlySalary },
+    { concept: "AFP - Cuenta individual (10%)", amount: cuentaIndividual },
+    { concept: "AFP - Comision promedio (1.84%)", amount: comision },
+    { concept: "AFP - Prima seguro invalidez (1.35%)", amount: seguroInvalidez },
+    { concept: "Total descuento AFP (~13.19%)", amount: totalAfp },
+    { concept: "Sueldo neto estimado (en mano)", amount: salarioNeto },
+  ];
+
+  return { total: salarioNeto, breakdown, currency: "PEN" };
+}

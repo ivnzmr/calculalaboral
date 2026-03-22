@@ -390,3 +390,68 @@ export function calculateIVA(
   ];
   return { total: incluido ? iva : total, breakdown, currency: "EUR" };
 }
+
+/**
+ * Seguridad Social Trabajador - Spain ET Art. 103
+ * Contingencias comunes: 4.7%
+ * Desempleo: 1.55%
+ * Formacion profesional: 0.1%
+ * FOGASA: 0.12%
+ * Total: 6.47%
+ */
+export function calculateSeguridadSocial(monthlySalary: number): CalculationResult {
+  const contingencias = monthlySalary * 0.047;
+  const desempleo = monthlySalary * 0.0155;
+  const formacion = monthlySalary * 0.001;
+  const fogasa = monthlySalary * 0.0012;
+  const total = contingencias + desempleo + formacion + fogasa;
+  const baseAnteIRPF = monthlySalary - total;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Salario bruto mensual", amount: monthlySalary },
+    { concept: "Contingencias comunes (4.7%)", amount: contingencias },
+    { concept: "Desempleo (1.55%)", amount: desempleo },
+    { concept: "Formacion profesional (0.1%)", amount: formacion },
+    { concept: "FOGASA (0.12%)", amount: fogasa },
+    { concept: "Total cuota SS trabajador (6.47%)", amount: total },
+    { concept: "Base liquida antes de IRPF", amount: baseAnteIRPF },
+  ];
+
+  return { total, breakdown, currency: "EUR" };
+}
+
+/**
+ * Nomina Neta - Spain
+ * SS trabajador 6.47% + IRPF estimado segun tramos 2026
+ */
+export function calculateNominaNetaES(monthlySalary: number): CalculationResult {
+  const salarioAnual = monthlySalary * 14;
+
+  let irpfAnual = 0;
+  if (salarioAnual <= 12450) {
+    irpfAnual = salarioAnual * 0.19;
+  } else if (salarioAnual <= 20200) {
+    irpfAnual = 12450 * 0.19 + (salarioAnual - 12450) * 0.24;
+  } else if (salarioAnual <= 35200) {
+    irpfAnual = 12450 * 0.19 + 7750 * 0.24 + (salarioAnual - 20200) * 0.30;
+  } else if (salarioAnual <= 60000) {
+    irpfAnual = 12450 * 0.19 + 7750 * 0.24 + 15000 * 0.30 + (salarioAnual - 35200) * 0.37;
+  } else if (salarioAnual <= 300000) {
+    irpfAnual = 12450 * 0.19 + 7750 * 0.24 + 15000 * 0.30 + 24800 * 0.37 + (salarioAnual - 60000) * 0.45;
+  } else {
+    irpfAnual = 12450 * 0.19 + 7750 * 0.24 + 15000 * 0.30 + 24800 * 0.37 + 240000 * 0.45 + (salarioAnual - 300000) * 0.47;
+  }
+
+  const irpfMensual = irpfAnual / 12;
+  const ssObrero = monthlySalary * 0.0647;
+  const salarioNeto = monthlySalary - irpfMensual - ssObrero;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Salario bruto mensual", amount: monthlySalary },
+    { concept: `Retencion IRPF mensual estimada (${((irpfMensual / monthlySalary) * 100).toFixed(1)}%)`, amount: irpfMensual },
+    { concept: "Cotizacion SS trabajador (6.47%)", amount: ssObrero },
+    { concept: "Salario neto estimado (en mano)", amount: salarioNeto },
+  ];
+
+  return { total: salarioNeto, breakdown, currency: "EUR" };
+}

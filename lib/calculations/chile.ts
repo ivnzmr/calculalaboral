@@ -306,3 +306,32 @@ export function calculateIVA(precio: number, incluido: boolean): CalculationResu
   ];
   return { total: incluido ? iva : total, breakdown, currency: "CLP" };
 }
+
+/**
+ * Nomina Neta - Chile
+ * AFP obligatorio: 10% (promedio)
+ * SIS - Seguro Invalidez y Sobrevivencia: 0.69%
+ * Seguro Desempleo trabajador: 0.6%
+ * Salud Fonasa/Isapre: 7%
+ * Total: ~18.29%
+ */
+export function calculateNominaNetaCL(monthlySalary: number): CalculationResult {
+  const afp = monthlySalary * 0.10;
+  const sis = monthlySalary * 0.0069;
+  const cesantia = monthlySalary * 0.006;
+  const salud = monthlySalary * 0.07;
+  const totalDescuento = afp + sis + cesantia + salud;
+  const salarioLiquido = monthlySalary - totalDescuento;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Sueldo bruto mensual", amount: monthlySalary },
+    { concept: "AFP obligatorio (10% promedio)", amount: afp },
+    { concept: "SIS - Seguro Invalidez y Sobrevivencia (0.69%)", amount: sis },
+    { concept: "Seguro Desempleo trabajador (0.6%)", amount: cesantia },
+    { concept: "Salud Fonasa/Isapre (7%)", amount: salud },
+    { concept: "Total descuentos previsionales", amount: totalDescuento },
+    { concept: "Sueldo liquido estimado (en mano)", amount: salarioLiquido },
+  ];
+
+  return { total: salarioLiquido, breakdown, currency: "CLP" };
+}

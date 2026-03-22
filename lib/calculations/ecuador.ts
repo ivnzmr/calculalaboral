@@ -323,3 +323,21 @@ export function calculateIVA(precio: number, incluido: boolean): CalculationResu
   ];
   return { total: incluido ? iva : total, breakdown, currency: "USD" };
 }
+
+/**
+ * Nomina Neta - Ecuador
+ * Aporte IESS trabajador: 9.45%
+ */
+export function calculateNominaNetaEC(monthlySalary: number): CalculationResult {
+  const iess = monthlySalary * 0.0945;
+  const salarioNeto = monthlySalary - iess;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Sueldo bruto mensual", amount: monthlySalary },
+    { concept: "Aporte personal IESS (9.45%)", amount: iess },
+    { concept: "Total descuentos", amount: iess },
+    { concept: "Sueldo neto estimado (en mano)", amount: salarioNeto },
+  ];
+
+  return { total: salarioNeto, breakdown, currency: "USD" };
+}

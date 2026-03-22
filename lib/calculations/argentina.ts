@@ -347,3 +347,29 @@ export function calculateIVA(precio: number, incluido: boolean): CalculationResu
   ];
   return { total: incluido ? iva : total, breakdown, currency: "ARS" };
 }
+
+/**
+ * Nomina Neta - Argentina
+ * Jubilacion SIPA: 11%
+ * INSSJP (PAMI): 3%
+ * Obra Social: 3%
+ * Total aportes SS: 17%
+ */
+export function calculateNominaNeta(monthlySalary: number): CalculationResult {
+  const jubilacion = monthlySalary * 0.11;
+  const pami = monthlySalary * 0.03;
+  const obraSocial = monthlySalary * 0.03;
+  const totalDescuento = jubilacion + pami + obraSocial;
+  const salarioNeto = monthlySalary - totalDescuento;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Salario bruto mensual", amount: monthlySalary },
+    { concept: "Jubilacion SIPA (11%)", amount: jubilacion },
+    { concept: "INSSJP - PAMI (3%)", amount: pami },
+    { concept: "Obra Social (3%)", amount: obraSocial },
+    { concept: "Total aportes SS (17%)", amount: totalDescuento },
+    { concept: "Salario neto estimado (sin Impuesto Ganancias)", amount: salarioNeto },
+  ];
+
+  return { total: salarioNeto, breakdown, currency: "ARS" };
+}

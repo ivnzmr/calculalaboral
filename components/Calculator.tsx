@@ -80,19 +80,33 @@ import {
   calculatePrestacionesSociales,
   calculateVacaciones as calculateVacacionesVE,
   calculateBonoVacacional,
+  calculateHorasExtra as calculateHorasExtraVE,
+  calculateIVA as calculateIVAVE,
+  calculateNominaNeta as calculateNominaNetaVE,
 } from "@/lib/calculations/venezuela";
 import {
   calculateAguinaldo as calculateAguinaldoCR,
   calculateCesantia as calculateCesantiaCR,
   calculatePreaviso,
   calculateVacaciones as calculateVacacionesCR,
+  calculateHorasExtra as calculateHorasExtraCR,
+  calculateIVA as calculateIVACR,
+  calculateNominaNeta as calculateNominaNetaCR,
 } from "@/lib/calculations/costa-rica";
 import {
   calculateAguinaldo as calculateAguinaldoBO,
   calculateSegundoAguinaldo,
   calculateDesahucio as calculateDesahucioBO,
   calculateVacaciones as calculateVacacionesBO,
+  calculateHorasExtra as calculateHorasExtraBO,
+  calculateIVA as calculateIVABO,
+  calculateNominaNeta as calculateNominaNetaBO,
 } from "@/lib/calculations/bolivia";
+import { calculateNominaNeta as calculateNominaNetaAR } from "@/lib/calculations/argentina";
+import { calculateSeguridadSocial as calculateSeguridadSocialES, calculateNominaNetaES } from "@/lib/calculations/spain";
+import { calculateNominaNetaCL } from "@/lib/calculations/chile";
+import { calculateNominaNetaPE } from "@/lib/calculations/peru";
+import { calculateNominaNetaEC } from "@/lib/calculations/ecuador";
 import type { CalculationResult } from "@/lib/calculations/mexico";
 
 type Props = {
@@ -134,7 +148,8 @@ function getInputMode(country: string, calculatorType: string): InputMode {
   if (
     (country === "mexico" && calculatorType === "calculadora-imss") ||
     (country === "colombia" && calculatorType === "calculadora-seguridad-social") ||
-    (country === "espana" && calculatorType === "calculadora-irpf")
+    (country === "espana" && calculatorType === "calculadora-irpf") ||
+    (country === "espana" && calculatorType === "calculadora-seguridad-social")
   ) {
     return "salary-only";
   }
@@ -143,13 +158,18 @@ function getInputMode(country: string, calculatorType: string): InputMode {
   if (
     (country === "espana" && calculatorType === "calculadora-horas-extra") ||
     (country === "chile" && calculatorType === "calculadora-horas-extra") ||
-    (country === "peru" && calculatorType === "calculadora-horas-extra")
+    (country === "peru" && calculatorType === "calculadora-horas-extra") ||
+    (country === "costa-rica" && calculatorType === "calculadora-horas-extra") ||
+    (country === "bolivia" && calculatorType === "calculadora-horas-extra")
   ) {
     return "salary-hours";
   }
 
-  // Argentina overtime: weekday + holiday hours
-  if (country === "argentina" && calculatorType === "calculadora-horas-extra") {
+  // Argentina/Venezuela overtime: weekday + holiday hours
+  if (
+    (country === "argentina" && calculatorType === "calculadora-horas-extra") ||
+    (country === "venezuela" && calculatorType === "calculadora-horas-extra")
+  ) {
     return "salary-hours-ar";
   }
 
@@ -304,6 +324,10 @@ function runCalculation(
         return calculateHorasExtraES(salary, parseFloat(form.hours1) || 0, "convenio");
       case "calculadora-iva":
         return calculateIVAES(precio, form.ivaIncluido, form.ivaTipo);
+      case "calculadora-seguridad-social":
+        return calculateSeguridadSocialES(salary);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaES(salary);
       default:
         return null;
     }
@@ -323,6 +347,8 @@ function runCalculation(
         return calculateHorasExtraAR(salary, parseFloat(form.hours1) || 0, parseFloat(form.hours2) || 0);
       case "calculadora-iva":
         return calculateIVAAR(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaAR(salary);
       default:
         return null;
     }
@@ -344,6 +370,8 @@ function runCalculation(
         return calculateHorasExtraCL(salary, parseFloat(form.hours1) || 0);
       case "calculadora-iva":
         return calculateIVACL(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaCL(salary);
       default:
         return null;
     }
@@ -365,6 +393,8 @@ function runCalculation(
         return calculateHorasExtraPE(salary, parseFloat(form.hours1) || 0);
       case "calculadora-igv":
         return calculateIGV(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaPE(salary);
       default:
         return null;
     }
@@ -391,6 +421,8 @@ function runCalculation(
         );
       case "calculadora-iva":
         return calculateIVAEC(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaEC(salary);
       default:
         return null;
     }
@@ -406,6 +438,12 @@ function runCalculation(
         return calculateVacacionesVE(salary, startDate, endDate);
       case "calculadora-bono-vacacional":
         return calculateBonoVacacional(salary, startDate, endDate);
+      case "calculadora-horas-extra":
+        return calculateHorasExtraVE(salary, parseFloat(form.hours1) || 0, parseFloat(form.hours2) || 0);
+      case "calculadora-iva":
+        return calculateIVAVE(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaVE(salary);
       default:
         return null;
     }
@@ -421,6 +459,12 @@ function runCalculation(
         return calculatePreaviso(salary, startDate, endDate);
       case "calculadora-vacaciones":
         return calculateVacacionesCR(salary, startDate, endDate);
+      case "calculadora-horas-extra":
+        return calculateHorasExtraCR(salary, parseFloat(form.hours1) || 0);
+      case "calculadora-iva":
+        return calculateIVACR(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaCR(salary);
       default:
         return null;
     }
@@ -436,6 +480,12 @@ function runCalculation(
         return calculateDesahucioBO(salary, startDate, endDate);
       case "calculadora-vacaciones":
         return calculateVacacionesBO(salary, startDate, endDate);
+      case "calculadora-horas-extra":
+        return calculateHorasExtraBO(salary, parseFloat(form.hours1) || 0);
+      case "calculadora-iva":
+        return calculateIVABO(precio, form.ivaIncluido);
+      case "calculadora-nomina-neta":
+        return calculateNominaNetaBO(salary);
       default:
         return null;
     }

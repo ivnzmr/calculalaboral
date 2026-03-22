@@ -133,3 +133,65 @@ export function calculateVacaciones(
   ];
   return { total: annualAmount + proporcionalAmount, breakdown, currency: "CRC" };
 }
+
+/**
+ * Horas Extra - Costa Rica Codigo de Trabajo Art. 139
+ * Recargo: +50% sobre la hora ordinaria
+ */
+export function calculateHorasExtra(
+  monthlySalary: number,
+  horasExtra: number
+): CalculationResult {
+  const hourlyRate = monthlySalary / (8 * 26);
+  const pagoHora = hourlyRate * 1.5;
+  const total = pagoHora * horasExtra;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: `Valor hora ordinaria: ${hourlyRate.toFixed(0)} CRC`, amount: 0 },
+    { concept: `${horasExtra} horas extra con recargo 50% (Art. 139 CT)`, days: horasExtra, amount: total },
+    { concept: "Limite legal: maximas 12 horas diarias en total", amount: 0 },
+  ];
+
+  return { total, breakdown, currency: "CRC" };
+}
+
+/**
+ * Calculadora de IVA - Costa Rica
+ * Tasa general 13% (Ley del IVA 9635)
+ */
+export function calculateIVA(precio: number, incluido: boolean): CalculationResult {
+  const tasa = 0.13;
+  const base = incluido ? precio / (1 + tasa) : precio;
+  const iva = base * tasa;
+  const total = base + iva;
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Precio base (sin IVA)", amount: base },
+    { concept: "IVA (13%)", amount: iva },
+    { concept: "Total con IVA", amount: total },
+  ];
+  return { total: incluido ? iva : total, breakdown, currency: "CRC" };
+}
+
+/**
+ * Nomina Neta - Costa Rica
+ * CCSS obrero: SEM (salud) 5.5% + IVM (pension) 2.72% + Banco Popular 1%
+ * Total descuento trabajador: ~9.22%
+ */
+export function calculateNominaNeta(monthlySalary: number): CalculationResult {
+  const sem = monthlySalary * 0.055;
+  const ivm = monthlySalary * 0.0272;
+  const bancoPopular = monthlySalary * 0.01;
+  const totalDescuento = sem + ivm + bancoPopular;
+  const salarioNeto = monthlySalary - totalDescuento;
+
+  const breakdown: CalculationBreakdown[] = [
+    { concept: "Salario bruto mensual", amount: monthlySalary },
+    { concept: "CCSS - Seguro de Salud SEM (5.5%)", amount: sem },
+    { concept: "CCSS - IVM Pension (2.72%)", amount: ivm },
+    { concept: "Banco Popular (1%)", amount: bancoPopular },
+    { concept: "Total descuentos CCSS trabajador", amount: totalDescuento },
+    { concept: "Salario neto estimado (en mano)", amount: salarioNeto },
+  ];
+
+  return { total: salarioNeto, breakdown, currency: "CRC" };
+}

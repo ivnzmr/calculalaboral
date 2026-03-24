@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = getSalarioMinimo(pais);
   if (!data) return {};
   return {
-    title: `Salario Mínimo ${data.countryName} ${data.year} | CalculaLaboral`,
+    title: `Salario Mínimo ${data.countryName} ${data.year}`,
     description: `Salario mínimo en ${data.countryName} para ${data.year}: ${data.currencySymbol}${data.amount.toLocaleString("es")} ${data.periodLabel}. Tabla histórica, equivalencia en USD y calculadora de nómina neta.`,
     openGraph: {
       title: `Salario Mínimo ${data.countryName} ${data.year}`,

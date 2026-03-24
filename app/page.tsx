@@ -20,16 +20,20 @@ const GLOBAL_TOOLS = [
 const TOTAL_CALCULATORS = getAllCalculatorPaths().length + GLOBAL_TOOLS.length;
 
 export const metadata: Metadata = {
-  title:
-    "Calculadoras Laborales Gratis 2026 | Mexico, Colombia, Espana, Argentina, Chile, Peru y mas",
+  title: {
+    absolute: "Calculadoras Laborales Gratis 2026 | 10 Países | CalculaLaboral",
+  },
   description:
     "Calcula gratis tu finiquito, liquidacion, aguinaldo, vacaciones, cesantias, indemnizacion, CTS y mas en 10 paises hispanohablantes. Resultados instantaneos y precisos.",
   openGraph: {
-    title:
-      "Calculadoras Laborales Gratis 2026 | 10 Paises Hispanohablantes",
+    title: "Calculadoras Laborales Gratis 2026 | 10 Países Hispanohablantes",
     description:
       "Calcula gratis tu finiquito, liquidacion, aguinaldo y mas en Mexico, Colombia, Espana, Argentina, Chile, Peru y mas.",
     type: "website",
+    url: "https://calculalaboral.net",
+  },
+  alternates: {
+    canonical: "https://calculalaboral.net",
   },
 };
 
@@ -97,11 +101,32 @@ const popularCalculators = [
   },
 ];
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "CalculaLaboral",
+  url: "https://calculalaboral.net",
+  description:
+    "Plataforma gratuita de calculadoras laborales para trabajadores de 10 paises hispanohablantes.",
+  inLanguage: "es",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "CalculaLaboral",
+  url: "https://calculalaboral.net",
+  description:
+    "Plataforma gratuita de calculadoras laborales para trabajadores hispanohablantes de Mexico, Colombia, Espana, Argentina, Chile, Peru, Ecuador, Venezuela, Costa Rica y Bolivia.",
+};
+
 export default function HomePage() {
   const countryList = Object.values(countries);
 
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
       {/* A) Hero */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">

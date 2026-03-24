@@ -3,7 +3,7 @@ import Link from "next/link";
 import { articles } from "@/data/articles";
 
 export const metadata: Metadata = {
-  title: "Blog Laboral 2026 | Guías y Calculadoras Gratuitas | CalculaLaboral",
+  title: "Blog Laboral 2026 | Guías y Calculadoras Gratuitas",
   description:
     "Artículos y guías sobre derechos laborales en México, Colombia, España, Argentina, Chile, Perú y más. Aprende a calcular finiquito, liquidación, vacaciones y más.",
   openGraph: {

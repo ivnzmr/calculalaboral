@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = getFestivos(pais);
   if (!data) return {};
   return {
-    title: `Días Festivos ${data.countryName} ${data.year} | Calendario Oficial | CalculaLaboral`,
+    title: `Días Festivos ${data.countryName} ${data.year} | Calendario Oficial`,
     description: `Calendario completo de días festivos y feriados en ${data.countryName} para ${data.year}. ${data.festivos.length} festivos oficiales con fechas, nombres y tipo.`,
     openGraph: {
       title: `Días Festivos ${data.countryName} ${data.year}`,

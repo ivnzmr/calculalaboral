@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticle(slug);
   if (!article) return {};
   return {
-    title: `${article.title} | CalculaLaboral`,
+    title: article.title,
     description: article.description,
     openGraph: {
       title: article.title,
@@ -43,8 +43,44 @@ export default async function ArticlePage({ params }: Props) {
 
   const otherArticles = articles.filter((a) => a.slug !== article.slug).slice(0, 4);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.publishDate,
+    dateModified: article.publishDate,
+    author: {
+      "@type": "Organization",
+      name: "CalculaLaboral",
+      url: "https://calculalaboral.net",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "CalculaLaboral",
+      url: "https://calculalaboral.net",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://calculalaboral.net/blog/${article.slug}`,
+    },
+    inLanguage: "es",
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "CalculaLaboral", item: "https://calculalaboral.net/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://calculalaboral.net/blog" },
+      { "@type": "ListItem", position: 3, name: article.title, item: `https://calculalaboral.net/blog/${article.slug}` },
+    ],
+  };
+
   return (
     <div className="py-8 px-4">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="max-w-6xl mx-auto">
         {/* Breadcrumb */}
         <nav className="text-sm text-slate-500 mb-6">

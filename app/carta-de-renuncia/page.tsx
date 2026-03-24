@@ -4,7 +4,7 @@ import Link from "next/link";
 import { countries } from "@/data/countries";
 
 export const metadata: Metadata = {
-  title: "Generador de Carta de Renuncia Gratis 2026 | 10 Países | CalculaLaboral",
+  title: "Generador de Carta de Renuncia Gratis 2026 | 10 Países",
   description:
     "Genera gratis tu carta de renuncia voluntaria adaptada a México, Colombia, España, Argentina, Chile, Perú y más. Descárgala en segundos, sin registro.",
   openGraph: {

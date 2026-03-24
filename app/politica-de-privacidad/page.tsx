@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | CalculaLaboral",
+  title: "Política de Privacidad",
   description: "Política de privacidad de CalculaLaboral. Información sobre el tratamiento de datos personales, cookies y publicidad.",
 };
 

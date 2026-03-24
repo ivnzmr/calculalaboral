@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aviso Legal | CalculaLaboral",
+  title: "Aviso Legal",
   description: "Aviso legal y términos de uso de CalculaLaboral. Información sobre el uso del sitio y limitación de responsabilidad.",
 };
 

@@ -1399,6 +1399,483 @@ export const articles: Article[] = [
 <p>¿Estás terminando una relación laboral? Usa nuestra <strong>Calculadora de Finiquito</strong> o la <strong>Calculadora AFP</strong> para entender exactamente lo que deberías recibir.</p>
     `.trim(),
   },
+  {
+    slug: "ptu-utilidades-mexico-2026",
+    title: "PTU 2026: cómo calcular tus utilidades en México",
+    description:
+      "Guía completa sobre el reparto de utilidades (PTU) en México 2026: quiénes tienen derecho, cómo se calcula, cuándo se paga y qué hacer si tu empresa no reparte.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-01",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-ptu", name: "PTU / Utilidades" },
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Nómina Neta (Bruto a Neto)" },
+    ],
+    content: `
+<h2>¿Qué es la PTU?</h2>
+<p>La <strong>Participación de los Trabajadores en las Utilidades (PTU)</strong> es un derecho constitucional en México (Art. 123 CPEUM) que obliga a las empresas a repartir el <strong>10% de su utilidad fiscal</strong> entre sus trabajadores. Se paga una vez al año y es uno de los conceptos más importantes del calendario laboral.</p>
+
+<h2>¿Cuándo se paga la PTU 2026?</h2>
+<p>El plazo para pagar la PTU varía según el tipo de empresa:</p>
+<ul>
+  <li><strong>Personas morales (empresas):</strong> dentro de los <strong>60 días siguientes</strong> a la presentación de la declaración anual, generalmente entre <strong>abril y mayo</strong>.</li>
+  <li><strong>Personas físicas con actividad empresarial:</strong> dentro de los <strong>60 días siguientes</strong> a su declaración, normalmente en <strong>junio</strong>.</li>
+</ul>
+<p>La fecha límite habitual para la mayoría de empresas es el <strong>31 de mayo</strong>.</p>
+
+<h2>¿Quiénes tienen derecho a la PTU?</h2>
+<p>Tienen derecho a PTU todos los trabajadores que hayan prestado servicios durante el ejercicio fiscal, incluyendo:</p>
+<ul>
+  <li>Trabajadores con contrato indefinido o temporal.</li>
+  <li>Trabajadores con al menos 60 días trabajados en el año.</li>
+  <li>Ex-trabajadores que laboraron ese año (aunque ya no estén en la empresa).</li>
+</ul>
+<p><strong>No tienen derecho a PTU:</strong> directores generales, administradores y gerentes generales; trabajadores domésticos; trabajadores eventuales con menos de 60 días.</p>
+
+<h2>¿Cómo se calcula la PTU?</h2>
+<p>La PTU total de la empresa se divide en <strong>dos partes iguales del 50% cada una</strong>:</p>
+<ul>
+  <li><strong>Primera mitad (50%):</strong> se reparte en partes iguales entre todos los trabajadores según los <strong>días trabajados</strong> en el año.</li>
+  <li><strong>Segunda mitad (50%):</strong> se reparte proporcionalmente a los <strong>salarios percibidos</strong> durante el año.</li>
+</ul>
+<p>Fórmula para tu parte por días trabajados:</p>
+<p><em>PTU días = (Días trabajados por ti / Total días trabajados por todos) × 50% del fondo PTU</em></p>
+<p>Fórmula para tu parte por salario:</p>
+<p><em>PTU salario = (Tu salario anual / Suma de salarios de todos) × 50% del fondo PTU</em></p>
+
+<h2>¿Cuánto PTU recibirás en 2026?</h2>
+<p>El monto depende directamente de la utilidad fiscal de tu empresa. Si la empresa tuvo pérdidas o utilidad cero, no hay PTU. Para estimar tu participación, usa nuestra <strong>Calculadora PTU</strong> con los datos de tu empresa.</p>
+
+<h2>¿Mi empresa no quiere pagar la PTU?</h2>
+<p>Si tu empleador se niega a pagar o no lo hace en plazo, puedes:</p>
+<ul>
+  <li>Presentar una queja ante la <strong>Secretaría del Trabajo y Previsión Social (STPS)</strong>.</li>
+  <li>Acudir a la <strong>Procuraduría Federal de la Defensa del Trabajo (PROFEDET)</strong>, que brinda asesoría y representación legal gratuita.</li>
+  <li>Demandar ante el <strong>Tribunal Federal de Conciliación y Arbitraje</strong>.</li>
+</ul>
+<p>El incumplimiento del reparto de PTU es una infracción grave con multas de hasta <strong>5,000 veces el salario mínimo</strong>.</p>
+
+<h2>Tope de PTU para trabajadores de confianza</h2>
+<p>Los trabajadores de <strong>confianza</strong> tienen un tope: su salario máximo para calcular PTU no puede exceder en <strong>20%</strong> al salario del trabajador sindicalizado de más alto salario, o en su defecto del trabajador de planta de mayor salario.</p>
+    `.trim(),
+  },
+  {
+    slug: "prima-servicios-colombia-2026",
+    title: "Prima de servicios Colombia 2026: cuánto te corresponde y cuándo la pagan",
+    description:
+      "Todo sobre la prima de servicios en Colombia 2026: fechas de pago, cómo se calcula, quiénes tienen derecho y qué pasa si el empleador no la paga.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-05",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-prima-servicios", name: "Prima de Servicios" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "colombia", slug: "calculadora-cesantias", name: "Cesantías" },
+    ],
+    content: `
+<h2>¿Qué es la prima de servicios?</h2>
+<p>La <strong>prima de servicios</strong> es un beneficio laboral obligatorio en Colombia, equivalente a <strong>un salario mensual por año trabajado</strong>, pagado en dos cuotas iguales. Está regulada por el artículo 306 del Código Sustantivo del Trabajo (CST).</p>
+
+<h2>¿Cuándo se paga la prima de servicios 2026?</h2>
+<p>El pago se realiza en dos momentos del año:</p>
+<ul>
+  <li><strong>Primera cuota:</strong> a más tardar el <strong>30 de junio</strong> (corresponde al primer semestre: 1 enero – 30 junio).</li>
+  <li><strong>Segunda cuota:</strong> a más tardar el <strong>20 de diciembre</strong> (corresponde al segundo semestre: 1 julio – 31 diciembre).</li>
+</ul>
+
+<h2>¿Cuánto es la prima de servicios?</h2>
+<p>Equivale a <strong>15 días de salario por semestre</strong> completo. Si no trabajaste el semestre completo, se paga de forma proporcional a los días trabajados.</p>
+<p><em>Prima = (Salario mensual × Días trabajados en el semestre) / 360</em></p>
+<p><strong>Ejemplo:</strong> Si ganas $2.000.000 COP y trabajaste 90 días en el semestre:</p>
+<p><em>Prima = ($2.000.000 × 90) / 360 = $500.000 COP</em></p>
+
+<h2>¿Qué salario se toma en cuenta?</h2>
+<p>Para calcular la prima se considera el <strong>salario ordinario</strong>, incluyendo:</p>
+<ul>
+  <li>Salario básico mensual.</li>
+  <li>Horas extra y recargos nocturnos (si son habituales).</li>
+  <li>Comisiones y auxilio de transporte (si aplica).</li>
+</ul>
+<p>El salario integral (más de 10 SMMLV) tiene un tratamiento diferente: la prima se calcula sobre el <strong>70% del salario integral</strong>.</p>
+
+<h2>¿Quiénes tienen derecho a la prima?</h2>
+<p>Todos los trabajadores vinculados mediante contrato de trabajo, independientemente de:</p>
+<ul>
+  <li>Tipo de contrato (fijo, indefinido, obra o labor).</li>
+  <li>Tiempo trabajado (incluso si llevas solo días en la empresa).</li>
+  <li>Modalidad (presencial o teletrabajo).</li>
+</ul>
+
+<h2>Prima proporcional al terminar el contrato</h2>
+<p>Si te retiras o te despiden antes de que se cumpla el semestre, el empleador debe pagarte la <strong>prima proporcional</strong> a los días trabajados en ese período como parte de la liquidación laboral.</p>
+
+<h2>¿Qué pasa si no te pagan la prima?</h2>
+<p>El incumplimiento en el pago de la prima de servicios genera una sanción de un día de salario por cada día de retraso. Puedes reclamar ante el <strong>Ministerio del Trabajo</strong> o interponer demanda ordinaria laboral.</p>
+    `.trim(),
+  },
+  {
+    slug: "gratificacion-julio-peru-2026",
+    title: "Gratificación de julio 2026 en Perú: cómo calcularla y cuándo cobrarla",
+    description:
+      "Guía completa sobre la gratificación de Fiestas Patrias julio 2026 en Perú: quiénes tienen derecho, cómo se calcula, bonificación extraordinaria y fechas de pago.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-03-10",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-gratificaciones", name: "Gratificaciones" },
+      { pais: "peru", slug: "calculadora-cts", name: "CTS" },
+      { pais: "peru", slug: "calculadora-liquidacion", name: "Liquidación Laboral" },
+    ],
+    content: `
+<h2>¿Qué es la gratificación de julio?</h2>
+<p>La <strong>gratificación de Fiestas Patrias</strong> es un beneficio obligatorio para los trabajadores del régimen laboral privado en Perú, equivalente a <strong>un sueldo mensual completo</strong>. Se paga en julio y está regulada por la Ley N° 27735.</p>
+
+<h2>¿Cuándo se paga la gratificación julio 2026?</h2>
+<p>El empleador debe depositarla durante la <strong>primera quincena de julio</strong>, a más tardar el <strong>15 de julio de 2026</strong>. El período computable es del <strong>1 de enero al 30 de junio</strong>.</p>
+
+<h2>¿Cuánto es la gratificación?</h2>
+<p>Si trabajaste todo el semestre enero-junio, recibes <strong>1 remuneración mensual completa</strong>. Si trabajaste solo parte del semestre, se paga proporcionalmente:</p>
+<p><em>Gratificación proporcional = (Remuneración mensual × Meses completos trabajados) / 6</em></p>
+<p>Los días adicionales dentro de un mes se calculan a razón de <strong>1/6 de la gratificación mensual por cada mes</strong>, y si no completaste el mes, se usa: <em>(días trabajados × gratificación mensual) / 30</em>.</p>
+
+<h2>¿Qué incluye la remuneración base?</h2>
+<p>Para calcular la gratificación, la remuneración mensual incluye:</p>
+<ul>
+  <li>Sueldo básico.</li>
+  <li>Asignación familiar (si corresponde).</li>
+  <li>Cualquier remuneración regular y permanente.</li>
+</ul>
+<p>No se incluyen: horas extra esporádicas, bonos por productividad ocasionales ni beneficios no remunerativos.</p>
+
+<h2>Bonificación extraordinaria del 9%</h2>
+<p>Gracias a la Ley N° 29351 (prorrogada), las gratificaciones están <strong>inafectas a descuentos de EsSalud y AFP/ONP</strong>. En su lugar, el empleador paga al trabajador una <strong>bonificación extraordinaria equivalente al 9%</strong> de la gratificación (el aporte que normalmente iría a EsSalud). Esta bonificación se paga junto con la gratificación.</p>
+<p><em>Bonificación extra = Gratificación × 9%</em></p>
+
+<h2>¿Quiénes tienen derecho?</h2>
+<p>Todos los trabajadores del régimen laboral de la actividad privada, incluyendo:</p>
+<ul>
+  <li>Trabajadores a tiempo completo o parcial (a partir de 4 horas diarias).</li>
+  <li>Trabajadores con contrato a plazo fijo o indefinido.</li>
+  <li>Trabajadores que al momento del pago estén con vínculo laboral vigente o que hayan sido despedidos en los 6 meses previos a la quincena de julio.</li>
+</ul>
+
+<h2>¿Qué pasa si renuncias antes de julio?</h2>
+<p>Si tu contrato termina antes del 15 de julio, tienes derecho a la <strong>gratificación trunca proporcional</strong> a los meses trabajados desde enero. Se incluye en tu liquidación laboral.</p>
+    `.trim(),
+  },
+  {
+    slug: "declaracion-renta-espana-2026",
+    title: "Declaración de la Renta 2026 España: fechas, quién debe presentarla y cómo",
+    description:
+      "Todo sobre la campaña de la Renta 2025-2026 en España: plazos, quién está obligado a declarar, tramos IRPF 2026, deducciones clave y cómo pagar menos.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-15",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-irpf", name: "IRPF y Salario Neto" },
+      { pais: "espana", slug: "calculadora-nomina-neta", name: "Nómina Neta (Bruto a Neto)" },
+      { pais: "espana", slug: "calculadora-paro", name: "Prestación por Desempleo (Paro)" },
+    ],
+    content: `
+<h2>¿Cuándo empieza la campaña de la Renta 2026?</h2>
+<p>La campaña de la Renta 2025 (que se presenta en 2026) tiene los siguientes plazos:</p>
+<ul>
+  <li><strong>Presentación por internet (Renta Web):</strong> desde el <strong>2 de abril de 2026</strong>.</li>
+  <li><strong>Presentación por teléfono (plan Le Llamamos):</strong> desde el <strong>6 de mayo de 2026</strong>.</li>
+  <li><strong>Presentación presencial en oficinas de la AEAT:</strong> desde el <strong>2 de junio de 2026</strong>.</li>
+  <li><strong>Fecha límite para todas las modalidades:</strong> <strong>30 de junio de 2026</strong>.</li>
+</ul>
+<p>Si el resultado es a ingresar y domicilias el pago, el plazo se anticipa al <strong>25 de junio de 2026</strong>.</p>
+
+<h2>¿Quién está obligado a declarar en 2026?</h2>
+<p>Debes presentar la declaración si has obtenido:</p>
+<ul>
+  <li><strong>Rendimientos del trabajo superiores a 22.000 €</strong> de un solo pagador.</li>
+  <li><strong>Rendimientos del trabajo superiores a 15.000 €</strong> si tienes dos o más pagadores y el segundo supera 1.500 € anuales.</li>
+  <li><strong>Rendimientos del capital mobiliario o ganancias patrimoniales</strong> superiores a 1.600 €.</li>
+  <li><strong>Rendimientos inmobiliarios</strong> imputados superiores a 1.000 €.</li>
+  <li><strong>Cualquier actividad económica</strong> (autónomos siempre deben declarar).</li>
+</ul>
+<p>Incluso si no estás obligado, puede convenirte declarar si tienes deducciones que te generan devolución.</p>
+
+<h2>Tramos IRPF 2026 (escala estatal)</h2>
+<table>
+  <thead><tr><th>Base liquidable</th><th>Tipo estatal</th></tr></thead>
+  <tbody>
+    <tr><td>Hasta 12.450 €</td><td>9,50%</td></tr>
+    <tr><td>12.450 € – 20.200 €</td><td>12,00%</td></tr>
+    <tr><td>20.200 € – 35.200 €</td><td>15,00%</td></tr>
+    <tr><td>35.200 € – 60.000 €</td><td>18,50%</td></tr>
+    <tr><td>60.000 € – 300.000 €</td><td>22,50%</td></tr>
+    <tr><td>Más de 300.000 €</td><td>24,50%</td></tr>
+  </tbody>
+</table>
+<p>A esta escala estatal se suma la escala autonómica, que varía según tu comunidad. El tipo final efectivo suele oscilar entre el 19% y el 47%.</p>
+
+<h2>Principales deducciones para reducir la factura fiscal</h2>
+<ul>
+  <li><strong>Reducción por rendimientos del trabajo:</strong> hasta 5.565 € para rentas bajas (automática).</li>
+  <li><strong>Deducción por alquiler de vivienda habitual:</strong> si firmaste contrato antes del 1 de enero de 2015.</li>
+  <li><strong>Deducción por hipoteca:</strong> si la adquisición fue antes de 2013 (deducción por inversión en vivienda habitual).</li>
+  <li><strong>Aportaciones a planes de pensiones:</strong> reducen la base imponible (límite: menor de 1.500 € o 30% de rendimientos netos del trabajo y actividades económicas).</li>
+  <li><strong>Donativos a entidades sin ánimo de lucro:</strong> entre el 35% y el 80% de lo donado.</li>
+  <li><strong>Deducciones autonómicas:</strong> varían por comunidad (nacimiento de hijos, rehabilitación de vivienda, etc.).</li>
+</ul>
+
+<h2>¿Cómo presentar la declaración?</h2>
+<p>La forma más sencilla es usar <strong>Renta Web</strong> en la sede electrónica de la AEAT con tu certificado digital, Cl@ve PIN o número de referencia. La AEAT ya prerrellena muchos datos con la información que recibe de empresas, bancos y otros pagadores.</p>
+<p>Revisa siempre el borrador antes de confirmarlo: puede contener errores u omisiones, especialmente en inmuebles, fondos de inversión o deducciones autonómicas.</p>
+    `.trim(),
+  },
+  {
+    slug: "sac-aguinaldo-junio-argentina-2026",
+    title: "SAC junio 2026 Argentina: cómo calcular el aguinaldo y cuándo lo cobras",
+    description:
+      "Todo sobre el SAC (Sueldo Anual Complementario) del primer semestre 2026 en Argentina: cuándo se paga, cómo se calcula, descuentos y qué pasa si el empleador no abona.",
+    country: "argentina",
+    countryName: "Argentina",
+    publishDate: "2026-03-20",
+    relatedCalculators: [
+      { pais: "argentina", slug: "calculadora-sac", name: "SAC / Aguinaldo" },
+      { pais: "argentina", slug: "calculadora-liquidacion-final", name: "Liquidación Final" },
+      { pais: "argentina", slug: "calculadora-indemnizacion", name: "Indemnización por Despido" },
+    ],
+    content: `
+<h2>¿Qué es el SAC?</h2>
+<p>El <strong>Sueldo Anual Complementario (SAC)</strong>, conocido popularmente como aguinaldo, es el equivalente al 50% de la mejor remuneración mensual percibida en el semestre. Está regulado por el artículo 121 de la Ley de Contrato de Trabajo (LCT) y es un derecho irrenunciable de todos los trabajadores en relación de dependencia.</p>
+
+<h2>¿Cuándo se paga el SAC en 2026?</h2>
+<p>El SAC se abona en dos cuotas:</p>
+<ul>
+  <li><strong>Primera cuota (primer semestre):</strong> a más tardar el <strong>30 de junio de 2026</strong> (período enero-junio).</li>
+  <li><strong>Segunda cuota (segundo semestre):</strong> a más tardar el <strong>31 de diciembre de 2026</strong> (período julio-diciembre).</li>
+</ul>
+
+<h2>¿Cómo se calcula el SAC?</h2>
+<p>El cálculo es el siguiente:</p>
+<p><em>SAC = Mejor remuneración mensual del semestre / 2</em></p>
+<p>Si no trabajaste todo el semestre, el SAC es proporcional a los días trabajados:</p>
+<p><em>SAC proporcional = (Mejor remuneración × Días trabajados en el semestre) / (2 × 180)</em></p>
+<p><strong>Ejemplo:</strong> Si tu mejor sueldo del semestre fue $500.000 ARS y trabajaste 90 días:</p>
+<p><em>SAC = ($500.000 × 90) / (2 × 180) = $125.000 ARS</em></p>
+
+<h2>¿Qué se incluye en la remuneración base?</h2>
+<p>Se toma la <strong>remuneración bruta más alta del semestre</strong>, incluyendo:</p>
+<ul>
+  <li>Sueldo básico.</li>
+  <li>Horas extra (si fueron habituales ese mes).</li>
+  <li>Comisiones y premios habituales.</li>
+  <li>Adicionales convencionales o contractuales.</li>
+</ul>
+<p>No se incluyen beneficios no remunerativos (viáticos, tickets alimentarios, etc.).</p>
+
+<h2>¿El SAC tiene descuentos?</h2>
+<p>Sí. El SAC está sujeto a los mismos descuentos que el salario mensual:</p>
+<ul>
+  <li>Jubilación SIPA: 11%.</li>
+  <li>PAMI: 3%.</li>
+  <li>Obra social: 3%.</li>
+  <li>Impuesto a las Ganancias (si tu salario supera el mínimo no imponible).</li>
+</ul>
+
+<h2>SAC proporcional al despido o renuncia</h2>
+<p>Si la relación laboral termina antes del fin del semestre (por despido, renuncia o cualquier otra causa), el trabajador tiene derecho al <strong>SAC proporcional</strong> como parte de la liquidación final. Este se calcula considerando los días trabajados desde el inicio del semestre hasta la fecha de egreso.</p>
+
+<h2>¿Qué pasa si el empleador no paga?</h2>
+<p>El incumplimiento en el pago del SAC habilita al trabajador a reclamar el importe más intereses. Si el empleador persiste en el incumplimiento, puede constituir injuria grave y justificar el despido indirecto con derecho a indemnización completa. La denuncia puede realizarse ante el <strong>Ministerio de Trabajo</strong> provincial o ante la Justicia Laboral.</p>
+    `.trim(),
+  },
+  {
+    slug: "retencion-fuente-colombia-2026",
+    title: "Retención en la fuente sobre salarios Colombia 2026: tabla y cómo calcularla",
+    description:
+      "Guía práctica sobre la retención en la fuente por salarios en Colombia 2026: tabla UVT actualizada, quiénes aplica, cómo se descuenta y cómo minimizarla legalmente.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-22",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Nómina Neta (Bruto a Neto)" },
+      { pais: "colombia", slug: "calculadora-seguridad-social", name: "Seguridad Social" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+    ],
+    content: `
+<h2>¿Qué es la retención en la fuente?</h2>
+<p>La <strong>retención en la fuente</strong> es un mecanismo de recaudo anticipado del impuesto de renta. El empleador actúa como agente retenedor y descuenta mensualmente del salario del trabajador un porcentaje estimado del impuesto que este deberá pagar al año. Está regulada por el artículo 383 del Estatuto Tributario.</p>
+
+<h2>Valor de la UVT en 2026</h2>
+<p>El cálculo de la retención se basa en la <strong>Unidad de Valor Tributario (UVT)</strong>. Para 2026, la DIAN fijó la UVT en <strong>$49.799 COP</strong> (valor aproximado sujeto a resolución oficial). Todos los rangos de la tabla de retención están expresados en UVT.</p>
+
+<h2>¿A partir de qué salario aplica la retención?</h2>
+<p>La retención en la fuente aplica cuando el ingreso laboral mensual, una vez depurado, supera <strong>95 UVT</strong> (aproximadamente $4.730.905 COP en 2026). Por debajo de este umbral, no hay retención.</p>
+
+<h2>¿Cómo se calcula la base de retención?</h2>
+<p>No se retiene sobre el salario bruto total. El proceso de depuración es:</p>
+<ol>
+  <li>Salario bruto mensual.</li>
+  <li>Menos aportes obligatorios a salud (4%) y pensión (4%).</li>
+  <li>Menos el 25% de renta exenta (sobre el ingreso laboral, con tope de 240 UVT mensuales).</li>
+  <li>Menos deducciones adicionales (intereses de vivienda, dependientes, medicina prepagada).</li>
+</ol>
+<p>La base resultante se convierte a UVT y se aplica la tabla del artículo 383 ET.</p>
+
+<h2>Tabla de retención en la fuente 2026 (rangos principales)</h2>
+<table>
+  <thead><tr><th>Ingreso mensual (UVT)</th><th>Tarifa marginal</th></tr></thead>
+  <tbody>
+    <tr><td>Menor a 95 UVT</td><td>0%</td></tr>
+    <tr><td>95 – 150 UVT</td><td>19% sobre exceso de 95 UVT</td></tr>
+    <tr><td>150 – 360 UVT</td><td>28% sobre exceso de 150 UVT + 10,44 UVT</td></tr>
+    <tr><td>360 – 640 UVT</td><td>33% sobre exceso de 360 UVT + 69,24 UVT</td></tr>
+    <tr><td>640 – 945 UVT</td><td>35% sobre exceso de 640 UVT + 162,24 UVT</td></tr>
+    <tr><td>945 – 2.300 UVT</td><td>37% sobre exceso de 945 UVT + 269,04 UVT</td></tr>
+    <tr><td>Más de 2.300 UVT</td><td>39% sobre exceso de 2.300 UVT + 770,04 UVT</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo reducir legalmente la retención?</h2>
+<p>Puedes disminuir la base de retención informando a tu empleador las siguientes deducciones:</p>
+<ul>
+  <li><strong>Intereses de crédito hipotecario:</strong> hasta 100 UVT mensuales.</li>
+  <li><strong>Dependientes económicos:</strong> hasta el 10% del ingreso bruto, máximo 32 UVT mensuales.</li>
+  <li><strong>Medicina prepagada:</strong> hasta 16 UVT mensuales.</li>
+  <li><strong>Aportes voluntarios a pensión obligatoria:</strong> deducibles.</li>
+  <li><strong>AFC (Ahorro para el Fomento a la Construcción):</strong> aportes voluntarios a cuentas AFC reducen la base.</li>
+</ul>
+<p>Para aplicar estas deducciones, debes entregarle a tu empleador los soportes correspondientes antes del primer pago del año o cuando varíen tus circunstancias.</p>
+    `.trim(),
+  },
+  {
+    slug: "tabla-isr-mexico-2026",
+    title: "Tabla ISR 2026 México: tarifas, cálculo y cómo pagar menos impuestos",
+    description:
+      "Tabla del Impuesto Sobre la Renta (ISR) 2026 en México: tarifas mensuales y anuales, subsidio al empleo, cómo se calcula el descuento en nómina y estrategias para optimizar tu carga fiscal.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Nómina Neta (Bruto a Neto)" },
+      { pais: "mexico", slug: "calculadora-imss", name: "Cuotas IMSS" },
+      { pais: "mexico", slug: "calculadora-ptu", name: "PTU / Utilidades" },
+    ],
+    content: `
+<h2>¿Qué es el ISR sobre salarios?</h2>
+<p>El <strong>Impuesto Sobre la Renta (ISR)</strong> es el principal impuesto que grava los ingresos de las personas físicas en México. Para trabajadores asalariados, el empleador retiene mensualmente una cantidad estimada del ISR anual y la entera al SAT. La base legal es la Ley del ISR, artículos 94 al 99.</p>
+
+<h2>Tabla ISR mensual 2026</h2>
+<p>Las tarifas para el cálculo mensual del ISR 2026 son (tabla del Artículo 96 LISR, actualizada para 2026):</p>
+<table>
+  <thead><tr><th>Límite inferior ($)</th><th>Límite superior ($)</th><th>Cuota fija ($)</th><th>% sobre excedente</th></tr></thead>
+  <tbody>
+    <tr><td>0,01</td><td>746,04</td><td>0,00</td><td>1,92%</td></tr>
+    <tr><td>746,05</td><td>6.332,05</td><td>14,32</td><td>6,40%</td></tr>
+    <tr><td>6.332,06</td><td>11.128,01</td><td>371,83</td><td>10,88%</td></tr>
+    <tr><td>11.128,02</td><td>12.935,82</td><td>893,63</td><td>16,00%</td></tr>
+    <tr><td>12.935,83</td><td>15.487,71</td><td>1.182,88</td><td>17,92%</td></tr>
+    <tr><td>15.487,72</td><td>31.236,49</td><td>1.640,18</td><td>21,36%</td></tr>
+    <tr><td>31.236,50</td><td>49.233,00</td><td>5.004,12</td><td>23,52%</td></tr>
+    <tr><td>49.233,01</td><td>93.993,90</td><td>9.236,89</td><td>30,00%</td></tr>
+    <tr><td>93.993,91</td><td>125.325,20</td><td>22.665,17</td><td>32,00%</td></tr>
+    <tr><td>125.325,21</td><td>375.975,61</td><td>32.691,18</td><td>34,00%</td></tr>
+    <tr><td>375.975,62</td><td>En adelante</td><td>117.912,32</td><td>35,00%</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo se calcula el ISR mensual?</h2>
+<ol>
+  <li>Toma tu <strong>ingreso gravable mensual</strong> (salario menos deducciones autorizadas).</li>
+  <li>Ubica el rango en la tabla anterior.</li>
+  <li>Resta el límite inferior a tu ingreso gravable.</li>
+  <li>Multiplica la diferencia por el porcentaje sobre excedente.</li>
+  <li>Suma la cuota fija del rango.</li>
+  <li>Resta el <strong>subsidio al empleo</strong> (si aplica).</li>
+</ol>
+<p><em>ISR = Cuota fija + (Ingreso gravable − Límite inferior) × % sobre excedente − Subsidio al empleo</em></p>
+
+<h2>¿Qué es el subsidio al empleo?</h2>
+<p>El <strong>subsidio al empleo</strong> es un crédito fiscal que beneficia a trabajadores de ingresos bajos y medios. Si el ISR calculado es mayor al subsidio, pagas la diferencia. Si el subsidio es mayor que el ISR, en algunos casos tu empleador te debe entregar la diferencia en efectivo. El subsidio aplica para ingresos mensuales hasta aproximadamente <strong>$10.171 MXN</strong>.</p>
+
+<h2>¿Qué deducciones reducen el ISR?</h2>
+<p>Para trabajadores asalariados, las deducciones personales que puedes aplicar en la declaración anual son:</p>
+<ul>
+  <li>Honorarios médicos, dentales y hospitalarios.</li>
+  <li>Intereses reales pagados por crédito hipotecario.</li>
+  <li>Primas de seguros de gastos médicos mayores.</li>
+  <li>Colegiaturas (deducción especial con topes por nivel educativo).</li>
+  <li>Donativos a instituciones autorizadas.</li>
+  <li>Aportaciones complementarias al fondo de retiro (AFORE).</li>
+  <li>Gastos funerarios (equivalente a una UMA anual).</li>
+</ul>
+<p>Conserva siempre las facturas (CFDI) de estos gastos para poder deducirlos en tu declaración anual de abril.</p>
+    `.trim(),
+  },
+  {
+    slug: "reforma-laboral-2026-mexico",
+    title: "Reforma laboral 2026 en México: cambios clave y cómo te afectan",
+    description:
+      "Resumen de los principales cambios laborales en México para 2026: nuevos derechos, salario mínimo actualizado, reducción de jornada, plataformas digitales y más.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-28",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "mexico", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "mexico", slug: "calculadora-aguinaldo", name: "Calculadora de Aguinaldo" },
+    ],
+    content: `
+<h2>El panorama laboral en México en 2026</h2>
+<p>El marco laboral mexicano continúa evolucionando en 2026 con cambios relevantes en materia de jornada de trabajo, derechos de plataformas digitales y actualización del salario mínimo. A continuación, los puntos clave que todo trabajador y empleador debe conocer.</p>
+
+<h2>Salario mínimo 2026</h2>
+<p>La Comisión Nacional de los Salarios Mínimos (CONASAMI) actualizó los salarios mínimos para 2026:</p>
+<ul>
+  <li><strong>Zona general:</strong> $278,00 MXN diarios (aprox. $8.348 MXN mensuales).</li>
+  <li><strong>Zona libre de la Frontera Norte:</strong> $419,88 MXN diarios.</li>
+</ul>
+<p>Estos importes son los mínimos legales; ningún empleador puede pagar por debajo de estas cantidades. El incumplimiento es sancionable por la Secretaría del Trabajo.</p>
+
+<h2>Reducción de jornada laboral</h2>
+<p>La reforma constitucional aprobada en 2024 estableció la reducción progresiva de la jornada máxima de <strong>48 a 40 horas semanales</strong>. La implementación es gradual:</p>
+<ul>
+  <li>Primera etapa: reducción a <strong>44 horas</strong> semanales.</li>
+  <li>Segunda etapa: reducción a <strong>40 horas</strong> semanales.</li>
+</ul>
+<p>Esta reforma implica que el cálculo de horas extra cambia proporcionalmente: las horas que excedan el nuevo máximo semanal deben pagarse con los recargos establecidos en la LFT (dobles las primeras 9 horas, triples a partir de la décima).</p>
+
+<h2>Días de vacaciones: tabla actualizada</h2>
+<p>Tras la reforma de 2023 (Ley Silla), los días mínimos de vacaciones en México se incrementaron significativamente. Para 2026 aplica la siguiente tabla:</p>
+<table>
+  <thead><tr><th>Años de servicio</th><th>Días de vacaciones mínimos</th></tr></thead>
+  <tbody>
+    <tr><td>1 año</td><td>12 días</td></tr>
+    <tr><td>2 años</td><td>14 días</td></tr>
+    <tr><td>3 años</td><td>16 días</td></tr>
+    <tr><td>4 años</td><td>18 días</td></tr>
+    <tr><td>5 años</td><td>20 días</td></tr>
+    <tr><td>6–10 años</td><td>22 días</td></tr>
+    <tr><td>11–15 años</td><td>24 días</td></tr>
+    <tr><td>16–20 años</td><td>26 días</td></tr>
+    <tr><td>21–25 años</td><td>28 días</td></tr>
+    <tr><td>26–30 años</td><td>30 días</td></tr>
+    <tr><td>31+ años</td><td>32 días</td></tr>
+  </tbody>
+</table>
+
+<h2>Trabajadores de plataformas digitales</h2>
+<p>La reforma al artículo 311-A de la LFT regula el trabajo a través de plataformas digitales (Uber, DiDi, Rappi, etc.). Los puntos clave son:</p>
+<ul>
+  <li>Los repartidores y conductores que superen ciertos umbrales de conexión y dependencia económica son reconocidos como trabajadores dependientes con derechos laborales plenos.</li>
+  <li>Las plataformas deben registrarlos ante el IMSS y cubrir cuotas de seguridad social.</li>
+  <li>Los trabajadores esporádicos pueden optar por el régimen de trabajadores independientes.</li>
+</ul>
+
+<h2>Ley Silla: derecho al descanso durante la jornada</h2>
+<p>La llamada <strong>Ley Silla</strong>, en vigor desde 2023 y consolidada en 2026, obliga a los empleadores a proporcionar asientos con respaldo a todos los trabajadores que deban permanecer de pie por razón de su trabajo. También garantiza descansos mínimos durante la jornada. El incumplimiento es sancionable por la STPS.</p>
+
+<h2>¿Cómo afectan estos cambios a tu liquidación o finiquito?</h2>
+<p>Los cambios en jornada y vacaciones impactan directamente en el cálculo de indemnizaciones y finiquitos, ya que se elevan los montos de vacaciones proporcionales y horas extra. Usa nuestra calculadora de finiquito o liquidación para obtener los importes exactos con los parámetros actualizados de 2026.</p>
+    `.trim(),
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

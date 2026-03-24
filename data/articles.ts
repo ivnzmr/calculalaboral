@@ -1878,6 +1878,243 @@ export const articles: Article[] = [
   },
 ];
 
+  {
+    slug: "decimo-tercero-cuarto-ecuador-2026",
+    title: "Décimo tercero y cuarto sueldo Ecuador 2026: cómo calcularlos y cuándo cobrarlos",
+    description:
+      "Guía completa sobre el décimo tercer sueldo (bono navideño) y el décimo cuarto sueldo (bono escolar) en Ecuador 2026: fechas de pago, fórmulas, quiénes tienen derecho y qué hacer si no te pagan.",
+    country: "ecuador",
+    countryName: "Ecuador",
+    publishDate: "2026-03-28",
+    relatedCalculators: [
+      { pais: "ecuador", slug: "calculadora-decimo-tercero", name: "Décimo Tercer Sueldo" },
+      { pais: "ecuador", slug: "calculadora-decimo-cuarto", name: "Décimo Cuarto Sueldo" },
+      { pais: "ecuador", slug: "calculadora-liquidacion", name: "Liquidación Laboral" },
+    ],
+    content: `
+<h2>¿Qué son los décimos sueldos en Ecuador?</h2>
+<p>Ecuador es uno de los pocos países de América Latina que otorga a sus trabajadores <strong>dos sueldos adicionales obligatorios</strong> al año: el décimo tercer sueldo (bono navideño) y el décimo cuarto sueldo (bono escolar). Ambos son derechos irrenunciables establecidos en el Código del Trabajo.</p>
+
+<h2>Décimo tercer sueldo (bono navideño)</h2>
+<p>Equivale a la <strong>doceava parte del total de remuneraciones</strong> percibidas en el período del 1 de diciembre del año anterior al 30 de noviembre del año en curso.</p>
+<p><em>Fórmula: Total salarios del período / 12</em></p>
+<p><strong>Fecha de pago:</strong> hasta el 24 de diciembre.</p>
+<p><strong>Ejemplo:</strong> Si ganas $600/mes y trabajaste 12 meses → Décimo tercero = $600. Si trabajaste 8 meses → ($600 × 8) / 12 = $400.</p>
+
+<h2>Décimo cuarto sueldo (bono escolar)</h2>
+<p>Es un monto fijo igual al <strong>Salario Básico Unificado (SBU)</strong>, igual para todos los trabajadores sin importar su remuneración. Para 2026, el SBU es de <strong>$460</strong>.</p>
+<p><strong>Fechas de pago según región:</strong></p>
+<ul>
+  <li><strong>Costa e Insular:</strong> hasta el 15 de marzo (período agosto anterior – febrero actual).</li>
+  <li><strong>Sierra y Amazonia:</strong> hasta el 15 de agosto (período agosto anterior – julio actual).</li>
+</ul>
+<p>Si no trabajaste el período completo, recibes proporcional: ($460 × meses trabajados) / 12.</p>
+
+<h2>¿Se pueden recibir de forma mensualizada?</h2>
+<p>Sí. El trabajador puede solicitar el pago mensualizado de ambos décimos: en lugar de recibirlos en las fechas establecidas, se divide el monto entre 12 y se incluye en la nómina mensual. Esta opción debe solicitarse por escrito al empleador.</p>
+
+<h2>¿Tienen descuentos del IESS?</h2>
+<p>No. Ambos décimos están <strong>exentos del aporte personal al IESS</strong> (9.45%). Se pagan íntegros al trabajador. Sin embargo, pueden estar sujetos a retención de impuesto a la renta si el total de ingresos anuales supera la base imponible.</p>
+
+<h2>¿Qué pasa si no te pagan los décimos?</h2>
+<p>Puedes presentar una denuncia ante el <strong>Ministerio del Trabajo</strong>. La entidad puede sancionar al empleador con multas y obligarlo a pagar el valor adeudado con intereses. El empleador que no pague en los plazos establecidos incurre en mora automática.</p>
+    `.trim(),
+  },
+  {
+    slug: "liquidacion-laboral-ecuador-2026",
+    title: "Liquidación laboral Ecuador 2026: qué te corresponde al salir de tu trabajo",
+    description:
+      "Todo sobre la liquidación laboral en Ecuador 2026: desahucio, vacaciones, décimos proporcionales, fondos de reserva y cómo reclamar si tu empleador no paga.",
+    country: "ecuador",
+    countryName: "Ecuador",
+    publishDate: "2026-03-29",
+    relatedCalculators: [
+      { pais: "ecuador", slug: "calculadora-liquidacion", name: "Liquidación Laboral" },
+      { pais: "ecuador", slug: "calculadora-decimo-tercero", name: "Décimo Tercer Sueldo" },
+      { pais: "ecuador", slug: "calculadora-fondos-reserva", name: "Fondos de Reserva" },
+    ],
+    content: `
+<h2>¿Qué incluye la liquidación laboral en Ecuador?</h2>
+<p>Cuando termina una relación laboral en Ecuador, el trabajador tiene derecho a recibir el pago de todos los beneficios proporcionales al tiempo trabajado. Los componentes principales son:</p>
+<ul>
+  <li><strong>Desahucio:</strong> 25% de la última remuneración mensual × años de servicio (máximo 25 años).</li>
+  <li><strong>Vacaciones no gozadas:</strong> proporcional a los días no disfrutados.</li>
+  <li><strong>Décimo tercer sueldo proporcional:</strong> del período de cálculo vigente.</li>
+  <li><strong>Décimo cuarto sueldo proporcional:</strong> según la región.</li>
+  <li><strong>Fondos de reserva acumulados:</strong> si el empleador los guardaba en cuenta.</li>
+</ul>
+
+<h2>¿Qué es el desahucio en Ecuador?</h2>
+<p>El desahucio aplica en toda terminación de contrato (tanto por parte del empleador como del trabajador) y equivale al <strong>25% de la última remuneración por cada año de servicio</strong>, con un tope de 25 años. No es una sanción por despido injustificado, sino un derecho de todos los trabajadores al terminar la relación laboral.</p>
+<p><em>Desahucio = Último salario mensual × 25% × años de servicio</em></p>
+
+<h2>¿Qué pasa si me despiden intempestivamente?</h2>
+<p>Si el empleador termina el contrato sin seguir el proceso legal (sin previo visto bueno del Ministerio del Trabajo), debe pagar adicionalmente una <strong>indemnización por despido intempestivo</strong>:</p>
+<ul>
+  <li><strong>Menos de 3 años de servicio:</strong> 3 meses de remuneración.</li>
+  <li><strong>Más de 3 años de servicio:</strong> 1 mes de remuneración por cada año de servicio.</li>
+</ul>
+<p>Esta indemnización se suma al desahucio y a los demás componentes de la liquidación.</p>
+
+<h2>Fondos de reserva: qué son y cuándo los recibes</h2>
+<p>Los fondos de reserva equivalen al 8.33% del salario mensual y se generan a partir del segundo año de trabajo. El trabajador puede optar por recibirlos mensualmente (incluidos en el rol de pagos) o que el empleador los deposite en el IESS. Si optaste por el depósito en IESS, al terminar el contrato puedes retirarlos directamente de esa institución.</p>
+
+<h2>¿Cuánto tiempo tiene el empleador para pagar?</h2>
+<p>La liquidación debe pagarse de forma <strong>inmediata al finalizar el contrato</strong>. El empleador que demora genera mora y debe pagar intereses. Puedes exigir el pago mediante una carta notariada y, si no responde, presentar una denuncia ante el Ministerio del Trabajo.</p>
+    `.trim(),
+  },
+  {
+    slug: "prestaciones-sociales-venezuela-2026",
+    title: "Prestaciones sociales Venezuela 2026: cómo calcularlas y cuándo cobrarlas",
+    description:
+      "Guía completa sobre las prestaciones sociales en Venezuela 2026 (LOTTT): fórmula de cálculo, salario integral, anticipo, intereses y qué hacer si tu empresa no las deposita.",
+    country: "venezuela",
+    countryName: "Venezuela",
+    publishDate: "2026-03-29",
+    relatedCalculators: [
+      { pais: "venezuela", slug: "calculadora-prestaciones-sociales", name: "Prestaciones Sociales" },
+      { pais: "venezuela", slug: "calculadora-utilidades", name: "Utilidades" },
+      { pais: "venezuela", slug: "calculadora-vacaciones", name: "Vacaciones" },
+    ],
+    content: `
+<h2>¿Qué son las prestaciones sociales en Venezuela?</h2>
+<p>Las prestaciones sociales son un mecanismo de <strong>ahorro obligatorio</strong> que acumula el empleador a favor del trabajador durante toda la relación laboral, reguladas por los Artículos 141 al 148 de la LOTTT (Ley Orgánica del Trabajo, los Trabajadores y las Trabajadoras).</p>
+
+<h2>¿Cómo se acumulan?</h2>
+<p>El empleador deposita mensualmente (a partir del cuarto mes de servicio) el equivalente a <strong>15 días de salario integral</strong>. Adicionalmente, por cada año de servicio se acumulan días adicionales de forma progresiva:</p>
+<table>
+  <thead><tr><th>Año de servicio</th><th>Días adicionales acumulados</th></tr></thead>
+  <tbody>
+    <tr><td>1er año</td><td>2 días</td></tr>
+    <tr><td>2do año</td><td>4 días</td></tr>
+    <tr><td>3er año</td><td>6 días</td></tr>
+    <tr><td>Por cada año adicional</td><td>+2 días más</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué es el salario integral?</h2>
+<p>El salario integral (base de cálculo) incluye:</p>
+<ul>
+  <li>Salario normal mensual.</li>
+  <li>Alícuota mensual de utilidades: (utilidades anuales estimadas / 12).</li>
+  <li>Alícuota mensual del bono vacacional: (bono vacacional / 12).</li>
+</ul>
+<p>Al usar el salario integral, el monto de las prestaciones es mayor que si se usara solo el salario base.</p>
+
+<h2>¿Puedo solicitar un anticipo?</h2>
+<p>Sí. El trabajador puede solicitar hasta el <strong>75% del saldo acumulado</strong> en prestaciones para:</p>
+<ul>
+  <li>Adquisición, mejora o reparación de vivienda.</li>
+  <li>Educación propia o de familiares directos.</li>
+  <li>Atención médica de emergencia.</li>
+  <li>Adquisición de vehículo de uso personal.</li>
+</ul>
+
+<h2>¿El empleador debe depositarlas en un fondo?</h2>
+<p>Sí. El empleador debe depositar mensualmente las prestaciones en un <strong>fideicomiso individual</strong> en una institución financiera a nombre del trabajador, o en el Fondo Nacional de Prestaciones Sociales. Si no lo hace, asume directamente la deuda y genera intereses a la tasa promedio pasiva del sistema bancario.</p>
+
+<h2>¿Cuándo las cobro?</h2>
+<p>Al terminar la relación laboral (por cualquier causa: renuncia, despido, retiro justificado o mutuo acuerdo), el trabajador tiene derecho a cobrar la totalidad de las prestaciones acumuladas. El empleador tiene 5 días hábiles para realizar el pago. El incumplimiento puede reclamarse ante la Inspectoría del Trabajo.</p>
+    `.trim(),
+  },
+  {
+    slug: "aguinaldo-cesantia-costa-rica-2026",
+    title: "Aguinaldo y cesantía Costa Rica 2026: cuánto te corresponde y cómo calcularlo",
+    description:
+      "Guía completa sobre el aguinaldo y el auxilio de cesantía en Costa Rica 2026: fechas de pago, fórmulas oficiales del Código de Trabajo, Fondo de Capitalización Laboral y cómo reclamar tus derechos.",
+    country: "costa-rica",
+    countryName: "Costa Rica",
+    publishDate: "2026-03-30",
+    relatedCalculators: [
+      { pais: "costa-rica", slug: "calculadora-aguinaldo", name: "Aguinaldo" },
+      { pais: "costa-rica", slug: "calculadora-cesantia", name: "Auxilio de Cesantía" },
+      { pais: "costa-rica", slug: "calculadora-vacaciones", name: "Vacaciones" },
+    ],
+    content: `
+<h2>El aguinaldo en Costa Rica</h2>
+<p>El aguinaldo costarricense es un beneficio obligatorio establecido en el Artículo 228 del Código de Trabajo. Equivale a la <strong>doceava parte del total de salarios</strong> percibidos entre el 1 de diciembre del año anterior y el 30 de noviembre del año en curso.</p>
+<p><em>Aguinaldo = Total salarios del período / 12</em></p>
+<p><strong>Pago:</strong> antes del 15 de diciembre.</p>
+<p><strong>Importante:</strong> El aguinaldo está exento de cargas sociales de la CCSS y no puede embargarse ni reducirse como sanción.</p>
+
+<h2>El auxilio de cesantía</h2>
+<p>El auxilio de cesantía es la indemnización que recibe el trabajador despedido <strong>sin justa causa</strong>. Está regulado por el Artículo 29 del Código de Trabajo e incluye el Fondo de Capitalización Laboral (FCL).</p>
+
+<h2>Escala del auxilio de cesantía</h2>
+<table>
+  <thead><tr><th>Antigüedad</th><th>Días de salario</th></tr></thead>
+  <tbody>
+    <tr><td>3 a 6 meses</td><td>7 días</td></tr>
+    <tr><td>6 meses a 1 año</td><td>14 días</td></tr>
+    <tr><td>1 a 2 años</td><td>19,5 días</td></tr>
+    <tr><td>2 a 3 años</td><td>20 días</td></tr>
+    <tr><td>3 a 4 años</td><td>20,5 días</td></tr>
+    <tr><td>4 a 5 años</td><td>21 días</td></tr>
+    <tr><td>5 a 6 años</td><td>21,5 días</td></tr>
+    <tr><td>6 a 7 años</td><td>22 días</td></tr>
+  </tbody>
+</table>
+<p>El tope legal es de <strong>8 años</strong> de antigüedad computable.</p>
+
+<h2>¿Qué es el Fondo de Capitalización Laboral (FCL)?</h2>
+<p>El FCL es un fondo al que el empleador aporta el <strong>3% del salario mensual</strong> desde el primer día de trabajo. Al finalizar la relación laboral (por cualquier causa, incluida la renuncia voluntaria), el trabajador puede retirar el monto acumulado en el FCL directamente del operador financiero. Si el despido es sin causa y el FCL no cubre el total de la cesantía, el empleador paga la diferencia.</p>
+
+<h2>Preaviso: cuánto te deben avisar</h2>
+<p>El preaviso (Artículo 28 del Código de Trabajo) depende de la antigüedad:</p>
+<ul>
+  <li>Menos de 3 meses: 1 semana.</li>
+  <li>3 meses a 1 año: 2 semanas.</li>
+  <li>Más de 1 año: 1 mes.</li>
+</ul>
+<p>Si el empleador no otorga el preaviso, debe pagar ese período adicional. Si el trabajador renuncia sin dar preaviso, puede descontársele ese monto de la liquidación.</p>
+
+<h2>Vacaciones en Costa Rica</h2>
+<p>Todo trabajador con más de 50 semanas continuas de trabajo tiene derecho a un mínimo de <strong>2 semanas (14 días) de vacaciones remuneradas</strong>. Las vacaciones no pueden sustituirse por dinero mientras el contrato esté vigente, salvo el proporcional al terminar la relación laboral.</p>
+    `.trim(),
+  },
+  {
+    slug: "aguinaldo-bolivia-2026",
+    title: "Aguinaldo Bolivia 2026: cuánto es, cuándo lo pagan y qué es el segundo aguinaldo",
+    description:
+      "Todo sobre el aguinaldo de Navidad en Bolivia 2026: monto, fecha de pago, cálculo proporcional, descuentos y las condiciones para el segundo aguinaldo 'Esfuerzo por Bolivia'.",
+    country: "bolivia",
+    countryName: "Bolivia",
+    publishDate: "2026-03-30",
+    relatedCalculators: [
+      { pais: "bolivia", slug: "calculadora-aguinaldo", name: "Aguinaldo de Navidad" },
+      { pais: "bolivia", slug: "calculadora-segundo-aguinaldo", name: "Segundo Aguinaldo" },
+      { pais: "bolivia", slug: "calculadora-desahucio", name: "Desahucio por Despido" },
+    ],
+    content: `
+<h2>¿Qué es el aguinaldo en Bolivia?</h2>
+<p>El aguinaldo de Navidad en Bolivia es un beneficio laboral obligatorio que equivale a <strong>un salario mensual completo</strong> y debe pagarse antes del 20 de diciembre de cada año. Está establecido en el Decreto Supremo N° 229 y aplica a todos los trabajadores del sector privado y público.</p>
+
+<h2>¿Cuánto es el aguinaldo en Bolivia 2026?</h2>
+<p>Equivale a tu <strong>último salario mensual completo</strong> si trabajaste los 12 meses del año. Si trabajaste menos tiempo, recibes la parte proporcional:</p>
+<p><em>Aguinaldo = (Salario mensual × Meses trabajados) / 12</em></p>
+<p><strong>Ejemplo:</strong> Con Bs. 5.000 de sueldo y 9 meses trabajados → (Bs. 5.000 × 9) / 12 = Bs. 3.750.</p>
+
+<h2>¿Cuándo se paga el aguinaldo?</h2>
+<p>El empleador tiene la obligación de pagar el aguinaldo antes del <strong>20 de diciembre</strong>. El incumplimiento está sancionado con multas por el Ministerio de Trabajo y Empleo, más el pago de intereses al trabajador.</p>
+
+<h2>¿Qué es el segundo aguinaldo?</h2>
+<p>El segundo aguinaldo "Esfuerzo por Bolivia" es un beneficio adicional que se activa cuando el crecimiento del PIB de Bolivia supera el <strong>4.5%</strong>. No es automático: depende de los datos del Banco Central de Bolivia para cada año fiscal.</p>
+<p>Cuando corresponde, equivale a un salario mensual adicional y se paga junto con el aguinaldo de Navidad antes del 20 de diciembre. Si el trabajador no estuvo todo el año, recibe el proporcional igual que con el aguinaldo regular.</p>
+
+<h2>¿Tiene descuentos?</h2>
+<p>El aguinaldo está sujeto a los mismos descuentos que el salario mensual ordinario:</p>
+<ul>
+  <li>Aporte al sistema de pensiones (AFP): 10% + comisión.</li>
+  <li>Aporte a la seguridad social de corto plazo (CNS/Caja): 10%.</li>
+  <li>Impuesto RC-IVA (si el salario supera el mínimo no imponible).</li>
+</ul>
+
+<h2>Desahucio: qué te corresponde si te despiden</h2>
+<p>Si el empleador termina el contrato sin causa justificada, debe pagar un desahucio de <strong>3 salarios mensuales</strong>. Adicionalmente, si tienes más de 90 días de servicio, tienes derecho a la indemnización por tiempo de servicios de 1 salario por año trabajado. Ambos conceptos son independientes y se acumulan.</p>
+    `.trim(),
+  },
+];
+
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countries, getAllCalculatorPaths } from "@/data/countries";
+import { articles } from "@/data/articles";
 import Calculator from "@/components/Calculator";
 import FAQAccordion from "@/components/FAQAccordion";
 
@@ -1149,6 +1150,239 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
     },
   },
+  ecuador: {
+    "calculadora-decimo-tercero": {
+      howItWorks: [
+        "El Décimo Tercer Sueldo (o bono navideño) es un beneficio obligatorio en Ecuador establecido en el Código del Trabajo. Equivale a la doceava parte de las remuneraciones percibidas en el período comprendido entre el 1 de diciembre del año anterior y el 30 de noviembre del año en curso. Todos los trabajadores en relación de dependencia tienen derecho a este pago.",
+        "La fórmula de cálculo es sencilla: suma todos los ingresos percibidos en el período de cálculo (incluye sueldo básico, horas extra, comisiones y otros rubros remunerativos) y divídelos entre 12. Si no trabajaste el período completo, recibes la parte proporcional a los meses trabajados.",
+        "El pago debe realizarse hasta el 24 de diciembre de cada año. Si el empleador no cumple este plazo, incurre en mora y debe pagar intereses. El décimo tercer sueldo está exento de aportes al IESS y no es parte de la base de cálculo de las utilidades.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuándo se paga el décimo tercer sueldo en Ecuador?",
+          answer: "El décimo tercer sueldo debe pagarse hasta el 24 de diciembre de cada año. Aplica al período del 1 de diciembre del año anterior al 30 de noviembre del año en curso. El empleador puede pagarlo de forma mensualizada (dividiéndolo entre 12 y pagando una doceava parte cada mes) si así lo acuerda con el trabajador.",
+        },
+        {
+          question: "¿Cómo se calcula el décimo tercer sueldo?",
+          answer: "Se suman todos los ingresos del período (1 dic año anterior – 30 nov año actual) y se divide entre 12. Por ejemplo: si ganaste $600/mes durante 12 meses → $600 × 12 / 12 = $600. Si trabajaste solo 6 meses → $600 × 6 / 12 = $300.",
+        },
+        {
+          question: "¿El décimo tercer sueldo se descuenta del IESS?",
+          answer: "No. El décimo tercer sueldo no forma parte de la materia gravada para el IESS. No se le aplica el descuento del 9.45% de aportación personal al seguro social.",
+        },
+        {
+          question: "¿Qué diferencia hay entre el décimo tercero y el décimo cuarto?",
+          answer: "El décimo tercer sueldo (bono navideño) es proporcional a tu sueldo anual y varía según lo que ganes. El décimo cuarto sueldo (bono escolar) es un monto fijo igual al Salario Básico Unificado vigente ($460 en 2026), igual para todos los trabajadores sin importar su remuneración.",
+        },
+      ],
+    },
+    "calculadora-decimo-cuarto": {
+      howItWorks: [
+        "El Décimo Cuarto Sueldo, también llamado bono escolar, es un beneficio obligatorio en Ecuador equivalente a un Salario Básico Unificado (SBU) por año. Para 2026, el SBU es de $460. A diferencia del décimo tercer sueldo, el décimo cuarto es un monto fijo igual para todos los trabajadores, independientemente de su remuneración.",
+        "El período de cálculo y la fecha de pago varían según la región: en la Costa e Insular, el período es del 1 de marzo al 28 de febrero y se paga hasta el 15 de marzo. En la Sierra y Amazonia, el período es del 1 de agosto al 31 de julio y se paga hasta el 15 de agosto. Si el trabajador no completó el período, recibe el proporcional.",
+        "El décimo cuarto sueldo está exento de aportes al IESS y no se incluye en el cálculo de utilidades ni de otros beneficios. Puede pagarse de forma acumulada en las fechas indicadas o en forma mensualizada si el trabajador así lo solicita.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuánto es el décimo cuarto sueldo en Ecuador 2026?",
+          answer: "El décimo cuarto sueldo en 2026 equivale a un Salario Básico Unificado (SBU): $460 por año completo trabajado. Si no trabajaste el año completo, recibes el proporcional: ($460 × meses trabajados) / 12.",
+        },
+        {
+          question: "¿Cuándo se paga el décimo cuarto sueldo?",
+          answer: "Depende de la región: en la Costa e Insular se paga hasta el 15 de marzo (período ago anterior – feb actual). En la Sierra y Amazonia se paga hasta el 15 de agosto (período ago anterior – jul actual). Si el trabajador optó por pago mensualizado, recibe $460/12 ≈ $38,33 mensualmente.",
+        },
+        {
+          question: "¿El décimo cuarto tiene descuento del IESS?",
+          answer: "No. El décimo cuarto sueldo no está sujeto a aportes al IESS ni a retención de impuesto a la renta. Se paga íntegro al trabajador.",
+        },
+        {
+          question: "¿Si renuncio pierdo el décimo cuarto?",
+          answer: "No. Si tu contrato termina antes de la fecha de pago, tienes derecho al décimo cuarto proporcional a los meses trabajados en el período. Este valor se incluye en tu liquidación laboral.",
+        },
+      ],
+    },
+    "calculadora-liquidacion": {
+      howItWorks: [
+        "La liquidación laboral en Ecuador comprende el conjunto de rubros económicos que el empleador debe pagar al trabajador al terminar la relación laboral. Los conceptos principales son: desahucio (si aplica), vacaciones no gozadas, décimos proporcionales (tercero y cuarto), y fondos de reserva acumulados.",
+        "El desahucio equivale al 25% de la última remuneración mensual por cada año de servicio, con un máximo de 25 años (6.25 remuneraciones máximo). El desahucio aplica tanto cuando el empleador da por terminado el contrato sin causa, como cuando el trabajador lo termina por su propia voluntad. Si el empleador despide intempestivamente sin seguir el proceso legal, debe pagar adicionalmente una indemnización.",
+        "Las vacaciones no gozadas se pagan a razón de una remuneración completa por cada 11 meses de trabajo, proporcional a los días no disfrutados. Los fondos de reserva acumulados deben pagarse al final de la relación laboral si el trabajador optó por que el empleador los guarde en lugar de recibirlos mensualmente.",
+      ],
+      faqs: [
+        {
+          question: "¿Qué incluye la liquidación laboral en Ecuador?",
+          answer: "Incluye: desahucio (25% de la última remuneración × años de servicio, máx. 25 años), vacaciones no gozadas (proporcional), décimo tercer sueldo proporcional, décimo cuarto sueldo proporcional, y fondos de reserva si el empleador los tenía acumulados.",
+        },
+        {
+          question: "¿Cuánto tiempo tiene el empleador para pagar la liquidación?",
+          answer: "El empleador debe pagar la liquidación de forma inmediata al momento de la terminación del contrato. La demora en el pago genera el pago de intereses y puede dar lugar a sanciones por parte del Ministerio del Trabajo.",
+        },
+        {
+          question: "¿Qué es el desahucio en Ecuador?",
+          answer: "El desahucio es el aviso previo de terminación de contrato. Si no se da el aviso con 15 días de anticipación, se debe pagar una indemnización equivalente a 15 días de remuneración adicionales. El desahucio propiamente dicho es la indemnización del 25% por año de servicio que se paga en toda terminación de contrato.",
+        },
+        {
+          question: "¿Puedo reclamar la liquidación si me despiden sin causa?",
+          answer: "Sí. Si el despido es intempestivo (sin causa legal), además del desahucio tienes derecho a una indemnización adicional equivalente a tres meses de remuneración si llevas menos de 3 años, o un mes de remuneración por año de servicio si llevas más de 3 años, según el Código del Trabajo.",
+        },
+      ],
+    },
+  },
+  venezuela: {
+    "calculadora-utilidades": {
+      howItWorks: [
+        "Las utilidades en Venezuela están reguladas por el Artículo 131 de la Ley Orgánica del Trabajo, los Trabajadores y las Trabajadoras (LOTTT). Los empleadores deben distribuir entre sus trabajadores un mínimo del 15% de los beneficios líquidos obtenidos al final del ejercicio anual (mínimo 15 días de salario y máximo 4 meses). El pago debe realizarse dentro de los 2 meses siguientes al cierre del ejercicio fiscal.",
+        "El monto de utilidades que recibe cada trabajador se calcula en proporción a los salarios devengados durante el año. Si el trabajador no estuvo todo el año, recibe la parte proporcional a los meses efectivamente trabajados. Los trabajadores que ganen más del equivalente a 3 salarios mínimos pueden tener un tope en el cálculo según convenga la empresa.",
+        "Además de las utilidades anuales, los trabajadores tienen derecho a un anticipo del 50% de las utilidades estimadas, que el empleador debe pagar antes del 15 de diciembre de cada año. Este anticipo se descuenta del pago final de utilidades.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuándo se pagan las utilidades en Venezuela?",
+          answer: "Las utilidades deben pagarse dentro de los 2 meses siguientes al cierre del ejercicio económico. La mayoría de las empresas cierran ejercicio en diciembre, por lo que las utilidades se pagan entre enero y febrero del año siguiente. Adicionalmente, antes del 15 de diciembre debe pagarse un anticipo del 50% de las utilidades estimadas.",
+        },
+        {
+          question: "¿Cuántos días de utilidades me corresponden?",
+          answer: "El mínimo legal es 15 días de salario por año. El máximo es 4 meses (120 días). El monto exacto depende de las ganancias de la empresa: si el 15% de los beneficios da menos de 15 días, el empleador igual debe pagar 15 días. Si da más de 4 meses, el tope es 4 meses.",
+        },
+        {
+          question: "¿Cómo se calcula el monto de utilidades?",
+          answer: "Se toma el total de utilidades a distribuir (mín. 15 días de salario total de todos los trabajadores), se divide entre la suma de todos los salarios anuales para obtener un factor, y luego se multiplica por el salario anual de cada trabajador. El resultado no puede ser inferior a 15 días ni superior a 4 meses de salario.",
+        },
+        {
+          question: "¿Qué pasa si la empresa no distribuye utilidades?",
+          answer: "Si la empresa declara pérdidas o no distribuye utilidades, el trabajador igual tiene derecho a recibir el mínimo legal de 15 días de salario. La LOTTT establece este piso mínimo independientemente del resultado económico de la empresa. Puedes reclamar ante la Inspectoría del Trabajo.",
+        },
+      ],
+    },
+    "calculadora-prestaciones-sociales": {
+      howItWorks: [
+        "Las prestaciones sociales en Venezuela (antes denominadas antigüedad) están reguladas por los Artículos 141 al 148 de la LOTTT. Son una garantía de ahorro obligatorio que el empleador debe depositar a nombre del trabajador. A partir del cuarto mes de servicio, el empleador deposita mensualmente el equivalente a 15 días de salario integral del trabajador en un fondo de prestaciones.",
+        "Adicionalmente, por cada año de servicio o fracción superior a 6 meses, el empleador deposita 2 días de salario adicionales por año de antigüedad, acumulativamente. Este beneficio adicional crece con la antigüedad: después del primer año, son 4 días adicionales; después del segundo año, 6 días adicionales, y así sucesivamente.",
+        "El salario integral utilizado para el cálculo incluye el salario normal más la alícuota de utilidades (utilidades anuales / 12 meses) y la alícuota del bono vacacional (bono vacacional anual / 12 meses). Al terminar la relación laboral, el trabajador recibe el total acumulado en su cuenta de prestaciones.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuánto son las prestaciones sociales en Venezuela?",
+          answer: "A partir del cuarto mes se depositan 15 días de salario integral mensualmente. Además, por cada año de servicio se suman días adicionales acumulativos (2 días el primer año, 4 el segundo, etc.). El monto total depende de la antigüedad y el salario integral del trabajador.",
+        },
+        {
+          question: "¿Cuándo puedo retirar mis prestaciones sociales?",
+          answer: "Puedes solicitar hasta el 75% de las prestaciones como anticipo para cubrir: vivienda, educación, salud o adquisición de vehículo. El monto total se paga al terminar la relación laboral. Si el empleador no las ha depositado en un fideicomiso o fondo, las debe pagar directamente al finalizar el contrato.",
+        },
+        {
+          question: "¿Qué es el salario integral en Venezuela?",
+          answer: "El salario integral es la base de cálculo de las prestaciones. Incluye el salario normal más la alícuota mensual de utilidades (utilidades anuales estimadas / 12) y la alícuota mensual del bono vacacional (bono vacacional / 12). Es mayor que el salario normal, lo que incrementa el monto de las prestaciones.",
+        },
+        {
+          question: "¿Qué pasa si mi empleador no depositó las prestaciones?",
+          answer: "Si el empleador no depositó en fideicomiso o fondo de prestaciones, asume el riesgo de garantizar ese monto al trabajador y debe pagar intereses a una tasa no menor a la pasiva promedio del sistema bancario. Puedes reclamar ante la Inspectoría del Trabajo o la vía judicial.",
+        },
+      ],
+    },
+  },
+  "costa-rica": {
+    "calculadora-aguinaldo": {
+      howItWorks: [
+        "El aguinaldo en Costa Rica es un beneficio laboral obligatorio establecido en el Artículo 228 del Código de Trabajo. Equivale a la doceava parte del total de salarios devengados por el trabajador durante el año, calculado del 1 de diciembre del año anterior al 30 de noviembre del año en curso. Debe pagarse durante la primera quincena de diciembre.",
+        "El cálculo considera todos los ingresos salariales del período, incluyendo salario ordinario, horas extra, comisiones y otros beneficios de naturaleza salarial. Se divide el total de ingresos del año entre 12 para obtener el aguinaldo. Si el trabajador no laboró todo el año, recibe la parte proporcional a los meses completos trabajados.",
+        "El aguinaldo está exento de cargas sociales (CCSS) y no es parte de la base de cálculo para la liquidación ni el preaviso. Tiene la misma protección que el salario ordinario: no puede ser embargado ni retenido como sanción disciplinaria.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuándo se paga el aguinaldo en Costa Rica?",
+          answer: "El aguinaldo debe pagarse en la primera quincena de diciembre, es decir, antes del 15 de diciembre. El período de cálculo es del 1 de diciembre del año anterior al 30 de noviembre del año en curso. Si el empleador no lo paga en ese plazo, incurre en mora.",
+        },
+        {
+          question: "¿Cómo se calcula el aguinaldo en Costa Rica?",
+          answer: "Se suman todos los salarios devengados entre el 1 de diciembre (año anterior) y el 30 de noviembre (año actual) y se divide entre 12. Ejemplo: si ganaste ₡500.000/mes durante 12 meses → Aguinaldo = (₡500.000 × 12) / 12 = ₡500.000. Con 6 meses trabajados → (₡500.000 × 6) / 12 = ₡250.000.",
+        },
+        {
+          question: "¿El aguinaldo tiene descuentos de la CCSS?",
+          answer: "No. El aguinaldo está excluido de las cargas sociales de la Caja Costarricense de Seguro Social (CCSS). Se paga íntegro, sin descuentos de seguridad social. Sin embargo, podría estar sujeto a retención del impuesto sobre la renta si supera los montos exentos.",
+        },
+        {
+          question: "¿Pierdo el aguinaldo si renuncio antes de diciembre?",
+          answer: "No. Si el contrato termina antes de la fecha de pago, tienes derecho a la parte proporcional del aguinaldo correspondiente a los meses trabajados en el período. Este monto debe incluirse en el cálculo de la liquidación final.",
+        },
+      ],
+    },
+    "calculadora-cesantia": {
+      howItWorks: [
+        "El auxilio de cesantía en Costa Rica es una indemnización que el empleador debe pagar al trabajador cuando lo despide sin justa causa, o cuando el trabajador se retira por justa causa imputable al empleador. Está regulado por los Artículos 28 y 29 del Código de Trabajo.",
+        "El cálculo del auxilio de cesantía utiliza una escala de días según la antigüedad: para los primeros 3 meses hasta 6 meses, 7 días de salario; entre 6 meses y 1 año, 14 días; de 1 a 2 años, 19.5 días; de 2 a 3 años, 20 días; de 3 a 4 años, 20.5 días; de 4 a 5 años, 21 días; de 5 a 6 años, 21.5 días; y de 6 a 7 años en adelante, un máximo de 22 días. Para trabajadores con más de 7 años, se calcula sobre los últimos 8 años de servicio.",
+        "El tope legal es de 8 años de cesantía, lo que equivale aproximadamente a 22 días de salario por año para los primeros 8 años. Si el trabajador renuncia voluntariamente sin justa causa, generalmente no tiene derecho al auxilio de cesantía, salvo que tenga un contrato que lo contemple.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuándo tengo derecho al auxilio de cesantía en Costa Rica?",
+          answer: "Tienes derecho cuando el empleador te despide sin justa causa. También aplica si renuncias por justa causa imputable al empleador (hostigamiento, incumplimiento de contrato, etc.). La renuncia voluntaria sin causa justificada generalmente no da derecho a la cesantía.",
+        },
+        {
+          question: "¿Cuánto es el auxilio de cesantía?",
+          answer: "Depende de la antigüedad. Por ejemplo: 6 meses a 1 año = 14 días de salario; 1 a 2 años = 19.5 días; 5 a 6 años = 21.5 días. El tope máximo es de 8 años de antigüedad (aprox. 22 días por cada uno de los últimos 8 años).",
+        },
+        {
+          question: "¿Qué es el Fondo de Capitalización Laboral (FCL)?",
+          answer: "El FCL es un fondo al que el empleador aporta el 3% del salario mensual del trabajador desde el inicio del contrato. Al terminar la relación laboral, ese fondo se aplica al pago de la cesantía. Si el fondo acumulado es menor a la cesantía adeudada, el empleador debe pagar la diferencia.",
+        },
+        {
+          question: "¿Cuánto es el preaviso en Costa Rica?",
+          answer: "El preaviso (Artículo 28 del Código de Trabajo) depende de la antigüedad: menos de 3 meses = 1 semana; entre 3 meses y 1 año = 2 semanas; más de 1 año = 1 mes. Si el empleador no otorga el preaviso, debe pagar ese período adicional como indemnización.",
+        },
+      ],
+    },
+  },
+  bolivia: {
+    "calculadora-aguinaldo": {
+      howItWorks: [
+        "El aguinaldo de Navidad en Bolivia es un beneficio laboral obligatorio equivalente a un salario mensual completo, pagado en el mes de diciembre. Está regulado por el Decreto Supremo N° 229 y por la Ley General del Trabajo. Todos los trabajadores en relación de dependencia (sector privado y público) tienen derecho a este beneficio.",
+        "El monto del aguinaldo es igual al último salario mensual percibido por el trabajador. Si no se trabajó el año completo, se recibe la parte proporcional a los meses trabajados: (salario mensual × meses trabajados) / 12. El pago debe realizarse antes del 20 de diciembre de cada año.",
+        "El aguinaldo de Navidad está sujeto a descuentos previsionales (aporte AFP/CNS) e impuesto sobre utilidades de las empresas, pero no al Impuesto a las Transacciones (IT) ni al RC-IVA en los casos generales. Los trabajadores del sector público reciben el aguinaldo de acuerdo a las normas específicas del servicio civil.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuándo se paga el aguinaldo en Bolivia?",
+          answer: "El aguinaldo de Navidad debe pagarse antes del 20 de diciembre de cada año. Los empleadores que no cumplan este plazo son pasibles de multas por parte del Ministerio de Trabajo, más el pago de intereses al trabajador.",
+        },
+        {
+          question: "¿Cuánto es el aguinaldo en Bolivia?",
+          answer: "Equivale a un salario mensual completo por año trabajado. Si trabajaste menos de 12 meses, recibes la parte proporcional: (tu sueldo × meses trabajados) / 12. Por ejemplo, con Bs. 4.000 de sueldo y 8 meses trabajados: (Bs. 4.000 × 8) / 12 = Bs. 2.667.",
+        },
+        {
+          question: "¿Qué es el segundo aguinaldo en Bolivia?",
+          answer: "El segundo aguinaldo ('Esfuerzo por Bolivia') es un beneficio adicional que se paga cuando el crecimiento del PIB del país supera el 4.5%. No es automático cada año: depende de los indicadores económicos. Cuando corresponde, equivale a otro salario mensual adicional y se paga junto al aguinaldo de Navidad.",
+        },
+        {
+          question: "¿Se puede pagar el aguinaldo en cuotas?",
+          answer: "No. El aguinaldo debe pagarse de forma íntegra antes del 20 de diciembre. El pago en cuotas no está autorizado legalmente. Si el empleador tiene dificultades financieras, puede solicitar autorización especial al Ministerio de Trabajo, pero no queda eximido de la obligación.",
+        },
+      ],
+    },
+    "calculadora-desahucio": {
+      howItWorks: [
+        "El desahucio por despido intempestivo en Bolivia es la indemnización que debe pagar el empleador cuando pone fin al contrato de trabajo sin justa causa legal. Está regulado por el Artículo 12 de la Ley General del Trabajo y equivale a tres salarios mensuales, independientemente de la antigüedad del trabajador.",
+        "Adicionalmente al desahucio de tres salarios, si el trabajador tiene más de 90 días de antigüedad, tiene derecho a recibir la indemnización por tiempo de servicios (un salario por año de servicio, con duodécimos proporcionales si no completó el año). Esta indemnización es distinta al desahucio y se acumula a él.",
+        "El proceso de terminación de contrato requiere que el empleador otorgue un preaviso de 90 días o pague la indemnización equivalente si no da ese aviso. Si el despido es por causal justificada según la Ley, el empleador no está obligado a pagar el desahucio, pero siempre debe pagar las partes proporcionales de beneficios (aguinaldo, vacaciones) acumulados.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuánto es el desahucio en Bolivia?",
+          answer: "El desahucio equivale a 3 salarios mensuales cuando el empleador despide sin causa justificada. Si el trabajador lleva más de 90 días, también tiene derecho a la indemnización por tiempo de servicios (1 salario por año trabajado). Ambos conceptos se suman en la liquidación.",
+        },
+        {
+          question: "¿Qué es la indemnización por tiempo de servicios en Bolivia?",
+          answer: "Es un beneficio adicional al desahucio que equivale a un salario mensual por año de servicio (con duodécimos proporcionales). Se calcula sobre el promedio de los últimos 3 meses de remuneración. A diferencia del desahucio, esta indemnización corresponde a todos los trabajadores con más de 90 días, incluso en caso de renuncia justificada.",
+        },
+        {
+          question: "¿El trabajador tiene derecho a desahucio si renuncia?",
+          answer: "Si el trabajador renuncia voluntariamente sin causa justificada, no tiene derecho al desahucio de 3 salarios. Sin embargo, sí tiene derecho a la indemnización por tiempo de servicios (1 salario/año) si tiene más de 90 días de servicio, más las partes proporcionales de aguinaldo y vacaciones.",
+        },
+        {
+          question: "¿Cuál es el plazo para pagar la liquidación en Bolivia?",
+          answer: "El empleador tiene un plazo de 15 días hábiles para realizar el pago de la liquidación laboral completa. Si no paga en ese plazo, incurre en mora y debe pagar intereses. El trabajador puede presentar una denuncia ante el Ministerio de Trabajo para exigir el pago.",
+        },
+      ],
+    },
+  },
 };
 
 function getDefaultContent(
@@ -1243,6 +1477,15 @@ export default async function CalculatorPage({ params }: Props) {
   const otherCalculators = country.calculators
     .filter((c) => c.slug !== calculadora)
     .slice(0, 4);
+
+  // Related blog articles: first those that link directly to this calculator, then country articles
+  const directArticles = articles.filter((a) =>
+    a.relatedCalculators.some((rc) => rc.pais === pais && rc.slug === calculadora)
+  );
+  const countryArticles = articles
+    .filter((a) => a.country === pais && !directArticles.find((d) => d.slug === a.slug))
+    .slice(0, 3 - directArticles.length);
+  const relatedArticles = [...directArticles, ...countryArticles].slice(0, 3);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -1461,6 +1704,33 @@ export default async function CalculatorPage({ params }: Props) {
                 className="inline-block mt-4 text-xs text-slate-500 hover:text-slate-800 transition-colors"
               >
                 Ver todas las calculadoras de {country.name} &rarr;
+              </Link>
+            </div>
+          )}
+
+          {/* Related articles card */}
+          {relatedArticles.length > 0 && (
+            <div className="bg-white border border-slate-200 rounded-xl p-6">
+              <h2 className="text-base font-bold text-slate-800 mb-4">
+                Artículos relacionados
+              </h2>
+              <ul className="space-y-3">
+                {relatedArticles.map((article) => (
+                  <li key={article.slug}>
+                    <Link
+                      href={`/blog/${article.slug}`}
+                      className="text-sm text-slate-700 hover:text-blue-700 transition-colors leading-snug block"
+                    >
+                      &ndash; {article.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/blog"
+                className="inline-block mt-4 text-xs text-slate-500 hover:text-slate-800 transition-colors"
+              >
+                Ver todos los artículos &rarr;
               </Link>
             </div>
           )}

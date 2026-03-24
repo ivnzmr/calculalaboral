@@ -137,8 +137,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/argentina/sac-junio-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
   ];
 
+  // Tax reference pages
+  const taxPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/mexico/tabla-isr-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/espana/tramos-irpf-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+  ];
+
+  // Comparativa salario mínimo
+  const comparativaSalarioPage: MetadataRoute.Sitemap[number] = {
+    url: `${BASE_URL}/comparar-salario-minimo`,
+    lastModified: now,
+    changeFrequency: "yearly",
+    priority: 0.85,
+  };
+
   // Legal pages
   const legalPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/metodologia`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.5 },
     { url: `${BASE_URL}/politica-de-privacidad`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/aviso-legal`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/contacto`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
@@ -158,6 +173,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     freelancePage,
     ...newToolPages,
     ...comparacionPages,
+    ...taxPages,
+    comparativaSalarioPage,
     ...seasonalPages,
     ...legalPages,
   ];

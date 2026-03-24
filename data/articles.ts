@@ -1876,8 +1876,6 @@ export const articles: Article[] = [
 <p>Los cambios en jornada y vacaciones impactan directamente en el cálculo de indemnizaciones y finiquitos, ya que se elevan los montos de vacaciones proporcionales y horas extra. Usa nuestra calculadora de finiquito o liquidación para obtener los importes exactos con los parámetros actualizados de 2026.</p>
     `.trim(),
   },
-];
-
   {
     slug: "decimo-tercero-cuarto-ecuador-2026",
     title: "Décimo tercero y cuarto sueldo Ecuador 2026: cómo calcularlos y cuándo cobrarlos",

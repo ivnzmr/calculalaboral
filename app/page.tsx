@@ -109,6 +109,69 @@ const websiteJsonLd = {
   description:
     "Plataforma gratuita de calculadoras laborales para trabajadores de 10 paises hispanohablantes.",
   inLanguage: "es",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://calculalaboral.net/?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Cómo calcular el finiquito en México?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Para calcular el finiquito en México se suman: aguinaldo proporcional (salario diario × 15 × días trabajados ÷ 365), vacaciones proporcionales según antigüedad y prima vacacional (25% de las vacaciones). Todo según la Ley Federal del Trabajo. Nuestra calculadora de finiquito hace el cálculo automáticamente.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cómo calcular la liquidación en Colombia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "La liquidación en Colombia incluye: cesantías (salario mensual × días trabajados ÷ 360), intereses sobre cesantías (12% anual), prima de servicios (15 días de salario por semestre) y vacaciones proporcionales (15 días hábiles por año). El Código Sustantivo del Trabajo regula todos estos conceptos.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuánto es el finiquito por renuncia voluntaria?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Al renunciar voluntariamente, el finiquito incluye: la parte proporcional del aguinaldo (mínimo 15 días/año según LFT en México), días de vacaciones no disfrutados y prima vacacional del 25%. No incluye los 3 meses de indemnización ni los 20 días por año, que solo aplican en despido injustificado.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuánto de liquidación me corresponde en Colombia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En Colombia, la liquidación al terminar el contrato incluye cesantías equivalentes a 1 mes de salario por año trabajado, intereses del 12% sobre cesantías, prima de servicios proporcional (hasta 15 días por semestre) y vacaciones proporcionales. Usa nuestra calculadora para obtener el monto exacto.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuántos días de aguinaldo me corresponden en México?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En México, la Ley Federal del Trabajo garantiza un mínimo de 15 días de salario como aguinaldo (Art. 87 LFT), pagadero antes del 20 de diciembre. Si trabajaste menos de un año, recibes la parte proporcional: salario diario × 15 × días trabajados ÷ 365.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuánto paro me corresponde en España?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En España, la prestación por desempleo equivale al 70% de la base reguladora los primeros 180 días y al 60% a partir del día 181. La duración depende de los meses cotizados: mínimo 120 días cotizados para 4 meses de paro, hasta 720 días cotizados para 24 meses máximo.",
+      },
+    },
+  ],
 };
 
 const organizationJsonLd = {
@@ -127,6 +190,7 @@ export default function HomePage() {
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       {/* A) Hero */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -477,6 +541,57 @@ export default function HomePage() {
                   Calcular &rarr;
                 </p>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section for featured snippets */}
+      <section className="py-12 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+            Preguntas frecuentes sobre cálculos laborales
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: "¿Cómo calcular el finiquito en México?",
+                a: "El finiquito en México incluye: aguinaldo proporcional (salario diario × 15 × días trabajados ÷ 365), vacaciones proporcionales según antigüedad, y prima vacacional (25% de las vacaciones). Aplica al renunciar voluntariamente. Usa nuestra calculadora de finiquito para obtener el monto exacto en segundos.",
+                link: "/mexico/calculadora-finiquito",
+              },
+              {
+                q: "¿Cómo calcular la liquidación en Colombia?",
+                a: "La liquidación en Colombia al terminar el contrato incluye cesantías (1 mes de salario por año), intereses sobre cesantías (12% anual), prima de servicios proporcional y vacaciones proporcionales. El Código Sustantivo del Trabajo regula todos estos conceptos.",
+                link: "/colombia/calculadora-liquidacion",
+              },
+              {
+                q: "¿Cuántos días de aguinaldo me corresponden en México?",
+                a: "La ley garantiza mínimo 15 días de salario de aguinaldo (Art. 87 LFT), pagadero antes del 20 de diciembre. Si trabajaste menos de un año, recibes la parte proporcional: salario diario × 15 × días trabajados ÷ 365.",
+                link: "/mexico/calculadora-aguinaldo",
+              },
+              {
+                q: "¿Cuánto paro me corresponde en España?",
+                a: "La prestación por desempleo equivale al 70% de la base reguladora los primeros 180 días y al 60% a partir del día 181. La duración va desde 4 meses (120 días cotizados) hasta un máximo de 24 meses (720+ días cotizados).",
+                link: "/espana/calculadora-paro",
+              },
+              {
+                q: "¿Cuánto me corresponde de indemnización por despido en Argentina?",
+                a: "La indemnización por despido sin causa en Argentina equivale a 1 mes de la mejor remuneración mensual por cada año de antigüedad (Art. 245 LCT), con un mínimo de 2 meses. Se suma la indemnización sustitutiva de preaviso y el SAC proporcional.",
+                link: "/argentina/calculadora-indemnizacion",
+              },
+            ].map(({ q, a, link }) => (
+              <details key={q} className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">
+                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-slate-800 hover:text-blue-700 transition-colors list-none">
+                  <span>{q}</span>
+                  <span className="text-slate-400 group-open:rotate-180 transition-transform text-lg ml-4 flex-shrink-0">▼</span>
+                </summary>
+                <div className="px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                  <p className="mb-3">{a}</p>
+                  <a href={link} className="text-blue-600 font-medium hover:underline text-sm">
+                    Calcular ahora →
+                  </a>
+                </div>
+              </details>
             ))}
           </div>
         </div>

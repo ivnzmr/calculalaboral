@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Carta de Renuncia ${country.name} 2026 | Gratis`,
     description: `Genera gratis tu carta de renuncia voluntaria en ${country.name} adaptada a su legislación laboral. Descárgala en segundos, sin registro.`,
+    alternates: {
+      canonical: `https://calculalaboral.net/carta-de-renuncia/${pais}`,
+    },
     openGraph: {
       title: `Carta de Renuncia ${country.name} 2026`,
       description: `Carta de renuncia gratuita y descargable para ${country.name}.`,

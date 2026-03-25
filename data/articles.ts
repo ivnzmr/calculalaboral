@@ -2111,7 +2111,455 @@ export const articles: Article[] = [
 <p>Si el empleador termina el contrato sin causa justificada, debe pagar un desahucio de <strong>3 salarios mensuales</strong>. Adicionalmente, si tienes más de 90 días de servicio, tienes derecho a la indemnización por tiempo de servicios de 1 salario por año trabajado. Ambos conceptos son independientes y se acumulan.</p>
     `.trim(),
   },
+  {
+    slug: "finiquito-vs-liquidacion-diferencia-mexico",
+    title: "Finiquito vs liquidación en México: ¿cuál es la diferencia y cuánto te corresponde?",
+    description: "Muchos trabajadores confunden el finiquito con la liquidación. En México son conceptos distintos con montos muy diferentes. Te explicamos la diferencia y cómo calcular cada uno.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "mexico", slug: "calculadora-liquidacion-despido-injustificado", name: "Calculadora de Liquidación" },
+    ],
+    content: `
+<h2>¿Qué es el finiquito en México?</h2>
+<p>El <strong>finiquito</strong> es el pago que recibe el trabajador cuando termina la relación laboral de forma voluntaria (renuncia) o al finalizar un contrato por tiempo determinado. Incluye únicamente las partes proporcionales que se hayan generado y que no han sido pagadas:</p>
+<ul>
+  <li><strong>Aguinaldo proporcional:</strong> días trabajados en el año × (15 ÷ 365).</li>
+  <li><strong>Vacaciones proporcionales:</strong> días de vacaciones generados no gozados.</li>
+  <li><strong>Prima vacacional proporcional:</strong> 25% del valor de las vacaciones.</li>
+  <li><strong>Salarios pendientes:</strong> días trabajados y no pagados.</li>
+</ul>
+<p>No incluye los 3 meses de indemnización ni los 20 días por año. Esos son conceptos de la liquidación.</p>
+
+<h2>¿Qué es la liquidación en México?</h2>
+<p>La <strong>liquidación</strong> es el pago que corresponde cuando el patrón rescinde el contrato sin causa justificada (despido injustificado). Según el Art. 123 constitucional y la LFT, incluye:</p>
+<ul>
+  <li><strong>3 meses de salario</strong> (indemnización constitucional).</li>
+  <li><strong>20 días de salario por cada año trabajado</strong>.</li>
+  <li><strong>12 días de salario por año trabajado</strong> (partes proporcionales de prima de antigüedad).</li>
+  <li>Más los mismos conceptos del finiquito: aguinaldo, vacaciones y prima vacacional proporcionales.</li>
+</ul>
+
+<h2>Tabla comparativa: finiquito vs liquidación</h2>
+<table>
+  <thead><tr><th>Concepto</th><th>Finiquito (renuncia)</th><th>Liquidación (despido injustificado)</th></tr></thead>
+  <tbody>
+    <tr><td>3 meses de salario</td><td>No</td><td>Sí</td></tr>
+    <tr><td>20 días por año</td><td>No</td><td>Sí</td></tr>
+    <tr><td>Prima de antigüedad</td><td>Solo si tiene 15+ años</td><td>Sí, siempre</td></tr>
+    <tr><td>Aguinaldo proporcional</td><td>Sí</td><td>Sí</td></tr>
+    <tr><td>Vacaciones proporcionales</td><td>Sí</td><td>Sí</td></tr>
+    <tr><td>Prima vacacional</td><td>Sí</td><td>Sí</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Y si me obligan a renunciar?</h2>
+<p>Si el patrón te presiona para que renuncies cuando en realidad te está despidiendo (renuncia forzada), legalmente tienes derecho a la liquidación completa. Puedes demandar ante la Junta de Conciliación y Arbitraje dentro de los 2 años siguientes al despido.</p>
+
+<h2>¿Cuánto me toca en cada caso?</h2>
+<p>Usa nuestras calculadoras gratuitas para obtener el monto exacto según tu salario y tiempo de servicio. Solo necesitas ingresar tu salario mensual y la fecha de inicio de tu relación laboral.</p>
+    `.trim(),
+  },
+  {
+    slug: "cuantos-dias-vacaciones-corresponden-colombia",
+    title: "¿Cuántos días de vacaciones te corresponden en Colombia en 2026?",
+    description: "En Colombia, la ley garantiza 15 días hábiles de vacaciones por año trabajado. Te explicamos cómo calcularlos, cuándo tomarlos y qué pasa si no los disfrutas.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+    ],
+    content: `
+<h2>Derecho a vacaciones en Colombia</h2>
+<p>Según el <strong>Artículo 186 del Código Sustantivo del Trabajo (CST)</strong>, todo trabajador que haya prestado servicios durante un año continuo tiene derecho a <strong>15 días hábiles consecutivos de vacaciones remuneradas</strong>. Los días hábiles excluyen domingos y festivos.</p>
+
+<h2>¿Cómo se calcula el valor de las vacaciones?</h2>
+<p>El valor se calcula sobre el <strong>salario ordinario promedio del último año</strong>, incluyendo el salario básico más los factores salariales que se paguen de forma habitual. La fórmula básica es:</p>
+<p><em>Valor vacaciones = (Salario mensual × 15) ÷ 30</em></p>
+<p>Es decir, corresponde a la mitad del salario mensual por los 15 días hábiles.</p>
+
+<h2>¿Se pueden acumular vacaciones?</h2>
+<p>La ley permite acumular vacaciones hasta por <strong>dos años</strong> con acuerdo entre empleador y trabajador. Para empleados de dirección, confianza y manejo, se pueden acumular hasta por <strong>cuatro años</strong>. Pasado ese plazo, el empleador está obligado a concederlas.</p>
+
+<h2>¿Qué pasa si me liquidan sin haber tomado vacaciones?</h2>
+<p>Al terminar el contrato, el empleador debe pagar las vacaciones proporcionales no disfrutadas. Se calcula así:</p>
+<p><em>Vacaciones proporcionales = (Días trabajados en el período × Salario mensual) ÷ 720</em></p>
+
+<h2>¿Las vacaciones tienen algún descuento?</h2>
+<p>Las vacaciones están exentas de aportes a seguridad social. Solo se descuenta retención en la fuente si aplica según el nivel salarial del trabajador.</p>
+
+<h2>¿Cuándo tengo derecho a disfrutarlas?</h2>
+<p>Una vez cumplido el año de servicio, el trabajador puede exigir el disfrute de las vacaciones. El empleador tiene hasta un año para programarlas. Si no se conceden en ese plazo, el trabajador puede demandar su reconocimiento ante el Ministerio del Trabajo.</p>
+    `.trim(),
+  },
+  {
+    slug: "como-calcular-aguinaldo-2026-mexico",
+    title: "Cómo calcular tu aguinaldo 2026 en México paso a paso",
+    description: "El aguinaldo es un derecho irrenunciable en México. Aprende a calcularlo correctamente, cuándo se paga y qué sucede si tu empresa no te lo da a tiempo.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-aguinaldo", name: "Calculadora de Aguinaldo" },
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+    ],
+    content: `
+<h2>¿Qué es el aguinaldo?</h2>
+<p>El aguinaldo es una prestación obligatoria establecida en el <strong>Artículo 87 de la Ley Federal del Trabajo (LFT)</strong>. Todo trabajador tiene derecho a recibir un mínimo de <strong>15 días de salario</strong> como aguinaldo antes del 20 de diciembre de cada año.</p>
+
+<h2>Fórmula para calcular el aguinaldo</h2>
+<p>Si trabajaste todo el año completo (365 días), recibes el equivalente a 15 días de salario diario:</p>
+<p><em>Aguinaldo = Salario diario × 15</em></p>
+<p>Si no trabajaste el año completo, el aguinaldo es proporcional a los días trabajados:</p>
+<p><em>Aguinaldo proporcional = Salario diario × 15 × (Días trabajados ÷ 365)</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Supongamos que ganas $300 diarios y trabajaste 180 días en el año:</p>
+<ul>
+  <li>Aguinaldo completo = $300 × 15 = $4,500</li>
+  <li>Aguinaldo proporcional = $300 × 15 × (180 ÷ 365) = $2,219</li>
+</ul>
+
+<h2>¿Cuándo se paga el aguinaldo?</h2>
+<p>La ley establece que debe pagarse antes del <strong>20 de diciembre</strong>. Si el empleador no lo paga en esa fecha, incurre en una violación a la LFT y el trabajador puede presentar una queja ante la STPS (Secretaría del Trabajo y Previsión Social).</p>
+
+<h2>¿El aguinaldo lleva ISR?</h2>
+<p>Sí, pero con una exención importante: los primeros <strong>30 días de salario mínimo</strong> de aguinaldo están exentos de ISR. Solo el excedente sobre ese monto está gravado. En la práctica, la mayoría de los trabajadores con aguinaldo de 15 días no pagan ISR o pagan muy poco.</p>
+
+<h2>¿Qué incluye el aguinaldo si me dan más de 15 días?</h2>
+<p>Muchas empresas otorgan aguinaldos superiores al mínimo legal, como 30 o 40 días. Esto es una prestación superior a la ley y debe pagarse en su totalidad según lo acordado en el contrato colectivo o individual.</p>
+    `.trim(),
+  },
+  {
+    slug: "indemnizacion-despido-injustificado-argentina",
+    title: "Indemnización por despido injustificado en Argentina 2026: cómo calcularla",
+    description: "Si te despidieron sin causa en Argentina, tienes derecho a una indemnización según la LCT. Aprende a calcularla, qué topes aplican y cuándo prescribe tu derecho.",
+    country: "argentina",
+    countryName: "Argentina",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "argentina", slug: "calculadora-indemnizacion", name: "Calculadora de Indemnización" },
+      { pais: "argentina", slug: "calculadora-sac", name: "Calculadora SAC" },
+    ],
+    content: `
+<h2>¿Qué dice la Ley de Contrato de Trabajo?</h2>
+<p>El <strong>Artículo 245 de la LCT (Ley 20.744)</strong> establece que, ante un despido sin causa justificada, el empleador debe abonar al trabajador una indemnización equivalente a <strong>1 mes de salario por cada año de servicio</strong> o fracción mayor a 3 meses, con un tope en la base de cálculo.</p>
+
+<h2>Fórmula básica de la indemnización</h2>
+<p><em>Indemnización = Mejor remuneración mensual normal y habitual × Años de antigüedad</em></p>
+<p>El mínimo es siempre 2 meses del mejor salario, sin importar la antigüedad.</p>
+
+<h2>¿Qué es la "mejor remuneración mensual normal y habitual"?</h2>
+<p>Es el mayor salario mensual que el trabajador haya percibido en los últimos 12 meses previos al despido. Incluye el sueldo básico más comisiones, horas extra, bonos recurrentes y cualquier otro concepto salarial periódico. No se incluyen pagos ocasionales ni reintegros de gastos.</p>
+
+<h2>Tope indemnizatorio</h2>
+<p>La base de cálculo tiene un tope: no puede superar <strong>3 veces el salario promedio de los convenios colectivos vigentes</strong>, que el Ministerio de Trabajo actualiza periódicamente. En 2026, este tope se actualiza trimestralmente según índices de inflación.</p>
+
+<h2>¿Y el preaviso?</h2>
+<p>Además de la indemnización, si el empleador no otorga el preaviso correspondiente, debe pagar una <strong>indemnización sustitutiva de preaviso</strong>:</p>
+<ul>
+  <li>1 mes de salario si la antigüedad es menor a 5 años.</li>
+  <li>2 meses de salario si la antigüedad supera los 5 años.</li>
+</ul>
+
+<h2>SAC proporcional sobre la indemnización</h2>
+<p>También corresponde el pago del SAC (aguinaldo) proporcional al semestre en curso, calculado sobre la mejor remuneración.</p>
+
+<h2>Plazo para reclamar</h2>
+<p>El derecho a reclamar prescribe a los <strong>2 años</strong> desde que se tornó exigible (fecha del despido). Es fundamental actuar dentro de ese plazo.</p>
+    `.trim(),
+  },
+  {
+    slug: "cotizaciones-afp-chile-2026",
+    title: "Cotizaciones AFP Chile 2026: cuánto descuentan de tu sueldo y para qué sirve",
+    description: "En Chile, las cotizaciones previsionales se descuentan de tu sueldo bruto. Te explicamos para qué sirven, cuánto es el porcentaje exacto y cómo afectan tu sueldo líquido.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "chile", slug: "calculadora-indemnizacion", name: "Calculadora de Indemnización" },
+    ],
+    content: `
+<h2>¿Qué son las cotizaciones AFP?</h2>
+<p>Las cotizaciones AFP son aportes obligatorios al sistema de pensiones que cada trabajador dependiente en Chile debe realizar mensualmente. Se rigen por el <strong>Decreto Ley 3.500</strong> y son administradas por las Administradoras de Fondos de Pensiones (AFP).</p>
+
+<h2>¿Cuánto se descuenta del sueldo?</h2>
+<p>El total de cotizaciones obligatorias en Chile para 2026 es:</p>
+<table>
+  <thead><tr><th>Concepto</th><th>Porcentaje</th><th>Quién paga</th></tr></thead>
+  <tbody>
+    <tr><td>AFP (pensión)</td><td>10%</td><td>Trabajador</td></tr>
+    <tr><td>Comisión AFP</td><td>~0.58%–1.45% (varía por AFP)</td><td>Trabajador</td></tr>
+    <tr><td>Seguro de invalidez y sobrevivencia (SIS)</td><td>~1.49%</td><td>Empleador</td></tr>
+    <tr><td>Salud (Fonasa o Isapre)</td><td>7% (mínimo)</td><td>Trabajador</td></tr>
+    <tr><td>Seguro de cesantía</td><td>0.6% (trabajador) + 2.4% (empleador)</td><td>Ambos</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuál es la rentabilidad de los fondos AFP?</h2>
+<p>Las AFP ofrecen cinco tipos de fondos (A al E) con distintos niveles de riesgo y rentabilidad esperada:</p>
+<ul>
+  <li><strong>Fondo A (más riesgo):</strong> mayor inversión en renta variable, mayor rentabilidad histórica a largo plazo.</li>
+  <li><strong>Fondo E (más conservador):</strong> principalmente renta fija, menor volatilidad, recomendado para personas próximas a la pensión.</li>
+</ul>
+
+<h2>¿Qué pasa con el seguro de cesantía?</h2>
+<p>El seguro de cesantía es administrado por la AFC (Administradora de Fondos de Cesantía). Al quedar desempleado, puedes acceder a los fondos de tu cuenta individual o al fondo solidario dependiendo de la causal de término del contrato.</p>
+
+<h2>¿Las cotizaciones forman parte del sueldo bruto?</h2>
+<p>Sí. La AFP se descuenta del sueldo bruto antes de calcular el impuesto a la renta (impuesto único de segunda categoría). Esto reduce la base imponible y, por tanto, el impuesto a pagar.</p>
+    `.trim(),
+  },
+  {
+    slug: "prima-servicios-colombia-2026",
+    title: "Prima de servicios Colombia 2026: cuándo se paga y cómo calcularla",
+    description: "La prima de servicios en Colombia equivale a 30 días de salario al año, pagados en dos cuotas: junio y diciembre. Aprende a calcularla correctamente y qué hacer si no te la pagan.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-prima-servicios", name: "Prima de Servicios" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+    ],
+    content: `
+<h2>¿Qué es la prima de servicios?</h2>
+<p>La prima de servicios es una prestación social obligatoria en Colombia establecida en el <strong>Artículo 306 del Código Sustantivo del Trabajo</strong>. Equivale a <strong>30 días de salario por año</strong>, pagados en dos cuotas iguales de 15 días.</p>
+
+<h2>¿Cuándo se paga?</h2>
+<ul>
+  <li><strong>Primera cuota:</strong> máximo el 30 de junio de cada año, por el semestre de enero a junio.</li>
+  <li><strong>Segunda cuota:</strong> máximo el 20 de diciembre, por el semestre de julio a diciembre.</li>
+</ul>
+<p>Si el trabajador ingresó después del inicio del semestre, solo recibe la parte proporcional.</p>
+
+<h2>Fórmula de cálculo</h2>
+<p><em>Prima semestral = (Salario mensual × Días trabajados en el semestre) ÷ 360</em></p>
+<p>Por ejemplo, si ganas $2.000.000 y trabajaste los 6 meses completos del semestre (180 días):</p>
+<p><em>Prima = ($2.000.000 × 180) ÷ 360 = $1.000.000</em></p>
+
+<h2>¿Qué incluye el "salario" para calcular la prima?</h2>
+<p>Se incluyen todos los pagos que constituyan salario: salario básico, comisiones, horas extra y cualquier pago habitual con connotación salarial. No se incluyen viáticos, auxilio de transporte ni gastos de representación.</p>
+
+<h2>Prima de servicios al terminar el contrato</h2>
+<p>Si el contrato termina en cualquier momento del semestre, la empresa debe pagar la prima proporcional al número de días trabajados en ese semestre, independientemente de la causa del retiro.</p>
+
+<h2>¿La prima lleva descuentos?</h2>
+<p>La prima de servicios sí está sujeta a aportes a seguridad social (salud y pensión) y a retención en la fuente si aplica, al igual que el salario ordinario.</p>
+    `.trim(),
+  },
+  {
+    slug: "que-es-cts-peru-como-calcular",
+    title: "CTS Perú 2026: qué es, cómo se calcula y cuándo depositan",
+    description: "La Compensación por Tiempo de Servicios (CTS) es un beneficio laboral que funciona como seguro de desempleo en Perú. Aprende cuánto te depositan, cuándo y cómo calcularlo.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS" },
+      { pais: "peru", slug: "calculadora-gratificacion", name: "Calculadora Gratificación" },
+    ],
+    content: `
+<h2>¿Qué es la CTS?</h2>
+<p>La <strong>Compensación por Tiempo de Servicios (CTS)</strong> es un beneficio laboral regulado por el <strong>Decreto Legislativo 650</strong>. Funciona como un fondo de previsión o seguro de desempleo: se deposita semestralmente en una cuenta bancaria a nombre del trabajador y puede retirarse en porcentajes establecidos por ley.</p>
+
+<h2>¿Cuánto equivale la CTS?</h2>
+<p>La CTS equivale a <strong>1/12 de la remuneración computable por cada mes trabajado</strong>, más 1/12 de la gratificación. En la práctica, por semestre completo recibe aproximadamente <strong>1 mes de sueldo</strong> (incluyendo gratificación).</p>
+
+<h2>Fórmula de cálculo</h2>
+<p><em>CTS semestral = (Remuneración mensual + 1/6 de la gratificación) × (Meses trabajados ÷ 12)</em></p>
+<p>Donde la remuneración computable incluye el sueldo básico más asignación familiar si corresponde.</p>
+
+<h2>¿Cuándo se deposita la CTS?</h2>
+<ul>
+  <li><strong>Primer depósito:</strong> del 1 al 15 de mayo (por el período de noviembre a abril).</li>
+  <li><strong>Segundo depósito:</strong> del 1 al 15 de noviembre (por el período de mayo a octubre).</li>
+</ul>
+<p>Si el empleador no deposita en esos plazos, está obligado a pagar intereses.</p>
+
+<h2>¿Puedo retirar mi CTS?</h2>
+<p>Desde 2021, la legislación peruana ha permitido retiros extraordinarios de la CTS en varios momentos. Para 2026, la regla general es que puedes retirar el excedente que supere 4 remuneraciones brutas mensuales acumuladas en tu cuenta. Consulta las disposiciones vigentes en tu banco o en el MTPE.</p>
+
+<h2>¿Qué trabajadores tienen derecho a CTS?</h2>
+<p>Tienen derecho a CTS los trabajadores que laboran al menos 4 horas diarias (régimen general). Están excluidos los trabajadores que perciben CTS en su remuneración integral o bajo regímenes especiales como el agrario o el microempresarial.</p>
+    `.trim(),
+  },
+  {
+    slug: "carta-renuncia-por-maltrato-laboral",
+    title: "Carta de renuncia por maltrato laboral: cómo redactarla y qué derechos tienes",
+    description: "Si renuncias por acoso, maltrato o condiciones ilegales, en muchos países puedes exigir una liquidación como si te hubieran despedido. Te explicamos cómo hacerlo correctamente.",
+    country: null,
+    countryName: null,
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Finiquito México" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Liquidación Colombia" },
+      { pais: "espana", slug: "calculadora-finiquito", name: "Finiquito España" },
+    ],
+    content: `
+<h2>Renuncia voluntaria vs renuncia forzada por maltrato</h2>
+<p>No toda renuncia es igual. Cuando un trabajador se ve obligado a abandonar su empleo por condiciones de trabajo intolerables — acoso laboral, hostigamiento sexual, incumplimiento de salario, violencia física o psicológica — la ley de muchos países reconoce el concepto de <strong>despido indirecto</strong> o <strong>rescisión por causa imputable al patrón</strong>. En estos casos, el trabajador tiene derecho a la misma indemnización que si lo hubieran despedido.</p>
+
+<h2>¿En qué países aplica el despido indirecto?</h2>
+<ul>
+  <li><strong>México:</strong> Art. 51 LFT. El trabajador puede rescindir sin responsabilidad y exigir la liquidación completa (3 meses + 20 días por año).</li>
+  <li><strong>Colombia:</strong> Terminación con justa causa imputable al empleador (Art. 62 CST). Derecho a cesantías, prima e indemnización.</li>
+  <li><strong>España:</strong> Extinción del contrato por voluntad del trabajador por causa del empresario (Art. 50 ET). Indemnización igual que el despido improcedente (33 días por año).</li>
+  <li><strong>Argentina:</strong> Art. 246 LCT. El trabajador puede considerarse despedido con derecho a indemnización.</li>
+  <li><strong>Chile:</strong> Autodespido o despido indirecto (Art. 171 Código del Trabajo). Indemnización más recargo del 80%.</li>
+</ul>
+
+<h2>¿Cómo debe ser la carta de renuncia por maltrato?</h2>
+<p>Es crucial que la carta <strong>no parezca una renuncia voluntaria ordinaria</strong>. Debe dejar constancia expresa de:</p>
+<ol>
+  <li>Las conductas o situaciones que motivaron la renuncia (fechas y hechos concretos).</li>
+  <li>Las normas legales violadas por el empleador.</li>
+  <li>La invocación explícita del artículo legal que ampara la rescisión por causa del patrón.</li>
+  <li>La exigencia del pago de la liquidación o indemnización correspondiente.</li>
+</ol>
+
+<h2>Ejemplo de párrafo clave para tu carta</h2>
+<p>"Por medio de la presente, y en ejercicio del derecho que me confiere el Artículo [número] de [ley], me veo obligado/a a rescindir la relación laboral por causa imputable exclusivamente al patrón/empleador, en virtud de [describir hechos: acoso, falta de pago, condiciones insalubres, etc.]. En consecuencia, exijo el pago de la indemnización de ley correspondiente."</p>
+
+<h2>Recomendaciones prácticas</h2>
+<ul>
+  <li>Envía la carta por <strong>escrito y con acuse de recibo</strong> (carta certificada, correo con confirmación de lectura o ante testigos).</li>
+  <li>Guarda todas las <strong>evidencias</strong>: mensajes, correos, testigos, informes médicos si aplica.</li>
+  <li>Consulta con un abogado laboral antes de firmar cualquier documento de liquidación.</li>
+  <li>En México, Colombia y España existen servicios gratuitos de asesoría laboral del gobierno.</li>
+</ul>
+    `.trim(),
+  },
+  {
+    slug: "salario-minimo-2026-latinoamerica-comparativa",
+    title: "Salario mínimo 2026 en Latinoamérica: comparativa de los 10 países",
+    description: "¿En qué país de habla hispana se paga mejor? Comparamos los salarios mínimos de México, Colombia, Argentina, Chile, Perú y más países, en USD y ajustados por poder adquisitivo.",
+    country: null,
+    countryName: null,
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Nómina Neta México" },
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Nómina Neta Colombia" },
+      { pais: "chile", slug: "calculadora-finiquito", name: "Finiquito Chile" },
+    ],
+    content: `
+<h2>Salarios mínimos 2026 en países hispanohablantes</h2>
+<p>A continuación presentamos los salarios mínimos vigentes para 2026 en los principales países de habla hispana, expresados en moneda local y en dólares USD (tipo de cambio aproximado de enero 2026):</p>
+<table>
+  <thead><tr><th>País</th><th>Salario mínimo mensual</th><th>Equivalente USD aprox.</th></tr></thead>
+  <tbody>
+    <tr><td>España</td><td>€1.184</td><td>~$1.270 USD</td></tr>
+    <tr><td>Chile</td><td>$500.000 CLP</td><td>~$530 USD</td></tr>
+    <tr><td>Costa Rica</td><td>₡380.000 aprox.</td><td>~$730 USD</td></tr>
+    <tr><td>México</td><td>$278,80 MXN/día (~$8.375/mes)</td><td>~$415 USD</td></tr>
+    <tr><td>Colombia</td><td>$1.423.500 COP</td><td>~$340 USD</td></tr>
+    <tr><td>Perú</td><td>S/ 1.025</td><td>~$270 USD</td></tr>
+    <tr><td>Ecuador</td><td>$460 USD</td><td>$460 USD</td></tr>
+    <tr><td>Bolivia</td><td>Bs. 2.500</td><td>~$360 USD</td></tr>
+    <tr><td>Argentina</td><td>$400.000+ ARS</td><td>~$380 USD (var. por inflación)</td></tr>
+    <tr><td>Venezuela</td><td>Variable (muy bajo en USD)</td><td>~$5-8 USD</td></tr>
+  </tbody>
+</table>
+
+<h2>¿El salario mínimo es suficiente para vivir?</h2>
+<p>El poder adquisitivo real varía enormemente según el costo de vida de cada país. España tiene el salario más alto en términos nominales, pero también el costo de vida más elevado del grupo. Ecuador, aunque tiene salario mínimo en dólares, tiene un costo de vida relativamente bajo.</p>
+
+<h2>Factores que afectan el salario real</h2>
+<ul>
+  <li><strong>Descuentos obligatorios:</strong> En México se descuenta IMSS e ISR; en Colombia, EPS y pensión; en España, Seguridad Social e IRPF.</li>
+  <li><strong>Prestaciones adicionales:</strong> México tiene aguinaldo de 15 días; Ecuador tiene dos sueldos extra; Colombia tiene prima de servicios.</li>
+  <li><strong>Inflación:</strong> Argentina y Venezuela tienen inflación muy alta, que erosiona el salario real constantemente.</li>
+</ul>
+
+<h2>¿Cuánto cobras realmente después de descuentos?</h2>
+<p>El salario neto (lo que realmente recibes en la cuenta) es siempre menor al salario bruto. Usa nuestras calculadoras de nómina neta para conocer tu salario real después de todos los descuentos en tu país.</p>
+    `.trim(),
+  },
+  {
+    slug: "horas-extra-como-se-calculan-por-pais",
+    title: "Horas extra en México, Colombia, España y Argentina: ¿cuánto te deben pagar?",
+    description: "Las horas extra se calculan de forma diferente en cada país. Descubre el porcentaje de recargo que te corresponde y cómo reclamar si no te las pagan correctamente.",
+    country: null,
+    countryName: null,
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Nómina Neta México" },
+      { pais: "argentina", slug: "calculadora-horas-extra", name: "Horas Extra Argentina" },
+    ],
+    content: `
+<h2>Horas extra en México</h2>
+<p>La <strong>Ley Federal del Trabajo</strong> permite trabajar hasta 3 horas extra por día y 9 horas por semana. Los recargos son:</p>
+<ul>
+  <li>Las primeras 9 horas extra semanales: se pagan al <strong>200%</strong> (doble del salario por hora).</li>
+  <li>Las horas extra que excedan las 9 semanales: se pagan al <strong>300%</strong> (triple).</li>
+</ul>
+<p>Las horas extra en días de descanso obligatorio (domingos y festivos) se pagan también con recargo adicional.</p>
+
+<h2>Horas extra en Colombia</h2>
+<p>El <strong>Código Sustantivo del Trabajo</strong> establece:</p>
+<ul>
+  <li>Horas extra diurnas (6am-10pm): recargo del <strong>25%</strong> sobre el valor ordinario.</li>
+  <li>Horas extra nocturnas (10pm-6am): recargo del <strong>75%</strong>.</li>
+  <li>Máximo 2 horas extra diarias y 12 horas semanales sin autorización especial del Ministerio.</li>
+</ul>
+
+<h2>Horas extra en España</h2>
+<p>El <strong>Estatuto de los Trabajadores</strong> limita las horas extra a <strong>80 por año</strong>. Pueden compensarse con:</p>
+<ul>
+  <li>Pago económico: mínimo al valor de la hora ordinaria (el convenio puede fijar un recargo mayor).</li>
+  <li>Descanso compensatorio equivalente.</li>
+</ul>
+
+<h2>Horas extra en Argentina</h2>
+<p>La <strong>LCT</strong> establece un límite de 3 horas diarias y 30 horas mensuales. Los recargos son:</p>
+<ul>
+  <li>Horas extra en días hábiles: recargo del <strong>50%</strong>.</li>
+  <li>Horas extra en sábados después de las 13h, domingos y feriados: recargo del <strong>100%</strong>.</li>
+</ul>
+
+<h2>¿Qué pasa si no te pagan las horas extra?</h2>
+<p>En todos estos países, el trabajador puede reclamar el pago retroactivo de horas extra con los recargos correspondientes, generalmente hasta 2 años atrás (prescripción). Para ello se puede acudir a la inspección de trabajo del país, presentar una demanda laboral o llegar a un acuerdo en sede de conciliación.</p>
+    `.trim(),
+  },
+  {
+    slug: "prestaciones-sociales-venezuela-lottt-2026",
+    title: "Prestaciones sociales en Venezuela 2026: cómo se calculan según la LOTTT",
+    description: "Las prestaciones sociales en Venezuela son un derecho irrenunciable. Aprende cómo se acumulan, cuándo cobrarlas y cuánto te corresponde según la Ley Orgánica del Trabajo.",
+    country: "venezuela",
+    countryName: "Venezuela",
+    publishDate: "2026-03-25",
+    relatedCalculators: [
+      { pais: "venezuela", slug: "calculadora-prestaciones-sociales", name: "Prestaciones Sociales" },
+      { pais: "venezuela", slug: "calculadora-utilidades", name: "Utilidades" },
+    ],
+    content: `
+<h2>¿Qué son las prestaciones sociales en Venezuela?</h2>
+<p>Las prestaciones sociales son el principal beneficio de estabilidad laboral en Venezuela, reguladas por el <strong>Artículo 141 de la LOTTT (Ley Orgánica del Trabajo, los Trabajadores y las Trabajadoras)</strong>. Se acumulan durante toda la relación laboral y funcionan como un fondo de ahorro garantizado por ley.</p>
+
+<h2>¿Cómo se acumulan?</h2>
+<p>Las prestaciones sociales se calculan de la siguiente forma:</p>
+<ul>
+  <li><strong>Primer y segundo año:</strong> 15 días de salario integral por cada trimestre trabajado.</li>
+  <li><strong>A partir del tercer año:</strong> 45 días de salario integral por año, más 2 días adicionales por año acumulativos.</li>
+</ul>
+<p>El salario integral incluye el salario básico más alícuotas de bono vacacional y utilidades.</p>
+
+<h2>¿Dónde se depositan?</h2>
+<p>El empleador debe depositar las prestaciones sociales trimestralmente en un fondo individual del trabajador en una institución financiera elegida por el trabajador. El trabajador puede solicitar anticipos de hasta el 75% de las prestaciones para vivienda, salud o educación.</p>
+
+<h2>Utilidades: otro derecho importante</h2>
+<p>Además de las prestaciones, los trabajadores tienen derecho a <strong>utilidades equivalentes a un mínimo de 15 días de salario</strong> y un máximo de 4 meses, dependiendo de las ganancias de la empresa. Las empresas que obtengan beneficios deben distribuir al menos el 15% entre sus trabajadores.</p>
+
+<h2>Contexto económico 2026</h2>
+<p>Debido a la situación económica de Venezuela, muchos salarios y prestaciones se expresan en bolívares pero pueden ser complementados o negociados en dólares o petros según el sector. Es fundamental verificar el tipo de cambio oficial del BCV al momento del cálculo.</p>
+    `.trim(),
+  },
 ];
+
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);

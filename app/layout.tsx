@@ -60,6 +60,26 @@ export default function RootLayout({
   return (
     <html lang="es" className={inter.className}>
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        {/* WebSite JSON-LD with SearchAction */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "CalculaLaboral",
+          "url": "https://calculalaboral.net",
+          "description": "Calculadoras laborales gratuitas para 10 países hispanohablantes.",
+          "inLanguage": "es",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://calculalaboral.net/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        }) }} />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-K16W12FKYE"></script>
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-K16W12FKYE');` }} />

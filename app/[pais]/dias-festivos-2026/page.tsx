@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Días Festivos ${data.countryName} ${data.year} | Calendario Oficial`,
     description: `Calendario completo de días festivos y feriados en ${data.countryName} para ${data.year}. ${data.festivos.length} festivos oficiales con fechas, nombres y tipo.`,
+    alternates: {
+      canonical: `https://calculalaboral.net/${pais}/dias-festivos-2026`,
+    },
     openGraph: {
       title: `Días Festivos ${data.countryName} ${data.year}`,
       description: `${data.festivos.length} festivos oficiales en ${data.countryName} para ${data.year}.`,

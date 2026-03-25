@@ -5,6 +5,7 @@ import { countries, getAllCalculatorPaths } from "@/data/countries";
 import { articles } from "@/data/articles";
 import Calculator from "@/components/Calculator";
 import FAQAccordion from "@/components/FAQAccordion";
+import ShareButtons from "@/components/ShareButtons";
 
 type Props = {
   params: Promise<{ pais: string; calculadora: string }>;
@@ -215,6 +216,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    alternates: {
+      canonical: `https://calculalaboral.net/${pais}/${calculadora}`,
+    },
     openGraph: {
       title: seoOverride?.title ?? `${calc.name} ${country.name} ${year}`,
       description: seoOverride?.description ?? `${calc.description}. Resultado inmediato y desglose completo.`,
@@ -1583,6 +1587,9 @@ export default async function CalculatorPage({ params }: Props) {
             <p className="text-slate-600 mt-3 text-lg leading-relaxed">
               {calc.description}
             </p>
+            <div className="mt-4">
+              <ShareButtons title={`${calc.name} ${country.name} ${year}`} />
+            </div>
           </div>
 
           {/* Featured snippet */}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, getArticle } from "@/data/articles";
+import ShareButtons from "@/components/ShareButtons";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -18,6 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.description,
+    alternates: {
+      canonical: `https://calculalaboral.net/blog/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.description,
@@ -118,9 +122,12 @@ export default async function ArticlePage({ params }: Props) {
               <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
                 {article.title}
               </h1>
-              <p className="text-slate-600 mb-6 text-base leading-relaxed">
+              <p className="text-slate-600 mb-4 text-base leading-relaxed">
                 {article.description}
               </p>
+              <div className="mb-6">
+                <ShareButtons title={article.title} />
+              </div>
 
               {/* Article body */}
               <div

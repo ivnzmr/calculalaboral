@@ -2558,6 +2558,715 @@ export const articles: Article[] = [
 <p>Debido a la situación económica de Venezuela, muchos salarios y prestaciones se expresan en bolívares pero pueden ser complementados o negociados en dólares o petros según el sector. Es fundamental verificar el tipo de cambio oficial del BCV al momento del cálculo.</p>
     `.trim(),
   },
+  {
+    slug: "cuanto-finiquito-corresponde-por-anos-antiguedad-mexico",
+    title: "¿Cuánto finiquito me corresponde según mis años de antigüedad en México?",
+    description: "El finiquito varía según cuántos años llevas trabajando. Te mostramos exactamente cuántos días de vacaciones te corresponden con 1, 2, 5 o 10 años de antigüedad y cómo afecta al cálculo.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "mexico", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+    ],
+    content: `
+<h2>¿Por qué cambia el finiquito según la antigüedad?</h2>
+<p>El componente del finiquito que varía con la antigüedad son las <strong>vacaciones proporcionales</strong>. A más años trabajados, más días de vacaciones acumulas por año según la tabla de la Ley Federal del Trabajo (reformada en 2023). El aguinaldo proporcional y la prima vacacional también aumentan, pero de forma lineal.</p>
+
+<h2>Tabla de vacaciones según antigüedad (LFT 2026)</h2>
+<table>
+  <thead><tr><th>Años trabajados</th><th>Días de vacaciones por año</th></tr></thead>
+  <tbody>
+    <tr><td>1 año</td><td>12 días</td></tr>
+    <tr><td>2 años</td><td>14 días</td></tr>
+    <tr><td>3 años</td><td>16 días</td></tr>
+    <tr><td>4 años</td><td>18 días</td></tr>
+    <tr><td>5 años</td><td>20 días</td></tr>
+    <tr><td>6 a 10 años</td><td>22 días</td></tr>
+    <tr><td>11 a 15 años</td><td>24 días</td></tr>
+    <tr><td>16 a 20 años</td><td>26 días</td></tr>
+    <tr><td>21 a 25 años</td><td>28 días</td></tr>
+    <tr><td>26 a 30 años</td><td>30 días</td></tr>
+    <tr><td>31+ años</td><td>32 días</td></tr>
+  </tbody>
+</table>
+<p>Esta es la reforma aprobada en 2023 que duplicó el mínimo de vacaciones de 6 a 12 días para el primer año.</p>
+
+<h2>Ejemplo: finiquito con 2 años de antigüedad</h2>
+<p>Supón que ganas $15,000 mensuales y llevas 2 años y 3 meses trabajando (2.25 años). Al renunciar en marzo:</p>
+<ul>
+  <li><strong>Salario diario:</strong> $15,000 ÷ 30 = $500</li>
+  <li><strong>Aguinaldo proporcional:</strong> $500 × 15 × (90 días trabajados en el año ÷ 365) = $1,849</li>
+  <li><strong>Vacaciones proporcionales:</strong> 14 días × (90 ÷ 365) = 3.45 días → $500 × 3.45 = $1,726</li>
+  <li><strong>Prima vacacional:</strong> $1,726 × 25% = $431</li>
+  <li><strong>Total finiquito:</strong> ~$4,006</li>
+</ul>
+
+<h2>Ejemplo: finiquito con 5 años de antigüedad</h2>
+<p>Con el mismo salario de $15,000 y 5 años exactos trabajados (renunciando en enero, año completo):</p>
+<ul>
+  <li><strong>Aguinaldo:</strong> $500 × 15 = $7,500</li>
+  <li><strong>Vacaciones:</strong> $500 × 20 días = $10,000</li>
+  <li><strong>Prima vacacional:</strong> $10,000 × 25% = $2,500</li>
+  <li><strong>Total finiquito:</strong> $20,000</li>
+</ul>
+<p>La diferencia entre 1 y 5 años de antigüedad puede ser de más del doble en el concepto de vacaciones.</p>
+
+<h2>¿Y si no tomé mis vacaciones?</h2>
+<p>Si tienes vacaciones acumuladas de años anteriores que no disfrutaste, también debes recibirlas en el finiquito. La LFT establece que las vacaciones no caducan y deben pagarse al momento de la separación.</p>
+    `.trim(),
+  },
+  {
+    slug: "vacaciones-proporcionales-al-renunciar-mexico",
+    title: "Vacaciones proporcionales al renunciar en México: cómo se calculan en 2026",
+    description: "Al renunciar antes de completar el año, tienes derecho a las vacaciones que generaste proporcionalmente. Aprende la fórmula exacta y cuánto te corresponde según tu salario y fecha de renuncia.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+    ],
+    content: `
+<h2>¿Tengo derecho a vacaciones si renuncio antes del año?</h2>
+<p>Sí. Aunque no hayas completado el año de servicio, la <strong>Ley Federal del Trabajo</strong> te garantiza el pago de vacaciones proporcionales al tiempo trabajado. Este derecho es irrenunciable y debe incluirse en tu finiquito.</p>
+
+<h2>Fórmula para calcular vacaciones proporcionales</h2>
+<p><em>Días de vacaciones proporcionales = Días de vacaciones anuales × (Días trabajados en el año ÷ 365)</em></p>
+<p>Los días de vacaciones anuales dependen de tu antigüedad:</p>
+<ul>
+  <li>Primer año: 12 días anuales</li>
+  <li>Segundo año: 14 días anuales</li>
+  <li>Tercer año: 16 días anuales</li>
+</ul>
+
+<h2>Ejemplo práctico</h2>
+<p>Llevas 8 meses trabajando (240 días) en tu primer año. Tu salario es $12,000 mensuales:</p>
+<ul>
+  <li>Días de vacaciones anuales para el primer año: 12</li>
+  <li>Vacaciones proporcionales: 12 × (240 ÷ 365) = <strong>7.89 días</strong></li>
+  <li>Salario diario: $12,000 ÷ 30 = $400</li>
+  <li>Valor de vacaciones proporcionales: 7.89 × $400 = <strong>$3,156</strong></li>
+  <li>Prima vacacional (25%): $3,156 × 0.25 = <strong>$789</strong></li>
+</ul>
+
+<h2>¿Y si ya tomé algunas vacaciones durante el año?</h2>
+<p>Se descuentan los días ya disfrutados. Si te corresponden 7.89 días y ya tomaste 5, solo recibes el pago de 2.89 días en el finiquito.</p>
+
+<h2>¿Cuándo te pagan las vacaciones proporcionales?</h2>
+<p>Deben pagarse el mismo día en que se formaliza la renuncia, junto con el resto del finiquito. Si el patrón no las paga, puede ser sancionado por la STPS y el trabajador puede demandar ante el Centro de Conciliación Laboral.</p>
+    `.trim(),
+  },
+  {
+    slug: "liquidacion-renuncia-voluntaria-colombia-que-incluye",
+    title: "Liquidación por renuncia voluntaria en Colombia: ¿qué te pagan y qué no?",
+    description: "En Colombia, renunciar voluntariamente no significa perder tus prestaciones. Te explicamos exactamente qué incluye la liquidación al renunciar y qué conceptos solo aplican al despido.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "colombia", slug: "calculadora-cesantias", name: "Calculadora de Cesantías" },
+    ],
+    content: `
+<h2>¿Pierdo mis derechos si renuncio voluntariamente en Colombia?</h2>
+<p>No. Al renunciar voluntariamente en Colombia tienes derecho a recibir todas tus <strong>prestaciones sociales</strong> generadas durante el tiempo trabajado. Lo que no recibes al renunciar es la indemnización por despido sin justa causa, que solo aplica cuando es el empleador quien termina el contrato sin razón válida.</p>
+
+<h2>¿Qué incluye la liquidación por renuncia?</h2>
+<ul>
+  <li><strong>Cesantías:</strong> 1 mes de salario por año trabajado (proporcional si es menos de un año).</li>
+  <li><strong>Intereses sobre cesantías:</strong> 12% anual sobre el saldo de cesantías.</li>
+  <li><strong>Prima de servicios:</strong> 15 días de salario por semestre trabajado (proporcional).</li>
+  <li><strong>Vacaciones:</strong> 15 días hábiles por año trabajado (proporcional si es menos de un año).</li>
+  <li><strong>Salarios pendientes:</strong> días trabajados no pagados.</li>
+  <li><strong>Auxilio de transporte proporcional:</strong> si aplica según tu nivel salarial.</li>
+</ul>
+
+<h2>¿Qué NO te pagan al renunciar?</h2>
+<ul>
+  <li><strong>Indemnización por despido sin justa causa:</strong> solo aplica cuando el empleador te despide sin justa causa.</li>
+</ul>
+
+<h2>Ejemplo de liquidación por renuncia con 1 año y 4 meses</h2>
+<p>Salario mensual: $2.000.000 COP. Tiempo trabajado: 1 año y 4 meses (16 meses / 480 días).</p>
+<ul>
+  <li>Cesantías: ($2.000.000 × 480) ÷ 360 = <strong>$2.666.667</strong></li>
+  <li>Intereses cesantías: $2.666.667 × 12% × (480÷360) = <strong>$426.667</strong></li>
+  <li>Prima proporcional último semestre: ($2.000.000 × 120) ÷ 360 = <strong>$666.667</strong></li>
+  <li>Vacaciones proporcionales: ($2.000.000 × 480) ÷ 720 = <strong>$1.333.333</strong></li>
+  <li><strong>Total aproximado: $5.093.334</strong></li>
+</ul>
+
+<h2>¿Cuándo deben pagar la liquidación?</h2>
+<p>El empleador tiene hasta <strong>15 días hábiles</strong> después de la fecha de retiro para realizar el pago de la liquidación. Si no cumple, debe pagar un día de salario adicional por cada día de mora hasta el momento del pago efectivo.</p>
+    `.trim(),
+  },
+  {
+    slug: "cuanto-paro-con-1-2-anos-cotizados-espana",
+    title: "¿Cuánto paro cobro con 1 o 2 años cotizados en España en 2026?",
+    description: "La duración y el importe del paro dependen directamente de tus meses cotizados. Te mostramos exactamente cuánto cobrarías con 12, 18, 24 meses cotizados y cómo se calcula la base reguladora.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-paro", name: "Calculadora del Paro" },
+    ],
+    content: `
+<h2>¿Cuántos meses de paro me corresponden?</h2>
+<p>La duración de la prestación por desempleo en España equivale a la tercera parte de los días cotizados en los últimos 6 años, con un mínimo de 120 días y un máximo de 720 días (2 años):</p>
+<table>
+  <thead><tr><th>Días cotizados</th><th>Duración del paro</th></tr></thead>
+  <tbody>
+    <tr><td>360 – 539 (1 año)</td><td>4 meses</td></tr>
+    <tr><td>540 – 719</td><td>6 meses</td></tr>
+    <tr><td>720 – 899 (2 años)</td><td>8 meses</td></tr>
+    <tr><td>900 – 1.079</td><td>10 meses</td></tr>
+    <tr><td>1.080 – 1.259</td><td>12 meses</td></tr>
+    <tr><td>1.260 – 1.439</td><td>16 meses</td></tr>
+    <tr><td>1.440 – 1.619</td><td>20 meses</td></tr>
+    <tr><td>1.620+ (4,5 años+)</td><td>24 meses (máximo)</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuánto dinero cobro?</h2>
+<p>El importe se calcula sobre tu <strong>base reguladora</strong>, que es el promedio de las bases de cotización de los últimos 180 días dividido entre 180:</p>
+<ul>
+  <li><strong>Primeros 180 días:</strong> 70% de la base reguladora.</li>
+  <li><strong>A partir del día 181:</strong> 60% de la base reguladora.</li>
+</ul>
+<p>Existen topes máximos y mínimos que se actualizan anualmente con el IPREM.</p>
+
+<h2>Ejemplo con 1 año cotizado (salario bruto €1.800/mes)</h2>
+<ul>
+  <li>Base reguladora: €1.800 × 12 meses ÷ 180 días = €120/día</li>
+  <li>Prestación primeros 180 días: €120 × 70% = <strong>€84/día (~€2.520/mes)</strong></li>
+  <li>Duración: 4 meses (360 días cotizados)</li>
+  <li>Total prestación: ~€10.080</li>
+</ul>
+
+<h2>Ejemplo con 2 años cotizados (salario bruto €1.800/mes)</h2>
+<ul>
+  <li>Duración: 8 meses</li>
+  <li>Primeros 6 meses: €84/día</li>
+  <li>Meses 7-8: €120 × 60% = €72/día</li>
+  <li>Total prestación: ~€18.720</li>
+</ul>
+
+<h2>¿Cotiza el paro para la jubilación?</h2>
+<p>Sí. Durante el cobro de la prestación contributiva, la Seguridad Social sigue cotizando a tu nombre para la jubilación sobre el 100% de la base reguladora.</p>
+    `.trim(),
+  },
+  {
+    slug: "despido-procedente-improcedente-nulo-espana-diferencias",
+    title: "Despido procedente, improcedente y nulo en España: diferencias y qué te pagan en cada caso",
+    description: "No todos los despidos son iguales en España. El tipo de despido determina si cobras indemnización y cuánto. Te explicamos las diferencias entre procedente, improcedente y nulo.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-despido-improcedente", name: "Despido Improcedente" },
+      { pais: "espana", slug: "calculadora-finiquito", name: "Finiquito España" },
+      { pais: "espana", slug: "calculadora-paro", name: "Calculadora del Paro" },
+    ],
+    content: `
+<h2>Tipos de despido en España</h2>
+
+<h2>1. Despido procedente</h2>
+<p>El empleador tiene causa justificada para despedirte (causas disciplinarias graves o causas objetivas válidas como necesidades productivas). En este caso:</p>
+<ul>
+  <li><strong>Indemnización:</strong> 0 € (despido disciplinario) o 20 días por año con tope de 12 mensualidades (despido objetivo).</li>
+  <li><strong>Finiquito:</strong> sí se cobra (vacaciones pendientes, partes proporcionales de pagas extra).</li>
+  <li><strong>Paro:</strong> sí tienes derecho si has cotizado suficiente.</li>
+</ul>
+
+<h2>2. Despido improcedente</h2>
+<p>El empleador no puede probar la causa del despido o el procedimiento fue incorrecto. Es el tipo más frecuente. En este caso:</p>
+<ul>
+  <li><strong>Indemnización:</strong> 33 días de salario por año trabajado, con tope de 24 mensualidades (para contratos desde 12/02/2012). Contratos anteriores: 45 días/año hasta esa fecha y 33 desde entonces.</li>
+  <li><strong>Finiquito:</strong> sí.</li>
+  <li><strong>Paro:</strong> sí.</li>
+  <li>El empleador puede optar por readmitirte o pagarte la indemnización.</li>
+</ul>
+
+<h2>3. Despido nulo</h2>
+<p>El despido vulnera derechos fundamentales: discriminación por sexo, embarazo, maternidad, paternidad, religión, orientación sexual, o represalia por denunciar al empleador. En este caso:</p>
+<ul>
+  <li><strong>Readmisión obligatoria:</strong> el juez ordena tu reincorporación al puesto.</li>
+  <li><strong>Salarios de tramitación:</strong> cobras todos los salarios que habrías percibido desde el despido hasta la readmisión.</li>
+  <li>No existe la opción de indemnización en lugar de readmisión (salvo excepciones).</li>
+</ul>
+
+<h2>¿Cómo saber qué tipo de despido tienes?</h2>
+<p>El empleador debe entregarte una <strong>carta de despido</strong> por escrito con las causas. Si la carta no especifica causa, si la causa es falsa o si vulnera tus derechos, puedes impugnar el despido en el Servicio de Mediación, Arbitraje y Conciliación (SMAC) dentro de los <strong>20 días hábiles</strong> desde la notificación.</p>
+    `.trim(),
+  },
+  {
+    slug: "sac-aguinaldo-argentina-como-calcular-proporcional",
+    title: "SAC en Argentina 2026: cómo calcular el aguinaldo proporcional al terminar el contrato",
+    description: "El SAC (sueldo anual complementario) se paga en junio y diciembre, pero si te van antes, te corresponde la parte proporcional. Aprende a calcularlo exactamente.",
+    country: "argentina",
+    countryName: "Argentina",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "argentina", slug: "calculadora-sac", name: "Calculadora SAC" },
+      { pais: "argentina", slug: "calculadora-indemnizacion", name: "Calculadora Indemnización" },
+    ],
+    content: `
+<h2>¿Qué es el SAC y cuándo se paga?</h2>
+<p>El <strong>Sueldo Anual Complementario (SAC)</strong>, conocido como aguinaldo, es una prestación obligatoria regulada por el <strong>Artículo 121 de la LCT</strong>. Equivale a la doceava parte del total de remuneraciones percibidas en el semestre y se abona en dos cuotas:</p>
+<ul>
+  <li><strong>Primera cuota:</strong> última jornada hábil del mes de junio.</li>
+  <li><strong>Segunda cuota:</strong> última jornada hábil del mes de diciembre.</li>
+</ul>
+
+<h2>Fórmula del SAC proporcional al terminar el contrato</h2>
+<p>Si el contrato termina antes de la fecha de pago del SAC, tienes derecho a la parte proporcional al tiempo trabajado en ese semestre:</p>
+<p><em>SAC proporcional = (Mejor remuneración mensual del semestre × Días trabajados en el semestre) ÷ 365</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Te despiden el 15 de abril. Tu salario es $350.000 ARS. Tiempo trabajado en el semestre enero-junio: 105 días.</p>
+<ul>
+  <li>SAC proporcional = ($350.000 × 105) ÷ 365 = <strong>$100.685 ARS</strong></li>
+</ul>
+
+<h2>¿El SAC se incluye en la indemnización?</h2>
+<p>Sí. Cuando se calcula la indemnización por despido sin causa, también se debe sumar el SAC proporcional del semestre en curso. Algunos convenios colectivos establecen condiciones más favorables.</p>
+
+<h2>¿Lleva descuentos el SAC?</h2>
+<p>Sí. El SAC está sujeto a los mismos descuentos que el salario mensual: aportes jubilatorios (11%), obra social (3%), ANSSAL (0,5%) y, si corresponde, impuesto a las ganancias de cuarta categoría.</p>
+    `.trim(),
+  },
+  {
+    slug: "preaviso-argentina-cuanto-dias-corresponden",
+    title: "Preaviso en Argentina: cuántos días corresponden y qué pasa si no lo otorgan",
+    description: "El preaviso en Argentina es obligatorio tanto para el empleador como para el trabajador. Si no se otorga, se debe pagar la indemnización sustitutiva. Entérate de los plazos y montos exactos.",
+    country: "argentina",
+    countryName: "Argentina",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "argentina", slug: "calculadora-indemnizacion", name: "Calculadora Indemnización" },
+    ],
+    content: `
+<h2>¿Qué es el preaviso?</h2>
+<p>El preaviso es la obligación de notificar con anticipación la voluntad de terminar el contrato de trabajo. Está regulado por los <strong>Artículos 231 y 232 de la LCT</strong> y puede ser otorgado tanto por el empleador como por el trabajador.</p>
+
+<h2>¿Cuántos días de preaviso corresponden?</h2>
+<table>
+  <thead><tr><th>Situación</th><th>Plazo de preaviso</th></tr></thead>
+  <tbody>
+    <tr><td>Durante el período de prueba</td><td>15 días</td></tr>
+    <tr><td>Antigüedad menor a 5 años</td><td>1 mes</td></tr>
+    <tr><td>Antigüedad de 5 años o más</td><td>2 meses</td></tr>
+  </tbody>
+</table>
+<p>Estos plazos aplican tanto si el empleador despide al trabajador como si el trabajador renuncia.</p>
+
+<h2>Indemnización sustitutiva de preaviso</h2>
+<p>Si el empleador despide sin otorgar el período de preaviso, debe pagar la <strong>indemnización sustitutiva</strong> equivalente al salario que el trabajador habría percibido durante ese período:</p>
+<ul>
+  <li>Antigüedad menor a 5 años: 1 mes de salario.</li>
+  <li>Antigüedad de 5+ años: 2 meses de salario.</li>
+</ul>
+
+<h2>Integración del mes de despido</h2>
+<p>Si el despido ocurre en un día que no sea el último del mes, el empleador también debe pagar los días restantes hasta fin de mes (integración del mes de despido, Art. 233 LCT).</p>
+
+<h2>¿Qué pasa si el trabajador no respeta el preaviso al renunciar?</h2>
+<p>Si el trabajador renuncia sin dar preaviso, el empleador puede descontarle de la liquidación final el importe equivalente a los días de preaviso no otorgados. Sin embargo, en la práctica es poco frecuente que los empleadores ejerzan este derecho.</p>
+    `.trim(),
+  },
+  {
+    slug: "gratificacion-chile-como-calcular-legal-garantizada",
+    title: "Gratificación en Chile 2026: cómo calcular la legal y la garantizada",
+    description: "En Chile existen dos sistemas de gratificación: la legal (25% de las utilidades) y la garantizada (4,75 sueldos mínimos al año). Te explicamos cuál aplica en tu caso y cómo calcularla.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+    ],
+    content: `
+<h2>¿Qué es la gratificación en Chile?</h2>
+<p>La gratificación es un beneficio legal obligatorio regulado por el <strong>Artículo 47 del Código del Trabajo</strong>. Las empresas que tengan utilidades líquidas en su giro deben repartir anualmente el 30% de esas utilidades entre sus trabajadores. Existen dos modalidades:</p>
+
+<h2>Gratificación legal (Art. 47)</h2>
+<p>El empleador paga el <strong>25% de las remuneraciones anuales del trabajador</strong>, con tope en 4,75 Ingresos Mínimos Mensuales (IMM) al año. En 2026, con el ingreso mínimo de $500.000:</p>
+<p><em>Tope anual = 4,75 × $500.000 = $2.375.000</em></p>
+<p>Si el 25% de tu sueldo anual supera ese tope, solo recibes el tope.</p>
+
+<h2>Gratificación garantizada (la más común)</h2>
+<p>La mayoría de las empresas opta por pagar la gratificación garantizada mensualmente: <strong>25% del sueldo mensual del trabajador</strong>, con tope mensual de:</p>
+<p><em>Tope mensual = (4,75 × $500.000) ÷ 12 = $197.917</em></p>
+<p>Esto significa que si tu sueldo base mensual es $790.000 o menos, recibes exactamente el 25% de tu sueldo como gratificación. Si ganas más, el tope se aplica.</p>
+
+<h2>Ejemplo práctico</h2>
+<p>Trabajador con sueldo base de $600.000 mensual:</p>
+<ul>
+  <li>25% de $600.000 = $150.000</li>
+  <li>$150.000 &lt; tope de $197.917 → recibe <strong>$150.000 mensual</strong> de gratificación.</li>
+  <li>Sueldo total: $600.000 + $150.000 = $750.000</li>
+</ul>
+
+<h2>¿Se paga gratificación proporcional al terminar?</h2>
+<p>Sí. Al terminar el contrato antes de diciembre, si la empresa no ha pagado la gratificación mensualmente, debe pagar la parte proporcional al tiempo trabajado en el año. Si ya la pagaba mensualmente, no hay pago adicional al finiquito.</p>
+    `.trim(),
+  },
+  {
+    slug: "seguro-cesantia-chile-cuando-cobrar-requisitos",
+    title: "Seguro de cesantía en Chile 2026: cuándo cobrar, requisitos y montos",
+    description: "El seguro de cesantía en Chile es un fondo individual que se acumula durante tu vida laboral. Aprende cuándo puedes retirarlo, cuánto recibirías y qué diferencia hay entre cuenta individual y fondo solidario.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+    ],
+    content: `
+<h2>¿Qué es el seguro de cesantía?</h2>
+<p>El seguro de cesantía es administrado por la <strong>AFC (Administradora de Fondos de Cesantía)</strong> y está regulado por la Ley 19.728. Funciona con dos componentes: una cuenta individual (de propiedad del trabajador) y un fondo solidario (colectivo).</p>
+
+<h2>Cotizaciones mensuales</h2>
+<table>
+  <thead><tr><th>Aporte</th><th>Contrato indefinido</th><th>Contrato a plazo fijo</th></tr></thead>
+  <tbody>
+    <tr><td>Empleador → Cuenta individual</td><td>1,6%</td><td>3%</td></tr>
+    <tr><td>Empleador → Fondo solidario</td><td>0,8%</td><td>0%</td></tr>
+    <tr><td>Trabajador → Cuenta individual</td><td>0,6%</td><td>0%</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuándo puedo retirar el seguro?</h2>
+<p><strong>Cuenta individual:</strong> puedes retirarla cuando termina el contrato, independientemente de la causal. El monto acumulado es tuyo.</p>
+<p><strong>Fondo solidario:</strong> solo accedes si:</p>
+<ul>
+  <li>Fuiste despedido (contrato indefinido con al menos 12 meses de cotizaciones continuas).</li>
+  <li>Tu cuenta individual no es suficiente para cubrir el beneficio mínimo.</li>
+</ul>
+
+<h2>¿Cuánto recibirías del fondo solidario?</h2>
+<p>Los primeros meses recibes un porcentaje decreciente del promedio de tus últimas remuneraciones:</p>
+<ul>
+  <li>Mes 1: 70%</li>
+  <li>Mes 2: 55%</li>
+  <li>Mes 3: 45%</li>
+  <li>Mes 4: 40%</li>
+  <li>Mes 5: 35%</li>
+</ul>
+<p>Con topes mínimos y máximos definidos anualmente por la AFC.</p>
+
+<h2>¿Si renuncio voluntariamente cobro el seguro de cesantía?</h2>
+<p>Si renuncias, solo accedes a tu <strong>cuenta individual</strong> (lo que tú y tu empleador aportaron), no al fondo solidario. El fondo solidario está reservado para quienes pierden el trabajo involuntariamente.</p>
+    `.trim(),
+  },
+  {
+    slug: "vacaciones-truncas-peru-como-calcular",
+    title: "Vacaciones truncas en Perú: qué son y cómo calcularlas al terminar el contrato",
+    description: "Las vacaciones truncas son los días de descanso generados pero no gozados al momento de la liquidación en Perú. Aprende a calcularlas y cuándo te corresponden.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS" },
+      { pais: "peru", slug: "calculadora-gratificacion", name: "Calculadora Gratificación" },
+    ],
+    content: `
+<h2>¿Qué son las vacaciones truncas?</h2>
+<p>Las <strong>vacaciones truncas</strong> son el derecho a recibir una compensación económica por los días de descanso vacacional generados pero no disfrutados al momento de cesar la relación laboral. Están reguladas por el <strong>Decreto Legislativo 713</strong>.</p>
+
+<h2>¿Cuándo corresponden vacaciones truncas?</h2>
+<p>Las vacaciones truncas corresponden cuando el trabajador no ha completado el año de servicios necesario para tener derecho al período vacacional completo (30 días). Se generan desde el primer mes de trabajo.</p>
+<p><strong>Requisito mínimo:</strong> haber trabajado al menos 1 mes continuo.</p>
+
+<h2>Fórmula de cálculo</h2>
+<p><em>Vacaciones truncas = (Remuneración mensual × Meses trabajados en el período) ÷ 12</em></p>
+<p>O en días: <em>(30 días × Meses trabajados) ÷ 12</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Trabajaste 7 meses y 15 días (7.5 meses) con sueldo de S/ 1.800:</p>
+<ul>
+  <li>Días de vacaciones truncas: (30 × 7.5) ÷ 12 = <strong>18.75 días</strong></li>
+  <li>Valor diario: S/ 1.800 ÷ 30 = S/ 60</li>
+  <li>Monto vacaciones truncas: 18.75 × S/ 60 = <strong>S/ 1.125</strong></li>
+</ul>
+
+<h2>¿Vacaciones truncas y vacaciones vencidas son lo mismo?</h2>
+<p>No. Las <strong>vacaciones vencidas</strong> son aquellas que ya cumpliste el año para ganarlas pero aún no has disfrutado (por acuerdo o imposibilidad). Las <strong>vacaciones truncas</strong> son las del período en curso, incompleto al momento del cese. Ambas deben pagarse en la liquidación final.</p>
+    `.trim(),
+  },
+  {
+    slug: "fondos-reserva-ecuador-que-son-cuando-cobrar",
+    title: "Fondos de reserva en Ecuador 2026: qué son, cuánto es y cuándo cobrarlos",
+    description: "Los fondos de reserva son un beneficio laboral equivalente a un mes de salario adicional al año en Ecuador. Aprende cuándo se generan, cómo cobrarlos mensualmente o acumulados en el IESS.",
+    country: "ecuador",
+    countryName: "Ecuador",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "ecuador", slug: "calculadora-liquidacion", name: "Liquidación Ecuador" },
+      { pais: "ecuador", slug: "calculadora-decimo-tercero", name: "Décimo Tercer Sueldo" },
+    ],
+    content: `
+<h2>¿Qué son los fondos de reserva?</h2>
+<p>Los <strong>fondos de reserva</strong> son una prestación obligatoria establecida en el <strong>Artículo 196 del Código del Trabajo ecuatoriano</strong>. Equivalen al <strong>8,33% del salario mensual</strong> (aproximadamente 1 mes de salario al año) y se generan a partir del segundo año de trabajo con el mismo empleador.</p>
+
+<h2>¿Cuándo empiezan a generarse?</h2>
+<p>Los fondos de reserva se acumulan a partir del <strong>segundo año de trabajo continuo</strong> con el mismo empleador. En el primer año no corresponden.</p>
+
+<h2>¿Cómo se cobran?</h2>
+<p>Existen dos modalidades:</p>
+<ul>
+  <li><strong>Pago mensual directo:</strong> el empleador incluye el 8,33% en el sueldo mensual del trabajador. Es la opción más común hoy en día.</li>
+  <li><strong>Acumulación en el IESS:</strong> el empleador deposita mensualmente el 8,33% en la cuenta del IESS a nombre del trabajador. El trabajador puede retirarlo después de 2 años de acumulación o al terminar la relación laboral.</li>
+</ul>
+
+<h2>¿Cuánto equivale al año?</h2>
+<p>Con un sueldo de $600 mensuales:</p>
+<ul>
+  <li>Fondos de reserva mensuales: $600 × 8,33% = $49,98</li>
+  <li>Fondos de reserva anuales: $49,98 × 12 = <strong>$599,76</strong> (~1 mes de sueldo)</li>
+</ul>
+
+<h2>¿Se pagan fondos de reserva en la liquidación?</h2>
+<p>Si el empleador pagaba los fondos mensualmente, no hay saldo pendiente al terminar. Si los acumulaba en el IESS, al terminar la relación laboral se liquida el saldo acumulado junto con los rendimientos generados por el IESS.</p>
+    `.trim(),
+  },
+  {
+    slug: "aguinaldo-costa-rica-2026-como-calcular",
+    title: "Aguinaldo en Costa Rica 2026: cómo calcular el proporcional y cuándo se paga",
+    description: "El aguinaldo en Costa Rica equivale a un doceavo del total de salarios devengados en el año. Te explicamos la fórmula exacta, las fechas de pago y qué pasa si te van antes de diciembre.",
+    country: "costa-rica",
+    countryName: "Costa Rica",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "costa-rica", slug: "calculadora-aguinaldo", name: "Calculadora Aguinaldo" },
+      { pais: "costa-rica", slug: "calculadora-cesantia", name: "Calculadora Cesantía" },
+    ],
+    content: `
+<h2>¿Qué es el aguinaldo en Costa Rica?</h2>
+<p>El aguinaldo o <strong>décimo tercer mes</strong> en Costa Rica está regulado por la <strong>Ley N° 2412 (Ley del Aguinaldo)</strong>. Equivale a la doceava parte del total de salarios ordinarios y extraordinarios percibidos por el trabajador durante el año, del 1 de diciembre al 30 de noviembre.</p>
+
+<h2>Fórmula de cálculo</h2>
+<p><em>Aguinaldo = Total salarios percibidos del 1 de diciembre al 30 de noviembre ÷ 12</em></p>
+<p>Incluye salarios ordinarios, horas extra, comisiones y cualquier otro ingreso salarial del período.</p>
+
+<h2>¿Cuándo se paga?</h2>
+<p>El aguinaldo debe pagarse entre el <strong>1 y el 20 de diciembre</strong> de cada año. Si el empleador no lo paga en esa fecha, puede ser denunciado ante el Ministerio de Trabajo y Seguridad Social (MTSS).</p>
+
+<h2>Aguinaldo proporcional si terminas antes de diciembre</h2>
+<p>Si tu contrato termina antes del 30 de noviembre, tienes derecho al aguinaldo proporcional correspondiente a los meses trabajados en el período. Por ejemplo, si trabajaste 8 meses:</p>
+<ul>
+  <li>Total salarios 8 meses con ₡380.000/mes = ₡3.040.000</li>
+  <li>Aguinaldo proporcional = ₡3.040.000 ÷ 12 = <strong>₡253.333</strong></li>
+</ul>
+
+<h2>¿Tiene deducciones el aguinaldo?</h2>
+<p>El aguinaldo en Costa Rica está <strong>exento de cargas sociales</strong> (no se descuenta CCSS ni otras deducciones). Es uno de los pocos países donde el aguinaldo se paga limpio, sin retenciones de seguridad social ni impuesto sobre la renta.</p>
+    `.trim(),
+  },
+  {
+    slug: "que-es-prima-vacacional-mexico-como-calcular",
+    title: "Prima vacacional en México: qué es, para qué sirve y cómo calcularla en 2026",
+    description: "La prima vacacional es un pago adicional al valor de tus vacaciones que muy pocos trabajadores saben calcular correctamente. Es el 25% del valor de tus días de vacaciones y es obligatoria por ley.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+    ],
+    content: `
+<h2>¿Qué es la prima vacacional?</h2>
+<p>La <strong>prima vacacional</strong> es un pago adicional que el patrón está obligado a entregar al trabajador cuando toma sus vacaciones. Está establecida en el <strong>Artículo 80 de la Ley Federal del Trabajo</strong> y equivale a un mínimo del <strong>25% del salario correspondiente a los días de vacaciones</strong>.</p>
+
+<h2>¿Para qué sirve?</h2>
+<p>La prima vacacional fue creada para que el trabajador tenga recursos adicionales durante su período de descanso, reconociendo que las vacaciones implican gastos extras (viajes, actividades, etc.).</p>
+
+<h2>Fórmula de cálculo</h2>
+<p><em>Prima vacacional = Días de vacaciones × Salario diario × 25%</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Llevas 3 años trabajando (16 días de vacaciones). Tu salario mensual es $18,000:</p>
+<ul>
+  <li>Salario diario: $18,000 ÷ 30 = $600</li>
+  <li>Valor de las vacaciones: 16 días × $600 = $9,600</li>
+  <li>Prima vacacional: $9,600 × 25% = <strong>$2,400</strong></li>
+  <li>Total que recibes al tomar vacaciones: $9,600 + $2,400 = $12,000</li>
+</ul>
+
+<h2>¿Cuándo se paga la prima vacacional?</h2>
+<p>Debe pagarse <strong>antes de que el trabajador salga a disfrutar sus vacaciones</strong>, no después. Si el patrón paga la prima vacacional después del regreso, está incumpliendo la ley.</p>
+
+<h2>¿Y si no tomo mis vacaciones?</h2>
+<p>Si al terminar el contrato no disfrutaste tus vacaciones, la prima vacacional proporcional se incluye en el finiquito. No se pierde por no haberla disfrutado: siempre debes recibirla.</p>
+
+<h2>¿Las empresas pueden dar más del 25%?</h2>
+<p>Sí. Muchas empresas, especialmente las grandes corporaciones y sindicalizadas, otorgan primas vacacionales del 50%, 75% o incluso el 100%. El 25% es solo el mínimo legal.</p>
+    `.trim(),
+  },
+  {
+    slug: "descuentos-nomina-colombia-2026-cuanto-descuentan",
+    title: "¿Cuánto descuentan del salario en Colombia en 2026? Guía completa de deducciones",
+    description: "En Colombia, del salario bruto se descuentan aportes a salud, pensión y fondo de solidaridad. Aprende exactamente qué porcentajes aplican, cuál es el tope y cómo calcular tu salario neto.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora Liquidación" },
+    ],
+    content: `
+<h2>Deducciones obligatorias del salario en Colombia</h2>
+<p>Todo trabajador dependiente en Colombia tiene las siguientes deducciones sobre su salario mensual:</p>
+<table>
+  <thead><tr><th>Concepto</th><th>% Empleado</th><th>% Empleador</th></tr></thead>
+  <tbody>
+    <tr><td>Salud (EPS)</td><td>4%</td><td>8,5%</td></tr>
+    <tr><td>Pensión (AFP)</td><td>4%</td><td>12%</td></tr>
+    <tr><td>Fondo de solidaridad pensional</td><td>1% (salarios ≥ 4 SMMLV)</td><td>—</td></tr>
+    <tr><td>Fondo de subsistencia</td><td>0,2%-1% (salarios ≥ 16 SMMLV)</td><td>—</td></tr>
+  </tbody>
+</table>
+<p>El trabajador aporta en total el <strong>8% de su salario</strong> (4% salud + 4% pensión) como mínimo.</p>
+
+<h2>¿Y la retención en la fuente?</h2>
+<p>La retención en la fuente aplica para salarios que superen cierto umbral (aproximadamente $4.500.000 COP mensuales en 2026). Sigue una tabla marginal y puede oscilar entre el 0% y el 39% sobre el exceso gravable.</p>
+
+<h2>Ejemplo: salario bruto $3.000.000 COP</h2>
+<ul>
+  <li>Descuento salud (4%): $120.000</li>
+  <li>Descuento pensión (4%): $120.000</li>
+  <li>Total deducciones: $240.000</li>
+  <li><strong>Salario neto: $2.760.000</strong> (sin retención en la fuente, que no aplica a este nivel salarial)</li>
+</ul>
+
+<h2>¿El auxilio de transporte tiene descuentos?</h2>
+<p>No. El <strong>auxilio de transporte</strong> ($200.000 COP aproximado en 2026 para salarios hasta 2 SMMLV) no está sujeto a descuentos de salud, pensión ni retención en la fuente. Se paga limpio.</p>
+
+<h2>¿Los descuentos de pensión sirven para la jubilación?</h2>
+<p>Sí. El 4% que aportas mensualmente va a tu fondo de pensión individual (en régimen de ahorro individual con solidaridad, RAIS) o al fondo público (RPM - Colpensiones). Al llegar a la edad de pensión o acumular semanas suficientes, tienes derecho a la pensión de vejez.</p>
+    `.trim(),
+  },
+  {
+    slug: "cuanto-tiempo-reclamar-liquidacion-derechos-laborales",
+    title: "¿Cuánto tiempo tienes para reclamar tu liquidación o derechos laborales por país?",
+    description: "Los derechos laborales prescriben. Si no reclamas a tiempo, puedes perder el derecho a cobrar tu liquidación, indemnización o prestaciones. Conoce el plazo exacto en México, Colombia, España, Argentina y Chile.",
+    country: null,
+    countryName: null,
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Finiquito México" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Liquidación Colombia" },
+      { pais: "espana", slug: "calculadora-paro", name: "Paro España" },
+    ],
+    content: `
+<h2>¿Qué es la prescripción laboral?</h2>
+<p>La prescripción es el plazo máximo que tienes para reclamar tus derechos laborales ante las autoridades o tribunales. Pasado ese plazo, aunque tengas razón, puedes perder el derecho a cobrar. Es fundamental actuar antes de que prescriba.</p>
+
+<h2>Plazos de prescripción por país</h2>
+<table>
+  <thead><tr><th>País</th><th>Plazo</th><th>Desde cuándo cuenta</th><th>Base legal</th></tr></thead>
+  <tbody>
+    <tr><td>México</td><td>2 años</td><td>Desde que la acción fue exigible (fecha de despido o terminación)</td><td>Art. 516 LFT</td></tr>
+    <tr><td>Colombia</td><td>3 años</td><td>Desde que la obligación se hizo exigible</td><td>Art. 488 CST</td></tr>
+    <tr><td>España</td><td>1 año (impugnar despido: 20 días hábiles)</td><td>Desde la extinción del contrato</td><td>Art. 59 ET</td></tr>
+    <tr><td>Argentina</td><td>2 años</td><td>Desde que el crédito fue exigible</td><td>Art. 256 LCT</td></tr>
+    <tr><td>Chile</td><td>2 años (acciones laborales generales) / 6 meses (despido)</td><td>Desde el término de los servicios</td><td>Art. 510 Código del Trabajo</td></tr>
+    <tr><td>Perú</td><td>4 años</td><td>Desde que el derecho pudo ejercerse</td><td>Art. 44 Ley 26636</td></tr>
+  </tbody>
+</table>
+
+<h2>Caso especial: España — 20 días para impugnar el despido</h2>
+<p>En España, si quieres impugnar un despido (reclamar que sea declarado improcedente o nulo), tienes solo <strong>20 días hábiles desde la notificación del despido</strong>. Este plazo es mucho más corto que el general. Si no actúas en ese tiempo, el despido se considera consentido.</p>
+
+<h2>¿Cómo interrumpir la prescripción?</h2>
+<p>La prescripción se interrumpe al presentar una reclamación formal. En España, bastante con una papeleta de conciliación ante el SMAC. En México, con la demanda ante el Centro de Conciliación o la Junta. En Colombia, con cualquier reclamación escrita al empleador o demanda judicial.</p>
+
+<h2>Recomendación</h2>
+<p>No esperes a que el plazo esté por vencer. Si tienes dudas sobre si te pagaron correctamente, consulta con un abogado laboral cuanto antes. En muchos países existen servicios gratuitos de asesoría laboral (Procuraduría en México, CASC en Colombia, SMAC en España).</p>
+    `.trim(),
+  },
+  {
+    slug: "irpf-retencion-nomina-espana-como-funciona-2026",
+    title: "IRPF en la nómina España 2026: cómo funciona la retención y cómo calcularla",
+    description: "La retención de IRPF en nómina puede variar del 2% al 45% según tu salario y situación personal. Te explicamos cómo se calcula, por qué varía entre empleados y cómo ajustarla.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta" },
+    ],
+    content: `
+<h2>¿Qué es la retención de IRPF en nómina?</h2>
+<p>La <strong>retención del IRPF</strong> es un anticipo del Impuesto sobre la Renta de las Personas Físicas que el empleador descuenta mensualmente de tu nómina y lo ingresa directamente a Hacienda. Al hacer la declaración de la renta, se regulariza la diferencia entre lo retenido y lo que realmente debes.</p>
+
+<h2>¿Cómo se calcula el porcentaje de retención?</h2>
+<p>La retención no es un porcentaje fijo: se calcula individualmente para cada trabajador aplicando las tablas de la AEAT sobre el salario bruto anual estimado, teniendo en cuenta:</p>
+<ul>
+  <li>Salario bruto anual</li>
+  <li>Situación personal (soltero, casado, número de hijos)</li>
+  <li>Discapacidad</li>
+  <li>Pagos de hipoteca (créditos anteriores a 2013)</li>
+  <li>Aportaciones a planes de pensiones</li>
+</ul>
+
+<h2>Tramos IRPF 2026 (escala general)</h2>
+<table>
+  <thead><tr><th>Base liquidable</th><th>Tipo marginal</th></tr></thead>
+  <tbody>
+    <tr><td>Hasta €12.450</td><td>19%</td></tr>
+    <tr><td>€12.450 – €20.200</td><td>24%</td></tr>
+    <tr><td>€20.200 – €35.200</td><td>30%</td></tr>
+    <tr><td>€35.200 – €60.000</td><td>37%</td></tr>
+    <tr><td>€60.000 – €300.000</td><td>45%</td></tr>
+    <tr><td>Más de €300.000</td><td>47%</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Por qué dos compañeros con el mismo sueldo tienen retenciones diferentes?</h2>
+<p>Porque la retención tiene en cuenta la situación personal. Un trabajador casado con dos hijos tiene mayores deducciones personales y, por tanto, una base imponible menor y una retención más baja que un soltero con el mismo salario.</p>
+
+<h2>¿Cómo ajustar tu retención?</h2>
+<p>Puedes solicitar a tu empresa que aplique un porcentaje de retención diferente mediante el <strong>modelo 145</strong> (comunicación de datos al pagador). Esto es útil si tienes dos trabajos, si tu situación personal ha cambiado o si quieres evitar una sorpresa en la declaración de la renta.</p>
+    `.trim(),
+  },
+  {
+    slug: "bono-vacacional-venezuela-lottt-como-calcular",
+    title: "Bono vacacional en Venezuela 2026: cuántos días te corresponden y cómo calcularlo",
+    description: "El bono vacacional en Venezuela es un beneficio adicional a las vacaciones ordinarias. La LOTTT garantiza un mínimo según los años de servicio. Aprende a calcularlo correctamente.",
+    country: "venezuela",
+    countryName: "Venezuela",
+    publishDate: "2026-03-26",
+    relatedCalculators: [
+      { pais: "venezuela", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "venezuela", slug: "calculadora-prestaciones-sociales", name: "Prestaciones Sociales" },
+    ],
+    content: `
+<h2>¿Qué es el bono vacacional?</h2>
+<p>El <strong>bono vacacional</strong> es un beneficio adicional que acompaña a las vacaciones ordinarias en Venezuela, regulado por el <strong>Artículo 192 de la LOTTT</strong>. No se trata solo de pagar el salario durante las vacaciones, sino de un bono adicional equivalente a varios días de salario.</p>
+
+<h2>¿Cuántos días de bono vacacional corresponden?</h2>
+<p>El mínimo establecido por la LOTTT es:</p>
+<table>
+  <thead><tr><th>Año de servicio</th><th>Días de bono vacacional</th></tr></thead>
+  <tbody>
+    <tr><td>1er año</td><td>15 días</td></tr>
+    <tr><td>2do año</td><td>16 días</td></tr>
+    <tr><td>3er año</td><td>17 días</td></tr>
+    <tr><td>Años sucesivos</td><td>+1 día por año adicional</td></tr>
+  </tbody>
+</table>
+<p>Estos días se suman a los días de vacaciones ordinarias (15 días el primer año, +1 día por año adicional hasta máximo 15 días más).</p>
+
+<h2>¿Cómo se calcula el monto del bono vacacional?</h2>
+<p><em>Bono vacacional = Salario diario normal × Días de bono vacacional que corresponden</em></p>
+<p>El salario diario se calcula dividiendo el salario mensual entre 30.</p>
+
+<h2>¿Cuándo se paga el bono vacacional?</h2>
+<p>El bono vacacional debe pagarse al inicio del período de vacaciones, antes de que el trabajador salga a disfrutarlas. No puede diferirse ni pagarse después del regreso.</p>
+
+<h2>Nota sobre el contexto económico de Venezuela</h2>
+<p>Dada la situación económica, muchos empleadores en Venezuela pagan parte del salario en divisas. Al calcular el bono vacacional, debe tomarse como base el salario total acordado, incluyendo los componentes en bolívares y en divisas según el acuerdo laboral.</p>
+    `.trim(),
+  },
 ];
 
 

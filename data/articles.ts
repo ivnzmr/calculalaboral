@@ -11,6 +11,7 @@ export type Article = {
   country: string | null; // null = aplica a varios países
   countryName: string | null;
   publishDate: string;
+  modifiedDate?: string;
   relatedCalculators: RelatedCalculator[];
   content: string; // HTML seguro (solo etiquetas de prosa)
 };
@@ -657,8 +658,8 @@ export const articles: Article[] = [
   // ── Aguinaldo por país ────────────────────────────────────────────────────
   {
     slug: "aguinaldo-colombia-2026",
-    title: "Prima de Servicios en Colombia 2026: Cuándo y Cómo se Paga",
-    description: "Todo sobre la prima de servicios en Colombia 2026: fechas de pago (junio y diciembre), cálculo según el Art. 306 del CST, quién tiene derecho y cómo calcular la parte proporcional.",
+    title: "¿Cuándo pagan la prima de junio 2026 en Colombia? Fecha y Cálculo",
+    description: "La prima de junio se paga a más tardar el 30 de junio de 2026. Equivale a 15 días de salario. Aprende cuánto te corresponde y cómo calcularla según el Art. 306 del CST.",
     country: "colombia",
     countryName: "Colombia",
     publishDate: "2026-03-22",
@@ -1462,9 +1463,9 @@ export const articles: Article[] = [
   },
   {
     slug: "prima-servicios-colombia-2026",
-    title: "Prima de servicios Colombia 2026: cuánto te corresponde y cuándo la pagan",
+    title: "Prima de Servicios Colombia 2026: Cálculo, Fecha de Pago y Derechos",
     description:
-      "Todo sobre la prima de servicios en Colombia 2026: fechas de pago, cómo se calcula, quiénes tienen derecho y qué pasa si el empleador no la paga.",
+      "¿Cuánto te corresponde de prima de servicios en Colombia? 15 días de salario en junio y 15 en diciembre. Fórmula, fecha límite y qué hacer si no te la pagan. CST 2026.",
     country: "colombia",
     countryName: "Colombia",
     publishDate: "2026-03-05",
@@ -3265,6 +3266,676 @@ export const articles: Article[] = [
 
 <h2>Nota sobre el contexto económico de Venezuela</h2>
 <p>Dada la situación económica, muchos empleadores en Venezuela pagan parte del salario en divisas. Al calcular el bono vacacional, debe tomarse como base el salario total acordado, incluyendo los componentes en bolívares y en divisas según el acuerdo laboral.</p>
+    `.trim(),
+  },
+  // ─── 15 nuevos artículos SEO 2026 ───────────────────────────────────────
+  {
+    slug: "carta-de-renuncia-colombia-modelo-2026",
+    title: "Carta de Renuncia Colombia 2026 – Modelo Gratis y Guía Completa",
+    description:
+      "¿Cómo redactar tu carta de renuncia en Colombia? Descarga un modelo gratis con preaviso de 30 días según el Código Sustantivo del Trabajo. Incluye guía paso a paso.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "colombia", slug: "calculadora-cesantias", name: "Calculadora de Cesantías" },
+    ],
+    content: `
+<h2>¿Qué es la carta de renuncia voluntaria en Colombia?</h2>
+<p>La carta de renuncia es el documento escrito con el que un trabajador comunica formalmente su decisión de terminar el contrato de trabajo. En Colombia, la renuncia voluntaria está regulada por el <strong>Código Sustantivo del Trabajo (CST)</strong>.</p>
+
+<h2>¿Cuánto preaviso debo dar al renunciar en Colombia?</h2>
+<p>El CST no establece un plazo mínimo de preaviso para el trabajador en contratos a término indefinido, pero la práctica generalizada y muchos contratos exigen <strong>30 días de anticipación</strong>. Si renuncias sin preaviso, el empleador puede descontarte los salarios correspondientes a los días no avisados.</p>
+<p>Para contratos a término fijo, la renuncia debe comunicarse al menos con la misma anticipación que se acordó en el contrato.</p>
+
+<h2>¿Qué derechos conservo al renunciar?</h2>
+<p>Al renunciar voluntariamente en Colombia tienes derecho a:</p>
+<ul>
+  <li><strong>Liquidación de cesantías</strong> acumuladas y sus intereses</li>
+  <li><strong>Prima de servicios</strong> proporcional al tiempo trabajado en el semestre</li>
+  <li><strong>Vacaciones</strong> pendientes o compensadas en dinero</li>
+  <li><strong>Auxilio de transporte</strong> si aplica</li>
+  <li><strong>Salarios pendientes</strong> del período trabajado</li>
+</ul>
+<p>No tienes derecho a la indemnización por despido sin justa causa, que solo corresponde cuando el empleador termina el contrato.</p>
+
+<h2>Fórmula de la liquidación al renunciar</h2>
+<p>La liquidación al renunciar incluye los conceptos proporcionales acumulados:</p>
+<p><em>Cesantías = Salario mensual × días trabajados en el año / 360</em></p>
+<p><em>Prima proporcional = Salario mensual × días trabajados en el semestre / 180</em></p>
+<p><em>Vacaciones = (Salario mensual / 720) × días trabajados en el año</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Trabajador con salario de $2.000.000 COP, 8 meses trabajados en el año y 4 meses en el semestre:</p>
+<ul>
+  <li>Cesantías: $2.000.000 × 240 / 360 = <strong>$1.333.333</strong></li>
+  <li>Prima proporcional: $2.000.000 × 120 / 180 = <strong>$1.333.333</strong></li>
+  <li>Vacaciones: ($2.000.000 / 720) × 240 = <strong>$666.667</strong></li>
+</ul>
+
+<h2>¿Cómo redactar la carta de renuncia?</h2>
+<p>La carta debe incluir: ciudad y fecha, nombre completo del trabajador, cargo, nombre del empleador, la fecha efectiva de retiro (respetando el preaviso), y la firma. No es obligatorio indicar el motivo de la renuncia.</p>
+<p>Usa nuestra herramienta gratuita para generar tu carta en segundos.</p>
+    `.trim(),
+  },
+  {
+    slug: "carta-de-renuncia-ecuador-2026",
+    title: "Carta de Renuncia Ecuador 2026 – Modelo Gratis con Desahucio",
+    description:
+      "Genera tu carta de renuncia en Ecuador con el desahucio correcto (15 días según Art. 184 del Código del Trabajo). Modelo gratis, descargable al instante.",
+    country: "ecuador",
+    countryName: "Ecuador",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "ecuador", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "ecuador", slug: "calculadora-decimo-tercero", name: "Calculadora Décimo Tercero" },
+    ],
+    content: `
+<h2>¿Qué es el desahucio en Ecuador?</h2>
+<p>En Ecuador, la notificación de renuncia por parte del trabajador se denomina <strong>desahucio</strong>. Según el artículo 184 del Código del Trabajo, el trabajador debe avisar al empleador con al menos <strong>15 días de anticipación</strong> antes de su último día de trabajo.</p>
+
+<h2>¿Qué derechos tengo al renunciar en Ecuador?</h2>
+<p>Al renunciar voluntariamente tienes derecho a:</p>
+<ul>
+  <li><strong>Décimo tercero proporcional</strong> (bono navideño)</li>
+  <li><strong>Décimo cuarto proporcional</strong> (bono escolar)</li>
+  <li><strong>Fondos de reserva</strong> acumulados</li>
+  <li><strong>Vacaciones no gozadas</strong> liquidadas en dinero</li>
+  <li><strong>IESS</strong>: Afiliación cubierta hasta el último día</li>
+  <li>Parte proporcional de utilidades si corresponde al período fiscal</li>
+</ul>
+
+<h2>Fórmula del décimo tercero proporcional</h2>
+<p><em>Décimo Tercero = Suma de remuneraciones del período / 12</em></p>
+<p>Si trabajaste 8 meses del año con un sueldo de $500: ($500 × 8) / 12 = <strong>$333,33</strong></p>
+
+<h2>Ejemplo práctico de liquidación</h2>
+<p>Trabajador con sueldo de $600, 6 meses trabajados:</p>
+<ul>
+  <li>Décimo Tercero proporcional: ($600 × 6) / 12 = <strong>$300</strong></li>
+  <li>Décimo Cuarto proporcional: (SBU × 6) / 12 ≈ <strong>$230</strong></li>
+  <li>Vacaciones: ($600 / 24) × 6 meses = <strong>$150</strong></li>
+</ul>
+
+<h2>¿Cómo entregar el desahucio?</h2>
+<p>La notificación puede entregarse directamente al empleador o al Inspector de Trabajo. Se recomienda hacerlo por escrito y guardar una copia sellada o con acuse de recibo para respaldo legal.</p>
+    `.trim(),
+  },
+  {
+    slug: "carta-de-renuncia-peru-2026",
+    title: "Carta de Renuncia Perú 2026 – Modelo Gratis y Guía Legal",
+    description:
+      "¿Cómo renunciar en Perú? Descarga tu carta de renuncia gratis con preaviso de 30 días según LPCL Art. 18. Conserva tus beneficios laborales al 100%.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS" },
+    ],
+    content: `
+<h2>¿Cuánto preaviso debo dar al renunciar en Perú?</h2>
+<p>La Ley de Productividad y Competitividad Laboral (LPCL, Art. 18) establece que el trabajador debe comunicar su renuncia con un mínimo de <strong>30 días de anticipación</strong>. El empleador puede exonerar este preaviso de forma expresa.</p>
+
+<h2>¿Qué beneficios conservo al renunciar?</h2>
+<p>Al renunciar voluntariamente en Perú tienes derecho a:</p>
+<ul>
+  <li><strong>CTS (Compensación por Tiempo de Servicios)</strong> acumulada en tu cuenta bancaria</li>
+  <li><strong>Gratificaciones proporcionales</strong> de julio y/o diciembre según el período trabajado</li>
+  <li><strong>Vacaciones truncas</strong> no gozadas pagadas en dinero</li>
+  <li><strong>Utilidades</strong> proporcionales si la empresa tiene obligación de distribuirlas</li>
+</ul>
+
+<h2>Fórmula de vacaciones truncas</h2>
+<p><em>Vacaciones truncas = (Remuneración mensual / 12) × meses trabajados sin gozar vacaciones</em></p>
+<p>Con un sueldo de S/ 1.500 y 7 meses sin vacaciones: (1.500 / 12) × 7 = <strong>S/ 875</strong></p>
+
+<h2>Ejemplo práctico de gratificación proporcional</h2>
+<p>Trabajador con sueldo de S/ 2.000 que renuncia en octubre:</p>
+<ul>
+  <li>Gratificación de diciembre proporcional (julio–octubre = 4 meses): (S/ 2.000 / 6) × 4 = <strong>S/ 1.333</strong></li>
+</ul>
+
+<h2>¿Cómo redactar la carta de renuncia?</h2>
+<p>La carta debe incluir: lugar y fecha, datos del trabajador y del empleador, cargo, fecha de último día de labores (respetando los 30 días de preaviso), y firma. No es obligatorio explicar los motivos.</p>
+    `.trim(),
+  },
+  {
+    slug: "carta-de-renuncia-bolivia-2026",
+    title: "Carta de Renuncia Bolivia 2026 – Modelo Gratis y Guía",
+    description:
+      "Genera tu carta de renuncia en Bolivia según la Ley General del Trabajo. Modelo gratis, descargable al instante, con guía de derechos al retiro voluntario.",
+    country: "bolivia",
+    countryName: "Bolivia",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "bolivia", slug: "calculadora-desahucio", name: "Calculadora de Desahucio" },
+      { pais: "bolivia", slug: "calculadora-aguinaldo", name: "Calculadora de Aguinaldo" },
+    ],
+    content: `
+<h2>¿Qué dice la ley boliviana sobre la renuncia voluntaria?</h2>
+<p>En Bolivia, la renuncia voluntaria está regulada por la <strong>Ley General del Trabajo (LGT)</strong> y su Decreto Reglamentario. Al renunciar, el trabajador pierde el derecho al desahucio (indemnización por despido), pero conserva los beneficios acumulados.</p>
+
+<h2>¿Qué derechos tengo al renunciar en Bolivia?</h2>
+<ul>
+  <li><strong>Aguinaldo proporcional</strong> (doceava parte del sueldo anual por mes trabajado)</li>
+  <li><strong>Vacaciones proporcionales</strong> no gozadas</li>
+  <li><strong>Indemnización por antigüedad</strong>: en Bolivia, la indemnización se acumula incluso con la renuncia voluntaria después del primer año (Art. 13 LGT)</li>
+  <li><strong>Salarios pendientes</strong></li>
+</ul>
+
+<h2>Fórmula de la indemnización por antigüedad en Bolivia</h2>
+<p>A diferencia de otros países, en Bolivia la indemnización no requiere despido:</p>
+<p><em>Indemnización = Sueldo mensual × años de servicio</em></p>
+<p>Con un sueldo de Bs. 3.000 y 3 años de servicio: 3.000 × 3 = <strong>Bs. 9.000</strong></p>
+
+<h2>Fórmula del aguinaldo proporcional</h2>
+<p><em>Aguinaldo proporcional = (Sueldo mensual / 12) × meses trabajados en el año</em></p>
+<p>Con sueldo de Bs. 3.000 y 8 meses trabajados: (3.000 / 12) × 8 = <strong>Bs. 2.000</strong></p>
+
+<h2>¿Cómo redactar la carta de renuncia?</h2>
+<p>La carta debe incluir lugar y fecha, nombre completo, cargo, nombre del empleador, fecha de término y firma. Se recomienda entregarla con acuse de recibo y solicitar de inmediato la liquidación de beneficios.</p>
+    `.trim(),
+  },
+  {
+    slug: "carta-de-renuncia-chile-modelo-2026",
+    title: "Carta de Renuncia Chile 2026 – Modelo Gratis con Preaviso de 30 Días",
+    description:
+      "¿Cómo renunciar en Chile? Descarga un modelo de carta de renuncia gratis con preaviso de 30 días según el Código del Trabajo Art. 159. Incluye guía de beneficios.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "chile", slug: "calculadora-indemnizacion", name: "Calculadora de Indemnización" },
+    ],
+    content: `
+<h2>¿Cómo se llama la renuncia voluntaria en Chile?</h2>
+<p>En Chile, la renuncia voluntaria se denomina <strong>"renuncia voluntaria del trabajador"</strong> y está regulada por el artículo 159 N°2 del Código del Trabajo. El trabajador debe dar un aviso previo de al menos <strong>30 días</strong> o pagar una indemnización sustitutiva equivalente a 1 mes de sueldo.</p>
+
+<h2>¿Qué incluye el finiquito al renunciar?</h2>
+<ul>
+  <li><strong>Feriado proporcional</strong>: 1,25 días por mes trabajado desde el último período de vacaciones</li>
+  <li><strong>Gratificación proporcional</strong> si la empresa paga gratificación legal</li>
+  <li><strong>Salarios pendientes</strong></li>
+</ul>
+<p>La renuncia voluntaria no da derecho a la indemnización por años de servicio (Art. 163 CT), salvo acuerdo expreso.</p>
+
+<h2>Fórmula del feriado proporcional</h2>
+<p><em>Feriado proporcional = (Sueldo diario × 1,25 días) × meses desde último período vacacional</em></p>
+<p>Con sueldo de $900.000 CLP y 6 meses: sueldo diario = $30.000 → $30.000 × 1,25 × 6 = <strong>$225.000</strong></p>
+
+<h2>Ejemplo práctico de finiquito</h2>
+<p>Trabajador con sueldo líquido de $800.000, 2 años de antigüedad, renuncia en mes 10 del año:</p>
+<ul>
+  <li>Feriado proporcional (10 meses): $26.667 × 1,25 × 10 = <strong>$333.333</strong></li>
+  <li>Gratificación proporcional (10/12 del 25% mensual): aprox. <strong>$166.667</strong></li>
+  <li>Total finiquito estimado: <strong>$500.000</strong></li>
+</ul>
+
+<h2>¿Ante quién se presenta la renuncia?</h2>
+<p>La carta de renuncia debe entregarse al empleador. Se recomienda hacerlo por escrito con dos copias: una para el empleador y otra con timbre o firma de recepción para el trabajador. También puede ratificarse ante un Ministro de Fe.</p>
+    `.trim(),
+  },
+  {
+    slug: "como-calcular-liquidacion-colombia-2026",
+    title: "Cómo Calcular la Liquidación en Colombia 2026 – Guía Paso a Paso",
+    description:
+      "Aprende a calcular tu liquidación en Colombia 2026: cesantías, prima de servicios, vacaciones e intereses. Fórmulas exactas y ejemplos con el salario mínimo 2026.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "colombia", slug: "calculadora-cesantias", name: "Calculadora de Cesantías" },
+      { pais: "colombia", slug: "calculadora-prima-servicios", name: "Calculadora Prima de Servicios" },
+    ],
+    content: `
+<h2>¿Qué es la liquidación laboral en Colombia?</h2>
+<p>La liquidación es el pago total de todos los derechos laborales que se le adeudan al trabajador cuando termina el contrato, ya sea por renuncia, despido o vencimiento del contrato.</p>
+
+<h2>Componentes de la liquidación en Colombia 2026</h2>
+<table>
+  <thead><tr><th>Concepto</th><th>Fórmula</th></tr></thead>
+  <tbody>
+    <tr><td>Cesantías</td><td>Salario × días trabajados / 360</td></tr>
+    <tr><td>Intereses sobre cesantías</td><td>Cesantías × 12% × días / 360</td></tr>
+    <tr><td>Prima de servicios</td><td>Salario × días en semestre / 180</td></tr>
+    <tr><td>Vacaciones</td><td>(Salario / 720) × días trabajados</td></tr>
+    <tr><td>Auxilio de transporte</td><td>Proporcional si aplica</td></tr>
+  </tbody>
+</table>
+
+<h2>Fórmula detallada de cesantías</h2>
+<p>Las cesantías equivalen a un mes de salario por año trabajado. Para el cálculo exacto:</p>
+<p><em>Cesantías = (Salario mensual + auxilio de transporte) × días trabajados / 360</em></p>
+
+<h2>Ejemplo práctico con salario mínimo 2026</h2>
+<p>Trabajador con salario mínimo 2026 ($1.423.500 COP), 10 meses trabajados:</p>
+<ul>
+  <li>Cesantías: ($1.423.500 + $200.000) × 300 / 360 = <strong>$1.353.000</strong></li>
+  <li>Intereses cesantías (10 meses): $1.353.000 × 12% × 300/360 = <strong>$135.300</strong></li>
+  <li>Prima proporcional (si trabaja en el 2.° semestre, 4 meses): $1.423.500 × 120/180 = <strong>$949.000</strong></li>
+  <li>Vacaciones: ($1.423.500 / 720) × 300 = <strong>$592.917</strong></li>
+  <li><strong>Total liquidación estimada: $3.030.217</strong></li>
+</ul>
+
+<h2>¿En cuánto tiempo deben pagar la liquidación?</h2>
+<p>El empleador debe pagar la liquidación <strong>a más tardar 15 días hábiles</strong> después de la fecha de terminación del contrato. Si no paga en ese plazo, puede ser demandado ante el Ministerio de Trabajo o ante un juez laboral.</p>
+
+<h2>Usa la calculadora de liquidación</h2>
+<p>Para obtener el cálculo exacto según tus datos, ingresa tu salario, fecha de ingreso y fecha de retiro en nuestra calculadora gratuita.</p>
+    `.trim(),
+  },
+  {
+    slug: "salario-minimo-colombia-2026",
+    title: "Salario Mínimo Colombia 2026 – Cuánto Es y Cómo Afecta tu Nómina",
+    description:
+      "El salario mínimo en Colombia para 2026 es $1.423.500 COP mensuales (+9,54% vs 2025). Conoce el impacto en cesantías, prima, vacaciones y auxilio de transporte.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+    ],
+    content: `
+<h2>¿Cuánto es el salario mínimo en Colombia 2026?</h2>
+<p>El salario mínimo mensual legal vigente (SMMLV) en Colombia para 2026 fue fijado en <strong>$1.423.500 COP</strong>, lo que representa un incremento del <strong>9,54%</strong> respecto al 2025 ($1.300.000). El auxilio de transporte para 2026 es de <strong>$200.000 COP</strong> mensuales.</p>
+
+<h2>Resumen del salario mínimo 2026</h2>
+<table>
+  <thead><tr><th>Concepto</th><th>Valor 2026</th></tr></thead>
+  <tbody>
+    <tr><td>Salario mínimo mensual</td><td>$1.423.500</td></tr>
+    <tr><td>Auxilio de transporte</td><td>$200.000</td></tr>
+    <tr><td>Salario mínimo diario</td><td>$47.450</td></tr>
+    <tr><td>Salario mínimo por hora</td><td>$5.931</td></tr>
+    <tr><td>Incremento vs 2025</td><td>+9,54%</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo afecta el aumento al auxilio de cesantías?</h2>
+<p>Las cesantías se calculan sobre el salario real. Con el salario mínimo 2026 más el auxilio de transporte:</p>
+<p><em>Cesantías anuales = ($1.423.500 + $200.000) × 360 / 360 = <strong>$1.623.500</strong> por año completo</em></p>
+
+<h2>Impacto en la prima de servicios</h2>
+<p>La prima se paga en junio y diciembre. Para el primer semestre 2026 (6 meses con SMMLV):</p>
+<p><em>Prima = $1.423.500 × 180 / 180 = <strong>$1.423.500</strong></em></p>
+
+<h2>Historia del salario mínimo en Colombia</h2>
+<table>
+  <thead><tr><th>Año</th><th>Salario mínimo</th><th>Incremento</th></tr></thead>
+  <tbody>
+    <tr><td>2026</td><td>$1.423.500</td><td>+9,54%</td></tr>
+    <tr><td>2025</td><td>$1.300.000</td><td>+9,33%</td></tr>
+    <tr><td>2024</td><td>$1.300.000</td><td>+12%</td></tr>
+    <tr><td>2023</td><td>$1.160.000</td><td>+16%</td></tr>
+  </tbody>
+</table>
+    `.trim(),
+  },
+  {
+    slug: "tabla-isr-2026-mexico-como-calcular",
+    title: "Tabla ISR 2026 México – Cómo Calcular tu Impuesto sobre la Renta",
+    description:
+      "Aprende a usar la tabla ISR 2026 del SAT. Incluye tarifa mensual actualizada, límites inferior y superior, cuota fija y porcentaje. Calcula tu impuesto gratis.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta" },
+      { pais: "mexico", slug: "calculadora-imss", name: "Calculadora IMSS" },
+    ],
+    content: `
+<h2>¿Qué es el ISR en México?</h2>
+<p>El Impuesto sobre la Renta (ISR) es la contribución que los trabajadores pagan al SAT sobre sus ingresos. Se calcula aplicando la <strong>tarifa del artículo 96 de la LISR</strong>, que establece rangos (límite inferior y superior), una cuota fija y un porcentaje sobre el excedente.</p>
+
+<h2>Tabla ISR mensual 2026 (Art. 96 LISR)</h2>
+<table>
+  <thead><tr><th>Límite inferior</th><th>Límite superior</th><th>Cuota fija</th><th>Tasa</th></tr></thead>
+  <tbody>
+    <tr><td>$0.01</td><td>$746.04</td><td>$0.00</td><td>1.92%</td></tr>
+    <tr><td>$746.05</td><td>$6,332.05</td><td>$14.32</td><td>6.40%</td></tr>
+    <tr><td>$6,332.06</td><td>$11,128.01</td><td>$371.83</td><td>10.88%</td></tr>
+    <tr><td>$11,128.02</td><td>$12,935.82</td><td>$893.63</td><td>16.00%</td></tr>
+    <tr><td>$12,935.83</td><td>$15,487.71</td><td>$1,182.88</td><td>17.92%</td></tr>
+    <tr><td>$15,487.72</td><td>$31,236.49</td><td>$1,640.18</td><td>21.36%</td></tr>
+    <tr><td>$31,236.50</td><td>$49,233.00</td><td>$5,004.12</td><td>23.52%</td></tr>
+    <tr><td>$49,233.01</td><td>$93,993.90</td><td>$9,236.89</td><td>30.00%</td></tr>
+    <tr><td>$93,993.91</td><td>$125,325.20</td><td>$22,665.17</td><td>32.00%</td></tr>
+    <tr><td>$125,325.21</td><td>$375,975.61</td><td>$32,691.18</td><td>34.00%</td></tr>
+    <tr><td>$375,975.62</td><td>En adelante</td><td>$117,912.32</td><td>35.00%</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo se calcula el ISR paso a paso?</h2>
+<ol>
+  <li>Localiza tu salario mensual gravable en la tabla y determina el rango que corresponde</li>
+  <li>Resta al salario el límite inferior del rango</li>
+  <li>Multiplica el excedente por la tasa del rango</li>
+  <li>Suma la cuota fija</li>
+  <li>Resta el subsidio al empleo si aplica</li>
+</ol>
+
+<h2>Ejemplo práctico con salario de $15,000 MXN</h2>
+<ul>
+  <li>Rango: $12,935.83 – $15,487.71, cuota fija $1,182.88, tasa 17.92%</li>
+  <li>Excedente: $15,000 – $12,935.83 = $2,064.17</li>
+  <li>ISR sobre excedente: $2,064.17 × 17.92% = $369.90</li>
+  <li>ISR mensual = $1,182.88 + $369.90 = <strong>$1,552.78</strong></li>
+</ul>
+    `.trim(),
+  },
+  {
+    slug: "finiquito-vs-despido-improcedente-espana",
+    title: "Finiquito vs Despido Improcedente en España 2026 – Diferencias Clave",
+    description:
+      "¿Cuál es la diferencia entre finiquito y despido improcedente en España? Aprende qué incluye cada uno, las indemnizaciones según el ET y cómo reclamar.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "espana", slug: "calculadora-despido-improcedente", name: "Calculadora Despido Improcedente" },
+    ],
+    content: `
+<h2>¿Qué es el finiquito en España?</h2>
+<p>El finiquito es la liquidación de todos los conceptos pendientes al finalizar la relación laboral, independientemente de la causa. Incluye: días de salario pendientes, vacaciones no disfrutadas, partes proporcionales de pagas extra y cualquier otro concepto pactado en convenio.</p>
+
+<h2>¿Qué es el despido improcedente?</h2>
+<p>El despido improcedente es aquel que no tiene causa justificada o que no cumple los requisitos formales del Estatuto de los Trabajadores. En este caso, el empleador puede elegir entre:</p>
+<ul>
+  <li><strong>Readmitir al trabajador</strong> y pagar los salarios de tramitación</li>
+  <li><strong>Pagar la indemnización</strong> por despido improcedente</li>
+</ul>
+
+<h2>Indemnización por despido improcedente 2026</h2>
+<p>Según el artículo 56 del ET: <strong>33 días de salario por año de servicio</strong> con un máximo de 24 mensualidades.</p>
+<p><em>Indemnización = (Salario diario × 33 días) × años de servicio</em></p>
+<p>Para contratos anteriores al 12/02/2012, los años previos se calculan a 45 días/año.</p>
+
+<h2>Ejemplo comparativo</h2>
+<p>Trabajador con salario de €2.000/mes, 5 años de antigüedad:</p>
+<table>
+  <thead><tr><th>Concepto</th><th>Solo finiquito</th><th>Despido improcedente</th></tr></thead>
+  <tbody>
+    <tr><td>Vacaciones no disfrutadas (10 días)</td><td>€666</td><td>€666</td></tr>
+    <tr><td>Paga extra proporcional (6 meses)</td><td>€1.000</td><td>€1.000</td></tr>
+    <tr><td>Indemnización</td><td>—</td><td>€11.000</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>€1.666</strong></td><td><strong>€12.666</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>¿Puedo cobrar el paro si me despiden improcedentemente?</h2>
+<p>Sí. Al ser despedido (incluso improcedentemente) tienes derecho a solicitar la prestación por desempleo (paro) si has cotizado al menos 360 días en los últimos 6 años. Si renuncias voluntariamente, NO tienes derecho al paro.</p>
+    `.trim(),
+  },
+  {
+    slug: "horas-extra-mexico-cuanto-pagan",
+    title: "Horas Extra en México 2026 – ¿Cuánto Te Deben Pagar Legalmente?",
+    description:
+      "Aprende cuánto valen las horas extra en México según la LFT: doble las primeras 9 y triple a partir de la décima. Fórmulas y ejemplos para reclamar lo tuyo.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-horas-extra", name: "Calculadora Horas Extra" },
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta" },
+    ],
+    content: `
+<h2>¿Qué dice la Ley Federal del Trabajo sobre horas extra?</h2>
+<p>El artículo 67 de la LFT establece que las horas extra se pagan con un recargo sobre el salario ordinario. Las reglas son claras:</p>
+<ul>
+  <li>Las primeras <strong>9 horas extra a la semana</strong>: se pagan al <strong>doble</strong> del salario por hora</li>
+  <li>A partir de la décima hora extra en la semana: se pagan al <strong>triple</strong></li>
+  <li>Límite legal: 3 horas diarias, máximo 9 horas a la semana (Art. 66 LFT)</li>
+</ul>
+
+<h2>¿Cómo se calcula el pago de horas extra?</h2>
+<p><em>Salario por hora = Salario mensual / (días de trabajo al mes × horas diarias)</em></p>
+<p><em>Horas extra dobles = Salario por hora × 2 × número de horas</em></p>
+<p><em>Horas extra triples = Salario por hora × 3 × número de horas</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Trabajador con salario de $10,000 MXN mensual, jornada de 8 horas, 5 días a la semana, trabajó 6 horas extra esta semana:</p>
+<ul>
+  <li>Salario por hora: $10,000 / (22 días × 8 h) = <strong>$56.82/hora</strong></li>
+  <li>6 horas extra dobles: $56.82 × 2 × 6 = <strong>$681.82</strong></li>
+</ul>
+
+<h2>¿Las horas extra se incluyen en el finiquito o aguinaldo?</h2>
+<p>No directamente. Pero el "salario diario integrado" que se usa para calcular el aguinaldo, vacaciones y finiquito sí debe incluir el promedio de horas extra percibidas regularmente (Art. 84 LFT). Si trabajas horas extra de forma habitual, tu finiquito debe ser mayor.</p>
+
+<h2>¿Qué pasa si el empleador no paga las horas extra?</h2>
+<p>Puedes presentar una queja ante la <strong>STPS (Secretaría del Trabajo y Previsión Social)</strong> o demandar ante el Tribunal Laboral competente. Guarda registros (mensajes, tarjetas de entrada/salida) como evidencia.</p>
+    `.trim(),
+  },
+  {
+    slug: "vacaciones-proporcionales-espana-2026",
+    title: "Vacaciones Proporcionales España 2026 – Cómo Calcularlas al Salir",
+    description:
+      "¿Cómo se calculan las vacaciones proporcionales en España al salir de la empresa? Mínimo 30 días naturales por año según el ET. Fórmulas y ejemplos.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "espana", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+    ],
+    content: `
+<h2>¿Cuántas vacaciones corresponden en España?</h2>
+<p>El artículo 38 del Estatuto de los Trabajadores establece un mínimo de <strong>30 días naturales</strong> de vacaciones por año trabajado. Los convenios colectivos pueden mejorar este mínimo.</p>
+
+<h2>¿Cómo se calculan las vacaciones proporcionales?</h2>
+<p>Si no trabajaste el año completo, las vacaciones se calculan proporcionalmente:</p>
+<p><em>Días de vacaciones = 30 × (meses trabajados / 12)</em></p>
+<p>Con 7 meses trabajados: 30 × (7/12) = <strong>17,5 días → 18 días</strong> (se redondea al alza)</p>
+
+<h2>¿Cómo se compensan en dinero las vacaciones no disfrutadas?</h2>
+<p>Si se extingue la relación laboral y quedan vacaciones sin disfrutar, el empleador debe pagar la <strong>compensación económica</strong> equivalente:</p>
+<p><em>Importe = Salario diario bruto × días de vacaciones pendientes</em></p>
+<p>Con salario mensual de €2.000 y 15 días pendientes: (€2.000 / 30) × 15 = <strong>€1.000</strong></p>
+
+<h2>¿Puede el empleador no pagar las vacaciones no disfrutadas?</h2>
+<p>No. Las vacaciones no disfrutadas que no se puedan disfrutar por extinción del contrato <strong>siempre deben compensarse económicamente</strong>. El Tribunal de Justicia de la UE y el TS español han reafirmado este derecho incluso en renuncias voluntarias.</p>
+
+<h2>Ejemplo completo</h2>
+<p>Trabajador que entra el 1 de marzo y renuncia el 31 de octubre (8 meses), salario de €1.800/mes:</p>
+<ul>
+  <li>Días de vacaciones: 30 × 8/12 = 20 días</li>
+  <li>Si no disfrutó ninguna: compensación = (€1.800 / 30) × 20 = <strong>€1.200</strong></li>
+</ul>
+    `.trim(),
+  },
+  {
+    slug: "cesantia-costa-rica-como-calcular-2026",
+    title: "Cesantía Costa Rica 2026 – Cómo Se Calcula y Cuándo Corresponde",
+    description:
+      "Aprende a calcular la cesantía en Costa Rica: fórmula del auxilio de cesantía según el Código de Trabajo, tope de 8 años y ejemplos con salarios reales.",
+    country: "costa-rica",
+    countryName: "Costa Rica",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "costa-rica", slug: "calculadora-cesantia", name: "Calculadora de Cesantía" },
+      { pais: "costa-rica", slug: "calculadora-aguinaldo", name: "Calculadora de Aguinaldo" },
+    ],
+    content: `
+<h2>¿Qué es la cesantía en Costa Rica?</h2>
+<p>El auxilio de cesantía es una indemnización que corresponde al trabajador cuando es <strong>despedido sin justa causa</strong>. Está regulado por el artículo 29 del Código de Trabajo de Costa Rica y tiene un tope de <strong>8 años de antigüedad</strong>.</p>
+
+<h2>¿En qué casos corresponde la cesantía?</h2>
+<ul>
+  <li>Despido sin causa justificada por parte del empleador</li>
+  <li>Renuncia indirecta (cuando el empleador incumple el contrato)</li>
+</ul>
+<p>Si el trabajador renuncia voluntariamente, <strong>no tiene derecho</strong> a la cesantía.</p>
+
+<h2>Fórmula de la cesantía en Costa Rica</h2>
+<table>
+  <thead><tr><th>Años de servicio</th><th>Días de cesantía por año</th></tr></thead>
+  <tbody>
+    <tr><td>1 año</td><td>19,5 días</td></tr>
+    <tr><td>2 años</td><td>20 días</td></tr>
+    <tr><td>3 años</td><td>20,5 días</td></tr>
+    <tr><td>4 años</td><td>21 días</td></tr>
+    <tr><td>5 años</td><td>21,5 días</td></tr>
+    <tr><td>6 años</td><td>22 días</td></tr>
+    <tr><td>7 años</td><td>22,5 días</td></tr>
+    <tr><td>8 años o más</td><td>23 días (tope)</td></tr>
+  </tbody>
+</table>
+
+<h2>Ejemplo práctico</h2>
+<p>Trabajador con salario de ₡700.000 mensual y 4 años de antigüedad, despedido sin causa:</p>
+<ul>
+  <li>Salario diario: ₡700.000 / 30 = ₡23.333</li>
+  <li>Días de cesantía: 4 años × 21 días = 84 días</li>
+  <li>Cesantía: ₡23.333 × 84 = <strong>₡1.960.000</strong></li>
+</ul>
+
+<h2>¿Se pierde la cesantía si renuncia el trabajador?</h2>
+<p>Sí, en la mayoría de los casos. La excepción es la "renuncia justificada" o renuncia indirecta, cuando el empleador comete faltas graves que justifican la salida del trabajador. En ese caso, puede reclamarse la cesantía ante el Ministerio de Trabajo.</p>
+    `.trim(),
+  },
+  {
+    slug: "liquidacion-laboral-peru-que-incluye",
+    title: "Liquidación Laboral Perú 2026 – ¿Qué Incluye y Cómo Calcularla?",
+    description:
+      "Conoce qué incluye la liquidación laboral en Perú: CTS, gratificaciones, vacaciones truncas y utilidades. Fórmulas exactas y ejemplo con sueldo mínimo 2026.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS" },
+      { pais: "peru", slug: "calculadora-gratificaciones", name: "Calculadora de Gratificaciones" },
+    ],
+    content: `
+<h2>¿Qué incluye la liquidación laboral en Perú?</h2>
+<p>La liquidación de beneficios sociales en Perú comprende todos los conceptos acumulados durante la relación laboral:</p>
+<ul>
+  <li><strong>CTS (Compensación por Tiempo de Servicios)</strong>: ya depositada en cuenta, se libera al término</li>
+  <li><strong>Gratificaciones proporcionales</strong> de julio y/o diciembre</li>
+  <li><strong>Vacaciones truncas</strong>: vacaciones ganadas pero no gozadas</li>
+  <li><strong>Utilidades</strong>: si la empresa tiene obligación de distribuir</li>
+  <li><strong>Salarios pendientes</strong> del período trabajado</li>
+</ul>
+
+<h2>Fórmula de vacaciones truncas</h2>
+<p><em>Vacaciones truncas = (Remuneración mensual / 12) × meses completos trabajados sin gozar vacaciones</em></p>
+
+<h2>Fórmula de gratificación proporcional</h2>
+<p><em>Gratificación = (Remuneración mensual / 6) × meses trabajados en el semestre</em></p>
+
+<h2>Ejemplo con sueldo mínimo 2026</h2>
+<p>Sueldo mínimo Perú 2026: S/ 1.025. Trabajador que ingresó en enero y renuncia en octubre (10 meses):</p>
+<table>
+  <thead><tr><th>Concepto</th><th>Cálculo</th><th>Monto</th></tr></thead>
+  <tbody>
+    <tr><td>Vacaciones truncas</td><td>(1.025 / 12) × 10</td><td>S/ 854,17</td></tr>
+    <tr><td>Gratificación diciembre (4 meses: jul–oct)</td><td>(1.025 / 6) × 4</td><td>S/ 683,33</td></tr>
+    <tr><td>Gratificación julio (ya cobrada en julio)</td><td>—</td><td>S/ 1.025,00</td></tr>
+    <tr><td>CTS (libre disposición al cese)</td><td>Saldo en cuenta</td><td>Variable</td></tr>
+    <tr><td><strong>Total sin CTS</strong></td><td></td><td><strong>S/ 2.562,50</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuándo deben pagar la liquidación?</h2>
+<p>El empleador debe entregar la liquidación <strong>dentro de las 48 horas</strong> siguientes al cese (D.L. 728). Si no lo hace, el trabajador puede reclamar ante el Ministerio de Trabajo o el Poder Judicial.</p>
+    `.trim(),
+  },
+  {
+    slug: "nomina-neta-colombia-como-calcular",
+    title: "Cómo Calcular tu Nómina Neta en Colombia 2026 – Descuentos Paso a Paso",
+    description:
+      "Aprende a calcular tu salario neto en Colombia 2026: descuentos de salud (4%), pensión (4%) y retención en la fuente. Ejemplo con salario mínimo y salario medio.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta" },
+      { pais: "colombia", slug: "calculadora-seguridad-social", name: "Calculadora Seguridad Social" },
+    ],
+    content: `
+<h2>¿Qué descuentos tiene la nómina en Colombia?</h2>
+<p>El trabajador en Colombia tiene los siguientes descuentos obligatorios sobre su salario bruto:</p>
+<table>
+  <thead><tr><th>Concepto</th><th>Porcentaje del trabajador</th></tr></thead>
+  <tbody>
+    <tr><td>Salud (EPS)</td><td>4%</td></tr>
+    <tr><td>Pensión (AFP)</td><td>4%</td></tr>
+    <tr><td>Fondo de Solidaridad Pensional</td><td>1% (salarios ≥ 4 SMLV)</td></tr>
+    <tr><td>Retención en la fuente</td><td>Variable según ingresos</td></tr>
+  </tbody>
+</table>
+
+<h2>Fórmula del salario neto</h2>
+<p><em>Salario neto = Salario bruto − Salud (4%) − Pensión (4%) − Retención en la fuente</em></p>
+
+<h2>Ejemplo con salario mínimo 2026</h2>
+<p>Salario bruto: $1.423.500 (SMMLV 2026)</p>
+<ul>
+  <li>Salud (4%): −$56.940</li>
+  <li>Pensión (4%): −$56.940</li>
+  <li>Retención en la fuente: $0 (no aplica al SMMLV)</li>
+  <li><strong>Salario neto: $1.309.620</strong></li>
+</ul>
+
+<h2>Ejemplo con salario de $3.000.000 COP</h2>
+<ul>
+  <li>Salud (4%): −$120.000</li>
+  <li>Pensión (4%): −$120.000</li>
+  <li>Retención en la fuente: ≈ −$0 (depende de deducciones)</li>
+  <li><strong>Salario neto aproximado: $2.760.000</strong></li>
+</ul>
+
+<h2>¿Qué aporta el empleador?</h2>
+<p>Adicionalmente, el empleador aporta sobre el salario bruto: Salud (8,5%), Pensión (12%), ARL (entre 0,348% y 8,7%), Caja de Compensación (4%), SENA (2%) e ICBF (3%).</p>
+    `.trim(),
+  },
+  {
+    slug: "prestaciones-sociales-venezuela-2026",
+    title: "Prestaciones Sociales Venezuela 2026 – Cómo Se Calculan Según la LOTTT",
+    description:
+      "Aprende a calcular tus prestaciones sociales en Venezuela 2026: garantía de 15 días al tercer mes más 2 días por año. Fórmulas según LOTTT Art. 142.",
+    country: "venezuela",
+    countryName: "Venezuela",
+    publishDate: "2026-03-31",
+    relatedCalculators: [
+      { pais: "venezuela", slug: "calculadora-prestaciones-sociales", name: "Calculadora Prestaciones Sociales" },
+      { pais: "venezuela", slug: "calculadora-utilidades", name: "Calculadora de Utilidades" },
+    ],
+    content: `
+<h2>¿Qué son las prestaciones sociales en Venezuela?</h2>
+<p>Las prestaciones sociales son un beneficio laboral garantizado por el artículo 142 de la <strong>LOTTT (Ley Orgánica del Trabajo, los Trabajadores y las Trabajadoras)</strong>. Se generan desde el primer día de trabajo y se depositan en un fideicomiso o fondo individual.</p>
+
+<h2>¿Cuánto corresponde de prestaciones sociales?</h2>
+<p>El cálculo tiene dos componentes:</p>
+<ul>
+  <li><strong>Garantía inicial:</strong> 15 días de salario integral al tercer mes de trabajo, luego 15 días adicionales por trimestre</li>
+  <li><strong>Días adicionales:</strong> 2 días de salario integral por año de antigüedad, acumulativos hasta 30 días</li>
+</ul>
+
+<h2>¿Qué es el salario integral?</h2>
+<p>El salario integral incluye el salario normal más los <strong>alícuotas</strong> (partes proporcionales diarias) de utilidades y bono vacacional:</p>
+<p><em>Salario integral = Salario normal + (Utilidades anuales / 360) + (Bono vacacional / 360)</em></p>
+
+<h2>Fórmula de prestaciones por antigüedad</h2>
+<p><em>Prestaciones = Salario integral diario × (15 días por trimestre + días adicionales por año)</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Trabajador con 2 años de servicio, salario integral de Bs. 500/día:</p>
+<ul>
+  <li>Trimestres completos en 2 años: 8 trimestres × 15 días = 120 días</li>
+  <li>Días adicionales (año 1 = 2 días, año 2 = 4 días acumulados): 2 + 4 = 6 días</li>
+  <li>Total días: 120 + 6 = 126 días</li>
+  <li>Prestaciones: Bs. 500 × 126 = <strong>Bs. 63.000</strong></li>
+</ul>
+
+<h2>¿Cuándo se cobran las prestaciones sociales?</h2>
+<p>Las prestaciones se pagan al terminar la relación laboral, ya sea por renuncia, despido o cualquier otra causa. El fideicomiso debe estar disponible inmediatamente. Si el empleador no las paga, el trabajador puede reclamar ante la Inspectoría del Trabajo con los intereses correspondientes.</p>
     `.trim(),
   },
 ];

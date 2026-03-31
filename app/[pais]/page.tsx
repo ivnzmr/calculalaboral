@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countries, getAllCountrySlugs } from "@/data/countries";
+import { buildAlternates } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ pais: string }>;
@@ -72,9 +73,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: {
-      canonical: `https://calculalaboral.net/${pais}`,
-    },
+    alternates: buildAlternates(`https://calculalaboral.net/${pais}`, pais),
     openGraph: {
       title,
       description,

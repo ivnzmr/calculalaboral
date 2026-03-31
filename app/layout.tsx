@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     template: "%s | CalculaLaboral",
   },
   description:
-    "Calculadoras laborales gratuitas para 10 paises: Mexico, Colombia, Espana, Argentina, Chile, Peru, Ecuador, Venezuela, Costa Rica y Bolivia. Calcula finiquito, liquidacion, aguinaldo, vacaciones y mas.",
+    "Calculadoras laborales gratuitas para 10 países: México, Colombia, España, Argentina, Chile, Perú, Ecuador, Venezuela, Costa Rica y Bolivia. Calcula finiquito, liquidación, aguinaldo, vacaciones y más.",
   metadataBase: new URL("https://calculalaboral.net"),
   openGraph: {
     siteName: "CalculaLaboral",
-    locale: "es_MX",
+    locale: "es",
     type: "website",
   },
   twitter: {
@@ -343,7 +343,7 @@ export default function RootLayout({
                   Salario Minimo
                 </p>
                 <ul className="space-y-2 mb-6">
-                  {["mexico", "colombia", "espana", "argentina", "chile"].map((slug) => {
+                  {["mexico", "colombia", "espana", "argentina", "chile", "peru", "ecuador", "venezuela", "costa-rica", "bolivia"].map((slug) => {
                     const c = countryList.find((x) => x.slug === slug);
                     if (!c) return null;
                     return (
@@ -362,7 +362,7 @@ export default function RootLayout({
                   Dias Festivos
                 </p>
                 <ul className="space-y-2">
-                  {["mexico", "colombia", "espana", "argentina", "chile"].map((slug) => {
+                  {["mexico", "colombia", "espana", "argentina", "chile", "peru", "ecuador", "venezuela", "costa-rica", "bolivia"].map((slug) => {
                     const c = countryList.find((x) => x.slug === slug);
                     if (!c) return null;
                     return (

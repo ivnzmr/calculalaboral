@@ -53,7 +53,7 @@ export default async function ArticlePage({ params }: Props) {
     headline: article.title,
     description: article.description,
     datePublished: article.publishDate,
-    dateModified: article.publishDate,
+    dateModified: article.modifiedDate ?? article.publishDate,
     author: {
       "@type": "Organization",
       name: "CalculaLaboral",

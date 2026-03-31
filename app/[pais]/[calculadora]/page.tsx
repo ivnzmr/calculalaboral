@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countries, getAllCalculatorPaths } from "@/data/countries";
 import { articles } from "@/data/articles";
+import { buildAlternates } from "@/lib/seo";
 import Calculator from "@/components/Calculator";
 import FAQAccordion from "@/components/FAQAccordion";
 import ShareButtons from "@/components/ShareButtons";
@@ -186,6 +187,10 @@ const SEO_META: Record<string, Record<string, { title: string; description: stri
       title: "Liquidación Final Bolivia 2026 – ¿Cuánto Te Corresponde?",
       description: "Calcula tu liquidación laboral en Bolivia: desahucio, aguinaldo proporcional y vacaciones. Ley General del Trabajo 2026, resultado inmediato.",
     },
+    "calculadora-horas-extra": {
+      title: "Calculadora Horas Extras Bolivia 2026 – ¿Cuánto Te Deben Pagar?",
+      description: "¿Cuánto te pagan por horas extras en Bolivia? El recargo es del 100% sobre tu hora ordinaria. Calcula al instante. Ley General del Trabajo 2026, gratis.",
+    },
   },
   venezuela: {
     "calculadora-prestaciones-sociales": {
@@ -216,9 +221,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: {
-      canonical: `https://calculalaboral.net/${pais}/${calculadora}`,
-    },
+    alternates: buildAlternates(`https://calculalaboral.net/${pais}/${calculadora}`, pais),
     openGraph: {
       title: seoOverride?.title ?? `${calc.name} ${country.name} ${year}`,
       description: seoOverride?.description ?? `${calc.description}. Resultado inmediato y desglose completo.`,
@@ -246,7 +249,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
       faqs: [
         {
-          question: "Que incluye el finiquito en Mexico?",
+          question: "¿Qué incluye el finiquito en México?",
           answer:
             "El finiquito incluye: parte proporcional del aguinaldo (minimo 15 dias/ano), dias de vacaciones no disfrutados, prima vacacional (25% del valor de las vacaciones), y cualquier salario pendiente de pago.",
         },
@@ -275,12 +278,12 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
       faqs: [
         {
-          question: "Cuanto me corresponde por liquidacion en Mexico?",
+          question: "¿Cuánto me corresponde por liquidación en México?",
           answer:
             "La formula basica es: 3 meses de salario + 20 dias por ano trabajado + partes proporcionales de aguinaldo, vacaciones y prima vacacional. Esta calculadora te muestra el desglose completo.",
         },
         {
-          question: "Que es el salario integrado para la liquidacion?",
+          question: "¿Qué es el salario integrado para la liquidación?",
           answer:
             "El salario integrado incluye el salario diario mas las partes proporcionales de prestaciones como aguinaldo, vacaciones y prima vacacional. Para calculos basicos, esta herramienta usa el salario mensual declarado.",
         },
@@ -305,7 +308,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
       faqs: [
         {
-          question: "Cuando se paga el aguinaldo en Mexico?",
+          question: "¿Cuándo se paga el aguinaldo en México?",
           answer:
             "El aguinaldo debe pagarse antes del 20 de diciembre de cada ano. Si el empleador no lo paga a tiempo, el trabajador puede exigirlo con los recargos correspondientes.",
         },
@@ -320,7 +323,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
             "El aguinaldo esta exento de ISR hasta 30 dias de salario minimo general. El excedente debe incluirse en el calculo de impuestos del trabajador.",
         },
         {
-          question: "Que pasa si renuncio antes de diciembre?",
+          question: "¿Qué pasa si renuncio antes de diciembre?",
           answer:
             "Si te separas de la empresa antes de diciembre, tienes derecho al aguinaldo proporcional de los dias que trabajaste en ese ano. El empleador debe incluirlo en tu finiquito.",
         },
@@ -339,17 +342,17 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
             "Segun la reforma de 2023: 12 dias el primer ano, 14 el segundo, 16 el tercero, 18 el cuarto, y 20 a partir del quinto ano. A esto se suman 2 dias adicionales cada 5 anos mas de servicio.",
         },
         {
-          question: "Que es la prima vacacional?",
+          question: "¿Qué es la prima vacacional?",
           answer:
             "La prima vacacional es un pago adicional equivalente al 25% del salario correspondiente al periodo de vacaciones (Art. 80 LFT). Ademas de tu salario normal durante las vacaciones, recibes el 25% extra.",
         },
         {
-          question: "Puedo pedir que me paguen las vacaciones en efectivo?",
+          question: "¿Puedo pedir que me paguen las vacaciones en efectivo?",
           answer:
             "En principio, las vacaciones deben disfrutarse como descanso. Sin embargo, al terminar la relacion laboral, el empleador debe pagar el equivalente en dinero de las vacaciones no disfrutadas.",
         },
         {
-          question: "Que pasa si no me dan vacaciones?",
+          question: "¿Qué pasa si no me dan vacaciones?",
           answer:
             "Si tu empleador no te otorga vacaciones, puedes exigirlas o demandar su pago ante las autoridades laborales. Tienes hasta un ano para reclamarlas.",
         },
@@ -363,12 +366,12 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
       faqs: [
         {
-          question: "Que porcentaje es la prima vacacional en Mexico?",
+          question: "¿Qué porcentaje es la prima vacacional en México?",
           answer:
             "El minimo legal es el 25% del salario correspondiente al periodo de vacaciones. Algunas empresas otorgan un porcentaje mayor (30%, 40% o mas) como prestacion adicional.",
         },
         {
-          question: "Cuando se paga la prima vacacional?",
+          question: "¿Cuándo se paga la prima vacacional?",
           answer:
             "La prima vacacional debe pagarse antes de que el trabajador tome sus vacaciones. Si la relacion laboral termina, debe incluirse en el finiquito.",
         },
@@ -394,7 +397,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
       faqs: [
         {
-          question: "Cuanto me corresponde en liquidacion en Colombia?",
+          question: "¿Cuánto me corresponde en liquidación en Colombia?",
           answer:
             "La liquidacion total incluye: cesantias + intereses sobre cesantias (12%) + prima de servicios + vacaciones proporcionales. Esta calculadora suma todos estos conceptos.",
         },
@@ -411,7 +414,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
             "Si, todos los trabajadores con contrato de trabajo en Colombia tienen derecho a liquidacion, ya sea a termino indefinido, fijo o de obra.",
         },
         {
-          question: "Que pasa con las cesantias si cambio de trabajo?",
+          question: "¿Qué pasa con las cesantías si cambio de trabajo?",
           answer:
             "Las cesantias se consignan cada ano en un fondo de cesantias. Al retirarte, las solicitas al fondo, no directamente al empleador.",
         },
@@ -443,7 +446,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
         },
         {
           question:
-            "Que pasa si termino mi contrato a mitad de semestre?",
+            "¿Qué pasa si termino mi contrato a mitad de semestre?",
           answer:
             "Si tu contrato termina antes de completar el semestre, tienes derecho a la parte proporcional de la prima correspondiente a los dias trabajados.",
         },
@@ -457,7 +460,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
       ],
       faqs: [
         {
-          question: "Como calculo mis cesantias en Colombia?",
+          question: "¿Cómo calculo mis cesantías en Colombia?",
           answer:
             "La formula es: (salario mensual x dias trabajados) / 360. Por ejemplo, si ganas $2.000.000 y trabajaste 180 dias: (2.000.000 x 180) / 360 = $1.000.000.",
         },
@@ -472,7 +475,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
             "Si, puedes hacer retiros parciales para: compra, construccion o mejora de vivienda, o pago de educacion superior tuya o de tus hijos.",
         },
         {
-          question: "Que son los intereses sobre cesantias?",
+          question: "¿Qué son los intereses sobre cesantías?",
           answer:
             "Son un pago adicional del 12% anual que el empleador te paga directamente cada enero sobre el saldo de cesantias acumulado durante el ano.",
         },
@@ -496,7 +499,7 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
             "Solo se puede compensar en dinero hasta la mitad de las vacaciones (7 o 8 dias), siempre por acuerdo escrito entre empleador y trabajador.",
         },
         {
-          question: "Que pasa si no me dan vacaciones?",
+          question: "¿Qué pasa si no me dan vacaciones?",
           answer:
             "El empleador tiene la obligacion de otorgar vacaciones dentro del ano siguiente al que fueron causadas. En caso de renuncia o despido, siempre se pagan las pendientes.",
         },

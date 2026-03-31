@@ -4,13 +4,17 @@ import { articles } from "@/data/articles";
 
 const BASE_URL = "https://calculalaboral.net";
 
+// Static dates prevent Google from ignoring lastModified due to constant "today" values
+const DATE_CALC_UPDATED = new Date("2026-01-15"); // when 2026 legal data was updated
+const DATE_SEASONAL = new Date("2026-01-01");
+const DATE_STATIC = new Date("2026-01-15");
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
 
   // Homepage
   const homePage: MetadataRoute.Sitemap[number] = {
     url: BASE_URL,
-    lastModified: now,
+    lastModified: DATE_STATIC,
     changeFrequency: "monthly",
     priority: 1,
   };
@@ -19,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const countryPages: MetadataRoute.Sitemap = Object.keys(countries).map(
     (countrySlug) => ({
       url: `${BASE_URL}/${countrySlug}`,
-      lastModified: now,
+      lastModified: DATE_STATIC,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })
@@ -29,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const calculatorPages: MetadataRoute.Sitemap = getAllCalculatorPaths().map(
     ({ pais, calculadora }) => ({
       url: `${BASE_URL}/${pais}/${calculadora}`,
-      lastModified: now,
+      lastModified: DATE_CALC_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     })
@@ -38,14 +42,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog pages
   const blogIndexPage: MetadataRoute.Sitemap[number] = {
     url: `${BASE_URL}/blog`,
-    lastModified: now,
+    lastModified: DATE_STATIC,
     changeFrequency: "weekly",
     priority: 0.7,
   };
 
   const blogArticlePages: MetadataRoute.Sitemap = articles.map((article) => ({
     url: `${BASE_URL}/blog/${article.slug}`,
-    lastModified: new Date(article.publishDate),
+    lastModified: new Date(article.modifiedDate ?? article.publishDate),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -53,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Carta de renuncia pages
   const cartaIndexPage: MetadataRoute.Sitemap[number] = {
     url: `${BASE_URL}/carta-de-renuncia`,
-    lastModified: now,
+    lastModified: DATE_STATIC,
     changeFrequency: "monthly",
     priority: 0.8,
   };
@@ -61,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cartaPaisPages: MetadataRoute.Sitemap = Object.keys(countries).map(
     (countrySlug) => ({
       url: `${BASE_URL}/carta-de-renuncia/${countrySlug}`,
-      lastModified: now,
+      lastModified: DATE_STATIC,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })
@@ -71,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const salarioMinimoPages: MetadataRoute.Sitemap = Object.keys(countries).map(
     (countrySlug) => ({
       url: `${BASE_URL}/${countrySlug}/salario-minimo`,
-      lastModified: now,
+      lastModified: DATE_STATIC,
       changeFrequency: "yearly" as const,
       priority: 0.85,
     })
@@ -81,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const diasFestivosPages: MetadataRoute.Sitemap = Object.keys(countries).map(
     (countrySlug) => ({
       url: `${BASE_URL}/${countrySlug}/dias-festivos-2026`,
-      lastModified: now,
+      lastModified: DATE_STATIC,
       changeFrequency: "yearly" as const,
       priority: 0.8,
     })
@@ -91,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const comparadorPages: MetadataRoute.Sitemap = ["mexico", "espana", "argentina", "colombia", "chile"].map(
     (countrySlug) => ({
       url: `${BASE_URL}/${countrySlug}/finiquito-vs-despido`,
-      lastModified: now,
+      lastModified: DATE_STATIC,
       changeFrequency: "monthly" as const,
       priority: 0.85,
     })
@@ -100,22 +104,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Calculadora freelance
   const freelancePage: MetadataRoute.Sitemap[number] = {
     url: `${BASE_URL}/calculadora-freelance`,
-    lastModified: now,
+    lastModified: DATE_STATIC,
     changeFrequency: "monthly",
     priority: 0.8,
   };
 
   // New tools (Category A: calculators, Category B: audiences, Category D: SEO)
   const newToolPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/calculadora-inflacion`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/calculadora-prestamo-nomina`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/calculadora-irpf`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
-    { url: `${BASE_URL}/calculadora-pension`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/para-empleadores`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/comparar-ofertas`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/quiz-laboral`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/calculadora-nomada-digital`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.75 },
-    { url: `${BASE_URL}/comparar`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/calculadora-inflacion`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/calculadora-prestamo-nomina`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/calculadora-irpf`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/calculadora-pension`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/para-empleadores`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/comparar-ofertas`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/quiz-laboral`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/calculadora-nomada-digital`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.75 },
+    { url: `${BASE_URL}/comparar`, lastModified: DATE_STATIC, changeFrequency: "monthly" as const, priority: 0.7 },
   ];
 
   const comparacionPages: MetadataRoute.Sitemap = [
@@ -123,40 +127,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "espana-vs-colombia", "chile-vs-peru", "mexico-vs-colombia",
   ].map((pair) => ({
     url: `${BASE_URL}/comparar/${pair}`,
-    lastModified: now,
+    lastModified: DATE_STATIC,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   // Seasonal pages (year-targeted, high search spike)
   const seasonalPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/mexico/aguinaldo-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
-    { url: `${BASE_URL}/colombia/prima-servicios-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
-    { url: `${BASE_URL}/peru/gratificacion-julio-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
-    { url: `${BASE_URL}/peru/cts-mayo-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
-    { url: `${BASE_URL}/argentina/sac-junio-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/mexico/aguinaldo-2026`, lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/colombia/prima-servicios-2026`, lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/peru/gratificacion-julio-2026`, lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/peru/cts-mayo-2026`, lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/argentina/sac-junio-2026`, lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
   ];
 
   // Tax reference pages
   const taxPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/mexico/tabla-isr-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
-    { url: `${BASE_URL}/espana/tramos-irpf-2026`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/mexico/tabla-isr-2026`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/espana/tramos-irpf-2026`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.85 },
   ];
 
   // Comparativa salario mínimo
   const comparativaSalarioPage: MetadataRoute.Sitemap[number] = {
     url: `${BASE_URL}/comparar-salario-minimo`,
-    lastModified: now,
+    lastModified: DATE_STATIC,
     changeFrequency: "yearly",
     priority: 0.85,
   };
 
   // Legal pages
   const legalPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/metodologia`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.5 },
-    { url: `${BASE_URL}/politica-de-privacidad`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
-    { url: `${BASE_URL}/aviso-legal`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.3 },
-    { url: `${BASE_URL}/contacto`, lastModified: now, changeFrequency: "yearly" as const, priority: 0.4 },
+    { url: `${BASE_URL}/metodologia`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.5 },
+    { url: `${BASE_URL}/politica-de-privacidad`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${BASE_URL}/aviso-legal`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${BASE_URL}/contacto`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.4 },
   ];
 
   return [

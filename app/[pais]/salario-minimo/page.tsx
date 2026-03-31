@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllCountrySlugs } from "@/data/countries";
 import { getSalarioMinimo } from "@/data/salarios-minimos";
+import { buildAlternates } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ pais: string }>;
@@ -19,9 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Salario Mínimo ${data.countryName} ${data.year}`,
     description: `Salario mínimo en ${data.countryName} para ${data.year}: ${data.currencySymbol}${data.amount.toLocaleString("es")} ${data.periodLabel}. Tabla histórica, equivalencia en USD y calculadora de nómina neta.`,
-    alternates: {
-      canonical: `https://calculalaboral.net/${pais}/salario-minimo`,
-    },
+    alternates: buildAlternates(`https://calculalaboral.net/${pais}/salario-minimo`, pais),
     openGraph: {
       title: `Salario Mínimo ${data.countryName} ${data.year}`,
       description: `${data.currencySymbol}${data.amount.toLocaleString("es")} ${data.periodLabel} — ${data.year}`,

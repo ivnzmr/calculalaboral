@@ -3939,8 +3939,248 @@ export const articles: Article[] = [
 <p>Las prestaciones se pagan al terminar la relación laboral, ya sea por renuncia, despido o cualquier otra causa. El fideicomiso debe estar disponible inmediatamente. Si el empleador no las paga, el trabajador puede reclamar ante la Inspectoría del Trabajo con los intereses correspondientes.</p>
     `.trim(),
   },
-];
+  {
+    slug: "como-hacer-declaracion-renta-2025-espana",
+    title: "Cómo hacer la declaración de la renta 2025 paso a paso",
+    description:
+      "Guía completa para presentar la declaración de la renta 2025 en España: quién está obligado, plazos, cómo acceder al borrador y cómo confirmarlo con Renta Web.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-04-08",
+    relatedCalculators: [
+      { pais: "espana", slug: "declaracion-renta-2025", name: "Calculadora Declaración Renta 2025" },
+      { pais: "espana", slug: "calculadora-irpf", name: "Calculadora IRPF" },
+    ],
+    content: `
+<h2>¿Cuándo empieza la campaña de la renta 2025?</h2>
+<p>La Agencia Tributaria abre la campaña de la renta 2025 el <strong>2 de abril de 2026</strong>. El plazo para presentar la declaración finaliza el <strong>30 de junio de 2026</strong>. Si el resultado sale a ingresar y domicilias el pago, el plazo termina el 25 de junio.</p>
 
+<h2>¿Quién está obligado a declarar?</h2>
+<p>Debes presentar la declaración si cumples alguno de estos supuestos:</p>
+<ul>
+  <li>Rendimientos del trabajo superiores a <strong>22.000 €</strong> anuales con un único pagador.</li>
+  <li>Rendimientos del trabajo superiores a <strong>15.000 €</strong> con dos o más pagadores (si el segundo y sucesivos superan los 1.500 € en conjunto).</li>
+  <li>Rendimientos del capital mobiliario (dividendos, intereses) o ganancias patrimoniales superiores a <strong>1.600 €</strong>.</li>
+  <li>Rendimientos inmobiliarios, ganancias patrimoniales o imputaciones de renta superiores a <strong>1.000 €</strong>.</li>
+</ul>
+
+<h2>Paso 1 — Accede al borrador</h2>
+<p>Entra en <strong>Renta Web</strong> a través de la web de la Agencia Tributaria (<em>sede.agenciatributaria.gob.es</em>). Puedes identificarte con certificado digital, DNIe, Cl@ve PIN o número de referencia (casilla 505 de la renta anterior + importe del borrador del año pasado).</p>
+
+<h2>Paso 2 — Revisa el borrador</h2>
+<p>La Agencia Tributaria habrá precargado los datos fiscales de los que dispone (salarios, retenciones, inmuebles, hipotecas…). Revísalos detenidamente porque el borrador no siempre está completo:</p>
+<ul>
+  <li>Verifica que aparecen todos tus pagadores (si cambiaste de empresa a mitad de año).</li>
+  <li>Comprueba los rendimientos de alquiler si eres propietario.</li>
+  <li>Añade deducciones autonómicas que no estén cargadas automáticamente.</li>
+</ul>
+
+<h2>Paso 3 — Introduce tus deducciones</h2>
+<p>Las deducciones reducen la cuota final que pagas. Las más habituales son:</p>
+<ul>
+  <li><strong>Plan de pensiones:</strong> hasta 1.500 € anuales de reducción en la base imponible.</li>
+  <li><strong>Hipoteca anterior a 2013:</strong> 15% sobre las cantidades pagadas (máximo 9.040 €).</li>
+  <li><strong>Donativos:</strong> 80% de los primeros 150 € y 40% del resto.</li>
+  <li><strong>Deducciones autonómicas:</strong> varían según tu comunidad autónoma.</li>
+</ul>
+
+<h2>Paso 4 — Confirma y presenta</h2>
+<p>Una vez revisado, haz clic en <em>"Confirmar borrador / Declaración"</em>. Si el resultado es:</p>
+<ul>
+  <li><strong>A devolver:</strong> Hacienda te ingresará el importe en la cuenta bancaria que indiques en un plazo máximo de 6 meses.</li>
+  <li><strong>A ingresar:</strong> Puedes domiciliar el pago o realizarlo por adeudo directo. También puedes fraccionar el pago en dos plazos (60% en junio y 40% en noviembre).</li>
+</ul>
+
+<h2>Consejo final</h2>
+<p>No esperes al último día. Presentar la declaración a principios de abril te garantiza recibir la devolución antes del verano y evitar posibles cuellos de botella en la web de la AEAT.</p>
+    `.trim(),
+  },
+  {
+    slug: "deducciones-irpf-2025-que-no-debes-olvidar",
+    title: "Las 8 deducciones del IRPF 2025 que no debes olvidar",
+    description:
+      "Descubre las deducciones fiscales más importantes en la renta 2025: planes de pensiones, hipoteca, donativos, maternidad y más. Ahorra en tu declaración.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-04-08",
+    relatedCalculators: [
+      { pais: "espana", slug: "declaracion-renta-2025", name: "Calculadora Declaración Renta 2025" },
+      { pais: "espana", slug: "tramos-irpf-2026", name: "Tramos IRPF 2025" },
+    ],
+    content: `
+<h2>¿Qué son las deducciones del IRPF?</h2>
+<p>Las deducciones del IRPF son importes que se restan directamente de la <strong>cuota líquida</strong> (lo que pagarías sin deducciones) o de la base imponible, reduciendo así la cantidad que abones a Hacienda. Muchos contribuyentes las desconocen y acaban pagando más de lo necesario.</p>
+
+<h2>1. Plan de pensiones o mutualidad</h2>
+<p>Puedes reducir tu base imponible general en las aportaciones a planes de pensiones individuales hasta <strong>1.500 € anuales</strong> (o el 30% de los rendimientos netos del trabajo, si es menor). Si tu empresa también aporta a un plan de empleo, el límite conjunto sube a 10.000 €.</p>
+
+<h2>2. Deducción por hipoteca anterior a 2013</h2>
+<p>Si compraste tu vivienda habitual antes del 1 de enero de 2013, tienes derecho a deducirte el <strong>15% de las cantidades pagadas</strong> durante el año, con una base máxima de <strong>9.040 €</strong>. Esto supone hasta 1.356 € de deducción anual.</p>
+
+<h2>3. Donativos a ONGs y fundaciones</h2>
+<p>El 80% de los primeros 150 € donados y el 40% del resto se deducen de la cuota. Si llevas más de 2 años donando a la misma entidad, el porcentaje sube al 45% en el tramo superior.</p>
+
+<h2>4. Deducción por maternidad</h2>
+<p>Las madres trabajadoras con hijos menores de 3 años pueden deducirse hasta <strong>1.200 € anuales</strong> por cada hijo (100 €/mes). Pueden cobrarse de forma anticipada mensualmente o aplicarse en la declaración.</p>
+
+<h2>5. Familia numerosa o discapacidad</h2>
+<p>Las familias numerosas tienen derecho a deducciones de hasta 1.200 € (general) o 2.400 € (especial). Por cada ascendiente o descendiente con discapacidad, la deducción puede llegar a 1.200 €.</p>
+
+<h2>6. Gastos de alquiler de vivienda habitual (deducciones autonómicas)</h2>
+<p>Aunque la deducción estatal por alquiler desapareció en 2015, muchas comunidades autónomas mantienen sus propias deducciones. Consulta la normativa de tu comunidad: algunas permiten deducir hasta el 15-20% del alquiler pagado.</p>
+
+<h2>7. Rendimientos del trabajo: reducción por obtención</h2>
+<p>Esta reducción es automática y se aplica en el borrador. Permite reducir la base imponible hasta <strong>7.302 €</strong> para contribuyentes con rendimientos netos del trabajo inferiores a 14.047,50 €. Es inversamente proporcional al salario.</p>
+
+<h2>8. Inversión en empresas de nueva creación</h2>
+<p>Si inviertes en startups o empresas de nueva creación que cumplan ciertos requisitos, puedes deducirte el <strong>50% de la inversión</strong> hasta 100.000 €. Una de las deducciones más potentes para inversores.</p>
+
+<h2>Cómo aplicarlas en la declaración</h2>
+<p>Algunas deducciones (como la hipoteca) las carga automáticamente el borrador. Otras, como los donativos o las autonómicas, debes introducirlas tú manualmente. Usa nuestra calculadora de renta 2025 para estimar el impacto de cada deducción en tu resultado final.</p>
+    `.trim(),
+  },
+  {
+    slug: "reforma-laboral-mexico-2026",
+    title: "Reforma laboral México 2026: qué cambia para los trabajadores",
+    description:
+      "Conoce los cambios más importantes de la reforma laboral en México 2026: aumento de vacaciones, subcontratación, home office y nuevas prestaciones.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-04-05",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "mexico", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "mexico", slug: "calculadora-aguinaldo", name: "Calculadora de Aguinaldo" },
+    ],
+    content: `
+<h2>Contexto de la reforma laboral en México</h2>
+<p>En los últimos años, México ha impulsado una serie de reformas a la Ley Federal del Trabajo (LFT) orientadas a mejorar las condiciones de los trabajadores. Los cambios más relevantes que afectan a tu nómina y finiquito en 2026 son los siguientes.</p>
+
+<h2>Aumento del periodo vacacional</h2>
+<p>La reforma de 2023 duplicó el período mínimo de vacaciones. A partir de su entrada en vigor:</p>
+<ul>
+  <li>En el <strong>primer año</strong> de trabajo: 12 días de vacaciones (antes 6).</li>
+  <li>En el <strong>segundo año</strong>: 14 días.</li>
+  <li>En el <strong>tercer año</strong>: 16 días.</li>
+  <li>En el <strong>cuarto año</strong>: 18 días.</li>
+  <li>Del quinto al noveno: 20 días.</li>
+  <li>A partir del décimo año: 2 días adicionales por cada 5 años.</li>
+</ul>
+<p>Esto impacta directamente en el cálculo del finiquito y las vacaciones proporcionales al renunciar o ser despedido.</p>
+
+<h2>Regulación del Home Office</h2>
+<p>El teletrabajo en México quedó regulado en la LFT. Los trabajadores en modalidad remota tienen derecho a:</p>
+<ul>
+  <li>Que el empleador proporcione o subsidie el equipo necesario (computadora, internet, silla ergonómica).</li>
+  <li>Derecho a la desconexión digital fuera del horario laboral.</li>
+  <li>Las mismas condiciones salariales y prestaciones que el trabajo presencial.</li>
+</ul>
+
+<h2>Subcontratación (outsourcing)</h2>
+<p>La reforma de 2021 prohibió la subcontratación de personal en términos generales. Ahora las empresas solo pueden subcontratar <strong>servicios especializados</strong> distintos al objeto social de la empresa contratante, con registro ante el REPSE. Esto garantiza que los trabajadores tengan un patrón directo responsable de sus prestaciones.</p>
+
+<h2>Salario mínimo en alza</h2>
+<p>México ha incrementado el salario mínimo de forma sostenida. En 2026, el salario mínimo general supera los <strong>278 pesos diarios</strong> (más de 8.400 pesos mensuales), con un incremento especial en la Zona Libre de la Frontera Norte.</p>
+
+<h2>¿Cómo afecta a tu finiquito?</h2>
+<p>El aumento en días de vacaciones incrementa el importe de tu finiquito si renuncias, ya que las vacaciones proporcionales se calculan sobre el nuevo período. Usa nuestra calculadora actualizada para obtener el importe exacto con la normativa vigente.</p>
+    `.trim(),
+  },
+  {
+    slug: "salario-minimo-2026-latinoamerica",
+    title: "Salario mínimo 2026 en Latinoamérica: comparativa actualizada",
+    description:
+      "Comparativa del salario mínimo 2026 en México, Colombia, Chile, Perú, Argentina, Ecuador y más países de América Latina. Datos actualizados en euros.",
+    country: null,
+    countryName: null,
+    publishDate: "2026-04-01",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Calculadora Nómina Neta México" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora Liquidación Colombia" },
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora Finiquito Chile" },
+    ],
+    content: `
+<h2>¿Por qué importa el salario mínimo?</h2>
+<p>El salario mínimo es la referencia base para calcular finiquitos, liquidaciones, indemnizaciones y prestaciones sociales en todos los países de la región. Un aumento del salario mínimo impacta directamente en tus derechos laborales al momento de salir de una empresa.</p>
+
+<h2>Salario mínimo 2026 por país</h2>
+<p>Los datos siguientes corresponden al salario mínimo mensual vigente a enero de 2026:</p>
+<ul>
+  <li><strong>México:</strong> ~$8.400 MXN/mes (zona general) · ~$12.600 MXN/mes (zona frontera norte)</li>
+  <li><strong>Colombia:</strong> $1.423.500 COP/mes + auxilio de transporte de $174.897 COP</li>
+  <li><strong>Chile:</strong> $500.000 CLP/mes (aproximadamente)</li>
+  <li><strong>Perú:</strong> S/1.025/mes (Remuneración Mínima Vital)</li>
+  <li><strong>Argentina:</strong> Variable — actualizado trimestralmente por el SMVM</li>
+  <li><strong>Ecuador:</strong> $460 USD/mes</li>
+  <li><strong>Bolivia:</strong> Bs. 2.500/mes</li>
+  <li><strong>Venezuela:</strong> Actualizado frecuentemente — consultar SENIAT</li>
+  <li><strong>Costa Rica:</strong> Variable por categoría ocupacional — mínimo ~¢245.000/mes</li>
+</ul>
+
+<h2>México: incremento sostenido</h2>
+<p>México ha experimentado los mayores aumentos porcentuales de salario mínimo en la región durante los últimos 5 años, con crecimientos superiores al 20% anual. El objetivo del gobierno es acercarse a un salario digno en relación con la canasta básica.</p>
+
+<h2>Colombia: ajuste anual por inflación</h2>
+<p>El salario mínimo en Colombia se negocia cada año entre el gobierno, los empresarios y los sindicatos. El reajuste de 2026 fue superior a la inflación, lo que supone una mejora del poder adquisitivo real.</p>
+
+<h2>Chile: hacia los $500.000 CLP</h2>
+<p>Chile completó en 2025 su plan de incrementos graduales del salario mínimo hasta alcanzar los 500.000 pesos, uno de los más altos en términos absolutos de la región.</p>
+
+<h2>¿Cómo afecta a tus prestaciones?</h2>
+<p>En la mayoría de países, el salario mínimo es la base para calcular:</p>
+<ul>
+  <li>Indemnizaciones por despido.</li>
+  <li>Prestaciones sociales y cesantías.</li>
+  <li>Pensiones contributivas.</li>
+  <li>Multas laborales que los empleadores deben pagar.</li>
+</ul>
+<p>Usa nuestras calculadoras por país para conocer el impacto exacto en tu caso.</p>
+    `.trim(),
+  },
+  {
+    slug: "vacaciones-no-disfrutadas-finiquito-espana",
+    title: "Vacaciones no disfrutadas al finiquito: qué te corresponde en España",
+    description:
+      "¿Qué pasa con las vacaciones que no has disfrutado cuando dejas la empresa en España? Te explicamos cuánto te deben pagar y cómo calcularlo.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-03-28",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-finiquito", name: "Calculadora de Finiquito" },
+      { pais: "espana", slug: "calculadora-paro", name: "Calculadora de Paro" },
+    ],
+    content: `
+<h2>¿Puedo cobrar las vacaciones no disfrutadas?</h2>
+<p>Sí. Cuando termina una relación laboral en España, ya sea por renuncia, despido o fin de contrato, el trabajador tiene derecho a cobrar en el finiquito el importe correspondiente a los días de vacaciones que no haya podido disfrutar. Esto es un derecho irrenunciable según el <strong>Estatuto de los Trabajadores (Art. 38)</strong>.</p>
+
+<h2>¿Cuántos días de vacaciones me corresponden?</h2>
+<p>El mínimo legal en España es de <strong>30 días naturales</strong> por año completo trabajado (Art. 38 ET). Si no has completado el año, se calcula de forma proporcional:</p>
+<p><em>Días de vacaciones = 30 días × meses trabajados / 12</em></p>
+<p>Si tu convenio colectivo establece más días, prevalece el convenio.</p>
+
+<h2>¿Cómo se calcula el importe?</h2>
+<p>El pago se hace a razón del <strong>salario diario ordinario</strong>, incluyendo los conceptos salariales fijos (no los extraordinarios o variables si no son habituales):</p>
+<p><em>Importe vacaciones = Salario diario bruto × días de vacaciones pendientes</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Imagina que ganas 2.000 € brutos al mes y llevas 8 meses trabajados en el año, sin haber disfrutado ninguna vacación:</p>
+<ul>
+  <li>Días de vacaciones proporcionales: 30 × 8 / 12 = <strong>20 días</strong></li>
+  <li>Salario diario: 2.000 € × 12 / 365 = <strong>65,75 €/día</strong></li>
+  <li>Importe a cobrar: 20 × 65,75 = <strong>1.315 €</strong></li>
+</ul>
+
+<h2>¿Y si me despiden sin haber podido disfrutar las vacaciones?</h2>
+<p>Si el despido se produce antes de que puedas disfrutar las vacaciones, el importe íntegro se incluye en el finiquito. El empleador no puede "cancelar" las vacaciones devengadas. Si lo hace, incurre en un incumplimiento del Estatuto de los Trabajadores.</p>
+
+<h2>¿Caducan las vacaciones no disfrutadas?</h2>
+<p>El Tribunal de Justicia de la Unión Europea (TJUE) ha establecido que las vacaciones no pueden caducar automáticamente al final del año si el empleado no pudo disfrutarlas por causas como baja médica. Sin embargo, en situaciones normales el plazo de disfrute lo fija el convenio colectivo.</p>
+
+<h2>Revisa tu finiquito antes de firmarlo</h2>
+<p>Usa nuestra calculadora de finiquito para verificar que el importe de las vacaciones no disfrutadas está correctamente calculado. Si el importe que te ofrece la empresa no coincide, tienes derecho a no firmarlo y a reclamar.</p>
+    `.trim(),
+  },
+];
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);

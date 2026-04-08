@@ -4,6 +4,7 @@ import Link from "next/link";
 import { countries, getAllCalculatorPaths } from "@/data/countries";
 import { salariosMinimos } from "@/data/salarios-minimos";
 import { articles } from "@/data/articles";
+import DeclaracionRentaRapida from "@/components/DeclaracionRentaRapida";
 
 // Global tools not in countries.ts (update this when adding new standalone pages)
 const GLOBAL_TOOLS = [
@@ -22,14 +23,14 @@ const TOTAL_CALCULATORS = getAllCalculatorPaths().length + GLOBAL_TOOLS.length;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Calculadoras Laborales Gratis 2026 | 10 Países | CalculaLaboral",
+    absolute: "Declaración Renta 2025 + Calculadoras Laborales | CalculaLaboral",
   },
   description:
-    "Calcula gratis tu finiquito, liquidacion, aguinaldo, vacaciones, cesantias, indemnizacion, CTS y mas en 10 paises hispanohablantes. Resultados instantaneos y precisos.",
+    "Calcula tu declaracion de la renta 2025 gratis: ¿a devolver o a pagar? Tambien finiquito, liquidacion, aguinaldo, vacaciones y mas en 10 paises hispanohablantes.",
   openGraph: {
-    title: "Calculadoras Laborales Gratis 2026 | 10 Países Hispanohablantes",
+    title: "Declaración Renta 2025 + Calculadoras Laborales | CalculaLaboral",
     description:
-      "Calcula gratis tu finiquito, liquidacion, aguinaldo y mas en Mexico, Colombia, Espana, Argentina, Chile, Peru y mas.",
+      "Calculadora declaracion renta 2025 gratis. Tambien finiquito, liquidacion, aguinaldo y mas en Mexico, Colombia, Espana, Argentina, Chile, Peru y mas.",
     type: "website",
     url: "https://calculalaboral.net",
   },
@@ -172,6 +173,22 @@ const faqJsonLd = {
         text: "En España, la prestación por desempleo equivale al 70% de la base reguladora los primeros 180 días y al 60% a partir del día 181. La duración depende de los meses cotizados: mínimo 120 días cotizados para 4 meses de paro, hasta 720 días cotizados para 24 meses máximo.",
       },
     },
+    {
+      "@type": "Question",
+      name: "¿Tengo que hacer la declaración de la renta 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Estás obligado si tus rendimientos del trabajo superan los 22.000 € con un solo pagador, o los 15.000 € si tuvieras dos o más pagadores. La campaña de la renta 2025 transcurre del 2 de abril al 30 de junio de 2026.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuándo devuelve Hacienda el IRPF en España?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Si tu declaración sale a devolver, Hacienda tiene hasta 6 meses desde el fin de la campaña (30 de junio) para realizar el ingreso. En la práctica, la mayoría de devoluciones llegan en julio-agosto si declaras antes de mayo.",
+      },
+    },
   ],
 };
 
@@ -193,12 +210,12 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       {/* A) Hero */}
-      <section className="bg-white py-16 px-4">
+      <section className="bg-gradient-to-br from-blue-700 to-blue-900 py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight max-w-3xl">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-3xl">
             Calcula tus derechos laborales al instante
           </h1>
-          <p className="text-xl text-slate-600 mt-4 max-w-2xl leading-relaxed">
+          <p className="text-xl text-blue-100 mt-4 max-w-2xl leading-relaxed">
             Herramientas gratuitas, sin registro y actualizadas para
             trabajadores de 10 paises hispanohablantes.
           </p>
@@ -211,7 +228,7 @@ export default function HomePage() {
             ].map((badge) => (
               <span
                 key={badge}
-                className="bg-slate-100 text-slate-700 rounded-full px-4 py-1.5 text-sm font-medium"
+                className="bg-white/20 text-white border border-white/30 rounded-full px-4 py-1.5 text-sm font-medium"
               >
                 ✓ {badge}
               </span>
@@ -239,6 +256,55 @@ export default function HomePage() {
       </section>
 
       {/* ADSENSE SLOT */}
+
+      {/* RENTA 2025 SPOTLIGHT */}
+      <section className="py-10 px-4 bg-gradient-to-br from-amber-50 to-orange-50 border-b-2 border-amber-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              Campaña activa
+            </span>
+            <span className="text-sm text-amber-700 font-medium">
+              2 abril – 30 junio 2026
+            </span>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {/* Left: info + steps */}
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight mb-2">
+                Declaración de la Renta 2025
+              </h2>
+              <p className="text-slate-600 mb-6">
+                ¿Te devuelve Hacienda o tienes que pagar? Descúbrelo en 30 segundos.
+              </p>
+              <ol className="space-y-3 mb-6">
+                {[
+                  { num: "1", text: "Introduce tu salario bruto anual" },
+                  { num: "2", text: "Añade el IRPF que tu empresa te retuvo" },
+                  { num: "3", text: "Ve al instante si sale a devolver o a pagar" },
+                ].map(({ num, text }) => (
+                  <li key={num} className="flex items-center gap-3">
+                    <span className="flex-shrink-0 w-7 h-7 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                      {num}
+                    </span>
+                    <span className="text-slate-700 text-sm">{text}</span>
+                  </li>
+                ))}
+              </ol>
+              <Link
+                href="/espana/declaracion-renta-2025"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900 transition-colors"
+              >
+                Calculadora completa con alquiler, dividendos y deducciones →
+              </Link>
+            </div>
+            {/* Right: quick calculator */}
+            <div>
+              <DeclaracionRentaRapida />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* B2) Herramientas destacadas */}
       <section className="py-10 px-4 bg-white border-b border-slate-200">
@@ -579,6 +645,16 @@ export default function HomePage() {
                 q: "¿Cuánto me corresponde de indemnización por despido en Argentina?",
                 a: "La indemnización por despido sin causa en Argentina equivale a 1 mes de la mejor remuneración mensual por cada año de antigüedad (Art. 245 LCT), con un mínimo de 2 meses. Se suma la indemnización sustitutiva de preaviso y el SAC proporcional.",
                 link: "/argentina/calculadora-indemnizacion",
+              },
+              {
+                q: "¿Tengo que hacer la declaración de la renta 2025?",
+                a: "Estás obligado a declarar si tus rendimientos del trabajo superan los 22.000 € con un solo pagador, o los 15.000 € con dos o más pagadores. La campaña de la renta 2025 está abierta del 2 de abril al 30 de junio de 2026. Usa nuestra calculadora para ver si te sale a devolver o a pagar.",
+                link: "/espana/declaracion-renta-2025",
+              },
+              {
+                q: "¿Cuándo devuelve Hacienda el IRPF en España?",
+                a: "Si tu declaración sale a devolver, Hacienda tiene hasta 6 meses desde el 30 de junio para hacer el ingreso. En la práctica, si presentas antes de mayo la mayoría de devoluciones llegan en julio-agosto. Comprueba el estado en la app de la Agencia Tributaria.",
+                link: "/espana/declaracion-renta-2025",
               },
             ].map(({ q, a, link }) => (
               <details key={q} className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">

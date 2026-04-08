@@ -85,18 +85,41 @@ const COMPARADOR_COUNTRIES = ["mexico", "espana", "argentina", "colombia", "chil
 
 // Seasonal pages with high search spikes — shown in country hub
 const SEASONAL_PAGES: Record<string, Array<{ slug: string; label: string; description: string }>> = {
+  espana: [
+    { slug: "declaracion-renta-2025", label: "Declaración de la Renta 2025", description: "Campaña 2 abr – 30 jun 2026 · ¿A devolver o a pagar?" },
+    { slug: "tramos-irpf-2026", label: "Tramos IRPF 2026", description: "Tabla completa de tramos y tipos marginales" },
+  ],
   mexico: [
     { slug: "aguinaldo-2026", label: "Aguinaldo 2026", description: "¿Cuánto te corresponde en diciembre?" },
+    { slug: "declaracion-anual-2025", label: "Declaración Anual ISR 2025", description: "Plazo: 30 abril 2026 · SAT" },
   ],
   colombia: [
     { slug: "prima-servicios-2026", label: "Prima de Servicios 2026", description: "Junio y diciembre: calcula tu prima" },
+    { slug: "declaracion-renta-2025", label: "Declaración de Renta 2025", description: "Plazos agosto–octubre 2026 · DIAN" },
   ],
   peru: [
     { slug: "cts-mayo-2026", label: "CTS Mayo 2026", description: "¿Cuánto te depositan en mayo?" },
     { slug: "gratificacion-julio-2026", label: "Gratificación Julio 2026", description: "Un sueldo completo por Fiestas Patrias" },
+    { slug: "declaracion-anual-2025", label: "Declaración Anual Renta 2025", description: "Plazo: marzo–abril 2026 · SUNAT" },
   ],
   argentina: [
     { slug: "sac-junio-2026", label: "SAC Junio 2026", description: "Calcula tu aguinaldo del primer semestre" },
+    { slug: "impuesto-ganancias-2025", label: "Impuesto a las Ganancias 2025", description: "Declaración Jurada: mayo–junio 2026 · ARCA" },
+  ],
+  chile: [
+    { slug: "declaracion-renta-2025", label: "Declaración de Renta 2025", description: "Plazo: 30 abril 2026 · SII" },
+  ],
+  ecuador: [
+    { slug: "impuesto-renta-2025", label: "Impuesto a la Renta 2025", description: "Plazo: marzo–abril 2026 · SRI" },
+  ],
+  venezuela: [
+    { slug: "islr-2025", label: "ISLR 2025", description: "Declaración Definitiva: 31 marzo 2026 · SENIAT" },
+  ],
+  "costa-rica": [
+    { slug: "declaracion-d101-2025", label: "Declaración D-101 2025", description: "Impuesto sobre Utilidades · 15 dic 2025" },
+  ],
+  bolivia: [
+    { slug: "iue-2025", label: "IUE 2025", description: "Impuesto sobre Utilidades · Plazo según cierre fiscal" },
   ],
 };
 
@@ -172,6 +195,11 @@ const categoryKeywords: { label: string; keywords: string[] }[] = [
       "iess",
       "seguridad",
       "nomina-neta",
+      "declaracion-renta",
+      "declaracion-anual",
+      "ganancias",
+      "islr",
+      "iue",
     ],
   },
 ];

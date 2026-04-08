@@ -1574,6 +1574,7 @@ export const articles: Article[] = [
     countryName: "España",
     publishDate: "2026-03-15",
     relatedCalculators: [
+      { pais: "espana", slug: "declaracion-renta-2025", name: "Calculadora Declaración de la Renta 2025" },
       { pais: "espana", slug: "calculadora-irpf", name: "IRPF y Salario Neto" },
       { pais: "espana", slug: "calculadora-nomina-neta", name: "Nómina Neta (Bruto a Neto)" },
       { pais: "espana", slug: "calculadora-paro", name: "Prestación por Desempleo (Paro)" },

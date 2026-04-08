@@ -132,6 +132,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Declaración de renta pages (tax return season — 10 countries)
+  const declaracionRentaPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/espana/declaracion-renta-2025`,         lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.95 },
+    { url: `${BASE_URL}/mexico/declaracion-anual-2025`,          lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/colombia/declaracion-renta-2025`,        lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/chile/declaracion-renta-2025`,           lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/argentina/impuesto-ganancias-2025`,      lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/peru/declaracion-anual-2025`,            lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/ecuador/impuesto-renta-2025`,            lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
+    { url: `${BASE_URL}/venezuela/islr-2025`,                    lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.80 },
+    { url: `${BASE_URL}/costa-rica/declaracion-d101-2025`,       lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.80 },
+    { url: `${BASE_URL}/bolivia/iue-2025`,                       lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.80 },
+  ];
+
   // Seasonal pages (year-targeted, high search spike)
   const seasonalPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/mexico/aguinaldo-2026`, lastModified: DATE_SEASONAL, changeFrequency: "yearly" as const, priority: 0.85 },
@@ -180,6 +194,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...taxPages,
     comparativaSalarioPage,
     ...seasonalPages,
+    ...declaracionRentaPages,
     ...legalPages,
   ];
 }

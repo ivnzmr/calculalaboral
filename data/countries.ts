@@ -189,6 +189,11 @@ export const countries: CountriesConfig = {
         name: "Nómina Neta (Bruto a Neto)",
         description: "Salario bruto menos IRPF y Seguridad Social: cuánto cobras en mano cada mes",
       },
+      {
+        slug: "declaracion-renta-2025",
+        name: "Declaración de la Renta 2025",
+        description: "Calcula si tu declaración sale a devolver o a pagar: salario, alquiler, dividendos y deducciones",
+      },
     ],
   },
   argentina: {

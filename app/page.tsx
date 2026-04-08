@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { countries, getAllCalculatorPaths } from "@/data/countries";
 import { salariosMinimos } from "@/data/salarios-minimos";
+import { articles } from "@/data/articles";
 
 // Global tools not in countries.ts (update this when adding new standalone pages)
 const GLOBAL_TOOLS = [
@@ -285,7 +286,7 @@ export default function HomePage() {
                   Guias y articulos sobre derechos laborales: finiquito, liquidacion, vacaciones, horas extra y mas.
                 </p>
                 <span className="text-sm font-semibold text-blue-700">
-                  10 articulos disponibles &rarr;
+                  {articles.length} articulos disponibles &rarr;
                 </span>
               </div>
             </Link>

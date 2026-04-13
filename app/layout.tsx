@@ -385,6 +385,9 @@ export default function RootLayout({
                 &copy; 2026 CalculaLaboral. Todos los derechos reservados.
               </p>
               <div className="flex items-center gap-4 text-xs">
+                <Link href="/sobre-nosotros" className="text-slate-500 hover:text-white transition-colors">
+                  Sobre nosotros
+                </Link>
                 <Link href="/metodologia" className="text-slate-500 hover:text-white transition-colors">
                   Metodología
                 </Link>

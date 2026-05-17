@@ -4180,6 +4180,411 @@ export const articles: Article[] = [
 <p>Usa nuestra calculadora de finiquito para verificar que el importe de las vacaciones no disfrutadas está correctamente calculado. Si el importe que te ofrece la empresa no coincide, tienes derecho a no firmarlo y a reclamar.</p>
     `.trim(),
   },
+  // ─── NUEVOS ARTÍCULOS MAYO 2026 ───────────────────────────────────────────
+
+  {
+    slug: "vacaciones-venezuela-2026-cuantos-dias-corresponden",
+    title: "Vacaciones en Venezuela 2026: cuántos días te corresponden según la LOTTT",
+    description:
+      "¿Cuántos días de vacaciones te corresponden en Venezuela? La LOTTT garantiza mínimo 15 días hábiles más bono vacacional. Calcula tu derecho paso a paso con ejemplos reales.",
+    country: "venezuela",
+    countryName: "Venezuela",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "venezuela", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones Venezuela" },
+      { pais: "venezuela", slug: "calculadora-prestaciones-sociales", name: "Prestaciones Sociales" },
+    ],
+    content: `
+<h2>¿Cuántos días de vacaciones corresponden en Venezuela?</h2>
+<p>En Venezuela, el derecho a vacaciones está regulado por la <strong>Ley Orgánica del Trabajo, los Trabajadores y las Trabajadoras (LOTTT)</strong>, concretamente en sus artículos 190 al 198. Todo trabajador con más de un año ininterrumpido de servicio tiene derecho a un período de vacaciones remuneradas.</p>
+
+<h2>Días mínimos según la LOTTT (Art. 190)</h2>
+<p>La ley establece un mínimo de <strong>15 días hábiles</strong> de vacaciones el primer año. Este número se incrementa un día adicional por cada año de servicio:</p>
+<ul>
+  <li>1 año de servicio: <strong>15 días hábiles</strong></li>
+  <li>2 años: <strong>16 días hábiles</strong></li>
+  <li>3 años: <strong>17 días hábiles</strong></li>
+  <li>5 años: <strong>19 días hábiles</strong></li>
+  <li>10 años: <strong>24 días hábiles</strong></li>
+  <li>15 años: <strong>29 días hábiles</strong></li>
+</ul>
+<p>Muchos contratos colectivos o empleadores otorgan más días. En ese caso, prevalece el beneficio mayor (Art. 19 LOTTT, principio de favor al trabajador).</p>
+
+<h2>¿Qué es el bono vacacional?</h2>
+<p>Además de las vacaciones, la LOTTT establece un <strong>bono vacacional</strong> (Art. 192) que el empleador debe pagar cuando el trabajador sale de vacaciones. Este bono equivale a:</p>
+<ul>
+  <li>1 año de servicio: <strong>15 días de salario</strong></li>
+  <li>Cada año adicional: <strong>1 día más</strong> de bono</li>
+</ul>
+<p>Con 5 años, por ejemplo, el bono sería de 19 días de salario adicionales. El bono vacacional <strong>no es una prestación separada</strong>: se paga en conjunto con el salario de los días de vacaciones.</p>
+
+<h2>¿Cómo se calculan las vacaciones en Venezuela?</h2>
+<p>La fórmula básica para el pago de vacaciones es:</p>
+<p><em>Pago total de vacaciones = (Días hábiles de vacaciones + Días de bono vacacional) × Salario diario</em></p>
+<p>El <strong>salario diario</strong> se calcula dividiendo la remuneración mensual entre 30.</p>
+
+<h2>Ejemplo práctico de cálculo</h2>
+<p>Un trabajador con 3 años de servicio y salario mensual de Bs. 1.800.000 tiene derecho a:</p>
+<ul>
+  <li>Días de vacaciones: <strong>17 días hábiles</strong> (Art. 190 LOTTT)</li>
+  <li>Bono vacacional: <strong>17 días de salario</strong> (Art. 192: 15 + 2 adicionales)</li>
+  <li>Salario diario: Bs. 1.800.000 / 30 = <strong>Bs. 60.000</strong></li>
+  <li>Total vacaciones + bono: (17 + 17) × 60.000 = <strong>Bs. 2.040.000</strong></li>
+</ul>
+<p>Además, durante los días de vacaciones el trabajador sigue percibiendo su salario normal. El bono es un pago adicional encima de ese salario.</p>
+
+<h2>¿Cuándo se toman las vacaciones?</h2>
+<p>Las vacaciones deben disfrutarse dentro del año siguiente a que se generaron. El empleador fija la fecha de mutuo acuerdo con el trabajador, pero no puede negarlas indefinidamente. Si vence el período y el trabajador no tomó vacaciones por causa del empleador, este debe pagarlas como parte de las prestaciones sociales.</p>
+
+<h2>¿Qué pasa si me despiden con vacaciones pendientes?</h2>
+<p>Al término de la relación laboral, sea por despido, renuncia o cualquier otra causa, el empleador debe incluir en la liquidación el pago proporcional de vacaciones y bono vacacional no disfrutados. Esta cantidad se conoce como <strong>vacaciones fraccionadas</strong>.</p>
+<p><em>Vacaciones fraccionadas = (Días de vacaciones × meses trabajados del año en curso / 12) × Salario diario</em></p>
+
+<h2>Calcula tus vacaciones ahora</h2>
+<p>Usa nuestra calculadora de vacaciones Venezuela para obtener el monto exacto según tu antigüedad y salario, sin necesidad de hacer los cálculos a mano.</p>
+    `.trim(),
+  },
+
+  {
+    slug: "vacaciones-bolivia-2026-cuantos-dias-corresponden",
+    title: "Vacaciones en Bolivia 2026: días según antigüedad y cómo calcularlos",
+    description:
+      "¿Cuántos días de vacaciones te corresponden en Bolivia? La Ley General del Trabajo establece 15, 20 o 30 días según tu antigüedad. Calcula con ejemplos reales y fórmulas oficiales.",
+    country: "bolivia",
+    countryName: "Bolivia",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "bolivia", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones Bolivia" },
+      { pais: "bolivia", slug: "calculadora-liquidacion-final", name: "Liquidación Final Bolivia" },
+    ],
+    content: `
+<h2>¿Cuántos días de vacaciones corresponden en Bolivia?</h2>
+<p>En Bolivia, el derecho a vacaciones está regulado por el <strong>Artículo 44 de la Ley General del Trabajo (LGT)</strong> y el Decreto Reglamentario. Los días de vacaciones anuales pagadas dependen exclusivamente de la antigüedad del trabajador:</p>
+<ul>
+  <li>De 1 a 4 años de servicio: <strong>15 días hábiles</strong></li>
+  <li>De 5 a 9 años de servicio: <strong>20 días hábiles</strong></li>
+  <li>De 10 años en adelante: <strong>30 días hábiles</strong></li>
+</ul>
+<p>Los días son <strong>hábiles</strong>, lo que significa que no se cuentan sábados, domingos ni feriados nacionales.</p>
+
+<h2>¿Cuándo nace el derecho a vacaciones?</h2>
+<p>El trabajador adquiere el derecho a vacaciones después de cumplir <strong>un año continuo de trabajo</strong> con el mismo empleador. Para el primer año, no hay derecho a vacaciones (aunque algunos empleadores otorgan vacaciones proporcionales por política interna).</p>
+
+<h2>¿Cómo se calculan las vacaciones en Bolivia?</h2>
+<p>El pago de vacaciones equivale al salario que el trabajador habría percibido durante esos días. La fórmula es:</p>
+<p><em>Pago de vacaciones = Salario mensual / 30 × días hábiles de vacaciones</em></p>
+
+<h2>Ejemplo práctico</h2>
+<p>Un trabajador con 6 años de antigüedad y salario mensual de Bs. 3.500 tiene derecho a <strong>20 días hábiles</strong>:</p>
+<ul>
+  <li>Salario diario: Bs. 3.500 / 30 = <strong>Bs. 116,67</strong></li>
+  <li>Total vacaciones: 20 × 116,67 = <strong>Bs. 2.333</strong></li>
+</ul>
+<p>Este monto se paga antes de que el trabajador inicie sus vacaciones.</p>
+
+<h2>¿Cuándo se deben tomar las vacaciones?</h2>
+<p>Las vacaciones deben gozarse dentro del año siguiente a su generación. El empleador y el trabajador acuerdan la fecha. Si el empleador pospone repetidamente las vacaciones, el trabajador puede exigirlas formalmente. Las vacaciones no pueden ser sustituidas por dinero mientras dure el contrato (solo al finalizar la relación laboral).</p>
+
+<h2>¿Qué pasa con las vacaciones si me despiden o renuncio?</h2>
+<p>Al terminar la relación laboral, el empleador debe pagar las vacaciones proporcionales no disfrutadas. Si llevás, por ejemplo, 8 meses del año sin tomar vacaciones, te corresponden:</p>
+<p><em>Vacaciones proporcionales = (Días de vacaciones según antigüedad / 12) × meses trabajados en el año en curso</em></p>
+<p>Este monto se suma a la liquidación final junto con el aguinaldo proporcional y el desahucio si corresponde.</p>
+
+<h2>Diferencia entre días hábiles y días calendario</h2>
+<p>En Bolivia, las vacaciones se cuentan en días hábiles (lunes a viernes, excluyendo feriados). Esto es importante porque significa que si tus 15 días hábiles de vacaciones incluyen 3 feriados, en realidad disfrutarás de 18 días de ausencia del trabajo.</p>
+
+<h2>Calcula tus vacaciones Bolivia ahora</h2>
+<p>Usa nuestra calculadora de vacaciones Bolivia para obtener el monto exacto y los días que te corresponden según tu antigüedad y salario mensual.</p>
+    `.trim(),
+  },
+
+  {
+    slug: "cts-peru-mayo-2026-cuando-cuanto-depositan",
+    title: "CTS Perú mayo 2026: cuándo y cuánto te depositan exactamente",
+    description:
+      "El depósito de CTS de mayo 2026 en Perú se realiza entre el 1 y el 15 de mayo. Descubre cuánto te corresponde, cómo calcularlo y si puedes retirarlo.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS Perú" },
+      { pais: "peru", slug: "calculadora-liquidacion-final", name: "Liquidación Final Perú" },
+    ],
+    content: `
+<h2>¿Cuándo se deposita la CTS de mayo 2026?</h2>
+<p>El empleador tiene la obligación de depositar la <strong>Compensación por Tiempo de Servicios (CTS)</strong> del primer semestre entre el <strong>1 y el 15 de mayo de 2026</strong>. Este depósito corresponde al período octubre 2025 – marzo 2026 (6 meses). Si el 15 cae fin de semana o feriado, el plazo se extiende al siguiente día hábil.</p>
+<p>La CTS está regulada por el <strong>Texto Único Ordenado del Decreto Legislativo N° 650</strong>.</p>
+
+<h2>¿Cuánto CTS me depositan en mayo 2026?</h2>
+<p>El depósito equivale aproximadamente a <strong>medio sueldo bruto mensual</strong> por cada semestre completo trabajado. La fórmula exacta es:</p>
+<p><em>CTS semestral = (Remuneración mensual + 1/6 de gratificación) / 12 × meses trabajados en el semestre</em></p>
+<p>Si trabajaste los 6 meses completos (octubre 2025 – marzo 2026), el cálculo es sobre 6 meses.</p>
+
+<h2>¿Qué incluye la remuneración computable para CTS?</h2>
+<p>La base de cálculo incluye:</p>
+<ul>
+  <li><strong>Remuneración básica mensual</strong></li>
+  <li><strong>Asignación familiar</strong> si corresponde (S/ 102,50 en 2026)</li>
+  <li><strong>Promedio de comisiones o horas extra</strong> si son habituales (últimos 6 meses)</li>
+  <li><strong>1/6 de la gratificación</strong> (extraordinaria por el semestre)</li>
+</ul>
+<p>No se incluyen: conceptos no remunerativos, bonos esporádicos, movilidad condicionada, ni utilidades.</p>
+
+<h2>Ejemplo de cálculo CTS mayo 2026</h2>
+<p>Un trabajador con sueldo de S/ 2.500 mensuales y asignación familiar que trabajó los 6 meses completos:</p>
+<ul>
+  <li>Remuneración computable: S/ 2.500 + S/ 102,50 = <strong>S/ 2.602,50</strong></li>
+  <li>1/6 de gratificación: S/ 2.602,50 / 6 = <strong>S/ 433,75</strong></li>
+  <li>Base total: S/ 2.602,50 + S/ 433,75 = <strong>S/ 3.036,25</strong></li>
+  <li>CTS del semestre: S/ 3.036,25 / 12 × 6 = <strong>S/ 1.518,13</strong></li>
+</ul>
+
+<h2>¿En qué banco se deposita la CTS?</h2>
+<p>El trabajador elige el banco o cooperativa donde quiere recibir su CTS. Puedes cambiar de entidad financiera comunicándoselo al empleador con <strong>30 días de anticipación</strong> antes del depósito. Si no has elegido entidad, el empleador la deposita en la institución financiera con la que tenga convenio.</p>
+
+<h2>¿Puedo retirar la CTS en mayo 2026?</h2>
+<p>Sí, con ciertas condiciones. La ley vigente permite retirar el excedente por encima de <strong>4 remuneraciones brutas mensuales</strong> acumuladas en la cuenta CTS. Si tu saldo CTS acumulado supera ese monto, puedes retirar la diferencia.</p>
+<p>Para saber exactamente cuánto puedes retirar, consulta tu saldo en la entidad financiera donde está tu cuenta CTS.</p>
+
+<h2>¿Qué pasa si el empleador no deposita en mayo?</h2>
+<p>Si el empleador no realiza el depósito dentro del plazo (1 al 15 de mayo), <strong>incurre en mora automática</strong> y debe pagar intereses. El trabajador puede denunciarlo ante el Ministerio de Trabajo o la Superintendencia Nacional de Fiscalización Laboral (Sunafil).</p>
+
+<h2>Calcula tu CTS de mayo 2026</h2>
+<p>Usa nuestra calculadora de CTS Perú para obtener el monto exacto de tu depósito de mayo 2026 según tu remuneración y meses trabajados.</p>
+    `.trim(),
+  },
+
+  {
+    slug: "prima-servicios-colombia-junio-2026-cuanto-es",
+    title: "Prima de servicios Colombia junio 2026: cuánto te pagan y cuándo",
+    description:
+      "La prima de servicios de junio 2026 en Colombia se paga antes del 30 de junio. Equivale a 15 días de salario. Calcula el monto exacto con el salario mínimo 2026 y con tu sueldo real.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-prima-servicios", name: "Calculadora Prima de Servicios" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación" },
+    ],
+    content: `
+<h2>¿Cuándo se paga la prima de servicios en junio 2026?</h2>
+<p>El empleador debe pagar la <strong>primera prima de servicios del año</strong> a más tardar el <strong>30 de junio de 2026</strong>. Este pago corresponde al período enero – junio 2026. La segunda prima se paga antes del 20 de diciembre. La prima de servicios está regulada por el <strong>Artículo 306 del Código Sustantivo del Trabajo (CST)</strong>.</p>
+
+<h2>¿Cuánto es la prima de servicios de junio 2026?</h2>
+<p>La prima equivale a <strong>15 días de salario</strong> por cada semestre trabajado. Si trabajaste el semestre completo (enero–junio), la fórmula es:</p>
+<p><em>Prima semestral = Salario mensual × 15 / 30 = Salario mensual / 2</em></p>
+<p>Si trabajaste menos del semestre completo, se calcula de forma proporcional:</p>
+<p><em>Prima proporcional = Salario mensual × días trabajados en el semestre / 360</em></p>
+
+<h2>¿Cuánto es la prima con el salario mínimo 2026?</h2>
+<p>El salario mínimo mensual legal vigente (SMMLV) en Colombia para 2026 es de <strong>$ 1.423.500 COP</strong>. La prima de junio 2026 para quien gana el mínimo y trabajó el semestre completo es:</p>
+<ul>
+  <li>Prima semestral: $ 1.423.500 / 2 = <strong>$ 711.750 COP</strong></li>
+</ul>
+<p>Si tu empleador también paga auxilio de transporte ($ 200.000 en 2026) porque ganas hasta 2 salarios mínimos, ese auxilio <strong>se suma a la base de cálculo</strong> de la prima:</p>
+<ul>
+  <li>Base: $ 1.423.500 + $ 200.000 = $ 1.623.500</li>
+  <li>Prima con auxilio: $ 1.623.500 / 2 = <strong>$ 811.750 COP</strong></li>
+</ul>
+
+<h2>Ejemplos con diferentes salarios</h2>
+<table>
+  <thead><tr><th>Salario mensual</th><th>Prima junio 2026 (semestre completo)</th></tr></thead>
+  <tbody>
+    <tr><td>$ 1.423.500 (mínimo)</td><td><strong>$ 711.750</strong></td></tr>
+    <tr><td>$ 2.000.000</td><td><strong>$ 1.000.000</strong></td></tr>
+    <tr><td>$ 3.000.000</td><td><strong>$ 1.500.000</strong></td></tr>
+    <tr><td>$ 5.000.000</td><td><strong>$ 2.500.000</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>¿La prima incluye el auxilio de transporte?</h2>
+<p>Sí, siempre que el trabajador gane hasta <strong>dos salarios mínimos</strong> ($ 2.847.000 en 2026). En ese caso, el auxilio de transporte ($ 200.000) se suma al salario para calcular la prima. Quienes ganan más de ese límite no tienen auxilio de transporte y tampoco se incluye en la prima.</p>
+
+<h2>¿La prima tiene descuentos de seguridad social?</h2>
+<p>No. La prima de servicios <strong>no constituye salario</strong> para efectos legales (Art. 307 CST). Por tanto, no genera aportes a salud, pensión, ARL ni caja de compensación, y no sirve de base para calcular cesantías o vacaciones.</p>
+
+<h2>¿Si renuncio antes del 30 de junio pierdo la prima?</h2>
+<p>No. Tienes derecho a la prima proporcional por los días trabajados en el semestre (enero–junio). Si renuncias el 15 de mayo, te corresponde la prima proporcional de los meses de enero a mayo. El empleador debe incluirla en la liquidación final.</p>
+
+<h2>¿Qué pasa si el empleador no paga la prima antes del 30 de junio?</h2>
+<p>Si el empleador incumple el plazo, incurre en mora y debe pagar <strong>intereses moratorios</strong>. El trabajador puede presentar una queja ante el Ministerio de Trabajo o demandar ante el juez laboral. Las sanciones para el empleador pueden ser significativas.</p>
+
+<h2>Calcula tu prima de servicios ahora</h2>
+<p>Usa nuestra calculadora de prima de servicios Colombia para obtener el monto exacto según tu salario y los días trabajados en el semestre enero–junio 2026.</p>
+    `.trim(),
+  },
+
+  {
+    slug: "sac-junio-2026-cuanto-es-argentina",
+    title: "SAC junio 2026 Argentina: cuánto es el aguinaldo del primer semestre",
+    description:
+      "El SAC de junio 2026 en Argentina se paga antes del 30 de junio. Equivale al 50% de tu mejor sueldo del semestre. Calcula el monto exacto con ejemplos actualizados.",
+    country: "argentina",
+    countryName: "Argentina",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "argentina", slug: "calculadora-sac", name: "Calculadora SAC Argentina" },
+      { pais: "argentina", slug: "calculadora-liquidacion-final", name: "Liquidación Final Argentina" },
+    ],
+    content: `
+<h2>¿Cuándo se paga el SAC de junio 2026?</h2>
+<p>El <strong>Sueldo Anual Complementario (SAC)</strong>, conocido popularmente como aguinaldo, se paga en dos cuotas. La primera cuota del año debe abonarse <strong>antes del 30 de junio de 2026</strong>. El SAC está regulado por los <strong>artículos 121 a 123 de la Ley de Contrato de Trabajo (LCT)</strong>.</p>
+
+<h2>¿Cuánto es el SAC de junio 2026?</h2>
+<p>La primera cuota del SAC equivale al <strong>50% de la mejor remuneración mensual normal y habitual</strong> percibida en el período enero–junio 2026. La fórmula es:</p>
+<p><em>SAC primera cuota = Mejor remuneración mensual del semestre / 2</em></p>
+<p>Si no trabajaste el semestre completo (ingresaste después del 1 de enero o te vas antes del 30 de junio), el SAC es proporcional:</p>
+<p><em>SAC proporcional = (Mejor sueldo / 2) × días trabajados en el semestre / días totales del semestre</em></p>
+
+<h2>¿Qué es la "mejor remuneración"?</h2>
+<p>Se toma el <strong>mayor sueldo mensual normal y habitual</strong> percibido en los últimos 12 meses (para la cuota de junio: de enero a junio). "Normal y habitual" incluye:</p>
+<ul>
+  <li>Sueldo básico</li>
+  <li>Horas extra habituales (si se cobran regularmente todos los meses)</li>
+  <li>Comisiones regulares</li>
+  <li>Adicionales fijos</li>
+</ul>
+<p>No se incluyen bonos esporádicos, pagos extraordinarios de una sola vez ni conceptos no remunerativos.</p>
+
+<h2>Ejemplo de cálculo SAC junio 2026</h2>
+<p>Un trabajador con sueldo de $850.000 en enero, $880.000 en febrero, $880.000 en marzo, $920.000 en abril, $920.000 en mayo y $950.000 en junio:</p>
+<ul>
+  <li>Mejor sueldo del semestre: <strong>$950.000</strong> (junio)</li>
+  <li>SAC primera cuota: $950.000 / 2 = <strong>$475.000</strong></li>
+</ul>
+
+<h2>Ejemplo SAC proporcional (ingreso en marzo)</h2>
+<p>Si ingresaste el 1 de marzo y tu mejor sueldo fue $800.000, trabajando 122 días de un semestre de 181 días:</p>
+<ul>
+  <li>SAC proporcional: ($800.000 / 2) × (122 / 181) = <strong>$269.613</strong></li>
+</ul>
+
+<h2>¿El SAC paga impuestos?</h2>
+<p>El SAC está sujeto a <strong>retención del Impuesto a las Ganancias (IG)</strong> si el trabajador supera las deducciones del mínimo no imponible. En ese caso, el empleador retiene el impuesto sobre la cuota del SAC. Si tu sueldo no alcanza el mínimo imponible, cobrarás el SAC íntegro.</p>
+
+<h2>¿El SAC genera descuentos previsionales?</h2>
+<p>Sí. El SAC está sujeto a los descuentos de <strong>jubilación (11%), obra social (3%), ANSSAL (0,45%) y ley 19.032 (3%)</strong>, igual que el salario mensual. El empleador también hace sus aportes patronales sobre el SAC.</p>
+
+<h2>¿Si me despiden antes del 30 de junio pierdo el SAC?</h2>
+<p>No. Al desvincularte por cualquier causa (despido, renuncia, mutuo acuerdo), el empleador debe abonar el <strong>SAC proporcional</strong> correspondiente al tiempo trabajado en el semestre en curso. Este monto se incluye en la liquidación final y es irrenunciable.</p>
+
+<h2>Calcula tu SAC de junio 2026</h2>
+<p>Usa nuestra calculadora de SAC Argentina para obtener el monto exacto de tu primera cuota, con o sin proporcionalidad según los días trabajados en el semestre.</p>
+    `.trim(),
+  },
+
+  {
+    slug: "gratificacion-peru-julio-2026-cuanto-corresponde",
+    title: "Gratificación Perú julio 2026: cuánto te corresponde y cuándo se paga",
+    description:
+      "La gratificación de julio 2026 en Perú se paga antes del 15 de julio. Equivale a un sueldo completo. Calcula tu gratificación según tus meses trabajados y si incluye la bonificación extraordinaria.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-gratificacion", name: "Calculadora Gratificación Perú" },
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS Perú" },
+    ],
+    content: `
+<h2>¿Cuándo se paga la gratificación de julio 2026 en Perú?</h2>
+<p>La gratificación de Fiestas Patrias debe pagarse a más tardar el <strong>15 de julio de 2026</strong>. Es obligatoria para todos los trabajadores del régimen laboral general bajo contrato vigente. La gratificación está regulada por la <strong>Ley N° 27735</strong> y su reglamento.</p>
+
+<h2>¿Cuánto es la gratificación de julio 2026?</h2>
+<p>La gratificación equivale a <strong>una remuneración mensual completa</strong> si trabajaste los 6 meses del semestre (enero–junio). Si trabajaste menos, es proporcional:</p>
+<p><em>Gratificación = Remuneración mensual × meses completos trabajados / 6</em></p>
+<p>Solo se cuentan los meses completos (de 1 al último día del mes). Un mes trabajado parcialmente cuenta si se trabajó el último día del mes.</p>
+
+<h2>¿Qué incluye la remuneración para calcular la gratificación?</h2>
+<p>La base de cálculo incluye:</p>
+<ul>
+  <li><strong>Remuneración básica mensual</strong></li>
+  <li><strong>Asignación familiar</strong> (S/ 102,50 en 2026) si corresponde</li>
+  <li><strong>Promedio de comisiones o conceptos variables</strong> habituales de los últimos 6 meses</li>
+</ul>
+<p>No se incluyen: horas extra esporádicas, bonos no habituales, utilidades, ni conceptos no remunerativos.</p>
+
+<h2>Ejemplos de gratificación julio 2026</h2>
+<table>
+  <thead><tr><th>Sueldo mensual</th><th>Gratificación (6 meses)</th><th>Gratificación (4 meses)</th></tr></thead>
+  <tbody>
+    <tr><td>S/ 1.025 (mínimo)</td><td><strong>S/ 1.025</strong></td><td><strong>S/ 683</strong></td></tr>
+    <tr><td>S/ 2.000</td><td><strong>S/ 2.000</strong></td><td><strong>S/ 1.333</strong></td></tr>
+    <tr><td>S/ 3.500</td><td><strong>S/ 3.500</strong></td><td><strong>S/ 2.333</strong></td></tr>
+    <tr><td>S/ 5.000</td><td><strong>S/ 5.000</strong></td><td><strong>S/ 3.333</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué es la bonificación extraordinaria de la gratificación?</h2>
+<p>Desde la Ley N° 29351 (prorrogada permanentemente), las gratificaciones de julio y diciembre están <strong>inafectas a aportes a EsSalud</strong>. En lugar de descontar el 9% para EsSalud del empleador, ese monto se entrega al trabajador como <strong>bonificación extraordinaria</strong>:</p>
+<p><em>Bonificación extraordinaria = Gratificación × 9%</em></p>
+<p>Ejemplo: con gratificación de S/ 2.000, la bonificación extraordinaria es S/ 180. El trabajador recibe S/ 2.180 en total.</p>
+
+<h2>¿La gratificación tiene descuentos?</h2>
+<p>La gratificación sí está sujeta a:</p>
+<ul>
+  <li><strong>AFP u ONP</strong>: el trabajador aporta su porcentaje habitual sobre la gratificación</li>
+  <li><strong>Impuesto a la Renta de 5ta categoría</strong> si el trabajador supera el mínimo no imponible</li>
+</ul>
+<p>No se descuenta EsSalud del trabajador (solo del empleador, que en cambio entrega la bonificación extraordinaria).</p>
+
+<h2>¿Qué pasa si termino mi contrato antes del 15 de julio?</h2>
+<p>Si tu contrato termina antes del pago, tienes derecho a la <strong>gratificación trunca</strong>: la parte proporcional por los meses completos trabajados en el semestre enero–junio 2026.</p>
+
+<h2>Calcula tu gratificación de julio 2026</h2>
+<p>Usa nuestra calculadora de gratificación Perú para obtener el monto exacto incluyendo la bonificación extraordinaria, según tu remuneración y meses trabajados en el semestre.</p>
+    `.trim(),
+  },
+
+  {
+    slug: "vacaciones-peru-2026-30-dias-como-calcular",
+    title: "Vacaciones en Perú 2026: 30 días al año y cómo calcular el pago",
+    description:
+      "En Perú corresponden 30 días calendario de vacaciones por año. Aprende a calcular el pago de vacaciones, las vacaciones truncas y qué pasa si no te las otorgan.",
+    country: "peru",
+    countryName: "Perú",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "peru", slug: "calculadora-cts", name: "Calculadora CTS Perú" },
+      { pais: "peru", slug: "calculadora-gratificacion", name: "Calculadora Gratificación Perú" },
+    ],
+    content: `
+<h2>¿Cuántos días de vacaciones corresponden en Perú?</h2>
+<p>En Perú, todo trabajador con contrato a tiempo completo tiene derecho a <strong>30 días calendario de vacaciones</strong> remuneradas por cada año completo de servicio. Este derecho está regulado por el <strong>Decreto Legislativo N° 713</strong>.</p>
+<p>A diferencia de Venezuela o Bolivia, los días de vacaciones en Perú son <strong>días calendario</strong> (no hábiles), lo que significa que los fines de semana y feriados que caigan dentro del período de vacaciones sí se cuentan.</p>
+
+<h2>¿Qué requisitos necesito para tener vacaciones?</h2>
+<p>Para adquirir el derecho a 30 días de vacaciones, el trabajador debe:</p>
+<ul>
+  <li>Haber cumplido <strong>un año completo de servicios</strong> con el mismo empleador</li>
+  <li>Haber trabajado un mínimo de <strong>días efectivos</strong> en ese año (el reglamento establece mínimos según la jornada)</li>
+</ul>
+
+<h2>¿Cómo se calcula el pago de vacaciones?</h2>
+<p>El pago de vacaciones equivale a la remuneración que el trabajador hubiera percibido durante esos 30 días. La fórmula es:</p>
+<p><em>Pago vacaciones = Remuneración mensual bruta</em></p>
+<p>Es decir, recibes un sueldo completo adicional durante tus vacaciones. Si tu remuneración varía (comisiones, horas extra habituales), se toma el promedio de los últimos 6 meses.</p>
+
+<h2>¿Cuándo se deben tomar las vacaciones?</h2>
+<p>Las vacaciones deben gozarse dentro del año siguiente a haberse generado. El empleador fija la fecha, preferiblemente de acuerdo con el trabajador. Si el empleador no otorga las vacaciones dentro del plazo, el trabajador puede exigir la <strong>triple vacacional</strong>:</p>
+<ul>
+  <li>1 remuneración por las vacaciones no gozadas</li>
+  <li>1 remuneración como indemnización por no haberlas otorgado</li>
+  <li>1 remuneración como sanción al empleador</li>
+</ul>
+
+<h2>¿Puedo vender mis vacaciones?</h2>
+<p>Sí, pero solo parcialmente. El trabajador puede acordar con el empleador <strong>vender hasta 15 días</strong> de sus 30 días de vacaciones. Los otros 15 días son de disfrute obligatorio y no pueden compensarse en dinero.</p>
+
+<h2>¿Qué son las vacaciones truncas?</h2>
+<p>Si el contrato termina antes de que el trabajador complete el año para adquirir el derecho a vacaciones completas, se pagan las <strong>vacaciones truncas</strong>: la parte proporcional de los meses trabajados en el período en curso.</p>
+<p><em>Vacaciones truncas = (Remuneración mensual / 12) × meses trabajados en el año en curso</em></p>
+<p>Para tener derecho a vacaciones truncas, el trabajador debe haber prestado servicios al menos <strong>1 mes continuo</strong>.</p>
+
+<h2>Calcula tus derechos laborales en Perú</h2>
+<p>Usa nuestras calculadoras de CTS y gratificación para calcular todos tus derechos laborales en Perú de forma gratuita e inmediata.</p>
+    `.trim(),
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

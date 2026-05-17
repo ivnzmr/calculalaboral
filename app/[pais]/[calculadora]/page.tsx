@@ -1268,6 +1268,31 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
         },
       ],
     },
+    "calculadora-vacaciones": {
+      howItWorks: [
+        "Las vacaciones en Venezuela están reguladas por el Artículo 190 de la Ley Orgánica del Trabajo, los Trabajadores y las Trabajadoras (LOTTT). Todo trabajador tiene derecho a un período de vacaciones remuneradas de mínimo 15 días hábiles después del primer año de trabajo ininterrumpido con un mismo empleador. Por cada año adicional de servicio, el trabajador recibe 1 día hábil más de vacaciones, hasta un máximo de 30 días hábiles.",
+        "El salario para el pago de vacaciones es el salario normal devengado en el mes efectivo de labores inmediatamente anterior a la fecha del disfrute. Esto incluye el salario base más los beneficios que se perciben de forma regular (bono de producción, comisiones habituales, etc.). Adicionalmente, el trabajador tiene derecho a un bono vacacional: mínimo 15 días de salario el primer año, más 1 día por cada año adicional de servicio.",
+        "Si el contrato termina antes de que el trabajador tome sus vacaciones, el empleador debe pagar las vacaciones no disfrutadas de forma proporcional al tiempo trabajado en el año en curso. Las vacaciones son un derecho irrenunciable y su compensación en dinero sin que el trabajador las disfrute solo es válida al momento de la terminación de la relación laboral.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuántos días de vacaciones me corresponden en Venezuela?",
+          answer: "Según la LOTTT (Art. 190), te corresponden mínimo 15 días hábiles después del primer año. Por cada año adicional ganas 1 día más: 16 días el segundo año, 17 el tercero, y así hasta el máximo de 30 días hábiles con 15 o más años de servicio.",
+        },
+        {
+          question: "¿Qué es el bono vacacional en Venezuela?",
+          answer: "El bono vacacional es un pago adicional que se recibe junto con las vacaciones. El mínimo es 15 días de salario el primer año, más 1 día por cada año adicional de servicio. Por ejemplo, con 5 años de servicio corresponde un bono de 19 días de salario (15 + 4).",
+        },
+        {
+          question: "¿Cómo se calcula el pago de vacaciones en Venezuela?",
+          answer: "Se calcula sobre el salario normal del mes anterior al disfrute. Ejemplo: con salario de Bs. 5.000/mes, el salario diario es Bs. 166,67. Con 3 años de servicio (17 días de vacaciones): pago = Bs. 166,67 × 17 = Bs. 2.833,39. El bono vacacional (17 días adicionales) = Bs. 2.833,39 adicionales.",
+        },
+        {
+          question: "¿Qué pasa si no me otorgan las vacaciones?",
+          answer: "El empleador tiene 3 meses después de que el trabajador cumple el año para otorgar las vacaciones. Si no las otorga, el trabajador puede reclamar ante la Inspectoría del Trabajo. Al terminar la relación laboral, las vacaciones no disfrutadas deben pagarse con el salario actual, no el del momento en que nacieron.",
+        },
+      ],
+    },
     "calculadora-prestaciones-sociales": {
       howItWorks: [
         "Las prestaciones sociales en Venezuela (antes denominadas antigüedad) están reguladas por los Artículos 141 al 148 de la LOTTT. Son una garantía de ahorro obligatorio que el empleador debe depositar a nombre del trabajador. A partir del cuarto mes de servicio, el empleador deposita mensualmente el equivalente a 15 días de salario integral del trabajador en un fondo de prestaciones.",
@@ -1369,6 +1394,31 @@ const calculatorContent: Record<string, Record<string, CalculatorContent>> = {
         {
           question: "¿Se puede pagar el aguinaldo en cuotas?",
           answer: "No. El aguinaldo debe pagarse de forma íntegra antes del 20 de diciembre. El pago en cuotas no está autorizado legalmente. Si el empleador tiene dificultades financieras, puede solicitar autorización especial al Ministerio de Trabajo, pero no queda eximido de la obligación.",
+        },
+      ],
+    },
+    "calculadora-vacaciones": {
+      howItWorks: [
+        "Las vacaciones en Bolivia están reguladas por el Artículo 44 de la Ley General del Trabajo (LGT) y el Artículo 33 del Decreto Reglamentario. El derecho a vacaciones nace después de haber trabajado un año continuo con el mismo empleador. Los días de vacaciones son días hábiles (lunes a viernes, excluyendo festivos).",
+        "La cantidad de días de vacaciones varía según la antigüedad del trabajador: con 1 a 5 años de servicio se otorgan 15 días hábiles; entre 5 y 10 años, 20 días hábiles; y con más de 10 años de servicio, 30 días hábiles. Este aumento progresivo reconoce la lealtad y permanencia del trabajador en la empresa.",
+        "El pago de vacaciones equivale al salario promedio de los últimos 3 meses de trabajo. Si el trabajador termina su relación laboral sin haber disfrutado las vacaciones que le corresponden, el empleador debe pagarlas de forma proporcional al tiempo trabajado en el año en curso. Este monto se incluye en la liquidación final.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuántos días de vacaciones corresponden en Bolivia?",
+          answer: "Según la Ley General del Trabajo (Art. 44): con 1 a 5 años = 15 días hábiles; de 5 a 10 años = 20 días hábiles; más de 10 años = 30 días hábiles. Los días son hábiles (lunes a viernes, sin festivos).",
+        },
+        {
+          question: "¿Cómo se calcula el pago de vacaciones en Bolivia?",
+          answer: "El pago se calcula sobre el promedio salarial de los últimos 3 meses. Ejemplo: con salario de Bs. 4.500/mes y 2 años de servicio (15 días hábiles): salario diario = Bs. 4.500 / 30 = Bs. 150. Pago total = Bs. 150 × 15 = Bs. 2.250.",
+        },
+        {
+          question: "¿Qué pasa si renuncio y tengo vacaciones pendientes?",
+          answer: "Si renuncias o te despiden con vacaciones no disfrutadas, el empleador debe pagar el equivalente proporcional en la liquidación final. Se calcula sobre los meses trabajados en el año en curso: (días de vacaciones / 12) × meses trabajados.",
+        },
+        {
+          question: "¿Cuándo se tienen que pagar las vacaciones?",
+          answer: "Las vacaciones deben otorgarse dentro de los 3 meses siguientes al cumplimiento del año de trabajo. Si el empleador no las otorga, el trabajador puede reclamarlas ante el Ministerio de Trabajo o la vía judicial. No acumularlas y compensarlas en dinero (salvo al terminar el contrato) no está permitido.",
         },
       ],
     },

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countries, getAllCountrySlugs } from "@/data/countries";
 import { buildAlternates } from "@/lib/seo";
+import { articles } from "@/data/articles";
 
 type Props = {
   params: Promise<{ pais: string }>;
@@ -438,6 +439,40 @@ export default async function CountryPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {/* Related blog articles */}
+      {(() => {
+        const countryArticles = articles
+          .filter((a) => a.country === pais)
+          .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
+          .slice(0, 4);
+        if (countryArticles.length === 0) return null;
+        return (
+          <section>
+            <h2 className="text-lg font-bold text-slate-800 mb-3">
+              Guías laborales para {country.name}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {countryArticles.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/blog/${a.slug}`}
+                  className="group bg-white border border-slate-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-sm transition-all flex flex-col gap-1"
+                >
+                  <p className="text-sm font-semibold text-slate-800 group-hover:text-blue-700 transition-colors leading-snug">
+                    {a.title}
+                  </p>
+                  <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">{a.description}</p>
+                  <p className="text-xs font-medium text-blue-600 mt-1">Leer guía →</p>
+                </Link>
+              ))}
+            </div>
+            <Link href="/blog" className="mt-3 inline-block text-sm text-slate-500 hover:text-blue-600 transition-colors">
+              Ver todos los artículos del blog →
+            </Link>
+          </section>
+        );
+      })()}
 
       {/* Legal disclaimer */}
       <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 text-sm text-slate-700 leading-relaxed">

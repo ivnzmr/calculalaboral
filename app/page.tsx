@@ -360,6 +360,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Seasonal articles — hot right now */}
+      <section className="py-10 px-4 bg-gradient-to-br from-emerald-50 to-teal-50 border-y border-emerald-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              Guías de actualidad
+            </span>
+            <span className="text-sm text-emerald-700 font-medium">
+              Mayo – Julio 2026
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                slug: "cts-peru-mayo-2026-cuando-cuanto-depositan",
+                label: "CTS Perú mayo 2026",
+                desc: "Depósitos del 1 al 15 de mayo — ¿cuánto te depositan?",
+                badge: "Ahora",
+                badgeColor: "bg-red-500",
+              },
+              {
+                slug: "prima-servicios-colombia-junio-2026-cuanto-es",
+                label: "Prima Colombia junio 2026",
+                desc: "Vence el 30 de junio — calcula tu prima de servicios.",
+                badge: "Próximo",
+                badgeColor: "bg-amber-500",
+              },
+              {
+                slug: "sac-junio-2026-cuanto-es-argentina",
+                label: "SAC Argentina junio 2026",
+                desc: "Aguinaldo del primer semestre — vence el 30 de junio.",
+                badge: "Próximo",
+                badgeColor: "bg-amber-500",
+              },
+              {
+                slug: "gratificacion-peru-julio-2026-cuanto-corresponde",
+                label: "Gratificación Perú julio 2026",
+                desc: "Un sueldo por Fiestas Patrias — se paga antes del 15 de julio.",
+                badge: "Julio",
+                badgeColor: "bg-blue-500",
+              },
+            ].map((item) => (
+              <Link
+                key={item.slug}
+                href={`/blog/${item.slug}`}
+                className="group bg-white border border-emerald-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-md transition-all flex flex-col gap-2"
+              >
+                <span className={`${item.badgeColor} text-white text-xs font-bold px-2 py-0.5 rounded-full self-start`}>
+                  {item.badge}
+                </span>
+                <p className="text-sm font-semibold text-slate-800 group-hover:text-emerald-700 transition-colors leading-snug">
+                  {item.label}
+                </p>
+                <p className="text-xs text-slate-500 leading-relaxed flex-1">{item.desc}</p>
+                <p className="text-xs font-medium text-emerald-700">Leer guía →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* C) Country cards */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">

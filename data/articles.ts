@@ -4585,6 +4585,243 @@ export const articles: Article[] = [
 <p>Usa nuestras calculadoras de CTS y gratificación para calcular todos tus derechos laborales en Perú de forma gratuita e inmediata.</p>
     `.trim(),
   },
+  // Chile vacaciones 2026
+  {
+    slug: "vacaciones-chile-2026-cuantos-dias-corresponden",
+    title: "Vacaciones en Chile 2026: cuántos días corresponden y cómo calcular el pago",
+    description:
+      "En Chile corresponden 15 días hábiles de feriado legal por año. Aprende a calcular el pago de vacaciones, las vacaciones proporcionales y qué pasa si no te las otorgan.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito Chile" },
+      { pais: "chile", slug: "calculadora-indemnizacion", name: "Calculadora Indemnización Chile" },
+    ],
+    content: `
+<h2>¿Cuántos días de vacaciones corresponden en Chile?</h2>
+<p>En Chile, todo trabajador con contrato indefinido o a plazo fijo tiene derecho a <strong>15 días hábiles de feriado legal</strong> remunerado por cada año de trabajo. Este derecho está regulado en el <strong>artículo 67 del Código del Trabajo</strong>.</p>
+<p>Los días hábiles en Chile son de lunes a viernes (sábados, domingos y feriados legales no se cuentan). Esto equivale aproximadamente a 3 semanas de descanso.</p>
+
+<table>
+  <thead>
+    <tr><th>Situación</th><th>Días de vacaciones</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Trabajador general</td><td>15 días hábiles</td></tr>
+    <tr><td>Trabajador del extremo sur (Art. 67 inc. 3)</td><td>20 días hábiles</td></tr>
+    <tr><td>Trabajadores con más de 10 años (Art. 68)</td><td>+1 día hábil por cada 3 años extras</td></tr>
+  </tbody>
+</table>
+
+<h2>Requisito: el año de trabajo</h2>
+<p>Para acceder al feriado legal de 15 días, el trabajador debe cumplir <strong>1 año continuo de trabajo</strong> con el mismo empleador. A diferencia de otros países, no existe una acumulación parcial durante el primer año — el derecho nace completo al cumplir el año.</p>
+<p>Sin embargo, las <strong>vacaciones proporcionales</strong> sí existen al momento de la terminación del contrato, aunque el trabajador no haya cumplido el año.</p>
+
+<h2>¿Cómo se calcula el pago de vacaciones en Chile?</h2>
+<p>El pago de vacaciones se calcula sobre la base del <strong>sueldo diario promedio</strong> de los últimos 3 meses.</p>
+<p><em>Remuneración diaria = Sueldo bruto mensual promedio / 30</em></p>
+<p><em>Pago de vacaciones = Remuneración diaria × 15 días hábiles</em></p>
+
+<h3>Ejemplo práctico</h3>
+<p>María trabaja en Santiago con un sueldo de $700.000 mensuales y tiene derecho a sus vacaciones anuales.</p>
+<ul>
+  <li>Remuneración diaria: $700.000 / 30 = <strong>$23.333</strong></li>
+  <li>Pago de vacaciones (15 días hábiles): $23.333 × 15 = <strong>$350.000</strong></li>
+</ul>
+<p>María recibirá $350.000 como remuneración vacacional, más su sueldo habitual del mes en que tome las vacaciones.</p>
+
+<h2>Vacaciones proporcionales en el finiquito</h2>
+<p>Cuando un contrato termina — ya sea por renuncia, despido o término de plazo — el empleador debe pagar las <strong>vacaciones proporcionales</strong> correspondientes al período trabajado en el año en curso que no fue completado.</p>
+<p><em>Vacaciones proporcionales = (15 días / 12 meses) × meses trabajados en el año en curso</em></p>
+
+<h3>Ejemplo de vacaciones proporcionales</h3>
+<p>Si Juan lleva 7 meses trabajando en el año en curso cuando es despedido:</p>
+<ul>
+  <li>15 ÷ 12 × 7 = <strong>8,75 días hábiles</strong></li>
+  <li>Si su sueldo es $800.000: pago diario = $26.667 × 8,75 = <strong>$233.333</strong></li>
+</ul>
+<p>Este monto debe incluirse en el finiquito y es irrenunciable.</p>
+
+<h2>Acumulación de vacaciones y feriado progresivo</h2>
+<p>Según el <strong>artículo 68 del Código del Trabajo</strong>, los trabajadores con más de 10 años de trabajo (para el mismo u otros empleadores) tienen derecho a un día adicional de vacaciones por cada 3 años que excedan los 10, siempre que el trabajador lleve al menos 3 años con el empleador actual.</p>
+<table>
+  <thead>
+    <tr><th>Años de servicio total</th><th>Días de vacaciones</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1 a 10 años</td><td>15 días hábiles</td></tr>
+    <tr><td>13 años (10 + 3 extras)</td><td>16 días hábiles</td></tr>
+    <tr><td>16 años (10 + 6 extras)</td><td>17 días hábiles</td></tr>
+    <tr><td>19 años (10 + 9 extras)</td><td>18 días hábiles</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué pasa si el empleador no otorga vacaciones?</h2>
+<p>Si el empleador no otorga las vacaciones dentro de los 2 años siguientes al nacimiento del derecho, el trabajador puede reclamar ante la <strong>Inspección del Trabajo</strong>. Las vacaciones no prescriben si no son disfrutadas por causas imputables al empleador. Al terminar el contrato, siempre deben pagarse en el finiquito.</p>
+
+<h2>Calcula tu finiquito e indemnización en Chile</h2>
+<p>Si tu contrato termina y quieres verificar cuánto te corresponde de vacaciones proporcionales e indemnización, usa nuestras calculadoras gratuitas.</p>
+    `.trim(),
+  },
+
+  // Ecuador décimo cuarto sueldo agosto 2026
+  {
+    slug: "decimo-cuarto-sueldo-ecuador-agosto-2026",
+    title: "Décimo Cuarto Sueldo Ecuador agosto 2026: cuándo se paga y cómo calcularlo",
+    description:
+      "El décimo cuarto sueldo en Ecuador se paga en agosto (Sierra y Oriente) y en marzo (Costa y Galápagos). Aprende a calcularlo con la fórmula oficial y ejemplos claros.",
+    country: "ecuador",
+    countryName: "Ecuador",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "ecuador", slug: "calculadora-decimo-cuarto", name: "Décimo Cuarto Sueldo" },
+      { pais: "ecuador", slug: "calculadora-decimo-tercero", name: "Décimo Tercer Sueldo" },
+    ],
+    content: `
+<h2>¿Qué es el décimo cuarto sueldo en Ecuador?</h2>
+<p>El décimo cuarto sueldo es una <strong>bonificación anual obligatoria</strong> equivalente a un Salario Básico Unificado (SBU). Está regulado por el <strong>artículo 111 del Código del Trabajo</strong> de Ecuador y todas las empresas privadas están obligadas a pagarlo, sin importar el salario del trabajador.</p>
+<p>Para 2026, el Salario Básico Unificado en Ecuador es de <strong>$460 USD</strong> mensuales (verificar con resolución ministerial vigente).</p>
+
+<h2>¿Cuándo se paga el décimo cuarto sueldo 2026?</h2>
+<p>La fecha de pago varía según la región geográfica:</p>
+<table>
+  <thead>
+    <tr><th>Región</th><th>Período de cálculo</th><th>Fecha de pago</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sierra y Amazonía</td><td>1 agosto 2025 – 31 julio 2026</td><td>Hasta el 15 de agosto 2026</td></tr>
+    <tr><td>Costa y Galápagos</td><td>1 marzo 2025 – 28 febrero 2026</td><td>Hasta el 15 de marzo 2026</td></tr>
+  </tbody>
+</table>
+<p><strong>Nota importante:</strong> Si el empleador acumula el décimo cuarto (opción de pago mensual), el trabajador recibe 1/12 del SBU cada mes junto con su sueldo, en lugar de recibirlo como pago único en agosto o marzo.</p>
+
+<h2>¿Cómo se calcula el décimo cuarto sueldo?</h2>
+<p>El cálculo es simple: todos los trabajadores que hayan trabajado el período completo (12 meses) reciben exactamente <strong>1 SBU = $460</strong>. No importa si ganas $460 o $2.000 — el décimo cuarto siempre es $460.</p>
+
+<h3>Cálculo proporcional (si no trabajaste el período completo)</h3>
+<p>Si ingresaste o te fuiste durante el período de cálculo, recibes la parte proporcional:</p>
+<p><em>Décimo cuarto proporcional = ($460 / 12) × meses trabajados</em></p>
+<p>O también:</p>
+<p><em>Décimo cuarto proporcional = ($460 / 365) × días trabajados</em></p>
+
+<h3>Ejemplos</h3>
+<table>
+  <thead>
+    <tr><th>Situación</th><th>Cálculo</th><th>Monto</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Período completo (12 meses)</td><td>$460 completo</td><td><strong>$460</strong></td></tr>
+    <tr><td>9 meses trabajados</td><td>$460 / 12 × 9</td><td><strong>$345</strong></td></tr>
+    <tr><td>6 meses trabajados</td><td>$460 / 12 × 6</td><td><strong>$230</strong></td></tr>
+    <tr><td>3 meses trabajados</td><td>$460 / 12 × 3</td><td><strong>$115</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué trabajadores tienen derecho al décimo cuarto?</h2>
+<ul>
+  <li>Todos los trabajadores en <strong>relación de dependencia</strong> del sector privado</li>
+  <li>Trabajadores a tiempo parcial (reciben el proporcional)</li>
+  <li>Trabajadores con contratos eventuales o por temporada (proporcional)</li>
+  <li><strong>No aplica</strong> para trabajadores del servicio doméstico (tienen régimen especial)</li>
+</ul>
+
+<h2>Diferencia entre décimo tercer y décimo cuarto sueldo</h2>
+<table>
+  <thead>
+    <tr><th>Concepto</th><th>Décimo Tercero</th><th>Décimo Cuarto</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Base de cálculo</td><td>Remuneraciones del año</td><td>1 SBU fijo ($460)</td></tr>
+    <tr><td>Varía con el salario</td><td>Sí</td><td>No</td></tr>
+    <tr><td>Período Sierra</td><td>Dic–Nov, pago hasta 24 dic</td><td>Ago–Jul, pago hasta 15 ago</td></tr>
+    <tr><td>Período Costa</td><td>Dic–Nov, pago hasta 24 dic</td><td>Mar–Feb, pago hasta 15 mar</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué pasa si no te pagan el décimo cuarto?</h2>
+<p>Si tu empleador no te paga el décimo cuarto en la fecha correspondiente, tiene una <strong>multa de 3 SBU adicionales</strong> por cada trabajador afectado. Puedes denunciarlo ante el <strong>Ministerio del Trabajo</strong> de Ecuador (ministeriodetrabajo.gob.ec) o la Inspectoría del Trabajo de tu provincia.</p>
+
+<h2>Calcula tu décimo cuarto sueldo en Ecuador</h2>
+<p>Usa nuestra calculadora gratuita de décimo cuarto sueldo para Ecuador y verifica exactamente cuánto te corresponde según tus meses trabajados.</p>
+    `.trim(),
+  },
+
+  // Costa Rica vacaciones 2026
+  {
+    slug: "vacaciones-costa-rica-2026-cuantos-dias-corresponden",
+    title: "Vacaciones en Costa Rica 2026: cuántos días corresponden y cómo se calculan",
+    description:
+      "En Costa Rica corresponden 2 semanas de vacaciones por cada 50 semanas trabajadas. Aprende la fórmula oficial, el cálculo del pago y tus derechos si renuncias.",
+    country: "costa-rica",
+    countryName: "Costa Rica",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "costa-rica", slug: "calculadora-vacaciones", name: "Calculadora de Vacaciones" },
+      { pais: "costa-rica", slug: "calculadora-cesantia", name: "Calculadora de Cesantía" },
+    ],
+    content: `
+<h2>¿Cuántos días de vacaciones corresponden en Costa Rica?</h2>
+<p>Según el <strong>artículo 153 del Código de Trabajo de Costa Rica</strong>, todo trabajador tiene derecho a <strong>2 semanas de vacaciones remuneradas</strong> por cada <strong>50 semanas de trabajo continuo</strong> (equivalente a aproximadamente 1 año).</p>
+<p>En días, esto equivale a <strong>12 días hábiles</strong> de vacaciones mínimas anuales (considerando una semana laboral de 6 días) o <strong>10 días hábiles</strong> si la jornada es de lunes a viernes.</p>
+
+<table>
+  <thead>
+    <tr><th>Semanas trabajadas</th><th>Días hábiles de vacaciones</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>50 semanas (año completo)</td><td>12 días hábiles (o 2 semanas)</td></tr>
+    <tr><td>25 semanas</td><td>6 días hábiles (proporcional)</td></tr>
+    <tr><td>12 semanas</td><td>~3 días hábiles (proporcional)</td></tr>
+  </tbody>
+</table>
+
+<h2>Cálculo del pago de vacaciones</h2>
+<p>El salario durante las vacaciones debe calcularse sobre la base del <strong>promedio de salarios ordinarios y extraordinarios</strong> de las últimas 50 semanas (o del período trabajado si es menor).</p>
+<p><em>Salario promedio diario = Salario total de las últimas 50 semanas / 350 días</em></p>
+<p><em>Pago de vacaciones = Salario promedio diario × 14 días (2 semanas)</em></p>
+
+<h3>Ejemplo práctico</h3>
+<p>Carlos trabaja en San José con un salario mensual de ₡600.000. Lleva 1 año continuo y toma sus vacaciones.</p>
+<ul>
+  <li>Salario anual: ₡600.000 × 12 = ₡7.200.000</li>
+  <li>Salario promedio diario: ₡7.200.000 / 350 = <strong>₡20.571</strong></li>
+  <li>Pago de vacaciones (14 días): ₡20.571 × 14 = <strong>₡287.994</strong></li>
+</ul>
+<p>Carlos recibirá ₡287.994 durante sus 2 semanas de vacaciones.</p>
+
+<h2>Vacaciones proporcionales al terminar el contrato</h2>
+<p>Si el contrato termina antes de completar las 50 semanas — ya sea por renuncia, despido o acuerdo — el trabajador tiene derecho a <strong>vacaciones proporcionales</strong>.</p>
+<p><em>Vacaciones proporcionales = (Semanas trabajadas × 2) / 50</em></p>
+<p>O de forma equivalente:</p>
+<p><em>Vacaciones proporcionales = Semanas trabajadas × 0.04 semanas</em></p>
+
+<h3>Ejemplo de proporcional</h3>
+<p>Ana lleva 30 semanas trabajando cuando renuncia.</p>
+<ul>
+  <li>Vacaciones proporcionales = (30 × 2) / 50 = <strong>1.2 semanas = ~7 días hábiles</strong></li>
+  <li>Con salario diario de ₡20.000: pago = ₡20.000 × (1.2 × 7) = <strong>₡168.000 aprox.</strong></li>
+</ul>
+
+<h2>¿Cuándo se deben tomar las vacaciones?</h2>
+<p>Según el Código de Trabajo:</p>
+<ul>
+  <li>Las vacaciones deben tomarse dentro de las <strong>15 semanas siguientes</strong> al cumplimiento de las 50 semanas</li>
+  <li>El empleador decide <strong>cuándo</strong> se toman, pero debe notificar con al menos <strong>15 días de anticipación</strong></li>
+  <li>Las vacaciones son <strong>irrenunciables</strong> — el empleador no puede pagarlas en efectivo para que el trabajador no las tome (salvo al terminar el contrato)</li>
+  <li>Solo se pueden acumular hasta un máximo de 2 períodos (a solicitud del trabajador con acuerdo del empleador)</li>
+</ul>
+
+<h2>Trabajadores de tiempo parcial</h2>
+<p>Los trabajadores a tiempo parcial (media jornada) también tienen derecho a vacaciones proporcionales. El cálculo se basa igualmente en las semanas trabajadas y el promedio de salario efectivamente devengado.</p>
+
+<h2>¿Qué hacer si no te otorgan vacaciones?</h2>
+<p>Si tu empleador no te otorga las vacaciones correspondientes dentro del plazo legal, puedes interponer una denuncia ante la <strong>Dirección Nacional e Inspección General de Trabajo</strong> del Ministerio de Trabajo y Seguridad Social (MTSS) de Costa Rica.</p>
+
+<h2>Calcula tus vacaciones y cesantía en Costa Rica</h2>
+<p>Usa nuestras calculadoras gratuitas de vacaciones y cesantía para Costa Rica para verificar exactamente cuánto te corresponde según tus semanas trabajadas y salario.</p>
+    `.trim(),
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

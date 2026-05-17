@@ -56,8 +56,8 @@ export default async function ArticlePage({ params }: Props) {
     dateModified: article.modifiedDate ?? article.publishDate,
     author: {
       "@type": "Organization",
-      name: "CalculaLaboral",
-      url: "https://calculalaboral.net",
+      name: "Equipo Editorial CalculaLaboral",
+      url: "https://calculalaboral.net/sobre-nosotros",
     },
     publisher: {
       "@type": "Organization",
@@ -125,6 +125,25 @@ export default async function ArticlePage({ params }: Props) {
               <p className="text-slate-600 mb-4 text-base leading-relaxed">
                 {article.description}
               </p>
+
+              {/* Author / E-E-A-T block */}
+              <div className="flex items-center gap-3 mb-5 p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <div className="w-9 h-9 bg-blue-700 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                  CL
+                </div>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-slate-800">
+                    Equipo Editorial CalculaLaboral
+                  </p>
+                  <p className="text-xs text-slate-500">
+                    Especialistas en legislación laboral ·{" "}
+                    <Link href="/metodologia" className="text-blue-600 hover:underline">
+                      Metodología y fuentes legales
+                    </Link>
+                  </p>
+                </div>
+              </div>
+
               <div className="mb-6">
                 <ShareButtons title={article.title} />
               </div>

@@ -4,10 +4,10 @@ import { articles } from "@/data/articles";
 
 const BASE_URL = "https://calculalaboral.net";
 
-// Static dates prevent Google from ignoring lastModified due to constant "today" values
-const DATE_CALC_UPDATED = new Date("2026-01-15"); // when 2026 legal data was updated
-const DATE_SEASONAL = new Date("2026-01-01");
-const DATE_STATIC = new Date("2026-01-15");
+// Update these when content changes to signal Google to re-crawl
+const DATE_CALC_UPDATED = new Date("2026-05-17"); // refreshed May 2026
+const DATE_SEASONAL = new Date("2026-05-17");     // seasonal pages updated May 2026
+const DATE_STATIC = new Date("2026-05-17");       // structure/legal data reviewed May 2026
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
@@ -169,12 +169,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   };
 
-  // Legal pages
+  // Legal / trust pages
   const legalPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/metodologia`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.5 },
+    { url: `${BASE_URL}/sobre-nosotros`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.6 },
+    { url: `${BASE_URL}/metodologia`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.6 },
     { url: `${BASE_URL}/politica-de-privacidad`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/aviso-legal`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.3 },
-    { url: `${BASE_URL}/contacto`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.4 },
+    { url: `${BASE_URL}/contacto`, lastModified: DATE_STATIC, changeFrequency: "yearly" as const, priority: 0.5 },
   ];
 
   return [

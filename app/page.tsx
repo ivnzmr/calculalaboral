@@ -23,14 +23,14 @@ const TOTAL_CALCULATORS = getAllCalculatorPaths().length + GLOBAL_TOOLS.length;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Declaración Renta 2025 + Calculadoras Laborales | CalculaLaboral",
+    absolute: "Calculadoras Laborales Gratis 2026 | México, Colombia, España | CalculaLaboral",
   },
   description:
-    "Calcula tu declaracion de la renta 2025 gratis: ¿a devolver o a pagar? Tambien finiquito, liquidacion, aguinaldo, vacaciones y mas en 10 paises hispanohablantes.",
+    "Calcula finiquito, liquidación, aguinaldo, vacaciones, nómina y más en 10 países hispanos. Gratis, sin registro, actualizado 2026. México, Colombia, España, Argentina, Chile, Perú y más.",
   openGraph: {
-    title: "Declaración Renta 2025 + Calculadoras Laborales | CalculaLaboral",
+    title: "Calculadoras Laborales Gratis 2026 | México, Colombia, España | CalculaLaboral",
     description:
-      "Calculadora declaracion renta 2025 gratis. Tambien finiquito, liquidacion, aguinaldo y mas en Mexico, Colombia, Espana, Argentina, Chile, Peru y mas.",
+      "Finiquito, liquidación, aguinaldo, vacaciones y nómina. Calculadoras laborales gratuitas para México, Colombia, España, Argentina, Chile, Perú, Ecuador, Venezuela, Costa Rica y Bolivia.",
     type: "website",
     url: "https://calculalaboral.net",
   },
@@ -143,10 +143,18 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "¿Cuánto es el finiquito por renuncia voluntaria?",
+      name: "¿Cuántos días de vacaciones me corresponden en Venezuela?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Al renunciar voluntariamente, el finiquito incluye: la parte proporcional del aguinaldo (mínimo 15 días/año según LFT en México), días de vacaciones no disfrutados y prima vacacional del 25%. No incluye los 3 meses de indemnización ni los 20 días por año, que solo aplican en despido injustificado.",
+        text: "En Venezuela, la LOTTT garantiza un mínimo de 15 días hábiles de vacaciones tras el primer año, más 1 día adicional por cada año de servicio. Además, se paga un bono vacacional de 15 días de salario el primer año, incrementándose 1 día por año adicional. Usa nuestra calculadora de vacaciones Venezuela para el cálculo exacto.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuántos días de vacaciones corresponden en Bolivia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En Bolivia, la Ley General del Trabajo otorga 15 días hábiles de vacaciones por año cumplido al trabajador con 1 a 5 años de antigüedad, 20 días entre 5 y 10 años, y 30 días con más de 10 años. Usa nuestra calculadora de vacaciones Bolivia para obtener el resultado al instante.",
       },
     },
     {
@@ -155,6 +163,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "En Colombia, la liquidación al terminar el contrato incluye cesantías equivalentes a 1 mes de salario por año trabajado, intereses del 12% sobre cesantías, prima de servicios proporcional (hasta 15 días por semestre) y vacaciones proporcionales. Usa nuestra calculadora para obtener el monto exacto.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuánto es la prima de servicios en Colombia en junio 2026?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "La prima de servicios en Colombia equivale a 15 días de salario por cada semestre trabajado. En junio se paga la primera prima del año, calculada sobre los días trabajados entre enero y junio. Si ganás el salario mínimo 2026 ($ 1.423.500 COP) y trabajaste el semestre completo, te corresponden aproximadamente $ 711.750 COP.",
       },
     },
     {
@@ -171,22 +187,6 @@ const faqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "En España, la prestación por desempleo equivale al 70% de la base reguladora los primeros 180 días y al 60% a partir del día 181. La duración depende de los meses cotizados: mínimo 120 días cotizados para 4 meses de paro, hasta 720 días cotizados para 24 meses máximo.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Tengo que hacer la declaración de la renta 2025?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Estás obligado si tus rendimientos del trabajo superan los 22.000 € con un solo pagador, o los 15.000 € si tuvieras dos o más pagadores. La campaña de la renta 2025 transcurre del 2 de abril al 30 de junio de 2026.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuándo devuelve Hacienda el IRPF en España?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Si tu declaración sale a devolver, Hacienda tiene hasta 6 meses desde el fin de la campaña (30 de junio) para realizar el ingreso. En la práctica, la mayoría de devoluciones llegan en julio-agosto si declaras antes de mayo.",
       },
     },
   ],
@@ -632,6 +632,21 @@ export default function HomePage() {
                 link: "/colombia/calculadora-liquidacion",
               },
               {
+                q: "¿Cuántos días de vacaciones me corresponden en Venezuela?",
+                a: "La LOTTT venezolana garantiza mínimo 15 días hábiles el primer año, más 1 día adicional por cada año de servicio. El bono vacacional también aumenta progresivamente: 15 días el primer año más 1 día por año adicional. Usa nuestra calculadora de vacaciones Venezuela para el cálculo exacto según tu antigüedad.",
+                link: "/venezuela/calculadora-vacaciones",
+              },
+              {
+                q: "¿Cuántos días de vacaciones corresponden en Bolivia?",
+                a: "La Ley General del Trabajo de Bolivia otorga 15 días hábiles con 1-5 años de antigüedad, 20 días entre 5 y 10 años, y 30 días con más de 10 años. Si renuncias o te despiden con vacaciones pendientes, se calculan proporcionalmente. Usa nuestra calculadora para obtener el resultado exacto.",
+                link: "/bolivia/calculadora-vacaciones",
+              },
+              {
+                q: "¿Cuánto es la prima de servicios en Colombia en junio 2026?",
+                a: "La prima de servicios equivale a 15 días de salario por cada semestre trabajado, pagadera en junio y diciembre. Con el salario mínimo 2026 ($ 1.423.500 COP) y semestre completo te corresponden aproximadamente $ 711.750 COP. Calcula el monto exacto con tu salario.",
+                link: "/colombia/prima-servicios-2026",
+              },
+              {
                 q: "¿Cuántos días de aguinaldo me corresponden en México?",
                 a: "La ley garantiza mínimo 15 días de salario de aguinaldo (Art. 87 LFT), pagadero antes del 20 de diciembre. Si trabajaste menos de un año, recibes la parte proporcional: salario diario × 15 × días trabajados ÷ 365.",
                 link: "/mexico/calculadora-aguinaldo",
@@ -645,16 +660,6 @@ export default function HomePage() {
                 q: "¿Cuánto me corresponde de indemnización por despido en Argentina?",
                 a: "La indemnización por despido sin causa en Argentina equivale a 1 mes de la mejor remuneración mensual por cada año de antigüedad (Art. 245 LCT), con un mínimo de 2 meses. Se suma la indemnización sustitutiva de preaviso y el SAC proporcional.",
                 link: "/argentina/calculadora-indemnizacion",
-              },
-              {
-                q: "¿Tengo que hacer la declaración de la renta 2025?",
-                a: "Estás obligado a declarar si tus rendimientos del trabajo superan los 22.000 € con un solo pagador, o los 15.000 € con dos o más pagadores. La campaña de la renta 2025 está abierta del 2 de abril al 30 de junio de 2026. Usa nuestra calculadora para ver si te sale a devolver o a pagar.",
-                link: "/espana/declaracion-renta-2025",
-              },
-              {
-                q: "¿Cuándo devuelve Hacienda el IRPF en España?",
-                a: "Si tu declaración sale a devolver, Hacienda tiene hasta 6 meses desde el 30 de junio para hacer el ingreso. En la práctica, si presentas antes de mayo la mayoría de devoluciones llegan en julio-agosto. Comprueba el estado en la app de la Agencia Tributaria.",
-                link: "/espana/declaracion-renta-2025",
               },
             ].map(({ q, a, link }) => (
               <details key={q} className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">

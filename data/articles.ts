@@ -4822,6 +4822,710 @@ export const articles: Article[] = [
 <p>Usa nuestras calculadoras gratuitas de vacaciones y cesantía para Costa Rica para verificar exactamente cuánto te corresponde según tus semanas trabajadas y salario.</p>
     `.trim(),
   },
+
+  // Período de prueba México 2026
+  {
+    slug: "periodo-de-prueba-mexico-2026",
+    title: "Período de prueba en México 2026: duración, derechos y qué pasa si te despiden",
+    description:
+      "En México el período de prueba puede durar hasta 30 días (o 180 días para puestos directivos). Conoce tus derechos durante la prueba y qué pasa si te rescinden el contrato.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-finiquito", name: "Calculadora de Finiquito México" },
+      { pais: "mexico", slug: "calculadora-aguinaldo", name: "Calculadora de Aguinaldo México" },
+    ],
+    content: `
+<h2>¿Qué es el período de prueba en México?</h2>
+<p>El período de prueba es un lapso inicial del contrato de trabajo durante el cual el empleador verifica que el trabajador cumple los requisitos y habilidades necesarias para el puesto. Está regulado en los <strong>artículos 39-A y 47 de la Ley Federal del Trabajo (LFT)</strong>.</p>
+<p>Si al concluir el período el empleador no notifica su decisión, el contrato se convierte automáticamente en <strong>contrato por tiempo indeterminado</strong>.</p>
+
+<h2>¿Cuánto dura el período de prueba en México?</h2>
+<table>
+  <thead>
+    <tr><th>Tipo de puesto</th><th>Duración máxima</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Trabajadores en general</td><td>30 días</td></tr>
+    <tr><td>Puestos de dirección, gerenciales o alta especialización técnica</td><td>180 días</td></tr>
+  </tbody>
+</table>
+<p>El período de prueba <strong>debe pactarse por escrito</strong> en el contrato de trabajo. Si no consta por escrito, no existe legalmente. Además, no puede repetirse para el mismo trabajador y el mismo puesto.</p>
+
+<h2>Derechos del trabajador durante el período de prueba</h2>
+<p>Un error frecuente es creer que durante la prueba el trabajador tiene menos derechos. Esto es falso. La LFT establece que durante el período de prueba el trabajador goza de <strong>todos los derechos de un trabajador de base</strong>:</p>
+<ul>
+  <li><strong>Inscripción al IMSS</strong> desde el primer día (salud, maternidad, riesgo de trabajo)</li>
+  <li><strong>Salario íntegro</strong> acordado, no inferior al salario mínimo</li>
+  <li><strong>Vacaciones proporcionales</strong> a los días trabajados</li>
+  <li><strong>Aguinaldo proporcional</strong> si el período abarca parte del año fiscal</li>
+  <li><strong>Prima vacacional proporcional</strong></li>
+  <li>Descanso semanal y días festivos obligatorios</li>
+</ul>
+
+<h2>¿Qué pasa si te despiden durante el período de prueba?</h2>
+<p>Si el empleador rescinde el contrato durante el período de prueba porque el trabajador no acreditó las capacidades requeridas, <strong>no se genera indemnización constitucional</strong> (3 meses de salario + 20 días/año). Sin embargo, el trabajador sí tiene derecho a:</p>
+<ul>
+  <li>Pago de los días trabajados</li>
+  <li>Parte proporcional de aguinaldo</li>
+  <li>Parte proporcional de prima vacacional</li>
+  <li>Vacaciones proporcionales no disfrutadas</li>
+</ul>
+<p>Si el empleador no puede acreditar que la rescisión se debió a la no acreditación de aptitudes, el despido puede considerarse <strong>injustificado</strong> y generar indemnización completa.</p>
+
+<h2>Restricciones importantes del período de prueba</h2>
+<ul>
+  <li>No puede usarse para el mismo trabajador y el mismo puesto más de una vez</li>
+  <li>No puede pactarse en contratos por obra o por temporada</li>
+  <li>No puede exceder los plazos máximos establecidos por la LFT</li>
+  <li>No puede usarse para evitar el pago de prestaciones — el empleador está obligado a inscribir al trabajador al IMSS desde el día 1</li>
+</ul>
+
+<h2>Diferencia entre período de prueba y período de capacitación inicial</h2>
+<p>La LFT también contempla el <strong>período de capacitación inicial</strong> (Art. 39-B), que puede durar hasta 3 meses (6 meses para puestos de dirección). Su objetivo es que el trabajador adquiera los conocimientos necesarios. Los derechos y consecuencias son similares al período de prueba.</p>
+
+<h2>Calcula tu finiquito si terminan tu contrato</h2>
+<p>Si tu relación laboral termina — ya sea al concluir la prueba o por despido — usa nuestra calculadora de finiquito para saber exactamente cuánto dinero te corresponde cobrar.</p>
+    `.trim(),
+  },
+
+  // Período de prueba Colombia 2026
+  {
+    slug: "periodo-de-prueba-colombia-2026",
+    title: "Período de prueba en Colombia 2026: duración máxima y derechos según el CST",
+    description:
+      "El período de prueba en Colombia puede durar hasta 2 meses para contratos indefinidos. Debe pactarse por escrito. Conoce tus derechos y qué pasa si te despiden durante la prueba.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación Colombia" },
+      { pais: "colombia", slug: "calculadora-cesantias", name: "Calculadora de Cesantías Colombia" },
+    ],
+    content: `
+<h2>¿Qué es el período de prueba en Colombia?</h2>
+<p>El período de prueba es una etapa inicial del contrato de trabajo que permite tanto al empleador como al trabajador evaluar si la relación laboral es conveniente para ambas partes. En Colombia está regulado en los <strong>artículos 76 al 80 del Código Sustantivo del Trabajo (CST)</strong>.</p>
+<p><strong>Requisito esencial:</strong> el período de prueba <em>debe pactarse por escrito</em>. Sin cláusula escrita en el contrato, no existe jurídicamente y el contrato se entiende celebrado en plenas condiciones desde el primer día.</p>
+
+<h2>¿Cuánto dura el período de prueba en Colombia?</h2>
+<table>
+  <thead>
+    <tr><th>Tipo de contrato</th><th>Duración máxima del período de prueba</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Contrato a término indefinido</td><td>2 meses</td></tr>
+    <tr><td>Contrato a término fijo inferior a 1 año</td><td>1/5 de la duración pactada (máximo 2 meses)</td></tr>
+    <tr><td>Contrato a término fijo de 1 año o más</td><td>2 meses</td></tr>
+  </tbody>
+</table>
+<p><em>Ejemplo:</em> un contrato a término fijo de 6 meses puede tener un período de prueba máximo de 36 días (6 meses × 30 días / 5 = 36 días).</p>
+
+<h2>Derechos del trabajador durante el período de prueba</h2>
+<p>En Colombia, el trabajador en período de prueba tiene <strong>plenas prestaciones sociales desde el día 1</strong>. No existe diferencia en derechos respecto a un trabajador con contrato definitivo:</p>
+<ul>
+  <li><strong>Afiliación a seguridad social</strong>: salud (EPS), pensión (AFP o Colpensiones) y ARL desde el primer día</li>
+  <li><strong>Prima de servicios</strong> proporcional</li>
+  <li><strong>Cesantías e intereses sobre cesantías</strong> proporcionales</li>
+  <li><strong>Vacaciones</strong> proporcionales</li>
+  <li><strong>Auxilio de transporte</strong> si el salario es inferior a 2 SMMLV</li>
+</ul>
+
+<h2>Terminación del contrato durante el período de prueba</h2>
+<p>Según el <strong>artículo 78 del CST</strong>, cualquiera de las partes puede dar por terminado el contrato durante el período de prueba <strong>sin preaviso y sin indemnización</strong>. Esta es la principal diferencia frente a un contrato en plena vigencia.</p>
+<p>Sin embargo, hay excepciones importantes:</p>
+<ul>
+  <li>Si la trabajadora está embarazada, el fuero de maternidad la protege incluso durante la prueba — el empleador necesita autorización del Inspector del Trabajo para terminar el contrato</li>
+  <li>Si el empleador termina el contrato por discriminación (raza, religión, afiliación sindical, etc.), puede existir acción legal</li>
+</ul>
+
+<h2>Restricciones del período de prueba en Colombia</h2>
+<ul>
+  <li>No puede pactarse un nuevo período de prueba con el mismo empleador para el mismo cargo</li>
+  <li>Si el empleador no ejerce su derecho de dar por terminado el contrato durante la prueba, el contrato continúa en plenas condiciones</li>
+  <li>El período de prueba no puede usarse para eludir el pago de prestaciones — la seguridad social es obligatoria desde el día 1</li>
+</ul>
+
+<h2>Calcula tu liquidación si terminan tu contrato</h2>
+<p>Si el empleador da por terminada la relación laboral al concluir el período de prueba, aún tienes derecho a la liquidación proporcional de prestaciones. Usa nuestra calculadora de liquidación para Colombia para calcular exactamente cuánto te corresponde.</p>
+    `.trim(),
+  },
+
+  // Período de prueba España 2026
+  {
+    slug: "periodo-de-prueba-espana-2026",
+    title: "Período de prueba en España 2026: duración por contrato, derechos y despido",
+    description:
+      "El período de prueba en España puede llegar a 6 meses para técnicos titulados. Debe constar por escrito. Conoce tus derechos durante la prueba y cuándo el despido es nulo.",
+    country: "espana",
+    countryName: "España",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "espana", slug: "calculadora-finiquito", name: "Calculadora de Finiquito España" },
+      { pais: "espana", slug: "calculadora-paro", name: "Calculadora de Paro España" },
+    ],
+    content: `
+<h2>¿Qué es el período de prueba en España?</h2>
+<p>El período de prueba es el tiempo inicial de un contrato de trabajo durante el cual cualquiera de las partes puede extinguir libremente la relación laboral sin indemnización. Está regulado en el <strong>artículo 14 del Estatuto de los Trabajadores (ET)</strong>.</p>
+<p>Para existir legalmente, el período de prueba <strong>debe pactarse por escrito</strong> en el contrato. Si no consta por escrito, no tiene validez.</p>
+
+<h2>Duración máxima del período de prueba en España</h2>
+<table>
+  <thead>
+    <tr><th>Categoría de trabajador</th><th>Duración máxima</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Técnicos titulados</td><td>6 meses</td></tr>
+    <tr><td>Demás trabajadores (empresas con 25 o más trabajadores)</td><td>2 meses</td></tr>
+    <tr><td>Demás trabajadores (empresas con menos de 25 trabajadores)</td><td>3 meses</td></tr>
+  </tbody>
+</table>
+<p>El convenio colectivo puede establecer duraciones distintas, <strong>pero nunca superiores</strong> a los límites del ET. Si el convenio fija plazos menores, prevalece el convenio.</p>
+
+<h2>Derechos del trabajador durante el período de prueba</h2>
+<p>Durante el período de prueba, el trabajador tiene los mismos derechos y obligaciones que cualquier otro empleado:</p>
+<ul>
+  <li><strong>Cotización a la Seguridad Social</strong> desde el primer día (con plenos efectos para desempleo, jubilación, etc.)</li>
+  <li><strong>Salario íntegro</strong> pactado, no inferior al convenio colectivo aplicable</li>
+  <li><strong>Vacaciones proporcionales</strong> al tiempo trabajado</li>
+  <li><strong>Incapacidad temporal (IT) cubierta</strong> por la Seguridad Social</li>
+  <li>Descanso semanal, festivos y permisos retribuidos</li>
+</ul>
+
+<h2>Extinción del contrato durante el período de prueba</h2>
+<p>La extinción durante la prueba es libre: cualquiera de las partes puede ponerla fin sin necesidad de alegar causa y <strong>sin obligación de indemnización</strong> ni de preaviso (salvo pacto en contrario).</p>
+<p>Sin embargo, existen <strong>supuestos de nulidad</strong> que el Tribunal Constitucional y la jurisprudencia han establecido:</p>
+<ul>
+  <li><strong>Embarazo y maternidad:</strong> la STC 17/2007 declaró que extinguir el contrato de una trabajadora embarazada durante la prueba es nulo, aunque el empresario desconozca el embarazo. El fuero protege desde la concepción.</li>
+  <li><strong>Durante baja por IT:</strong> aunque es posible en general, si la extinción coincide con una IT de forma fraudulenta o discriminatoria puede ser impugnada.</li>
+  <li><strong>Discriminación:</strong> si la extinción se fundamenta en motivos discriminatorios (Art. 14 CE), la extinción es nula.</li>
+</ul>
+
+<h2>Restricciones del período de prueba en España</h2>
+<ul>
+  <li>No puede establecerse un nuevo período de prueba si el trabajador ya prestó servicios en el mismo puesto para la misma empresa</li>
+  <li>El tiempo de IT, maternidad, paternidad u otras suspensiones legales del contrato <strong>no computa</strong> dentro del período de prueba (el período se suspende y se reanuda al reincorporarse)</li>
+  <li>El convenio colectivo puede reducir los plazos pero no ampliarlos</li>
+</ul>
+
+<h2>¿Tengo derecho al paro si me despiden en período de prueba?</h2>
+<p>Sí, siempre que hayas cotizado al menos <strong>360 días</strong> en los últimos 6 años antes de la extinción. Los días cotizados durante la prueba cuentan íntegramente para el período de carencia de la prestación por desempleo.</p>
+
+<h2>Calcula tu finiquito y paro</h2>
+<p>Si tu contrato se extingue al terminar o durante el período de prueba, usa nuestras calculadoras para conocer tu finiquito y la prestación de desempleo a la que puedes tener derecho.</p>
+    `.trim(),
+  },
+
+  // Período de prueba Chile 2026
+  {
+    slug: "periodo-de-prueba-chile-2026",
+    title: "Período de prueba en Chile 2026: ¿existe legalmente? Lo que dice el Código del Trabajo",
+    description:
+      "Chile no contempla un período de prueba con exención de indemnización. Desde el día 1 aplica el Código del Trabajo. Conoce qué pueden y no pueden hacer las empresas en los primeros meses.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito Chile" },
+      { pais: "chile", slug: "calculadora-indemnizacion", name: "Calculadora Indemnización Chile" },
+    ],
+    content: `
+<h2>¿Existe el período de prueba en Chile?</h2>
+<p><strong>No.</strong> El Código del Trabajo de Chile <em>no contempla</em> un período de prueba con exención de indemnización o con reglas especiales de terminación. Desde el primer día de la relación laboral, el trabajador tiene todos los derechos que establece la ley.</p>
+<p>Muchas empresas utilizan el término "período de prueba" o "período de entrenamiento" en sus políticas internas, pero esto no tiene respaldo legal en el ordenamiento chileno. Si la empresa despide al trabajador sin causa durante estos meses, debe igualmente pagar la indemnización correspondiente.</p>
+
+<h2>¿Qué dice el Código del Trabajo?</h2>
+<p>El <strong>artículo 163 del Código del Trabajo</strong> establece que si el empleador pone término al contrato por una causa no contemplada en los artículos 159 y 160 (causales objetivas y causales con responsabilidad del trabajador), debe pagar:</p>
+<ul>
+  <li><strong>Indemnización sustitutiva del aviso previo:</strong> equivalente a 30 días de remuneración (si no se dio el aviso con 30 días de anticipación)</li>
+  <li><strong>Indemnización por años de servicio:</strong> 1 mes por cada año trabajado (o fracción superior a 6 meses)</li>
+</ul>
+<p>Esta obligación aplica desde el primer día de trabajo, sin importar si el empleador lo denomina "período de prueba".</p>
+
+<h2>El contrato debe firmarse en plazos legales</h2>
+<p>Aunque no existe período de prueba, sí existe un plazo para formalizar el contrato:</p>
+<ul>
+  <li><strong>15 días corridos</strong> desde el inicio de la relación laboral para la mayoría de los contratos</li>
+  <li><strong>5 días corridos</strong> si el contrato es por obra, faena o trabajo de temporada</li>
+</ul>
+<p>Si el empleador no formaliza el contrato en estos plazos, se entiende que el trabajador tiene un contrato indefinido con las condiciones que él declare.</p>
+
+<h2>¿Cómo pueden las empresas reducir el riesgo durante los primeros meses?</h2>
+<p>Dado que no existe período de prueba en Chile, las empresas que quieren mayor flexibilidad en los primeros meses de una relación laboral suelen recurrir a:</p>
+<ul>
+  <li><strong>Contratos a plazo fijo de corta duración</strong> (ej. 3 meses): al vencer el plazo, el contrato termina sin indemnización. Sin embargo, la renovación reiterada puede transformar el contrato en indefinido.</li>
+  <li><strong>Contratos por obra o faena</strong>: válidos cuando hay un proyecto específico y determinado.</li>
+</ul>
+<p>Estas alternativas tienen sus propias restricciones legales y no son equivalentes a un período de prueba.</p>
+
+<h2>Derechos desde el primer día en Chile</h2>
+<p>Independientemente de si la empresa lo llama "período de prueba" o no, el trabajador en Chile tiene desde el día 1:</p>
+<ul>
+  <li>Afiliación al sistema previsional (AFP) y de salud (FONASA o ISAPRE)</li>
+  <li>Cotizaciones obligatorias del empleador</li>
+  <li>Derecho a fuero (en caso de embarazo, sindicalización, etc.)</li>
+  <li>Protección contra despido injustificado (con derecho a indemnización)</li>
+  <li>Vacaciones proporcionales al terminar la relación laboral antes de completar el año</li>
+</ul>
+
+<h2>Calcula tu indemnización o finiquito en Chile</h2>
+<p>Si tu empleador da por terminada la relación laboral y crees que no te pagaron correctamente, usa nuestras calculadoras de finiquito e indemnización para verificar los montos que corresponden según la ley chilena.</p>
+    `.trim(),
+  },
+
+  // Período de prueba Argentina 2026
+  {
+    slug: "periodo-de-prueba-argentina-2026",
+    title: "Período de prueba en Argentina 2026: 3 meses del Art. 92 bis LCT y tus derechos",
+    description:
+      "En Argentina el período de prueba dura 3 meses según el Art. 92 bis LCT. Debe registrarse en AFIP desde el día 1. Conoce todos tus derechos y el preaviso de 15 días obligatorio.",
+    country: "argentina",
+    countryName: "Argentina",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "argentina", slug: "calculadora-sac", name: "Calculadora de SAC Argentina" },
+      { pais: "argentina", slug: "calculadora-indemnizacion", name: "Calculadora de Indemnización Argentina" },
+    ],
+    content: `
+<h2>¿Qué es el período de prueba en Argentina?</h2>
+<p>El período de prueba es la etapa inicial de todo contrato de trabajo por tiempo indeterminado en Argentina. Está regulado en el <strong>artículo 92 bis de la Ley de Contrato de Trabajo (LCT)</strong> y tiene como objetivo que ambas partes evalúen la conveniencia de la relación laboral.</p>
+
+<h2>¿Cuánto dura el período de prueba en Argentina?</h2>
+<p>La duración es de <strong>3 meses</strong> para todos los contratos por tiempo indeterminado. Este plazo es improrrogable, aunque el convenio colectivo de trabajo (CCT) aplicable puede ampliarlo hasta un máximo de <strong>6 meses</strong>.</p>
+<p>El período no puede usarse más de una vez: si el trabajador ya estuvo en período de prueba con el mismo empleador, no puede pactarse uno nuevo.</p>
+
+<h2>Requisitos formales — el registro en AFIP es obligatorio</h2>
+<p>Este es uno de los puntos más importantes y más incumplidos:</p>
+<ul>
+  <li>El contrato debe estar <strong>registrado ante la AFIP desde el primer día</strong> de trabajo</li>
+  <li>Si el empleador no registra al trabajador, el período de prueba no tiene efecto legal — el contrato se considera un contrato pleno, con todos los derechos de la LCT desde el inicio</li>
+  <li>Debe celebrarse <strong>por escrito</strong> (aunque la LCT no lo exige expresamente, es altamente recomendable para evitar litigios)</li>
+</ul>
+
+<h2>Derechos del trabajador durante el período de prueba</h2>
+<p>Durante el período de prueba el trabajador tiene <strong>todos los derechos de la LCT</strong>, con una sola excepción: la indemnización por antigüedad (Art. 245 LCT).</p>
+<ul>
+  <li><strong>Obra social y seguridad social</strong> desde el día 1</li>
+  <li><strong>Salario íntegro</strong> según el CCT o el convenio individual</li>
+  <li>Parte proporcional del <strong>SAC (aguinaldo)</strong></li>
+  <li><strong>Vacaciones proporcionales</strong></li>
+  <li>Protección contra accidentes de trabajo (ART)</li>
+  <li>Licencias especiales (matrimonio, fallecimiento familiar, etc.)</li>
+</ul>
+
+<h2>Terminación durante el período de prueba</h2>
+<p>Cualquiera de las partes puede disolver el contrato durante el período de prueba <strong>sin pagar indemnización por antigüedad</strong>. Sin embargo, existe un requisito que muchos empleadores ignoran: el <strong>preaviso de 15 días</strong> es obligatorio.</p>
+<ul>
+  <li>Si el empleador no otorga los 15 días de preaviso, debe abonar una <strong>indemnización sustitutiva del preaviso</strong> equivalente a 15 días de salario</li>
+  <li>Si el trabajador renuncia sin dar preaviso, puede ser responsable de los daños ocasionados al empleador</li>
+</ul>
+
+<h2>¿Qué pasa al vencer el período de prueba?</h2>
+<p>Si ninguna de las partes disuelve el contrato antes de que venzan los 3 meses (o el plazo del CCT), el contrato <strong>se convierte automáticamente en contrato por tiempo indeterminado</strong>. La antigüedad del trabajador se cuenta desde el primer día de la relación laboral, incluyendo el período de prueba.</p>
+
+<h2>Calcula tu SAC e indemnización en Argentina</h2>
+<p>Si tu contrato termina durante o al concluir el período de prueba, usa nuestras calculadoras para saber cuánto te corresponde de SAC proporcional y si aplica alguna indemnización sustitutiva del preaviso.</p>
+    `.trim(),
+  },
+
+  // Bono alimentación Venezuela 2026
+  {
+    slug: "bono-alimentacion-venezuela-cesta-ticket-2026",
+    title: "Bono de alimentación Venezuela 2026: cesta ticket, cuánto es y quién paga",
+    description:
+      "El bono de alimentación (cesta ticket) en Venezuela es obligatorio para empresas con 20 o más trabajadores. Lo paga el empleador al 100% y no es salario. Conoce cuánto es y cómo se calcula.",
+    country: "venezuela",
+    countryName: "Venezuela",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "venezuela", slug: "calculadora-prestaciones-sociales", name: "Calculadora de Prestaciones Sociales Venezuela" },
+      { pais: "venezuela", slug: "calculadora-utilidades", name: "Calculadora de Utilidades Venezuela" },
+    ],
+    content: `
+<h2>¿Qué es el bono de alimentación (cesta ticket) en Venezuela?</h2>
+<p>El bono de alimentación, conocido popularmente como <strong>cesta ticket</strong>, es un beneficio laboral obligatorio que tienen derecho a recibir los trabajadores venezolanos. Está regulado principalmente por la <strong>Ley de Alimentación para los Trabajadores y las Trabajadoras (LAT)</strong> y el <strong>Decreto Cestaticket Socialista de 2015</strong>.</p>
+<p>Su objetivo es garantizar que los trabajadores puedan cubrir sus necesidades alimentarias durante la jornada laboral.</p>
+
+<h2>¿Quiénes tienen derecho al cesta ticket?</h2>
+<p>Tienen derecho al beneficio todos los trabajadores cuyo empleador tenga <strong>20 o más trabajadores</strong>. Los empleadores con menos de 20 trabajadores también pueden otorgarlo voluntariamente.</p>
+<ul>
+  <li>Trabajadores a tiempo completo</li>
+  <li>Trabajadores a tiempo parcial (de forma proporcional)</li>
+  <li>Aprendices y pasantes en los términos del decreto</li>
+</ul>
+
+<h2>¿Cuánto es el bono de alimentación en Venezuela?</h2>
+<p>El monto mínimo del cesta ticket está vinculado a la <strong>Unidad Tributaria (UT)</strong> vigente, fijada por el SENIAT. El decreto establece que el beneficio no puede ser inferior a <strong>0,25 UT por día hábil trabajado</strong>.</p>
+<p>Dado que la UT y el entorno económico en Venezuela se actualizan con frecuencia, se recomienda verificar el valor vigente directamente en el SENIAT o el Ministerio del Trabajo. El empleador puede otorgar montos superiores al mínimo legal.</p>
+
+<h2>¿Quién paga el cesta ticket?</h2>
+<p>El beneficio lo paga <strong>el empleador al 100%</strong>. No existe ningún descuento al trabajador por este concepto. Es un beneficio adicional al salario, financiado íntegramente por la empresa.</p>
+
+<h2>¿Cómo se puede otorgar el cesta ticket?</h2>
+<p>La LAT permite que el empleador entregue el beneficio a través de distintas modalidades:</p>
+<ul>
+  <li><strong>Tarjeta electrónica de alimentación</strong> (la modalidad más común actualmente)</li>
+  <li><strong>Cupones o tickets</strong> canjeables en establecimientos autorizados</li>
+  <li><strong>Comedor propio</strong> en la empresa</li>
+  <li><strong>Cesta de alimentos</strong> entregada directamente</li>
+</ul>
+
+<h2>¿El cesta ticket forma parte del salario?</h2>
+<p><strong>No.</strong> Este es uno de los puntos más importantes. Según el <strong>artículo 4 de la LAT</strong>, el beneficio de alimentación:</p>
+<ul>
+  <li><strong>No se considera salario</strong> para ningún efecto legal</li>
+  <li>No se toma en cuenta para el cálculo de <strong>prestaciones sociales</strong></li>
+  <li>No integra la base de cálculo de <strong>vacaciones ni bono vacacional</strong></li>
+  <li>No integra la base de cálculo de <strong>utilidades</strong></li>
+  <li>No genera cotizaciones al IVSS</li>
+</ul>
+<p>Esta exclusión salarial es una ventaja tanto para el trabajador (recibe el beneficio sin retenciones) como para el empleador (no incrementa el costo salarial base).</p>
+
+<h2>¿Qué pasa si el empleador no paga el cesta ticket?</h2>
+<p>Si el empleador incumple con el otorgamiento del beneficio, el trabajador puede:</p>
+<ul>
+  <li>Interponer una denuncia ante la <strong>Inspectoría del Trabajo</strong> correspondiente</li>
+  <li>Reclamar las diferencias acumuladas ante los Tribunales del Trabajo</li>
+  <li>El empleador se expone a sanciones administrativas establecidas en la LAT</li>
+</ul>
+
+<h2>Calcula tus prestaciones sociales y utilidades en Venezuela</h2>
+<p>Recuerda que el cesta ticket no integra la base de cálculo de tus prestaciones ni utilidades. Usa nuestras calculadoras para determinar exactamente cuánto te corresponde por estos conceptos según tu salario normal.</p>
+    `.trim(),
+  },
+
+  // Incapacidad laboral Colombia 2026
+  {
+    slug: "incapacidad-laboral-colombia-2026-eps-cuanto-paga",
+    title: "Incapacidad laboral Colombia 2026: cuánto paga la EPS y quién cubre los primeros días",
+    description:
+      "En Colombia los primeros 2 días de incapacidad los paga el empleador al 100%. Desde el día 3, la EPS paga el 66.67% del IBC. Conoce la tabla completa, duración máxima y requisitos.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Calculadora de Nómina Neta Colombia" },
+      { pais: "colombia", slug: "calculadora-seguridad-social", name: "Calculadora Seguridad Social Colombia" },
+    ],
+    content: `
+<h2>¿Cómo funciona la incapacidad laboral en Colombia?</h2>
+<p>En Colombia, cuando un trabajador no puede laborar por enfermedad o accidente no relacionado con el trabajo, tiene derecho a un <strong>subsidio de incapacidad por enfermedad general</strong>. El sistema distribuye el pago entre el empleador y la EPS según los días de incapacidad. El marco legal es el <strong>artículo 227 del CST</strong> y el <strong>Decreto 2943 de 2013</strong>.</p>
+
+<h2>Tabla: quién paga y cuánto por cada período</h2>
+<table>
+  <thead>
+    <tr><th>Días de incapacidad</th><th>Quién paga</th><th>% del IBC</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Días 1 y 2</td><td>Empleador</td><td>100%</td></tr>
+    <tr><td>Días 3 al 180</td><td>EPS</td><td>66.67% (dos terceras partes)</td></tr>
+    <tr><td>Días 181 al 360 (prórroga médica)</td><td>EPS (con concepto del médico tratante)</td><td>66.67%</td></tr>
+    <tr><td>Días 361 al 540 (rehabilitación)</td><td>Fondo de Pensiones (si aplica rehabilitación)</td><td>Según concepto médico</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Qué es el IBC y cómo se calcula el pago diario?</h2>
+<p>El IBC (Ingreso Base de Cotización) es el salario sobre el cual el trabajador cotiza a salud y pensión. La fórmula del subsidio diario es:</p>
+<p><em>Subsidio diario = (IBC mensual / 30) × 66.67%</em></p>
+<p>El IBC tiene como <strong>piso mínimo el SMMLV</strong> vigente. Si el salario del trabajador es el mínimo, el subsidio diario será (SMMLV / 30) × 66.67%.</p>
+
+<h2>Requisitos para tener derecho al subsidio de la EPS</h2>
+<ul>
+  <li>Haber cotizado de forma continua a la EPS durante <strong>mínimo 4 semanas inmediatamente anteriores</strong> a la incapacidad</li>
+  <li>Estar afiliado al régimen contributivo de salud (no aplica para régimen subsidiado)</li>
+  <li>Presentar certificado médico de incapacidad expedido por un profesional autorizado</li>
+</ul>
+
+<h2>Diferencia con la licencia de maternidad</h2>
+<p>La licencia de maternidad tiene un tratamiento diferente al de la incapacidad por enfermedad general:</p>
+<ul>
+  <li>La licencia de maternidad (18 semanas según Ley 2114 de 2021) la paga la <strong>EPS al 100% del IBC</strong>, no al 66.67%</li>
+  <li>El empleador debe pagar primero y luego recobrar a la EPS</li>
+  <li>Aplica desde el primer día de la licencia sin los 2 días a cargo del empleador</li>
+</ul>
+
+<h2>¿Qué pasa si se agota la incapacidad de 180 días?</h2>
+<p>Si el trabajador no se ha recuperado al llegar al día 180, existen dos caminos:</p>
+<ul>
+  <li><strong>Prórroga médica hasta 360 días:</strong> si el médico tratante certifica que el trabajador tiene posibilidades de recuperación, la EPS puede autorizar una prórroga.</li>
+  <li><strong>Calificación de invalidez:</strong> si la recuperación no es posible, las Juntas de Calificación de Invalidez determinan el porcentaje de pérdida de capacidad laboral, lo que puede dar lugar a pensión de invalidez.</li>
+</ul>
+
+<h2>¿El empleador puede despedir a un trabajador incapacitado?</h2>
+<p><strong>No, durante la incapacidad el trabajador tiene protección especial.</strong> El artículo 26 de la Ley 361 de 1997 prohíbe el despido de trabajadores con incapacidad sin autorización del Ministerio del Trabajo. Un despido en estas condiciones puede ser declarado ineficaz y generar reintegro más indemnizaciones adicionales.</p>
+
+<h2>Calcula tu nómina neta en Colombia</h2>
+<p>Usa nuestra calculadora de nómina neta para Colombia para saber exactamente cuánto recibes descontando seguridad social y otros aportes, y nuestra calculadora de seguridad social para verificar el IBC que te aplica.</p>
+    `.trim(),
+  },
+
+  // Licencia médica Chile 2026
+  {
+    slug: "licencia-medica-chile-2026-cuanto-pagan",
+    title: "Licencia médica Chile 2026: cuánto pagan, quién paga y cómo tramitarla",
+    description:
+      "En Chile la licencia médica la paga COMPIN o tu ISAPRE según el promedio de tus últimas 3 remuneraciones. Los primeros 3 días no se pagan (carencia). Conoce cómo tramitarla y cuándo apelar.",
+    country: "chile",
+    countryName: "Chile",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "chile", slug: "calculadora-finiquito", name: "Calculadora de Finiquito Chile" },
+      { pais: "chile", slug: "calculadora-afp", name: "Calculadora AFP Chile" },
+    ],
+    content: `
+<h2>¿Qué es la licencia médica en Chile?</h2>
+<p>La licencia médica es el documento emitido por un médico cirujano que certifica que un trabajador está temporalmente impedido para laborar por enfermedad o accidente. El subsidio que reemplaza la remuneración durante ese período se llama <strong>Subsidio de Incapacidad Laboral (SIL)</strong> y está regulado por el <strong>DFL N° 44 de 1978</strong>.</p>
+
+<h2>¿Quién paga la licencia médica en Chile?</h2>
+<table>
+  <thead>
+    <tr><th>Sistema de salud del trabajador</th><th>Entidad que paga el subsidio</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>FONASA</td><td>COMPIN (Comisión de Medicina Preventiva e Invalidez)</td></tr>
+    <tr><td>ISAPRE</td><td>La ISAPRE correspondiente</td></tr>
+  </tbody>
+</table>
+<p>En la práctica, el empleador tramita la licencia y puede anticipar el subsidio al trabajador, recobrando luego el monto a COMPIN o la ISAPRE.</p>
+
+<h2>¿Cuánto paga la licencia médica?</h2>
+<p>El monto del subsidio se calcula como el <strong>promedio de las remuneraciones imponibles de los últimos 3 meses</strong> anteriores al inicio de la licencia, con los siguientes límites:</p>
+<ul>
+  <li><strong>Mínimo:</strong> no puede ser inferior al 100% de la última remuneración mensual neta</li>
+  <li><strong>Máximo:</strong> existe un tope diario (aproximadamente 3 UF diarias — verificar el valor vigente en la SUSESO)</li>
+</ul>
+<p>Para licencias tipo 1 (enfermedad común), los <strong>3 primeros días no se pagan</strong> (días de carencia). El subsidio se paga a partir del 4° día.</p>
+
+<h2>Tipos de licencia médica y días de carencia</h2>
+<table>
+  <thead>
+    <tr><th>Tipo</th><th>Descripción</th><th>Días de carencia</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Tipo 1</td><td>Enfermedad o accidente común</td><td>3 días (no se pagan)</td></tr>
+    <tr><td>Tipo 2</td><td>Prórroga de enfermedad</td><td>Sin carencia</td></tr>
+    <tr><td>Tipo 3</td><td>Medicina preventiva</td><td>Sin carencia</td></tr>
+    <tr><td>Tipo 4</td><td>Accidente del trabajo / enfermedad profesional</td><td>Sin carencia (paga la mutual)</td></tr>
+    <tr><td>Tipo 5</td><td>Licencia maternal (pre y postnatal)</td><td>Sin carencia — 100% del sueldo</td></tr>
+    <tr><td>Tipo 6</td><td>Enfermedad grave del hijo menor de 1 año</td><td>Sin carencia</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo tramitar la licencia médica?</h2>
+<ol>
+  <li>El médico emite la licencia en el sistema electrónico de licencias médicas (SIIL o papel en algunos casos)</li>
+  <li>El trabajador debe presentar la licencia al empleador dentro de los <strong>2 días hábiles</strong> siguientes al inicio de la incapacidad</li>
+  <li>El empleador debe tramitarla ante COMPIN o la ISAPRE dentro de los <strong>3 días hábiles</strong> siguientes a recibirla</li>
+  <li>COMPIN o la ISAPRE resuelven si autorizan o rechazan la licencia</li>
+</ol>
+
+<h2>¿Qué pasa si rechazan la licencia?</h2>
+<p>Si COMPIN o la ISAPRE rechazan la licencia, el trabajador puede apelar ante la <strong>Intendencia de Salud</strong> correspondiente dentro del plazo establecido (generalmente 15 días hábiles desde la notificación del rechazo). La resolución de la Intendencia puede ser impugnada posteriormente ante los tribunales de justicia.</p>
+
+<h2>¿El empleador puede despedir a un trabajador con licencia?</h2>
+<p>La licencia médica no otorga fuero laboral en sí misma, pero el despido durante una licencia puede ser cuestionado si se acredita que el motivo real del despido fue la enfermedad del trabajador. En ese caso, el Juzgado del Trabajo puede declarar el despido nulo o injustificado según las circunstancias.</p>
+
+<h2>Calcula tus derechos si termina tu contrato</h2>
+<p>Si finalmente terminan tu contrato laboral, usa nuestras calculadoras de finiquito y AFP para verificar todos los montos que te corresponde recibir.</p>
+    `.trim(),
+  },
+
+  // Vacaciones Ecuador 2026
+  {
+    slug: "vacaciones-ecuador-2026-cuantos-dias-corresponden",
+    title: "Vacaciones en Ecuador 2026: 15 días hábiles según el Código del Trabajo",
+    description:
+      "En Ecuador corresponden 15 días hábiles de vacaciones por año según el Art. 69 del Código del Trabajo. Desde el 5° año se suman días adicionales. Aprende a calcular vacaciones proporcionales y cuándo se pagan.",
+    country: "ecuador",
+    countryName: "Ecuador",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "ecuador", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación Ecuador" },
+      { pais: "ecuador", slug: "calculadora-decimo-tercero", name: "Calculadora Décimo Tercero Ecuador" },
+    ],
+    content: `
+<h2>¿Cuántos días de vacaciones corresponden en Ecuador?</h2>
+<p>Según el <strong>artículo 69 del Código del Trabajo</strong>, todo trabajador que haya prestado servicios durante un año continuo tiene derecho a <strong>15 días hábiles de vacaciones remuneradas</strong>.</p>
+<p>Los días hábiles son de lunes a viernes, excluyendo sábados, domingos y feriados nacionales o locales. Esto equivale aproximadamente a 3 semanas de descanso.</p>
+
+<h2>Días adicionales desde el 5° año</h2>
+<p>A partir del quinto año de trabajo con el mismo empleador, el trabajador tiene derecho a <strong>1 día hábil adicional de vacaciones por cada año excedente</strong>, sin tope máximo establecido en la ley.</p>
+<table>
+  <thead>
+    <tr><th>Años trabajados</th><th>Días hábiles de vacaciones</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1 a 4 años</td><td>15 días hábiles</td></tr>
+    <tr><td>5 años</td><td>16 días hábiles</td></tr>
+    <tr><td>6 años</td><td>17 días hábiles</td></tr>
+    <tr><td>10 años</td><td>21 días hábiles</td></tr>
+    <tr><td>20 años</td><td>31 días hábiles</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cómo se calcula el pago de vacaciones en Ecuador?</h2>
+<p>El pago de las vacaciones se calcula en función del <strong>promedio de remuneraciones percibidas durante el año</strong>, incluyendo las remuneraciones variables (horas extra, comisiones, etc.) que hayan sido habituales. La fórmula es:</p>
+<p><em>Pago de vacaciones = (Promedio mensual del año / 30) × días hábiles de vacaciones</em></p>
+<p>El promedio mensual incluye el sueldo base más los ingresos variables habituales percibidos durante el año anterior.</p>
+
+<h2>Vacaciones proporcionales en la liquidación</h2>
+<p>Si el trabajador no ha completado el año al momento de la terminación del contrato, tiene derecho a las <strong>vacaciones proporcionales</strong> calculadas así:</p>
+<p><em>Vacaciones proporcionales = (15 días hábiles / 12 meses) × meses trabajados en el año en curso</em></p>
+<p>Desde el 5° año se reemplaza "15 días hábiles" por los días que correspondan según la antigüedad.</p>
+
+<h2>¿El empleador puede fijar cuándo tomar vacaciones?</h2>
+<p>Sí. El <strong>empleador tiene la facultad de fijar las fechas de vacaciones</strong>, pero con ciertas limitaciones:</p>
+<ul>
+  <li>Debe comunicarlo al trabajador con <strong>30 días de anticipación</strong></li>
+  <li>Las vacaciones no pueden interrumpirse salvo acuerdo entre las partes</li>
+  <li>No pueden coincidir con períodos de trabajo especialmente intensos si ello perjudica al trabajador</li>
+</ul>
+
+<h2>Acumulación de vacaciones</h2>
+<p>Según el <strong>artículo 74 del Código del Trabajo</strong>, las vacaciones pueden acumularse hasta por <strong>3 años consecutivos</strong>, siempre que haya acuerdo escrito entre el empleador y el trabajador. Si se acumulan más de 3 años, el exceso se pierde — no se puede cobrar la acumulación indefinida.</p>
+
+<h2>Diferencia con el décimo tercero y décimo cuarto</h2>
+<p>En Ecuador existen otros beneficios laborales que se confunden a veces con las vacaciones:</p>
+<ul>
+  <li><strong>Décimo tercer sueldo:</strong> equivale a 1/12 de lo ganado en el año. No es vacaciones — es un beneficio adicional pagado en diciembre (o mensualmente si así se solicita).</li>
+  <li><strong>Décimo cuarto sueldo:</strong> equivale a 1 salario básico unificado (SBU) pagado en agosto (Sierra/Amazonía) o marzo (Costa/Galápagos). Tampoco es vacaciones.</li>
+</ul>
+<p>Estos tres beneficios son independientes: vacaciones, décimo tercero y décimo cuarto son derechos distintos y se acumulan.</p>
+
+<h2>Calcula tu liquidación en Ecuador</h2>
+<p>Si tu contrato ha terminado, usa nuestra calculadora de liquidación para Ecuador para verificar que recibes correctamente las vacaciones proporcionales junto con los décimos y demás beneficios que te corresponden.</p>
+    `.trim(),
+  },
+
+  // Licencia maternidad Colombia 2026
+  {
+    slug: "licencia-maternidad-colombia-2026-18-semanas",
+    title: "Licencia de maternidad Colombia 2026: 18 semanas, quién paga y cómo tramitarla",
+    description:
+      "En Colombia la licencia de maternidad es de 18 semanas desde la Ley 2114 de 2021. La paga la EPS al 100% del IBC. Conoce la distribución preparto/posparto, el fuero de maternidad y la licencia de paternidad.",
+    country: "colombia",
+    countryName: "Colombia",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "colombia", slug: "calculadora-nomina-neta", name: "Calculadora de Nómina Neta Colombia" },
+      { pais: "colombia", slug: "calculadora-liquidacion", name: "Calculadora de Liquidación Colombia" },
+    ],
+    content: `
+<h2>¿Cuántas semanas de licencia de maternidad hay en Colombia?</h2>
+<p>Desde la <strong>Ley 2114 de 2021</strong>, Colombia tiene una licencia de maternidad de <strong>18 semanas</strong>. Anteriormente era de 14 semanas. Esta es una de las licencias de maternidad más largas de América Latina.</p>
+<p>La base legal también incluye el <strong>artículo 236 del Código Sustantivo del Trabajo (CST)</strong>.</p>
+
+<h2>Distribución de las 18 semanas</h2>
+<table>
+  <thead>
+    <tr><th>Período</th><th>Semanas</th><th>Observación</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Preparto (antes del parto)</td><td>Mínimo 2 semanas</td><td>La madre puede transferir hasta 4 semanas preparto al posparto</td></tr>
+    <tr><td>Posparto (después del parto)</td><td>Mínimo 14 semanas (hasta 16 si se transfieren semanas)</td><td>Obligatorio mínimo 14 semanas posparto</td></tr>
+    <tr><td>Total</td><td>18 semanas</td><td>Puede repartirse con acuerdo médico</td></tr>
+  </tbody>
+</table>
+<p><strong>Partos múltiples:</strong> se añaden <strong>2 semanas adicionales por cada hijo adicional</strong> (gemelos = 20 semanas, trillizos = 22 semanas, etc.).</p>
+
+<h2>¿Quién paga la licencia de maternidad en Colombia?</h2>
+<p>La licencia de maternidad la paga la <strong>EPS al 100% del IBC</strong> (Ingreso Base de Cotización), no el 66.67% que aplica a las incapacidades por enfermedad común.</p>
+<p>En la práctica:</p>
+<ol>
+  <li>El empleador sigue pagando el salario a la trabajadora durante la licencia</li>
+  <li>El empleador recobra ese valor a la EPS</li>
+  <li>La EPS reembolsa el 100% del IBC al empleador</li>
+</ol>
+
+<h2>Requisitos para acceder a la licencia pagada por la EPS</h2>
+<ul>
+  <li>Haber cotizado a la EPS durante <strong>todo el período de gestación</strong> (desde la concepción hasta el parto)</li>
+  <li>Si hubo periodos de mora en las cotizaciones, la EPS puede descontar esas semanas del reconocimiento</li>
+  <li>La licencia debe estar soportada en el certificado médico de nacimiento o el registro de la EPS</li>
+</ul>
+
+<h2>Fuero de maternidad</h2>
+<p>El fuero de maternidad protege a la trabajadora embarazada contra el despido sin justa causa. Aplica:</p>
+<ul>
+  <li>Durante todo el embarazo</li>
+  <li>Durante la licencia de maternidad (18 semanas)</li>
+  <li>Hasta 3 meses después de reincorporarse al trabajo</li>
+</ul>
+<p>Para despedir a una trabajadora protegida por el fuero, el empleador necesita <strong>autorización previa del Inspector del Trabajo</strong>. Un despido sin esta autorización es ineficaz y puede generar reintegro más indemnizaciones adicionales.</p>
+
+<h2>Licencia de paternidad en Colombia</h2>
+<p>La <strong>Ley 2114 de 2021</strong> también estableció una licencia de paternidad de <strong>2 semanas</strong> pagadas. Su objetivo es equiparar progresivamente los derechos de ambos progenitores. La meta es llegar a la paridad con la licencia de maternidad en los próximos años mediante ampliaciones graduales.</p>
+
+<h2>Licencia de lactancia</h2>
+<p>Adicionalmente, la trabajadora tiene derecho a <strong>2 descansos de 30 minutos</strong> dentro de la jornada laboral para amamantar, durante los primeros <strong>6 meses posparto</strong>. Este tiempo es remunerado y no puede descontarse del salario.</p>
+
+<h2>Calcula tu nómina y liquidación en Colombia</h2>
+<p>Recuerda que durante la licencia de maternidad el empleador debe mantener las cotizaciones a seguridad social. Usa nuestras calculadoras para verificar tu nómina neta y los beneficios que te corresponden en Colombia.</p>
+    `.trim(),
+  },
+
+  // Licencia maternidad México 2026
+  {
+    slug: "licencia-maternidad-mexico-2026-imss",
+    title: "Licencia de maternidad en México 2026: 12 semanas IMSS, quién paga y cómo tramitar",
+    description:
+      "En México la licencia de maternidad es de 84 días (12 semanas) y la paga el IMSS al 100% del SBC. Necesitas 30 semanas cotizadas. Conoce cómo tramitarla, el fuero y la licencia de paternidad de 5 días.",
+    country: "mexico",
+    countryName: "México",
+    publishDate: "2026-05-17",
+    relatedCalculators: [
+      { pais: "mexico", slug: "calculadora-imss", name: "Calculadora IMSS México" },
+      { pais: "mexico", slug: "calculadora-nomina-neta", name: "Calculadora de Nómina Neta México" },
+    ],
+    content: `
+<h2>¿Cuánto dura la licencia de maternidad en México?</h2>
+<p>La licencia de maternidad en México es de <strong>84 días (12 semanas)</strong>, distribuidos en:</p>
+<ul>
+  <li><strong>42 días antes del parto</strong> (6 semanas preparto)</li>
+  <li><strong>42 días después del parto</strong> (6 semanas posparto)</li>
+</ul>
+<p>Está regulada en el <strong>artículo 170 de la Ley Federal del Trabajo (LFT)</strong> y el <strong>artículo 101 de la Ley del Seguro Social (LSS)</strong>.</p>
+
+<h2>¿Se pueden redistribuir las semanas?</h2>
+<p>Sí. Con autorización médica del IMSS, la trabajadora puede transferir hasta <strong>4 semanas del período preparto al posparto</strong>. En ese caso la distribución quedaría:</p>
+<ul>
+  <li>Mínimo 2 semanas preparto + hasta 10 semanas posparto</li>
+</ul>
+<p>Esta opción es útil cuando el trabajo no implica esfuerzo físico intenso y la trabajadora prefiere aprovechar más tiempo con el bebé después del parto.</p>
+
+<h2>¿Quién paga la licencia de maternidad en México?</h2>
+<p>El subsidio de maternidad lo paga el <strong>IMSS al 100% del Salario Base de Cotización (SBC)</strong>, con un tope de <strong>25 UMAs diarias</strong>.</p>
+<p>Si la trabajadora cumple el requisito de semanas cotizadas, el empleador <strong>no tiene obligación de pagar el salario durante la licencia</strong> — el IMSS lo cubre directamente mediante depósito en la CLABE bancaria registrada.</p>
+<p>Excepción: si la trabajadora <strong>no cumple el requisito de semanas cotizadas</strong>, la obligación recae en el empleador según el artículo 170 LFT.</p>
+
+<h2>Requisito: 30 semanas cotizadas al IMSS</h2>
+<p>Para que el IMSS pague el subsidio, la trabajadora debe acreditar <strong>30 semanas de cotización</strong> en los <strong>12 meses inmediatamente anteriores</strong> a la fecha del parto o del inicio del período prenatal.</p>
+<p>Si no se alcanza este mínimo, el IMSS no paga el subsidio y el empleador debe cubrir el salario íntegro durante los 84 días.</p>
+
+<h2>Cómo tramitar la licencia de maternidad ante el IMSS</h2>
+<ol>
+  <li>Obtener el <strong>certificado médico de incapacidad por maternidad</strong> del médico del IMSS</li>
+  <li>Entregarlo al empleador</li>
+  <li>El empleador registra la incapacidad en el portal del IMSS (IDSE)</li>
+  <li>El IMSS deposita el subsidio directamente en la CLABE bancaria de la trabajadora registrada en el sistema</li>
+</ol>
+<p>Es importante tener una cuenta bancaria activa registrada ante el IMSS para recibir el depósito sin demoras.</p>
+
+<h2>Fuero de maternidad en México</h2>
+<p>El <strong>artículo 170, fracción IV de la LFT</strong> prohíbe expresamente al empleador despedir a la trabajadora durante el embarazo y la lactancia. Si hay un despido en este período, la trabajadora puede:</p>
+<ul>
+  <li>Demandar ante la Junta de Conciliación y Arbitraje</li>
+  <li>Exigir el pago de los salarios caídos más la indemnización constitucional de 3 meses</li>
+  <li>Solicitar la reinstalación en su puesto</li>
+</ul>
+
+<h2>Licencia de paternidad en México</h2>
+<p>Los padres trabajadores tienen derecho a <strong>5 días hábiles de licencia de paternidad</strong>, con goce de sueldo pagado por el empleador, según el <strong>artículo 132, fracción XXVII bis de la LFT</strong>. Esta licencia aplica tanto para el nacimiento del hijo como para la adopción.</p>
+
+<h2>Calcula tu nómina y aportaciones al IMSS</h2>
+<p>Usa nuestra calculadora del IMSS para conocer el SBC sobre el cual se calcula el subsidio y nuestra calculadora de nómina neta para verificar tus descuentos habituales antes de la licencia.</p>
+    `.trim(),
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
